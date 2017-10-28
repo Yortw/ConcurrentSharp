@@ -1,0 +1,311 @@
+### YamlMime:XRefMap
+sorted: true
+references:
+- uid: ConcurrentSharp
+  name: ConcurrentSharp
+  href: api/ConcurrentSharp.html
+  commentId: N:ConcurrentSharp
+  fullName: ConcurrentSharp
+  nameWithType: ConcurrentSharp
+- uid: ConcurrentSharp.BlockingCollectionProcessor`1
+  name: BlockingCollectionProcessor<T>
+  href: api/ConcurrentSharp.BlockingCollectionProcessor-1.html
+  commentId: T:ConcurrentSharp.BlockingCollectionProcessor`1
+  name.vb: BlockingCollectionProcessor(Of T)
+  fullName: ConcurrentSharp.BlockingCollectionProcessor<T>
+  fullName.vb: ConcurrentSharp.BlockingCollectionProcessor(Of T)
+  nameWithType: BlockingCollectionProcessor<T>
+  nameWithType.vb: BlockingCollectionProcessor(Of T)
+- uid: ConcurrentSharp.BlockingCollectionProcessor`1.#ctor(BlockingCollection{`0},System.Int32,System.Action{`0},ConcurrentSharp.ExpectedThreadLifetime)
+  name: BlockingCollectionProcessor(BlockingCollection<T>, Int32, Action<T>, ExpectedThreadLifetime)
+  href: api/ConcurrentSharp.BlockingCollectionProcessor-1.-ctor.html#ConcurrentSharp_BlockingCollectionProcessor_1__ctor_BlockingCollection__0__System_Int32_System_Action__0__ConcurrentSharp_ExpectedThreadLifetime_
+  commentId: M:ConcurrentSharp.BlockingCollectionProcessor`1.#ctor(BlockingCollection{`0},System.Int32,System.Action{`0},ConcurrentSharp.ExpectedThreadLifetime)
+  name.vb: BlockingCollectionProcessor(BlockingCollection(Of T), Int32, Action(Of T), ExpectedThreadLifetime)
+  fullName: ConcurrentSharp.BlockingCollectionProcessor<T>.BlockingCollectionProcessor(BlockingCollection<T>, System.Int32, System.Action<T>, ConcurrentSharp.ExpectedThreadLifetime)
+  fullName.vb: ConcurrentSharp.BlockingCollectionProcessor(Of T).BlockingCollectionProcessor(BlockingCollection(Of T), System.Int32, System.Action(Of T), ConcurrentSharp.ExpectedThreadLifetime)
+  nameWithType: BlockingCollectionProcessor<T>.BlockingCollectionProcessor(BlockingCollection<T>, Int32, Action<T>, ExpectedThreadLifetime)
+  nameWithType.vb: BlockingCollectionProcessor(Of T).BlockingCollectionProcessor(BlockingCollection(Of T), Int32, Action(Of T), ExpectedThreadLifetime)
+- uid: ConcurrentSharp.BlockingCollectionProcessor`1.#ctor*
+  name: BlockingCollectionProcessor
+  href: api/ConcurrentSharp.BlockingCollectionProcessor-1.-ctor.html
+  commentId: Overload:ConcurrentSharp.BlockingCollectionProcessor`1.#ctor
+  fullName: ConcurrentSharp.BlockingCollectionProcessor<T>.BlockingCollectionProcessor
+  fullName.vb: ConcurrentSharp.BlockingCollectionProcessor(Of T).BlockingCollectionProcessor
+  nameWithType: BlockingCollectionProcessor<T>.BlockingCollectionProcessor
+  nameWithType.vb: BlockingCollectionProcessor(Of T).BlockingCollectionProcessor
+- uid: ConcurrentSharp.BlockingCollectionProcessor`1.Dispose
+  name: Dispose()
+  href: api/ConcurrentSharp.BlockingCollectionProcessor-1.Dispose.html#ConcurrentSharp_BlockingCollectionProcessor_1_Dispose
+  commentId: M:ConcurrentSharp.BlockingCollectionProcessor`1.Dispose
+  fullName: ConcurrentSharp.BlockingCollectionProcessor<T>.Dispose()
+  fullName.vb: ConcurrentSharp.BlockingCollectionProcessor(Of T).Dispose()
+  nameWithType: BlockingCollectionProcessor<T>.Dispose()
+  nameWithType.vb: BlockingCollectionProcessor(Of T).Dispose()
+- uid: ConcurrentSharp.BlockingCollectionProcessor`1.Dispose*
+  name: Dispose
+  href: api/ConcurrentSharp.BlockingCollectionProcessor-1.Dispose.html
+  commentId: Overload:ConcurrentSharp.BlockingCollectionProcessor`1.Dispose
+  fullName: ConcurrentSharp.BlockingCollectionProcessor<T>.Dispose
+  fullName.vb: ConcurrentSharp.BlockingCollectionProcessor(Of T).Dispose
+  nameWithType: BlockingCollectionProcessor<T>.Dispose
+  nameWithType.vb: BlockingCollectionProcessor(Of T).Dispose
+- uid: ConcurrentSharp.BlockingCollectionProcessor`1.ProcessItems(System.Collections.Generic.IEnumerable{`0},System.Int32,System.Action{`0},ConcurrentSharp.ExpectedThreadLifetime)
+  name: ProcessItems(IEnumerable<T>, Int32, Action<T>, ExpectedThreadLifetime)
+  href: api/ConcurrentSharp.BlockingCollectionProcessor-1.ProcessItems.html#ConcurrentSharp_BlockingCollectionProcessor_1_ProcessItems_System_Collections_Generic_IEnumerable__0__System_Int32_System_Action__0__ConcurrentSharp_ExpectedThreadLifetime_
+  commentId: M:ConcurrentSharp.BlockingCollectionProcessor`1.ProcessItems(System.Collections.Generic.IEnumerable{`0},System.Int32,System.Action{`0},ConcurrentSharp.ExpectedThreadLifetime)
+  name.vb: ProcessItems(IEnumerable(Of T), Int32, Action(Of T), ExpectedThreadLifetime)
+  fullName: ConcurrentSharp.BlockingCollectionProcessor<T>.ProcessItems(System.Collections.Generic.IEnumerable<T>, System.Int32, System.Action<T>, ConcurrentSharp.ExpectedThreadLifetime)
+  fullName.vb: ConcurrentSharp.BlockingCollectionProcessor(Of T).ProcessItems(System.Collections.Generic.IEnumerable(Of T), System.Int32, System.Action(Of T), ConcurrentSharp.ExpectedThreadLifetime)
+  nameWithType: BlockingCollectionProcessor<T>.ProcessItems(IEnumerable<T>, Int32, Action<T>, ExpectedThreadLifetime)
+  nameWithType.vb: BlockingCollectionProcessor(Of T).ProcessItems(IEnumerable(Of T), Int32, Action(Of T), ExpectedThreadLifetime)
+- uid: ConcurrentSharp.BlockingCollectionProcessor`1.ProcessItems*
+  name: ProcessItems
+  href: api/ConcurrentSharp.BlockingCollectionProcessor-1.ProcessItems.html
+  commentId: Overload:ConcurrentSharp.BlockingCollectionProcessor`1.ProcessItems
+  fullName: ConcurrentSharp.BlockingCollectionProcessor<T>.ProcessItems
+  fullName.vb: ConcurrentSharp.BlockingCollectionProcessor(Of T).ProcessItems
+  nameWithType: BlockingCollectionProcessor<T>.ProcessItems
+  nameWithType.vb: BlockingCollectionProcessor(Of T).ProcessItems
+- uid: ConcurrentSharp.BlockingCollectionProcessor`1.WaitForCompletion
+  name: WaitForCompletion()
+  href: api/ConcurrentSharp.BlockingCollectionProcessor-1.WaitForCompletion.html#ConcurrentSharp_BlockingCollectionProcessor_1_WaitForCompletion
+  commentId: M:ConcurrentSharp.BlockingCollectionProcessor`1.WaitForCompletion
+  fullName: ConcurrentSharp.BlockingCollectionProcessor<T>.WaitForCompletion()
+  fullName.vb: ConcurrentSharp.BlockingCollectionProcessor(Of T).WaitForCompletion()
+  nameWithType: BlockingCollectionProcessor<T>.WaitForCompletion()
+  nameWithType.vb: BlockingCollectionProcessor(Of T).WaitForCompletion()
+- uid: ConcurrentSharp.BlockingCollectionProcessor`1.WaitForCompletion(System.TimeSpan)
+  name: WaitForCompletion(TimeSpan)
+  href: api/ConcurrentSharp.BlockingCollectionProcessor-1.WaitForCompletion.html#ConcurrentSharp_BlockingCollectionProcessor_1_WaitForCompletion_System_TimeSpan_
+  commentId: M:ConcurrentSharp.BlockingCollectionProcessor`1.WaitForCompletion(System.TimeSpan)
+  fullName: ConcurrentSharp.BlockingCollectionProcessor<T>.WaitForCompletion(System.TimeSpan)
+  fullName.vb: ConcurrentSharp.BlockingCollectionProcessor(Of T).WaitForCompletion(System.TimeSpan)
+  nameWithType: BlockingCollectionProcessor<T>.WaitForCompletion(TimeSpan)
+  nameWithType.vb: BlockingCollectionProcessor(Of T).WaitForCompletion(TimeSpan)
+- uid: ConcurrentSharp.BlockingCollectionProcessor`1.WaitForCompletion*
+  name: WaitForCompletion
+  href: api/ConcurrentSharp.BlockingCollectionProcessor-1.WaitForCompletion.html
+  commentId: Overload:ConcurrentSharp.BlockingCollectionProcessor`1.WaitForCompletion
+  fullName: ConcurrentSharp.BlockingCollectionProcessor<T>.WaitForCompletion
+  fullName.vb: ConcurrentSharp.BlockingCollectionProcessor(Of T).WaitForCompletion
+  nameWithType: BlockingCollectionProcessor<T>.WaitForCompletion
+  nameWithType.vb: BlockingCollectionProcessor(Of T).WaitForCompletion
+- uid: ConcurrentSharp.Counter
+  name: Counter
+  href: api/ConcurrentSharp.Counter.html
+  commentId: T:ConcurrentSharp.Counter
+  fullName: ConcurrentSharp.Counter
+  nameWithType: Counter
+- uid: ConcurrentSharp.Counter.#ctor
+  name: Counter()
+  href: api/ConcurrentSharp.Counter.-ctor.html#ConcurrentSharp_Counter__ctor
+  commentId: M:ConcurrentSharp.Counter.#ctor
+  fullName: ConcurrentSharp.Counter.Counter()
+  nameWithType: Counter.Counter()
+- uid: ConcurrentSharp.Counter.#ctor(System.Int64)
+  name: Counter(Int64)
+  href: api/ConcurrentSharp.Counter.-ctor.html#ConcurrentSharp_Counter__ctor_System_Int64_
+  commentId: M:ConcurrentSharp.Counter.#ctor(System.Int64)
+  fullName: ConcurrentSharp.Counter.Counter(System.Int64)
+  nameWithType: Counter.Counter(Int64)
+- uid: ConcurrentSharp.Counter.#ctor*
+  name: Counter
+  href: api/ConcurrentSharp.Counter.-ctor.html
+  commentId: Overload:ConcurrentSharp.Counter.#ctor
+  fullName: ConcurrentSharp.Counter.Counter
+  nameWithType: Counter.Counter
+- uid: ConcurrentSharp.Counter.Decrement
+  name: Decrement()
+  href: api/ConcurrentSharp.Counter.Decrement.html#ConcurrentSharp_Counter_Decrement
+  commentId: M:ConcurrentSharp.Counter.Decrement
+  fullName: ConcurrentSharp.Counter.Decrement()
+  nameWithType: Counter.Decrement()
+- uid: ConcurrentSharp.Counter.Decrement(System.Int64)
+  name: Decrement(Int64)
+  href: api/ConcurrentSharp.Counter.Decrement.html#ConcurrentSharp_Counter_Decrement_System_Int64_
+  commentId: M:ConcurrentSharp.Counter.Decrement(System.Int64)
+  fullName: ConcurrentSharp.Counter.Decrement(System.Int64)
+  nameWithType: Counter.Decrement(Int64)
+- uid: ConcurrentSharp.Counter.Decrement*
+  name: Decrement
+  href: api/ConcurrentSharp.Counter.Decrement.html
+  commentId: Overload:ConcurrentSharp.Counter.Decrement
+  fullName: ConcurrentSharp.Counter.Decrement
+  nameWithType: Counter.Decrement
+- uid: ConcurrentSharp.Counter.Increment
+  name: Increment()
+  href: api/ConcurrentSharp.Counter.Increment.html#ConcurrentSharp_Counter_Increment
+  commentId: M:ConcurrentSharp.Counter.Increment
+  fullName: ConcurrentSharp.Counter.Increment()
+  nameWithType: Counter.Increment()
+- uid: ConcurrentSharp.Counter.Increment(System.Int64)
+  name: Increment(Int64)
+  href: api/ConcurrentSharp.Counter.Increment.html#ConcurrentSharp_Counter_Increment_System_Int64_
+  commentId: M:ConcurrentSharp.Counter.Increment(System.Int64)
+  fullName: ConcurrentSharp.Counter.Increment(System.Int64)
+  nameWithType: Counter.Increment(Int64)
+- uid: ConcurrentSharp.Counter.Increment*
+  name: Increment
+  href: api/ConcurrentSharp.Counter.Increment.html
+  commentId: Overload:ConcurrentSharp.Counter.Increment
+  fullName: ConcurrentSharp.Counter.Increment
+  nameWithType: Counter.Increment
+- uid: ConcurrentSharp.Counter.op_Implicit(ConcurrentSharp.Counter)~System.Int64
+  name: Implicit(Counter to Int64)
+  href: api/ConcurrentSharp.Counter.op_Implicit.html#ConcurrentSharp_Counter_op_Implicit_ConcurrentSharp_Counter__System_Int64
+  commentId: M:ConcurrentSharp.Counter.op_Implicit(ConcurrentSharp.Counter)~System.Int64
+  name.vb: Widening(Counter to Int64)
+  fullName: ConcurrentSharp.Counter.Implicit(ConcurrentSharp.Counter to System.Int64)
+  fullName.vb: ConcurrentSharp.Counter.Widening(ConcurrentSharp.Counter to System.Int64)
+  nameWithType: Counter.Implicit(Counter to Int64)
+  nameWithType.vb: Counter.Widening(Counter to Int64)
+- uid: ConcurrentSharp.Counter.op_Implicit*
+  name: Implicit
+  href: api/ConcurrentSharp.Counter.op_Implicit.html
+  commentId: Overload:ConcurrentSharp.Counter.op_Implicit
+  name.vb: Widening
+  fullName: ConcurrentSharp.Counter.Implicit
+  fullName.vb: ConcurrentSharp.Counter.Widening
+  nameWithType: Counter.Implicit
+  nameWithType.vb: Counter.Widening
+- uid: ConcurrentSharp.Counter.Reset
+  name: Reset()
+  href: api/ConcurrentSharp.Counter.Reset.html#ConcurrentSharp_Counter_Reset
+  commentId: M:ConcurrentSharp.Counter.Reset
+  fullName: ConcurrentSharp.Counter.Reset()
+  nameWithType: Counter.Reset()
+- uid: ConcurrentSharp.Counter.Reset*
+  name: Reset
+  href: api/ConcurrentSharp.Counter.Reset.html
+  commentId: Overload:ConcurrentSharp.Counter.Reset
+  fullName: ConcurrentSharp.Counter.Reset
+  nameWithType: Counter.Reset
+- uid: ConcurrentSharp.Counter.ToInt64
+  name: ToInt64()
+  href: api/ConcurrentSharp.Counter.ToInt64.html#ConcurrentSharp_Counter_ToInt64
+  commentId: M:ConcurrentSharp.Counter.ToInt64
+  fullName: ConcurrentSharp.Counter.ToInt64()
+  nameWithType: Counter.ToInt64()
+- uid: ConcurrentSharp.Counter.ToInt64*
+  name: ToInt64
+  href: api/ConcurrentSharp.Counter.ToInt64.html
+  commentId: Overload:ConcurrentSharp.Counter.ToInt64
+  fullName: ConcurrentSharp.Counter.ToInt64
+  nameWithType: Counter.ToInt64
+- uid: ConcurrentSharp.ExpectedThreadLifetime
+  name: ExpectedThreadLifetime
+  href: api/ConcurrentSharp.ExpectedThreadLifetime.html
+  commentId: T:ConcurrentSharp.ExpectedThreadLifetime
+  fullName: ConcurrentSharp.ExpectedThreadLifetime
+  nameWithType: ExpectedThreadLifetime
+- uid: ConcurrentSharp.ExpectedThreadLifetime.Long
+  name: Long
+  href: api/ConcurrentSharp.ExpectedThreadLifetime.Long.html#ConcurrentSharp_ExpectedThreadLifetime_Long
+  commentId: F:ConcurrentSharp.ExpectedThreadLifetime.Long
+  fullName: ConcurrentSharp.ExpectedThreadLifetime.Long
+  nameWithType: ExpectedThreadLifetime.Long
+- uid: ConcurrentSharp.ExpectedThreadLifetime.Short
+  name: Short
+  href: api/ConcurrentSharp.ExpectedThreadLifetime.Short.html#ConcurrentSharp_ExpectedThreadLifetime_Short
+  commentId: F:ConcurrentSharp.ExpectedThreadLifetime.Short
+  fullName: ConcurrentSharp.ExpectedThreadLifetime.Short
+  nameWithType: ExpectedThreadLifetime.Short
+- uid: ConcurrentSharp.Throttle
+  name: Throttle
+  href: api/ConcurrentSharp.Throttle.html
+  commentId: T:ConcurrentSharp.Throttle
+  fullName: ConcurrentSharp.Throttle
+  nameWithType: Throttle
+- uid: ConcurrentSharp.Throttle.#ctor(System.Int32)
+  name: Throttle(Int32)
+  href: api/ConcurrentSharp.Throttle.-ctor.html#ConcurrentSharp_Throttle__ctor_System_Int32_
+  commentId: M:ConcurrentSharp.Throttle.#ctor(System.Int32)
+  fullName: ConcurrentSharp.Throttle.Throttle(System.Int32)
+  nameWithType: Throttle.Throttle(Int32)
+- uid: ConcurrentSharp.Throttle.#ctor*
+  name: Throttle
+  href: api/ConcurrentSharp.Throttle.-ctor.html
+  commentId: Overload:ConcurrentSharp.Throttle.#ctor
+  fullName: ConcurrentSharp.Throttle.Throttle
+  nameWithType: Throttle.Throttle
+- uid: ConcurrentSharp.Throttle.Dispose
+  name: Dispose()
+  href: api/ConcurrentSharp.Throttle.Dispose.html#ConcurrentSharp_Throttle_Dispose
+  commentId: M:ConcurrentSharp.Throttle.Dispose
+  fullName: ConcurrentSharp.Throttle.Dispose()
+  nameWithType: Throttle.Dispose()
+- uid: ConcurrentSharp.Throttle.Dispose*
+  name: Dispose
+  href: api/ConcurrentSharp.Throttle.Dispose.html
+  commentId: Overload:ConcurrentSharp.Throttle.Dispose
+  fullName: ConcurrentSharp.Throttle.Dispose
+  nameWithType: Throttle.Dispose
+- uid: ConcurrentSharp.Throttle.Enter
+  name: Enter()
+  href: api/ConcurrentSharp.Throttle.Enter.html#ConcurrentSharp_Throttle_Enter
+  commentId: M:ConcurrentSharp.Throttle.Enter
+  fullName: ConcurrentSharp.Throttle.Enter()
+  nameWithType: Throttle.Enter()
+- uid: ConcurrentSharp.Throttle.Enter*
+  name: Enter
+  href: api/ConcurrentSharp.Throttle.Enter.html
+  commentId: Overload:ConcurrentSharp.Throttle.Enter
+  fullName: ConcurrentSharp.Throttle.Enter
+  nameWithType: Throttle.Enter
+- uid: ConcurrentSharp.Throttle.Execute(System.Action)
+  name: Execute(Action)
+  href: api/ConcurrentSharp.Throttle.Execute.html#ConcurrentSharp_Throttle_Execute_System_Action_
+  commentId: M:ConcurrentSharp.Throttle.Execute(System.Action)
+  fullName: ConcurrentSharp.Throttle.Execute(System.Action)
+  nameWithType: Throttle.Execute(Action)
+- uid: ConcurrentSharp.Throttle.Execute*
+  name: Execute
+  href: api/ConcurrentSharp.Throttle.Execute.html
+  commentId: Overload:ConcurrentSharp.Throttle.Execute
+  fullName: ConcurrentSharp.Throttle.Execute
+  nameWithType: Throttle.Execute
+- uid: ConcurrentSharp.Throttle.Execute``1(System.Action{``0},``0)
+  name: Execute<T>(Action<T>, T)
+  href: api/ConcurrentSharp.Throttle.Execute.html#ConcurrentSharp_Throttle_Execute__1_System_Action___0____0_
+  commentId: M:ConcurrentSharp.Throttle.Execute``1(System.Action{``0},``0)
+  name.vb: Execute(Of T)(Action(Of T), T)
+  fullName: ConcurrentSharp.Throttle.Execute<T>(System.Action<T>, T)
+  fullName.vb: ConcurrentSharp.Throttle.Execute(Of T)(System.Action(Of T), T)
+  nameWithType: Throttle.Execute<T>(Action<T>, T)
+  nameWithType.vb: Throttle.Execute(Of T)(Action(Of T), T)
+- uid: ConcurrentSharp.Throttle.Execute``1(System.Func{``0})
+  name: Execute<TResult>(Func<TResult>)
+  href: api/ConcurrentSharp.Throttle.Execute.html#ConcurrentSharp_Throttle_Execute__1_System_Func___0__
+  commentId: M:ConcurrentSharp.Throttle.Execute``1(System.Func{``0})
+  name.vb: Execute(Of TResult)(Func(Of TResult))
+  fullName: ConcurrentSharp.Throttle.Execute<TResult>(System.Func<TResult>)
+  fullName.vb: ConcurrentSharp.Throttle.Execute(Of TResult)(System.Func(Of TResult))
+  nameWithType: Throttle.Execute<TResult>(Func<TResult>)
+  nameWithType.vb: Throttle.Execute(Of TResult)(Func(Of TResult))
+- uid: ConcurrentSharp.Throttle.Execute``2(System.Func{``0,``1},``0)
+  name: Execute<T, TResult>(Func<T, TResult>, T)
+  href: api/ConcurrentSharp.Throttle.Execute.html#ConcurrentSharp_Throttle_Execute__2_System_Func___0___1____0_
+  commentId: M:ConcurrentSharp.Throttle.Execute``2(System.Func{``0,``1},``0)
+  name.vb: Execute(Of T, TResult)(Func(Of T, TResult), T)
+  fullName: ConcurrentSharp.Throttle.Execute<T, TResult>(System.Func<T, TResult>, T)
+  fullName.vb: ConcurrentSharp.Throttle.Execute(Of T, TResult)(System.Func(Of T, TResult), T)
+  nameWithType: Throttle.Execute<T, TResult>(Func<T, TResult>, T)
+  nameWithType.vb: Throttle.Execute(Of T, TResult)(Func(Of T, TResult), T)
+- uid: ConcurrentSharp.ThrottleToken
+  name: ThrottleToken
+  href: api/ConcurrentSharp.ThrottleToken.html
+  commentId: T:ConcurrentSharp.ThrottleToken
+  fullName: ConcurrentSharp.ThrottleToken
+  nameWithType: ThrottleToken
+- uid: ConcurrentSharp.ThrottleToken.Dispose
+  name: Dispose()
+  href: api/ConcurrentSharp.ThrottleToken.Dispose.html#ConcurrentSharp_ThrottleToken_Dispose
+  commentId: M:ConcurrentSharp.ThrottleToken.Dispose
+  fullName: ConcurrentSharp.ThrottleToken.Dispose()
+  nameWithType: ThrottleToken.Dispose()
+- uid: ConcurrentSharp.ThrottleToken.Dispose*
+  name: Dispose
+  href: api/ConcurrentSharp.ThrottleToken.Dispose.html
+  commentId: Overload:ConcurrentSharp.ThrottleToken.Dispose
+  fullName: ConcurrentSharp.ThrottleToken.Dispose
+  nameWithType: ThrottleToken.Dispose
