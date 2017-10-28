@@ -1,16 +1,16 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26430.13
+VisualStudioVersion = 15.0.27004.2005
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConcurrentSharp", "ConcurrentSharp.csproj", "{C9A5F462-EF0E-421E-9259-297F0B092410}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConcurrentSharp.Tests", "..\ConcurrentSharp.Tests\ConcurrentSharp.Tests.csproj", "{1303E845-1557-4BE1-9115-DB234953242E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConcurrentSharp", "ConcurrentSharp.Portable\ConcurrentSharp.csproj", "{C9A5F462-EF0E-421E-9259-297F0B092410}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{2EDEBD74-8B65-4DDF-82D0-5FF71E92EBFC}"
 	ProjectSection(SolutionItems) = preProject
 		.editorconfig = .editorconfig
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConcurrentSharp.Tests", "ConcurrentSharp.Tests\ConcurrentSharp.Tests.csproj", "{1303E845-1557-4BE1-9115-DB234953242E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,5 +29,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F49030CE-99CC-4E4D-A115-65BDC039D00D}
 	EndGlobalSection
 EndGlobal

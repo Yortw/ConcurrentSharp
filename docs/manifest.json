@@ -1,6 +1,6 @@
 {
   "homepages": [],
-  "source_base_path": "C:/Projects/GitHub/ConcurrentSharp/src/ConcurrentSharp",
+  "source_base_path": "C:/Projects/GitHub/ConcurrentSharp/src/ConcurrentSharp.Portable",
   "xrefmap": "xrefmap.yml",
   "files": [
     {
@@ -66,8 +66,20 @@
       "source_relative_path": "obj/api/ConcurrentSharp.BlockingCollectionProcessor-1.yml",
       "output": {
         ".html": {
-          "relative_path": "api/ConcurrentSharp.BlockingCollectionProcessor-1.ProcessItems.html",
-          "hash": "jlWA+hRgfkeiLf1B1Y1LwQ=="
+          "relative_path": "api/ConcurrentSharp.BlockingCollectionProcessor-1.Dispose.html",
+          "hash": "UOAK9HrpIk6TFSRyinPHRg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/ConcurrentSharp.BlockingCollectionProcessor-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ConcurrentSharp.BlockingCollectionProcessor-1.-ctor.html",
+          "hash": "zkqUojIeQnH7Rl761gj+Vw=="
         }
       },
       "is_incremental": true,
@@ -90,8 +102,8 @@
       "source_relative_path": "obj/api/ConcurrentSharp.BlockingCollectionProcessor-1.yml",
       "output": {
         ".html": {
-          "relative_path": "api/ConcurrentSharp.BlockingCollectionProcessor-1.Dispose.html",
-          "hash": "UOAK9HrpIk6TFSRyinPHRg=="
+          "relative_path": "api/ConcurrentSharp.BlockingCollectionProcessor-1.ProcessItems.html",
+          "hash": "jlWA+hRgfkeiLf1B1Y1LwQ=="
         }
       },
       "is_incremental": true,
@@ -111,11 +123,35 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "obj/api/ConcurrentSharp.BlockingCollectionProcessor-1.yml",
+      "source_relative_path": "obj/api/ConcurrentSharp.Counter.yml",
       "output": {
         ".html": {
-          "relative_path": "api/ConcurrentSharp.BlockingCollectionProcessor-1.-ctor.html",
-          "hash": "zkqUojIeQnH7Rl761gj+Vw=="
+          "relative_path": "api/ConcurrentSharp.Counter.html",
+          "hash": "WYVsyW1ey4h6fPFcl7ufpg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/ConcurrentSharp.Counter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ConcurrentSharp.Counter.op_Implicit.html",
+          "hash": "ga9nFFE1yV0LLMukB9nGUg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/ConcurrentSharp.Counter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ConcurrentSharp.Counter.ToInt64.html",
+          "hash": "YNGmMMrJ89ppMOknzupLUg=="
         }
       },
       "is_incremental": true,
@@ -128,18 +164,6 @@
         ".html": {
           "relative_path": "api/ConcurrentSharp.Counter.-ctor.html",
           "hash": "MMaS3RXodP5ZUZEzHodI2g=="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/api/ConcurrentSharp.Counter.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/ConcurrentSharp.Counter.html",
-          "hash": "WYVsyW1ey4h6fPFcl7ufpg=="
         }
       },
       "is_incremental": true,
@@ -183,23 +207,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "obj/api/ConcurrentSharp.Counter.yml",
+      "source_relative_path": "obj/api/ConcurrentSharp.ExpectedThreadLifetime.yml",
       "output": {
         ".html": {
-          "relative_path": "api/ConcurrentSharp.Counter.op_Implicit.html",
-          "hash": "ga9nFFE1yV0LLMukB9nGUg=="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/api/ConcurrentSharp.Counter.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/ConcurrentSharp.Counter.ToInt64.html",
-          "hash": "YNGmMMrJ89ppMOknzupLUg=="
+          "relative_path": "api/ConcurrentSharp.ExpectedThreadLifetime.Long.html",
+          "hash": "ovXrhSar3zkuKxvdrebS+g=="
         }
       },
       "is_incremental": true,
@@ -212,18 +224,6 @@
         ".html": {
           "relative_path": "api/ConcurrentSharp.ExpectedThreadLifetime.Short.html",
           "hash": "7JcigCToi061G5xzE+n7WA=="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/api/ConcurrentSharp.ExpectedThreadLifetime.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/ConcurrentSharp.ExpectedThreadLifetime.Long.html",
-          "hash": "ovXrhSar3zkuKxvdrebS+g=="
         }
       },
       "is_incremental": true,
@@ -250,43 +250,7 @@
           "hash": "bs1i6lq/AGlNfugwwQMc7w=="
         }
       },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/api/ConcurrentSharp.Throttle.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/ConcurrentSharp.Throttle.-ctor.html",
-          "hash": "/NbwzOlAzqD23jBilvpVew=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/api/ConcurrentSharp.Throttle.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/ConcurrentSharp.Throttle.Enter.html",
-          "hash": "NNqrKmgRjqBXRV169ki5ag=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/api/ConcurrentSharp.Throttle.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/ConcurrentSharp.Throttle.Execute.html",
-          "hash": "NbvhLGJdIxlOqxg9sdNX8g=="
-        }
-      },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -298,7 +262,43 @@
           "hash": "b8LSTj1svnsYwIC4Zvzg3w=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/ConcurrentSharp.Throttle.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ConcurrentSharp.Throttle.-ctor.html",
+          "hash": "/NbwzOlAzqD23jBilvpVew=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/ConcurrentSharp.Throttle.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ConcurrentSharp.Throttle.Enter.html",
+          "hash": "NNqrKmgRjqBXRV169ki5ag=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/ConcurrentSharp.Throttle.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ConcurrentSharp.Throttle.Execute.html",
+          "hash": "NbvhLGJdIxlOqxg9sdNX8g=="
+        }
+      },
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -310,7 +310,7 @@
           "hash": "+Kfqevt7BGb1v6FuHY1CwA=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -322,7 +322,7 @@
           "hash": "PizHY0iSCUcI/aOO8tk6Kw=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -334,7 +334,7 @@
           "hash": "wwVFkJPKlIe0JJheWFJFJA=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     }
   ],
@@ -345,27 +345,27 @@
         "incrementalPhase": "build"
       },
       "processors": {
-        "TocDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build"
-        },
         "RestApiDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor RestApiDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
-        "ManagedReferenceDocumentProcessor": {
-          "can_incremental": true,
+        "ResourceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
         "ConceptualDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build"
         },
-        "ResourceDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor ResourceDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": true,
           "incrementalPhase": "build"
         }
       }
