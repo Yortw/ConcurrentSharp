@@ -142,6 +142,15 @@
                               </ul>  </li>
                           <li class="">
                             <span class="expand-stub"></span>
+                            <a href="ConcurrentSharp.TaskExtensions.html" title="TaskExtensions" class="">TaskExtensions</a>
+                              
+                              <ul class="nav level3">
+                                <li class="">
+                                  <a href="ConcurrentSharp.TaskExtensions.IgnoreTask.html" title="IgnoreTask" class="">IgnoreTask</a>
+                                </li>
+                              </ul>  </li>
+                          <li class="">
+                            <span class="expand-stub"></span>
                             <a href="ConcurrentSharp.Throttle.html" title="Throttle" class="">Throttle</a>
                               
                               <ul class="nav level3">
@@ -239,7 +248,7 @@
     </tbody>
   </table>
   <h5 id="ConcurrentSharp_BlockingCollectionProcessor_1_remarks"><strong>Remarks</strong></h5>
-  <div class="markdown level0 remarks"><p>This class also exposes a static method called <a class="xref" href="ConcurrentSharp.BlockingCollectionProcessor-1.ProcessItems.html#ConcurrentSharp_BlockingCollectionProcessor_1_ProcessItems_System_Collections_Generic_IEnumerable__0__System_Int32_System_Action__0__ConcurrentSharp_ExpectedThreadLifetime_">ProcessItems(IEnumerable&lt;T&gt;, Int32, Action&lt;T&gt;, ExpectedThreadLifetime)</a> which can be used to process all the items in any <span class="xref">System.Collections.Generic.IEnumerable&lt;T&gt;</span>,
+  <div class="markdown level0 remarks"><p>This class also exposes a static method called <a class="xref" href="ConcurrentSharp.BlockingCollectionProcessor-1.ProcessItems.html#ConcurrentSharp_BlockingCollectionProcessor_1_ProcessItems_IEnumerable__0__System_Int32_System_Action__0__ConcurrentSharp_ExpectedThreadLifetime_">ProcessItems(IEnumerable&lt;T&gt;, Int32, Action&lt;T&gt;, ExpectedThreadLifetime)</a> which can be used to process all the items in any <see cref="!:IEnumerable&lt;T>"></see>,
 encapsulating creating and managing the blocking collection as well as processing the items.</p>
 <p>To use this class, create or obtain a reference to the blocking collection you want to process. Create a new instance of <a class="xref" href="ConcurrentSharp.BlockingCollectionProcessor-1.html">BlockingCollectionProcessor&lt;T&gt;</a> passing it the collection and other 
 configuration information. Then add items to the blocking collection as required, they will automatically be processed. When you&apos;ve finished and will no longer be adding any more items to the collection 
@@ -298,8 +307,8 @@ myProcessor.Dispose();</code></pre>
 </td>
       </tr>
       <tr>
-        <td id="ConcurrentSharp_BlockingCollectionProcessor_1_ProcessItems_System_Collections_Generic_IEnumerable__0__System_Int32_System_Action__0__ConcurrentSharp_ExpectedThreadLifetime_" data-uid="ConcurrentSharp.BlockingCollectionProcessor`1.ProcessItems(System.Collections.Generic.IEnumerable{`0},System.Int32,System.Action{`0},ConcurrentSharp.ExpectedThreadLifetime)">
-          <a class="xref" href="ConcurrentSharp.BlockingCollectionProcessor-1.ProcessItems.html#ConcurrentSharp_BlockingCollectionProcessor_1_ProcessItems_System_Collections_Generic_IEnumerable__0__System_Int32_System_Action__0__ConcurrentSharp_ExpectedThreadLifetime_">ProcessItems(IEnumerable&lt;T&gt;, Int32, Action&lt;T&gt;, ExpectedThreadLifetime)</a>
+        <td id="ConcurrentSharp_BlockingCollectionProcessor_1_ProcessItems_IEnumerable__0__System_Int32_System_Action__0__ConcurrentSharp_ExpectedThreadLifetime_" data-uid="ConcurrentSharp.BlockingCollectionProcessor`1.ProcessItems(IEnumerable{`0},System.Int32,System.Action{`0},ConcurrentSharp.ExpectedThreadLifetime)">
+          <a class="xref" href="ConcurrentSharp.BlockingCollectionProcessor-1.ProcessItems.html#ConcurrentSharp_BlockingCollectionProcessor_1_ProcessItems_IEnumerable__0__System_Int32_System_Action__0__ConcurrentSharp_ExpectedThreadLifetime_">ProcessItems(IEnumerable&lt;T&gt;, Int32, Action&lt;T&gt;, ExpectedThreadLifetime)</a>
         </td>
         <td class="markdown level1 summary"><p>Processes all ites in <code data-dev-comment-type="paramref" class="paramref">items</code> and returns control to the calling method when all items have completed processing.</p>
 </td>

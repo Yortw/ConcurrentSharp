@@ -37,6 +37,7 @@ namespace ConcurrentSharp
 	{
 
 		private System.Threading.Semaphore _Semaphore;
+		private object _Synchroniser;
 
 		/// <summary>
 		/// Constructs a new <see cref="Throttle"/> instance that allows up to the specified number of concurrent operations.
@@ -47,6 +48,7 @@ namespace ConcurrentSharp
 		{
 			if (maxConcurrency <= 0) throw new ArgumentOutOfRangeException(nameof(maxConcurrency));
 
+			_Synchroniser = new object();
 			_Semaphore = new System.Threading.Semaphore(maxConcurrency, maxConcurrency);
 		}
 
@@ -204,7 +206,7 @@ namespace ConcurrentSharp
 			_Semaphore = null;
 			if (semaphore != null)
 			{
-				lock (semaphore)
+				lock (_Synchroniser)
 				{
 					semaphore.Dispose();
 				}
@@ -218,9 +220,11 @@ namespace ConcurrentSharp
 	public sealed class ThrottleToken : IDisposable
 	{
 		private System.Threading.Semaphore _Semaphore;
+		private object _Synchroniser;
 
 		internal ThrottleToken(System.Threading.Semaphore semaphore)
 		{
+			_Synchroniser = new object();
 			_Semaphore = semaphore;
 		}
 
@@ -233,7 +237,7 @@ namespace ConcurrentSharp
 			_Semaphore = null;
 			if (semaphore != null)
 			{
-				lock (semaphore)
+				lock (_Synchroniser)
 				{
 					try
 					{

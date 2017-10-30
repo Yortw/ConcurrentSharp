@@ -55,11 +55,7 @@
     <None Include="toc.yml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BlockingCollectionProcessor.cs" />
-    <Compile Include="Counter.cs" />
-    <Compile Include="ExpectedThreadLifetime.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Throttle.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="ManagedReference.extension.js" />
@@ -83,6 +79,7 @@
     <Content Include="plugins\YamlDotNet.dll" />
     <Content Include="toc.html.js" />
   </ItemGroup>
+  <Import Project="..\Concurrent.Shared\Concurrent.Shared.projitems" Label="Shared" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <Import Project="..\packages\docfx.console.2.26.3\build\docfx.console.targets" Condition="Exists('..\packages\docfx.console.2.26.3\build\docfx.console.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

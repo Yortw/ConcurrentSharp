@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+    <metadata>       
+	<id>ConcurrentSharp</id>
+        <version>1.0.0</version>
+        <title>ConcurrentSharp</title>
+        <authors>Troy Willmot</authors>
+        <owners>Yortw</owners>
+	    <releaseNotes>Initial release.</releaseNotes>
+        <licenseUrl>https://github.com/Yortw/ConcurrentSharp/blob/master/LICENSE</licenseUrl>
+        <projectUrl>https://github.com/Yortw/ConcurrentSharp</projectUrl>
+        <iconUrl>https://raw.githubusercontent.com/Yortw/ConcurrentSharp/master/ConcurrentSharp.png</iconUrl>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>A grab-bag of types, extensions and utility methods for working with threads, tasks and other threading/parallelisation/concurrent stuff.</description>
+        <copyright>Copyright 2017</copyright>
+        <language>en-AU</language>
+        <tags>portable xamarin ios android mac concurrent thread threading net40</tags>
+    </metadata>
+    <files>
+        <file src="ConcurrentSharp.NetStandard20\bin\Release\netstandard2.0\ConcurrentSharp.dll" target="lib\netstandard2.0\ConcurrentSharp.dll" />
+        <file src="ConcurrentSharp.NetStandard20\bin\Release\netstandard2.0\ConcurrentSharp.pdb" target="lib\netstandard2.0\ConcurrentSharp.pdb" />
+        <file src="ConcurrentSharp.NetStandard20\bin\Release\netstandard2.0\ConcurrentSharp.XML" target="lib\netstandard2.0\ConcurrentSharp.XML" />
+        <file src="ConcurrentSharp.Net40\bin\Release\ConcurrentSharp.dll" target="lib\net40\ConcurrentSharp.dll" />
+        <file src="ConcurrentSharp.Net40\bin\Release\ConcurrentSharp.pdb" target="lib\net40\ConcurrentSharp.pdb" />
+        <file src="ConcurrentSharp.Net40\bin\Release\ConcurrentSharp.XML" target="lib\net40\ConcurrentSharp.XML" />
+        <file src="ConcurrentSharp.Portable\bin\Release\ConcurrentSharp.dll" target="lib\portable-net40+win8\ConcurrentSharp.dll" />
+        <file src="ConcurrentSharp.Portable\bin\Release\ConcurrentSharp.pdb" target="lib\portable-net40+win8\ConcurrentSharp.pdb" />
+        <file src="ConcurrentSharp.Portable\bin\Release\ConcurrentSharp.XML" target="lib\portable-net40+win8\ConcurrentSharp.XML" />
+        <file src="**\*.cs" target="src" />
+    </files>
+</package>

@@ -49,13 +49,13 @@ references:
   fullName.vb: ConcurrentSharp.BlockingCollectionProcessor(Of T).Dispose
   nameWithType: BlockingCollectionProcessor<T>.Dispose
   nameWithType.vb: BlockingCollectionProcessor(Of T).Dispose
-- uid: ConcurrentSharp.BlockingCollectionProcessor`1.ProcessItems(System.Collections.Generic.IEnumerable{`0},System.Int32,System.Action{`0},ConcurrentSharp.ExpectedThreadLifetime)
+- uid: ConcurrentSharp.BlockingCollectionProcessor`1.ProcessItems(IEnumerable{`0},System.Int32,System.Action{`0},ConcurrentSharp.ExpectedThreadLifetime)
   name: ProcessItems(IEnumerable<T>, Int32, Action<T>, ExpectedThreadLifetime)
-  href: api/ConcurrentSharp.BlockingCollectionProcessor-1.ProcessItems.html#ConcurrentSharp_BlockingCollectionProcessor_1_ProcessItems_System_Collections_Generic_IEnumerable__0__System_Int32_System_Action__0__ConcurrentSharp_ExpectedThreadLifetime_
-  commentId: M:ConcurrentSharp.BlockingCollectionProcessor`1.ProcessItems(System.Collections.Generic.IEnumerable{`0},System.Int32,System.Action{`0},ConcurrentSharp.ExpectedThreadLifetime)
+  href: api/ConcurrentSharp.BlockingCollectionProcessor-1.ProcessItems.html#ConcurrentSharp_BlockingCollectionProcessor_1_ProcessItems_IEnumerable__0__System_Int32_System_Action__0__ConcurrentSharp_ExpectedThreadLifetime_
+  commentId: M:ConcurrentSharp.BlockingCollectionProcessor`1.ProcessItems(IEnumerable{`0},System.Int32,System.Action{`0},ConcurrentSharp.ExpectedThreadLifetime)
   name.vb: ProcessItems(IEnumerable(Of T), Int32, Action(Of T), ExpectedThreadLifetime)
-  fullName: ConcurrentSharp.BlockingCollectionProcessor<T>.ProcessItems(System.Collections.Generic.IEnumerable<T>, System.Int32, System.Action<T>, ConcurrentSharp.ExpectedThreadLifetime)
-  fullName.vb: ConcurrentSharp.BlockingCollectionProcessor(Of T).ProcessItems(System.Collections.Generic.IEnumerable(Of T), System.Int32, System.Action(Of T), ConcurrentSharp.ExpectedThreadLifetime)
+  fullName: ConcurrentSharp.BlockingCollectionProcessor<T>.ProcessItems(IEnumerable<T>, System.Int32, System.Action<T>, ConcurrentSharp.ExpectedThreadLifetime)
+  fullName.vb: ConcurrentSharp.BlockingCollectionProcessor(Of T).ProcessItems(IEnumerable(Of T), System.Int32, System.Action(Of T), ConcurrentSharp.ExpectedThreadLifetime)
   nameWithType: BlockingCollectionProcessor<T>.ProcessItems(IEnumerable<T>, Int32, Action<T>, ExpectedThreadLifetime)
   nameWithType.vb: BlockingCollectionProcessor(Of T).ProcessItems(IEnumerable(Of T), Int32, Action(Of T), ExpectedThreadLifetime)
 - uid: ConcurrentSharp.BlockingCollectionProcessor`1.ProcessItems*
@@ -210,6 +210,24 @@ references:
   commentId: F:ConcurrentSharp.ExpectedThreadLifetime.Short
   fullName: ConcurrentSharp.ExpectedThreadLifetime.Short
   nameWithType: ExpectedThreadLifetime.Short
+- uid: ConcurrentSharp.TaskExtensions
+  name: TaskExtensions
+  href: api/ConcurrentSharp.TaskExtensions.html
+  commentId: T:ConcurrentSharp.TaskExtensions
+  fullName: ConcurrentSharp.TaskExtensions
+  nameWithType: TaskExtensions
+- uid: ConcurrentSharp.TaskExtensions.IgnoreTask(Task)
+  name: IgnoreTask(Task)
+  href: api/ConcurrentSharp.TaskExtensions.IgnoreTask.html#ConcurrentSharp_TaskExtensions_IgnoreTask_Task_
+  commentId: M:ConcurrentSharp.TaskExtensions.IgnoreTask(Task)
+  fullName: ConcurrentSharp.TaskExtensions.IgnoreTask(Task)
+  nameWithType: TaskExtensions.IgnoreTask(Task)
+- uid: ConcurrentSharp.TaskExtensions.IgnoreTask*
+  name: IgnoreTask
+  href: api/ConcurrentSharp.TaskExtensions.IgnoreTask.html
+  commentId: Overload:ConcurrentSharp.TaskExtensions.IgnoreTask
+  fullName: ConcurrentSharp.TaskExtensions.IgnoreTask
+  nameWithType: TaskExtensions.IgnoreTask
 - uid: ConcurrentSharp.Throttle
   name: Throttle
   href: api/ConcurrentSharp.Throttle.html

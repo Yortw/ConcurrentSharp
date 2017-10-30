@@ -61,9 +61,10 @@ namespace ConcurrentSharp
 		/// <exception cref="System.ArgumentOutOfRangeException">Thrown if <paramref name="numberOfProcessingThreads"/> is less than or equal to zero.</exception>
 		public BlockingCollectionProcessor(BlockingCollection<T> collection, int numberOfProcessingThreads, Action<T> processItem, ExpectedThreadLifetime threadLifetime)
 		{
-			if (collection == null) throw new ArgumentNullException(nameof(collection));
 			if (numberOfProcessingThreads <= 0) throw new ArgumentOutOfRangeException(nameof(numberOfProcessingThreads));
-			if (processItem == null) throw new ArgumentNullException(nameof(processItem));
+
+			_Collection = collection ?? throw new ArgumentNullException(nameof(collection));
+			_ProcessItem = processItem ?? throw new ArgumentNullException(nameof(processItem));
 
 			_Collection = collection;
 			_ProcessItem = processItem;
@@ -150,9 +151,11 @@ namespace ConcurrentSharp
 #if SUPPORTS_THREAD
 			if (threadLifetime == ExpectedThreadLifetime.Long)
 			{
-				var thread = new System.Threading.Thread(this.ProcessItems);
-				thread.IsBackground = true;
-				thread.Start();
+					var thread = new System.Threading.Thread(this.ProcessItems)
+					{
+						IsBackground = true
+					};
+					thread.Start();
 				return;
 			}
 #endif
@@ -160,12 +163,12 @@ namespace ConcurrentSharp
 #if SUPPORTS_THREADPOOL
 				System.Threading.ThreadPool.QueueUserWorkItem((reserved) => ProcessItems());
 #else
-			var task = System.Threading.Tasks.Task.Factory.StartNew
+			System.Threading.Tasks.Task.Factory.StartNew
 			(
 				(reserved) => ProcessItems(),
 				System.Threading.CancellationToken.None,
 				(threadLifetime == ExpectedThreadLifetime.Long ? System.Threading.Tasks.TaskCreationOptions.LongRunning : System.Threading.Tasks.TaskCreationOptions.None)
-			);
+			).IgnoreTask();
 #endif
 			}
 			catch

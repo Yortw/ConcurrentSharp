@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Method Increment
+    <title>Class TaskExtensions
    | ConcurrentSharp </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Method Increment
+    <meta name="title" content="Class TaskExtensions
    | ConcurrentSharp ">
     <meta name="generator" content="docfx 2.26.3.0">
     
@@ -118,8 +118,8 @@
                                 <li class="">
                                   <a href="ConcurrentSharp.Counter.op_Implicit.html" title="Implicit" class="">Implicit</a>
                                 </li>
-                                <li class="active">
-                                  <a href="ConcurrentSharp.Counter.Increment.html" title="Increment" class="active">Increment</a>
+                                <li class="">
+                                  <a href="ConcurrentSharp.Counter.Increment.html" title="Increment" class="">Increment</a>
                                 </li>
                                 <li class="">
                                   <a href="ConcurrentSharp.Counter.Reset.html" title="Reset" class="">Reset</a>
@@ -140,9 +140,9 @@
                                   <a href="ConcurrentSharp.ExpectedThreadLifetime.Short.html#ConcurrentSharp_ExpectedThreadLifetime_Short" title="Short" class="">Short</a>
                                 </li>
                               </ul>  </li>
-                          <li class="">
+                          <li class="active">
                             <span class="expand-stub"></span>
-                            <a href="ConcurrentSharp.TaskExtensions.html" title="TaskExtensions" class="">TaskExtensions</a>
+                            <a href="ConcurrentSharp.TaskExtensions.html" title="TaskExtensions" class="active">TaskExtensions</a>
                               
                               <ul class="nav level3">
                                 <li class="">
@@ -184,97 +184,68 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="ConcurrentSharp.Counter.Increment*">
-
-<h1 id="ConcurrentSharp_Counter_Increment_" data-uid="ConcurrentSharp.Counter.Increment*">Method Increment
-</h1>
-<div class="markdown level0 summary"></div>
-<div class="markdown level0 conceptual"></div>
-
-
-
-<a id="ConcurrentSharp_Counter_Increment_" data-uid="ConcurrentSharp.Counter.Increment*"></a>
-<h4 id="ConcurrentSharp_Counter_Increment" data-uid="ConcurrentSharp.Counter.Increment">Increment()</h4>
-<div class="markdown level1 summary"><p>Increments the counter by one and returns the value of the counter immediately after the increment, as an atomic, thread-safe operation.</p>
+            <article class="content wrap" id="_content" data-uid="ConcurrentSharp.TaskExtensions">
+  
+  
+  <h1 id="ConcurrentSharp_TaskExtensions" data-uid="ConcurrentSharp.TaskExtensions" class="text-break">Class TaskExtensions
+  </h1>
+  <div class="markdown level0 summary"><p>Extensions for <span class="xref">System.Threading.Tasks.Task</span> instances.</p>
 </div>
-<div class="markdown level1 conceptual"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public long Increment()</code></pre>
-</div>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><span class="xref">System.Int64</span></td>
-      <td><p>The value of the counter immediately after the increment occurred.</p>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">TaskExtensions</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="ConcurrentSharp.html">ConcurrentSharp</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="ConcurrentSharp_TaskExtensions_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class TaskExtensions</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td id="ConcurrentSharp_TaskExtensions_IgnoreTask_Task_" data-uid="ConcurrentSharp.TaskExtensions.IgnoreTask(Task)">
+          <a class="xref" href="ConcurrentSharp.TaskExtensions.IgnoreTask.html#ConcurrentSharp_TaskExtensions_IgnoreTask_Task_">IgnoreTask(Task)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Used to avoid compiler warnings for unused tasks returned from functions.</p>
 </td>
-    </tr>
-  </tbody>
-</table>
-<h5 id="ConcurrentSharp_Counter_Increment_remarks">Remarks</h5>
-<div class="markdown level1 remarks"><p>If the value of the counter overflows the <span class="xref">System.Int64.MaxValue</span> then the counter value will wrap around to <span class="xref">System.Int64.MinValue</span>.</p>
-</div>
-<h5 id="ConcurrentSharp_Counter_Increment_examples">Examples</h5>
-<pre><code>var newValue = counter.Increment();</code></pre>
-
-
-
-<a id="ConcurrentSharp_Counter_Increment_" data-uid="ConcurrentSharp.Counter.Increment*"></a>
-<h4 id="ConcurrentSharp_Counter_Increment_System_Int64_" data-uid="ConcurrentSharp.Counter.Increment(System.Int64)">Increment(Int64)</h4>
-<div class="markdown level1 summary"><p>Increments the counter by <code data-dev-comment-type="paramref" class="paramref">delta</code> and returns the value of the counter immediately after the increment, as an atomic, thread-safe operation.</p>
-</div>
-<div class="markdown level1 conceptual"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public long Increment(long delta)</code></pre>
-</div>
-<h5 class="parameters">Parameters</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><span class="xref">System.Int64</span></td>
-      <td><span class="parametername">delta</span></td>
-      <td><p>The amount to increment the counter by.</p>
-</td>
-    </tr>
-  </tbody>
-</table>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><span class="xref">System.Int64</span></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
-<h5 id="ConcurrentSharp_Counter_Increment_System_Int64__remarks">Remarks</h5>
-<div class="markdown level1 remarks"><p>If <code data-dev-comment-type="paramref" class="paramref">delta</code> is zero, no change occurs. If <code data-dev-comment-type="paramref" class="paramref">delta</code> is negative, this is equivalent to calling <a class="xref" href="ConcurrentSharp.Counter.Decrement.html#ConcurrentSharp_Counter_Decrement_System_Int64_">Decrement(Int64)</a>.</p>
-<p>If the value of the counter overflows the <span class="xref">System.Int64.MaxValue</span> then the counter value will wrap around to <span class="xref">System.Int64.MinValue</span>.</p>
-</div>
-<h5 id="ConcurrentSharp_Counter_Increment_System_Int64__examples">Examples</h5>
-<pre><code>var newValue = counter.Increment(5);</code></pre>
-
+      </tr>
+    </tbody>
+  </table>
 </article>
           </div>
           

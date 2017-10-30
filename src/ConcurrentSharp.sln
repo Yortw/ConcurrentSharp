@@ -12,7 +12,18 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConcurrentSharp.Tests", "ConcurrentSharp.Tests\ConcurrentSharp.Tests.csproj", "{1303E845-1557-4BE1-9115-DB234953242E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConcurrentSharp.NetStandard20", "ConcurrentSharp.NetStandard20\ConcurrentSharp.NetStandard20.csproj", "{0A515EBA-76E5-412D-B74D-4F199F90889A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConcurrentSharp.Net40", "ConcurrentSharp.Net40\ConcurrentSharp.Net40.csproj", "{4E43FBA2-5F94-4EA3-AA1B-5605BA801F4F}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Concurrent.Shared", "Concurrent.Shared\Concurrent.Shared.shproj", "{EED8B73E-40F9-4638-A07A-A2F2FA60C8AD}"
+EndProject
 Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		Concurrent.Shared\Concurrent.Shared.projitems*{4e43fba2-5f94-4ea3-aa1b-5605ba801f4f}*SharedItemsImports = 4
+		Concurrent.Shared\Concurrent.Shared.projitems*{c9a5f462-ef0e-421e-9259-297f0b092410}*SharedItemsImports = 4
+		Concurrent.Shared\Concurrent.Shared.projitems*{eed8b73e-40f9-4638-a07a-a2f2fa60c8ad}*SharedItemsImports = 13
+	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
@@ -26,6 +37,14 @@ Global
 		{1303E845-1557-4BE1-9115-DB234953242E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1303E845-1557-4BE1-9115-DB234953242E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1303E845-1557-4BE1-9115-DB234953242E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A515EBA-76E5-412D-B74D-4F199F90889A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A515EBA-76E5-412D-B74D-4F199F90889A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A515EBA-76E5-412D-B74D-4F199F90889A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A515EBA-76E5-412D-B74D-4F199F90889A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E43FBA2-5F94-4EA3-AA1B-5605BA801F4F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E43FBA2-5F94-4EA3-AA1B-5605BA801F4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E43FBA2-5F94-4EA3-AA1B-5605BA801F4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E43FBA2-5F94-4EA3-AA1B-5605BA801F4F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

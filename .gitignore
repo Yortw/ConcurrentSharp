@@ -253,3 +253,4 @@ paket-files/
 
 # docfx
 log.txt
+/.nuget
