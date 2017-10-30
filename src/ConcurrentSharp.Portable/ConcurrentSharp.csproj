@@ -88,4 +88,7 @@
     </PropertyGroup>
     <Error Condition="!Exists('..\packages\docfx.console.2.26.3\build\docfx.console.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\docfx.console.2.26.3\build\docfx.console.targets'))" />
   </Target>
+  <PropertyGroup>
+    <PreBuildEvent>xcopy "$(SolutionDir)..\README.md" "$(ProjectDir)\index.md" /Y</PreBuildEvent>
+  </PropertyGroup>
 </Project>
