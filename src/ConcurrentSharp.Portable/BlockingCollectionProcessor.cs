@@ -44,6 +44,7 @@ namespace ConcurrentSharp
 		private readonly BlockingCollection<T> _Collection;
 		private readonly Action<T> _ProcessItem;
 		private System.Threading.Semaphore _CompleteSemaphore;
+		private int _MaxThreads;
 
 		#endregion
 
@@ -66,7 +67,8 @@ namespace ConcurrentSharp
 
 			_Collection = collection;
 			_ProcessItem = processItem;
-			_CompleteSemaphore = new System.Threading.Semaphore(0, numberOfProcessingThreads);
+			_CompleteSemaphore = new System.Threading.Semaphore(numberOfProcessingThreads, numberOfProcessingThreads);
+			_MaxThreads = numberOfProcessingThreads;
 
 			for (int cnt = 0; cnt < numberOfProcessingThreads; cnt++)
 			{
@@ -88,7 +90,17 @@ namespace ConcurrentSharp
 		{
 			if (_CompleteSemaphore == null) throw new ObjectDisposedException(nameof(BlockingCollectionProcessor<T>));
 
-			return _CompleteSemaphore.WaitOne(timeout.Milliseconds);
+			var startTime = DateTime.Now;
+			for (int cnt = 0; cnt < _MaxThreads; cnt++)
+			{
+				var thisTimeout = Convert.ToInt32(timeout.Milliseconds - DateTime.Now.Subtract(startTime).TotalMilliseconds);
+				if (thisTimeout <= 0) return false;
+
+				if (!_CompleteSemaphore.WaitOne(thisTimeout))
+					return false;
+			}
+
+			return true;
 		}
 
 		/// <summary>
@@ -99,7 +111,10 @@ namespace ConcurrentSharp
 		{
 			if (_CompleteSemaphore == null) throw new ObjectDisposedException(nameof(BlockingCollectionProcessor<T>));
 
-			_CompleteSemaphore.WaitOne();
+			for (int cnt = 0; cnt < _MaxThreads; cnt++)
+			{
+				_CompleteSemaphore.WaitOne();
+			}
 		}
 
 		#endregion
@@ -125,9 +140,13 @@ namespace ConcurrentSharp
 
 		#region Private Methods
 
-		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA1801:ReviewUnusedParameters", MessageId = "threadLifetime", Justification="Usage depends on conditional compilation")]
+		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA1801:ReviewUnusedParameters", MessageId = "threadLifetime", Justification = "Usage depends on conditional compilation")]
 		private void StartThread(ExpectedThreadLifetime threadLifetime)
 		{
+			try
+			{
+				_CompleteSemaphore.WaitOne();
+
 #if SUPPORTS_THREAD
 			if (threadLifetime == ExpectedThreadLifetime.Long)
 			{
@@ -139,7 +158,7 @@ namespace ConcurrentSharp
 #endif
 
 #if SUPPORTS_THREADPOOL
-			System.Threading.ThreadPool.QueueUserWorkItem((reserved) => ProcessItems());
+				System.Threading.ThreadPool.QueueUserWorkItem((reserved) => ProcessItems());
 #else
 			var task = System.Threading.Tasks.Task.Factory.StartNew
 			(
@@ -148,6 +167,12 @@ namespace ConcurrentSharp
 				(threadLifetime == ExpectedThreadLifetime.Long ? System.Threading.Tasks.TaskCreationOptions.LongRunning : System.Threading.Tasks.TaskCreationOptions.None)
 			);
 #endif
+			}
+			catch
+			{
+				_CompleteSemaphore.Release();
+				throw;
+			}
 		}
 
 		private void ProcessItems()
@@ -197,13 +222,15 @@ namespace ConcurrentSharp
 
 			using (var collection = new BlockingCollection<T>())
 			{
-				var processor = new BlockingCollectionProcessor<T>(collection, numberOfProcessingThreads, processItem, threadLifetime);
-				foreach (var item in items)
+				using (var processor = new BlockingCollectionProcessor<T>(collection, numberOfProcessingThreads, processItem, threadLifetime))
 				{
-					collection.Add(item);
+					foreach (var item in items)
+					{
+						collection.Add(item);
+					}
+					collection.CompleteAdding();
+					processor.WaitForCompletion();
 				}
-				collection.CompleteAdding();
-				processor.WaitForCompletion();
 			}
 		}
 
