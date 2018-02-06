@@ -168,7 +168,7 @@ namespace ConcurrentSharp
 				(reserved) => ProcessItems(),
 				System.Threading.CancellationToken.None,
 				(threadLifetime == ExpectedThreadLifetime.Long ? System.Threading.Tasks.TaskCreationOptions.LongRunning : System.Threading.Tasks.TaskCreationOptions.None)
-			).IgnoreTask();
+			).Ignore();
 #endif
 			}
 			catch
