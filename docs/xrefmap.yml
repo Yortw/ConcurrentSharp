@@ -216,18 +216,84 @@ references:
   commentId: T:ConcurrentSharp.TaskExtensions
   fullName: ConcurrentSharp.TaskExtensions
   nameWithType: TaskExtensions
-- uid: ConcurrentSharp.TaskExtensions.IgnoreTask(Task)
-  name: IgnoreTask(Task)
-  href: api/ConcurrentSharp.TaskExtensions.IgnoreTask.html#ConcurrentSharp_TaskExtensions_IgnoreTask_Task_
-  commentId: M:ConcurrentSharp.TaskExtensions.IgnoreTask(Task)
-  fullName: ConcurrentSharp.TaskExtensions.IgnoreTask(Task)
-  nameWithType: TaskExtensions.IgnoreTask(Task)
-- uid: ConcurrentSharp.TaskExtensions.IgnoreTask*
-  name: IgnoreTask
-  href: api/ConcurrentSharp.TaskExtensions.IgnoreTask.html
-  commentId: Overload:ConcurrentSharp.TaskExtensions.IgnoreTask
-  fullName: ConcurrentSharp.TaskExtensions.IgnoreTask
-  nameWithType: TaskExtensions.IgnoreTask
+- uid: ConcurrentSharp.TaskExtensions.Ignore(Task)
+  name: Ignore(Task)
+  href: api/ConcurrentSharp.TaskExtensions.Ignore.html#ConcurrentSharp_TaskExtensions_Ignore_Task_
+  commentId: M:ConcurrentSharp.TaskExtensions.Ignore(Task)
+  fullName: ConcurrentSharp.TaskExtensions.Ignore(Task)
+  nameWithType: TaskExtensions.Ignore(Task)
+- uid: ConcurrentSharp.TaskExtensions.Ignore*
+  name: Ignore
+  href: api/ConcurrentSharp.TaskExtensions.Ignore.html
+  commentId: Overload:ConcurrentSharp.TaskExtensions.Ignore
+  fullName: ConcurrentSharp.TaskExtensions.Ignore
+  nameWithType: TaskExtensions.Ignore
+- uid: ConcurrentSharp.TaskExtensions.TimeoutAfter(Task,System.Int32)
+  name: TimeoutAfter(Task, Int32)
+  href: api/ConcurrentSharp.TaskExtensions.TimeoutAfter.html#ConcurrentSharp_TaskExtensions_TimeoutAfter_Task_System_Int32_
+  commentId: M:ConcurrentSharp.TaskExtensions.TimeoutAfter(Task,System.Int32)
+  fullName: ConcurrentSharp.TaskExtensions.TimeoutAfter(Task, System.Int32)
+  nameWithType: TaskExtensions.TimeoutAfter(Task, Int32)
+- uid: ConcurrentSharp.TaskExtensions.TimeoutAfter(Task,System.Int32,CancellationTokenSource)
+  name: TimeoutAfter(Task, Int32, CancellationTokenSource)
+  href: api/ConcurrentSharp.TaskExtensions.TimeoutAfter.html#ConcurrentSharp_TaskExtensions_TimeoutAfter_Task_System_Int32_CancellationTokenSource_
+  commentId: M:ConcurrentSharp.TaskExtensions.TimeoutAfter(Task,System.Int32,CancellationTokenSource)
+  fullName: ConcurrentSharp.TaskExtensions.TimeoutAfter(Task, System.Int32, CancellationTokenSource)
+  nameWithType: TaskExtensions.TimeoutAfter(Task, Int32, CancellationTokenSource)
+- uid: ConcurrentSharp.TaskExtensions.TimeoutAfter(Task,System.TimeSpan)
+  name: TimeoutAfter(Task, TimeSpan)
+  href: api/ConcurrentSharp.TaskExtensions.TimeoutAfter.html#ConcurrentSharp_TaskExtensions_TimeoutAfter_Task_System_TimeSpan_
+  commentId: M:ConcurrentSharp.TaskExtensions.TimeoutAfter(Task,System.TimeSpan)
+  fullName: ConcurrentSharp.TaskExtensions.TimeoutAfter(Task, System.TimeSpan)
+  nameWithType: TaskExtensions.TimeoutAfter(Task, TimeSpan)
+- uid: ConcurrentSharp.TaskExtensions.TimeoutAfter(Task,System.TimeSpan,CancellationTokenSource)
+  name: TimeoutAfter(Task, TimeSpan, CancellationTokenSource)
+  href: api/ConcurrentSharp.TaskExtensions.TimeoutAfter.html#ConcurrentSharp_TaskExtensions_TimeoutAfter_Task_System_TimeSpan_CancellationTokenSource_
+  commentId: M:ConcurrentSharp.TaskExtensions.TimeoutAfter(Task,System.TimeSpan,CancellationTokenSource)
+  fullName: ConcurrentSharp.TaskExtensions.TimeoutAfter(Task, System.TimeSpan, CancellationTokenSource)
+  nameWithType: TaskExtensions.TimeoutAfter(Task, TimeSpan, CancellationTokenSource)
+- uid: ConcurrentSharp.TaskExtensions.TimeoutAfter*
+  name: TimeoutAfter
+  href: api/ConcurrentSharp.TaskExtensions.TimeoutAfter.html
+  commentId: Overload:ConcurrentSharp.TaskExtensions.TimeoutAfter
+  fullName: ConcurrentSharp.TaskExtensions.TimeoutAfter
+  nameWithType: TaskExtensions.TimeoutAfter
+- uid: ConcurrentSharp.TaskExtensions.TimeoutAfter``1(Task{``0},System.Int32)
+  name: TimeoutAfter<T>(Task<T>, Int32)
+  href: api/ConcurrentSharp.TaskExtensions.TimeoutAfter.html#ConcurrentSharp_TaskExtensions_TimeoutAfter__1_Task___0__System_Int32_
+  commentId: M:ConcurrentSharp.TaskExtensions.TimeoutAfter``1(Task{``0},System.Int32)
+  name.vb: TimeoutAfter(Of T)(Task(Of T), Int32)
+  fullName: ConcurrentSharp.TaskExtensions.TimeoutAfter<T>(Task<T>, System.Int32)
+  fullName.vb: ConcurrentSharp.TaskExtensions.TimeoutAfter(Of T)(Task(Of T), System.Int32)
+  nameWithType: TaskExtensions.TimeoutAfter<T>(Task<T>, Int32)
+  nameWithType.vb: TaskExtensions.TimeoutAfter(Of T)(Task(Of T), Int32)
+- uid: ConcurrentSharp.TaskExtensions.TimeoutAfter``1(Task{``0},System.Int32,CancellationTokenSource)
+  name: TimeoutAfter<T>(Task<T>, Int32, CancellationTokenSource)
+  href: api/ConcurrentSharp.TaskExtensions.TimeoutAfter.html#ConcurrentSharp_TaskExtensions_TimeoutAfter__1_Task___0__System_Int32_CancellationTokenSource_
+  commentId: M:ConcurrentSharp.TaskExtensions.TimeoutAfter``1(Task{``0},System.Int32,CancellationTokenSource)
+  name.vb: TimeoutAfter(Of T)(Task(Of T), Int32, CancellationTokenSource)
+  fullName: ConcurrentSharp.TaskExtensions.TimeoutAfter<T>(Task<T>, System.Int32, CancellationTokenSource)
+  fullName.vb: ConcurrentSharp.TaskExtensions.TimeoutAfter(Of T)(Task(Of T), System.Int32, CancellationTokenSource)
+  nameWithType: TaskExtensions.TimeoutAfter<T>(Task<T>, Int32, CancellationTokenSource)
+  nameWithType.vb: TaskExtensions.TimeoutAfter(Of T)(Task(Of T), Int32, CancellationTokenSource)
+- uid: ConcurrentSharp.TaskExtensions.TimeoutAfter``1(Task{``0},System.TimeSpan)
+  name: TimeoutAfter<T>(Task<T>, TimeSpan)
+  href: api/ConcurrentSharp.TaskExtensions.TimeoutAfter.html#ConcurrentSharp_TaskExtensions_TimeoutAfter__1_Task___0__System_TimeSpan_
+  commentId: M:ConcurrentSharp.TaskExtensions.TimeoutAfter``1(Task{``0},System.TimeSpan)
+  name.vb: TimeoutAfter(Of T)(Task(Of T), TimeSpan)
+  fullName: ConcurrentSharp.TaskExtensions.TimeoutAfter<T>(Task<T>, System.TimeSpan)
+  fullName.vb: ConcurrentSharp.TaskExtensions.TimeoutAfter(Of T)(Task(Of T), System.TimeSpan)
+  nameWithType: TaskExtensions.TimeoutAfter<T>(Task<T>, TimeSpan)
+  nameWithType.vb: TaskExtensions.TimeoutAfter(Of T)(Task(Of T), TimeSpan)
+- uid: ConcurrentSharp.TaskExtensions.TimeoutAfter``1(Task{``0},System.TimeSpan,CancellationTokenSource)
+  name: TimeoutAfter<T>(Task<T>, TimeSpan, CancellationTokenSource)
+  href: api/ConcurrentSharp.TaskExtensions.TimeoutAfter.html#ConcurrentSharp_TaskExtensions_TimeoutAfter__1_Task___0__System_TimeSpan_CancellationTokenSource_
+  commentId: M:ConcurrentSharp.TaskExtensions.TimeoutAfter``1(Task{``0},System.TimeSpan,CancellationTokenSource)
+  name.vb: TimeoutAfter(Of T)(Task(Of T), TimeSpan, CancellationTokenSource)
+  fullName: ConcurrentSharp.TaskExtensions.TimeoutAfter<T>(Task<T>, System.TimeSpan, CancellationTokenSource)
+  fullName.vb: ConcurrentSharp.TaskExtensions.TimeoutAfter(Of T)(Task(Of T), System.TimeSpan, CancellationTokenSource)
+  nameWithType: TaskExtensions.TimeoutAfter<T>(Task<T>, TimeSpan, CancellationTokenSource)
+  nameWithType.vb: TaskExtensions.TimeoutAfter(Of T)(Task(Of T), TimeSpan, CancellationTokenSource)
 - uid: ConcurrentSharp.Throttle
   name: Throttle
   href: api/ConcurrentSharp.Throttle.html
