@@ -1,0 +1,4420 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Method FromAsyncCallback
+   | ConcurrentSharp </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Method FromAsyncCallback
+   | ConcurrentSharp ">
+    <meta name="generator" content="docfx 2.26.3.0">
+    
+    <link rel="shortcut icon" href="../images/ConcurrentSharp.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc">
+    <meta property="docfx:tocrel" content="toc">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/ConcurrentSharp.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+                <ul class="nav level1 navbar-nav">
+                  <li class="active">
+                    <a href="../api/ConcurrentSharp.html" title="API Documentation" class="active">API Documentation</a>
+                  </li>
+                </ul>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div>
+              <div class="sidefilter">
+                <form class="toc-filter">
+                  <span class="glyphicon glyphicon-filter filter-icon"></span>
+                  <input type="text" id="toc_filter_input" placeholder="Enter here to filter..." onkeypress="if(event.keyCode==13) {return false;}">
+                </form>
+              </div>
+              <div class="sidetoc">
+                <div class="toc" id="toc">
+                  
+                  <ul class="nav level1">
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="ConcurrentSharp.html" title="ConcurrentSharp" class="">ConcurrentSharp</a>
+                        
+                        <ul class="nav level2">
+                          <li class="">
+                            <span class="expand-stub"></span>
+                            <a href="ConcurrentSharp.BlockingCollectionProcessor-1.html" title="BlockingCollectionProcessor&lt;T&gt;" class="">BlockingCollectionProcessor&lt;T&gt;</a>
+                              
+                              <ul class="nav level3">
+                                <li class="">
+                                  <a href="ConcurrentSharp.BlockingCollectionProcessor-1.-ctor.html" title="BlockingCollectionProcessor" class="">BlockingCollectionProcessor</a>
+                                </li>
+                                <li class="">
+                                  <a href="ConcurrentSharp.BlockingCollectionProcessor-1.Dispose.html" title="Dispose" class="">Dispose</a>
+                                </li>
+                                <li class="">
+                                  <a href="ConcurrentSharp.BlockingCollectionProcessor-1.ProcessItems.html" title="ProcessItems" class="">ProcessItems</a>
+                                </li>
+                                <li class="">
+                                  <a href="ConcurrentSharp.BlockingCollectionProcessor-1.WaitForCompletion.html" title="WaitForCompletion" class="">WaitForCompletion</a>
+                                </li>
+                              </ul>  </li>
+                          <li class="">
+                            <span class="expand-stub"></span>
+                            <a href="ConcurrentSharp.Counter.html" title="Counter" class="">Counter</a>
+                              
+                              <ul class="nav level3">
+                                <li class="">
+                                  <a href="ConcurrentSharp.Counter.-ctor.html" title="Counter" class="">Counter</a>
+                                </li>
+                                <li class="">
+                                  <a href="ConcurrentSharp.Counter.Decrement.html" title="Decrement" class="">Decrement</a>
+                                </li>
+                                <li class="">
+                                  <a href="ConcurrentSharp.Counter.op_Implicit.html" title="Implicit" class="">Implicit</a>
+                                </li>
+                                <li class="">
+                                  <a href="ConcurrentSharp.Counter.Increment.html" title="Increment" class="">Increment</a>
+                                </li>
+                                <li class="">
+                                  <a href="ConcurrentSharp.Counter.Reset.html" title="Reset" class="">Reset</a>
+                                </li>
+                                <li class="">
+                                  <a href="ConcurrentSharp.Counter.ToInt64.html" title="ToInt64" class="">ToInt64</a>
+                                </li>
+                              </ul>  </li>
+                          <li class="">
+                            <span class="expand-stub"></span>
+                            <a href="ConcurrentSharp.ExpectedThreadLifetime.html" title="ExpectedThreadLifetime" class="">ExpectedThreadLifetime</a>
+                              
+                              <ul class="nav level3">
+                                <li class="">
+                                  <a href="ConcurrentSharp.ExpectedThreadLifetime.Long.html#ConcurrentSharp_ExpectedThreadLifetime_Long" title="Long" class="">Long</a>
+                                </li>
+                                <li class="">
+                                  <a href="ConcurrentSharp.ExpectedThreadLifetime.Short.html#ConcurrentSharp_ExpectedThreadLifetime_Short" title="Short" class="">Short</a>
+                                </li>
+                              </ul>  </li>
+                          <li class="">
+                            <span class="expand-stub"></span>
+                            <a href="ConcurrentSharp.TaskExtensions.html" title="TaskExtensions" class="">TaskExtensions</a>
+                              
+                              <ul class="nav level3">
+                                <li class="">
+                                  <a href="ConcurrentSharp.TaskExtensions.Ignore.html" title="Ignore" class="">Ignore</a>
+                                </li>
+                                <li class="">
+                                  <a href="ConcurrentSharp.TaskExtensions.TimeoutAfter.html" title="TimeoutAfter" class="">TimeoutAfter</a>
+                                </li>
+                              </ul>  </li>
+                          <li class="">
+                            <span class="expand-stub"></span>
+                            <a href="ConcurrentSharp.TaskFrom.html" title="TaskFrom" class="">TaskFrom</a>
+                              
+                              <ul class="nav level3">
+                                <li class="">
+                                  <a href="ConcurrentSharp.TaskFrom.Event.html" title="Event" class="">Event</a>
+                                </li>
+                                <li class="active">
+                                  <a href="ConcurrentSharp.TaskFrom.FromAsyncCallback.html" title="FromAsyncCallback" class="active">FromAsyncCallback</a>
+                                </li>
+                              </ul>  </li>
+                          <li class="">
+                            <span class="expand-stub"></span>
+                            <a href="ConcurrentSharp.Throttle.html" title="Throttle" class="">Throttle</a>
+                              
+                              <ul class="nav level3">
+                                <li class="">
+                                  <a href="ConcurrentSharp.Throttle.Dispose.html" title="Dispose" class="">Dispose</a>
+                                </li>
+                                <li class="">
+                                  <a href="ConcurrentSharp.Throttle.Enter.html" title="Enter" class="">Enter</a>
+                                </li>
+                                <li class="">
+                                  <a href="ConcurrentSharp.Throttle.Execute.html" title="Execute" class="">Execute</a>
+                                </li>
+                                <li class="">
+                                  <a href="ConcurrentSharp.Throttle.-ctor.html" title="Throttle" class="">Throttle</a>
+                                </li>
+                              </ul>  </li>
+                          <li class="">
+                            <span class="expand-stub"></span>
+                            <a href="ConcurrentSharp.ThrottleToken.html" title="ThrottleToken" class="">ThrottleToken</a>
+                              
+                              <ul class="nav level3">
+                                <li class="">
+                                  <a href="ConcurrentSharp.ThrottleToken.Dispose.html" title="Dispose" class="">Dispose</a>
+                                </li>
+                              </ul>  </li>
+                        </ul>  </li>
+                  </ul>        </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="ConcurrentSharp.TaskFrom.FromAsyncCallback*">
+
+<h1 id="ConcurrentSharp_TaskFrom_FromAsyncCallback_" data-uid="ConcurrentSharp.TaskFrom.FromAsyncCallback*">Method FromAsyncCallback
+</h1>
+<div class="markdown level0 summary"></div>
+<div class="markdown level0 conceptual"></div>
+
+
+
+<a id="ConcurrentSharp_TaskFrom_FromAsyncCallback_" data-uid="ConcurrentSharp.TaskFrom.FromAsyncCallback*"></a>
+<h4 id="ConcurrentSharp_TaskFrom_FromAsyncCallback__1_System_Func_System_AsyncCallback_System_Object_System_IAsyncResult__System_Func_System_IAsyncResult___0__" data-uid="ConcurrentSharp.TaskFrom.FromAsyncCallback``1(System.Func{System.AsyncCallback,System.Object,System.IAsyncResult},System.Func{System.IAsyncResult,``0})">FromAsyncCallback&lt;TReturn&gt;(Func&lt;AsyncCallback, Object, IAsyncResult&gt;, Func&lt;IAsyncResult, TReturn&gt;)</h4>
+<div class="markdown level1 summary"><p>Creates a <span class="xref">System.Threading.Tasks.Task</span> from a BeginAsync.. EndAsync pair of methods.</p>
+</div>
+<div class="markdown level1 conceptual"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static Task&lt;TReturn&gt; FromAsyncCallback&lt;TReturn&gt;(Func&lt;AsyncCallback, object, IAsyncResult&gt; beginAsync, Func&lt;IAsyncResult, TReturn&gt; endAsync)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span class="xref">System.Func</span>&lt;<span class="xref">System.AsyncCallback</span>, <span class="xref">System.Object</span>, <span class="xref">System.IAsyncResult</span>&gt;</td>
+      <td><span class="parametername">beginAsync</span></td>
+      <td><p>A delegate or lambda reprsenting the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">System.Func</span>&lt;<span class="xref">System.IAsyncResult</span>, TReturn&gt;</td>
+      <td><span class="parametername">endAsync</span></td>
+      <td><p>A delegate or lambda representing the paired EndAsync method.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span class="xref">Task</span>&lt;TReturn&gt;</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="typeParameters">Type Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span class="parametername">TReturn</span></td>
+      <td><p>The type of value returned from the EndAsync method.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+
+<a id="ConcurrentSharp_TaskFrom_FromAsyncCallback_" data-uid="ConcurrentSharp.TaskFrom.FromAsyncCallback*"></a>
+<h4 id="ConcurrentSharp_TaskFrom_FromAsyncCallback__2_System_Func___0_System_AsyncCallback_System_Object_System_IAsyncResult__System_Func_System_IAsyncResult___1____0_" data-uid="ConcurrentSharp.TaskFrom.FromAsyncCallback``2(System.Func{``0,System.AsyncCallback,System.Object,System.IAsyncResult},System.Func{System.IAsyncResult,``1},``0)">FromAsyncCallback&lt;T1, TReturn&gt;(Func&lt;T1, AsyncCallback, Object, IAsyncResult&gt;, Func&lt;IAsyncResult, TReturn&gt;, T1)</h4>
+<div class="markdown level1 summary"><p>Creates a <span class="xref">System.Threading.Tasks.Task</span> from a BeginAsync.. EndAsync pair of methods.</p>
+</div>
+<div class="markdown level1 conceptual"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static Task&lt;TReturn&gt; FromAsyncCallback&lt;T1, TReturn&gt;(Func&lt;T1, AsyncCallback, object, IAsyncResult&gt; beginAsync, Func&lt;IAsyncResult, TReturn&gt; endAsync, T1 arg1)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span class="xref">System.Func</span>&lt;T1, <span class="xref">System.AsyncCallback</span>, <span class="xref">System.Object</span>, <span class="xref">System.IAsyncResult</span>&gt;</td>
+      <td><span class="parametername">beginAsync</span></td>
+      <td><p>A delegate or lambda reprsenting the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">System.Func</span>&lt;<span class="xref">System.IAsyncResult</span>, TReturn&gt;</td>
+      <td><span class="parametername">endAsync</span></td>
+      <td><p>A delegate or lambda representing the paired EndAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T1</span></td>
+      <td><span class="parametername">arg1</span></td>
+      <td><p>The first argument to the BeginAsync method.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span class="xref">Task</span>&lt;TReturn&gt;</td>
+      <td><p>The return value of the paired EndAsync method.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="typeParameters">Type Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span class="parametername">T1</span></td>
+      <td><p>The type of the first argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">TReturn</span></td>
+      <td><p>The type of value returned from the EndAsync method.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+
+<a id="ConcurrentSharp_TaskFrom_FromAsyncCallback_" data-uid="ConcurrentSharp.TaskFrom.FromAsyncCallback*"></a>
+<h4 id="ConcurrentSharp_TaskFrom_FromAsyncCallback__3_System_Func___0___1_System_AsyncCallback_System_Object_System_IAsyncResult__System_Func_System_IAsyncResult___2____0___1_" data-uid="ConcurrentSharp.TaskFrom.FromAsyncCallback``3(System.Func{``0,``1,System.AsyncCallback,System.Object,System.IAsyncResult},System.Func{System.IAsyncResult,``2},``0,``1)">FromAsyncCallback&lt;T1, T2, TReturn&gt;(Func&lt;T1, T2, AsyncCallback, Object, IAsyncResult&gt;, Func&lt;IAsyncResult, TReturn&gt;, T1, T2)</h4>
+<div class="markdown level1 summary"><p>Creates a <span class="xref">System.Threading.Tasks.Task</span> from a BeginAsync.. EndAsync pair of methods.</p>
+</div>
+<div class="markdown level1 conceptual"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static Task&lt;TReturn&gt; FromAsyncCallback&lt;T1, T2, TReturn&gt;(Func&lt;T1, T2, AsyncCallback, object, IAsyncResult&gt; beginAsync, Func&lt;IAsyncResult, TReturn&gt; endAsync, T1 arg1, T2 arg2)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span class="xref">System.Func</span>&lt;T1, T2, <span class="xref">System.AsyncCallback</span>, <span class="xref">System.Object</span>, <span class="xref">System.IAsyncResult</span>&gt;</td>
+      <td><span class="parametername">beginAsync</span></td>
+      <td><p>A delegate or lambda reprsenting the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">System.Func</span>&lt;<span class="xref">System.IAsyncResult</span>, TReturn&gt;</td>
+      <td><span class="parametername">endAsync</span></td>
+      <td><p>A delegate or lambda representing the paired EndAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T1</span></td>
+      <td><span class="parametername">arg1</span></td>
+      <td><p>The first argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T2</span></td>
+      <td><span class="parametername">arg2</span></td>
+      <td><p>The second argument to the BeginAsync method.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span class="xref">Task</span>&lt;TReturn&gt;</td>
+      <td><p>The return value of the paired EndAsync method.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="typeParameters">Type Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span class="parametername">T1</span></td>
+      <td><p>The type of the first argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T2</span></td>
+      <td><p>The type of the second argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">TReturn</span></td>
+      <td><p>The type of value returned from the EndAsync method.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+
+<a id="ConcurrentSharp_TaskFrom_FromAsyncCallback_" data-uid="ConcurrentSharp.TaskFrom.FromAsyncCallback*"></a>
+<h4 id="ConcurrentSharp_TaskFrom_FromAsyncCallback__4_System_Func___0___1___2_System_AsyncCallback_System_Object_System_IAsyncResult__System_Func_System_IAsyncResult___3____0___1___2_" data-uid="ConcurrentSharp.TaskFrom.FromAsyncCallback``4(System.Func{``0,``1,``2,System.AsyncCallback,System.Object,System.IAsyncResult},System.Func{System.IAsyncResult,``3},``0,``1,``2)">FromAsyncCallback&lt;T1, T2, T3, TReturn&gt;(Func&lt;T1, T2, T3, AsyncCallback, Object, IAsyncResult&gt;, Func&lt;IAsyncResult, TReturn&gt;, T1, T2, T3)</h4>
+<div class="markdown level1 summary"><p>Creates a <span class="xref">System.Threading.Tasks.Task</span> from a BeginAsync.. EndAsync pair of methods.</p>
+</div>
+<div class="markdown level1 conceptual"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static Task&lt;TReturn&gt; FromAsyncCallback&lt;T1, T2, T3, TReturn&gt;(Func&lt;T1, T2, T3, AsyncCallback, object, IAsyncResult&gt; beginAsync, Func&lt;IAsyncResult, TReturn&gt; endAsync, T1 arg1, T2 arg2, T3 arg3)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span class="xref">System.Func</span>&lt;T1, T2, T3, <span class="xref">System.AsyncCallback</span>, <span class="xref">System.Object</span>, <span class="xref">System.IAsyncResult</span>&gt;</td>
+      <td><span class="parametername">beginAsync</span></td>
+      <td><p>A delegate or lambda reprsenting the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">System.Func</span>&lt;<span class="xref">System.IAsyncResult</span>, TReturn&gt;</td>
+      <td><span class="parametername">endAsync</span></td>
+      <td><p>A delegate or lambda representing the paired EndAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T1</span></td>
+      <td><span class="parametername">arg1</span></td>
+      <td><p>The first argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T2</span></td>
+      <td><span class="parametername">arg2</span></td>
+      <td><p>The second argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T3</span></td>
+      <td><span class="parametername">arg3</span></td>
+      <td><p>The third argument to the BeginAsync method.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span class="xref">Task</span>&lt;TReturn&gt;</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="typeParameters">Type Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span class="parametername">T1</span></td>
+      <td><p>The type of the first argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T2</span></td>
+      <td><p>The type of the second argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T3</span></td>
+      <td><p>The type of the third argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">TReturn</span></td>
+      <td><p>The type of value returned from the EndAsync method.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+
+<a id="ConcurrentSharp_TaskFrom_FromAsyncCallback_" data-uid="ConcurrentSharp.TaskFrom.FromAsyncCallback*"></a>
+<h4 id="ConcurrentSharp_TaskFrom_FromAsyncCallback__5_System_Func___0___1___2___3_System_AsyncCallback_System_Object_System_IAsyncResult__System_Func_System_IAsyncResult___4____0___1___2___3_" data-uid="ConcurrentSharp.TaskFrom.FromAsyncCallback``5(System.Func{``0,``1,``2,``3,System.AsyncCallback,System.Object,System.IAsyncResult},System.Func{System.IAsyncResult,``4},``0,``1,``2,``3)">FromAsyncCallback&lt;T1, T2, T3, T4, TReturn&gt;(Func&lt;T1, T2, T3, T4, AsyncCallback, Object, IAsyncResult&gt;, Func&lt;IAsyncResult, TReturn&gt;, T1, T2, T3, T4)</h4>
+<div class="markdown level1 summary"><p>Creates a <span class="xref">System.Threading.Tasks.Task</span> from a BeginAsync.. EndAsync pair of methods.</p>
+</div>
+<div class="markdown level1 conceptual"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static Task&lt;TReturn&gt; FromAsyncCallback&lt;T1, T2, T3, T4, TReturn&gt;(Func&lt;T1, T2, T3, T4, AsyncCallback, object, IAsyncResult&gt; beginAsync, Func&lt;IAsyncResult, TReturn&gt; endAsync, T1 arg1, T2 arg2, T3 arg3, T4 arg4)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span class="xref">System.Func</span>&lt;T1, T2, T3, T4, <span class="xref">System.AsyncCallback</span>, <span class="xref">System.Object</span>, <span class="xref">System.IAsyncResult</span>&gt;</td>
+      <td><span class="parametername">beginAsync</span></td>
+      <td><p>A delegate or lambda reprsenting the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">System.Func</span>&lt;<span class="xref">System.IAsyncResult</span>, TReturn&gt;</td>
+      <td><span class="parametername">endAsync</span></td>
+      <td><p>A delegate or lambda representing the paired EndAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T1</span></td>
+      <td><span class="parametername">arg1</span></td>
+      <td><p>The first argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T2</span></td>
+      <td><span class="parametername">arg2</span></td>
+      <td><p>The second argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T3</span></td>
+      <td><span class="parametername">arg3</span></td>
+      <td><p>The third argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T4</span></td>
+      <td><span class="parametername">arg4</span></td>
+      <td><p>The fourth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span class="xref">Task</span>&lt;TReturn&gt;</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="typeParameters">Type Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span class="parametername">T1</span></td>
+      <td><p>The type of the first argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T2</span></td>
+      <td><p>The type of the second argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T3</span></td>
+      <td><p>The type of the third argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T4</span></td>
+      <td><p>The type of the fourth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">TReturn</span></td>
+      <td><p>The type of value returned from the EndAsync method.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+
+<a id="ConcurrentSharp_TaskFrom_FromAsyncCallback_" data-uid="ConcurrentSharp.TaskFrom.FromAsyncCallback*"></a>
+<h4 id="ConcurrentSharp_TaskFrom_FromAsyncCallback__6_System_Func___0___1___2___3___4_System_AsyncCallback_System_Object_System_IAsyncResult__System_Func_System_IAsyncResult___5____0___1___2___3___4_" data-uid="ConcurrentSharp.TaskFrom.FromAsyncCallback``6(System.Func{``0,``1,``2,``3,``4,System.AsyncCallback,System.Object,System.IAsyncResult},System.Func{System.IAsyncResult,``5},``0,``1,``2,``3,``4)">FromAsyncCallback&lt;T1, T2, T3, T4, T5, TReturn&gt;(Func&lt;T1, T2, T3, T4, T5, AsyncCallback, Object, IAsyncResult&gt;, Func&lt;IAsyncResult, TReturn&gt;, T1, T2, T3, T4, T5)</h4>
+<div class="markdown level1 summary"><p>Creates a <span class="xref">System.Threading.Tasks.Task</span> from a BeginAsync.. EndAsync pair of methods.</p>
+</div>
+<div class="markdown level1 conceptual"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static Task&lt;TReturn&gt; FromAsyncCallback&lt;T1, T2, T3, T4, T5, TReturn&gt;(Func&lt;T1, T2, T3, T4, T5, AsyncCallback, object, IAsyncResult&gt; beginAsync, Func&lt;IAsyncResult, TReturn&gt; endAsync, T1 arg1, T2 arg2, T3 arg3, T4 arg4, T5 arg5)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span class="xref">System.Func</span>&lt;T1, T2, T3, T4, T5, <span class="xref">System.AsyncCallback</span>, <span class="xref">System.Object</span>, <span class="xref">System.IAsyncResult</span>&gt;</td>
+      <td><span class="parametername">beginAsync</span></td>
+      <td><p>A delegate or lambda reprsenting the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">System.Func</span>&lt;<span class="xref">System.IAsyncResult</span>, TReturn&gt;</td>
+      <td><span class="parametername">endAsync</span></td>
+      <td><p>A delegate or lambda representing the paired EndAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T1</span></td>
+      <td><span class="parametername">arg1</span></td>
+      <td><p>The first argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T2</span></td>
+      <td><span class="parametername">arg2</span></td>
+      <td><p>The second argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T3</span></td>
+      <td><span class="parametername">arg3</span></td>
+      <td><p>The third argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T4</span></td>
+      <td><span class="parametername">arg4</span></td>
+      <td><p>The fourth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T5</span></td>
+      <td><span class="parametername">arg5</span></td>
+      <td><p>The fifth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span class="xref">Task</span>&lt;TReturn&gt;</td>
+      <td><p>The return value of the paired EndAsync method.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="typeParameters">Type Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span class="parametername">T1</span></td>
+      <td><p>The type of the first argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T2</span></td>
+      <td><p>The type of the second argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T3</span></td>
+      <td><p>The type of the third argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T4</span></td>
+      <td><p>The type of the fourth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T5</span></td>
+      <td><p>The type of the fifth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">TReturn</span></td>
+      <td><p>The type of value returned from the EndAsync method.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+
+<a id="ConcurrentSharp_TaskFrom_FromAsyncCallback_" data-uid="ConcurrentSharp.TaskFrom.FromAsyncCallback*"></a>
+<h4 id="ConcurrentSharp_TaskFrom_FromAsyncCallback__7_System_Func___0___1___2___3___4___5_System_AsyncCallback_System_Object_System_IAsyncResult__System_Func_System_IAsyncResult___6____0___1___2___3___4___5_" data-uid="ConcurrentSharp.TaskFrom.FromAsyncCallback``7(System.Func{``0,``1,``2,``3,``4,``5,System.AsyncCallback,System.Object,System.IAsyncResult},System.Func{System.IAsyncResult,``6},``0,``1,``2,``3,``4,``5)">FromAsyncCallback&lt;T1, T2, T3, T4, T5, T6, TReturn&gt;(Func&lt;T1, T2, T3, T4, T5, T6, AsyncCallback, Object, IAsyncResult&gt;, Func&lt;IAsyncResult, TReturn&gt;, T1, T2, T3, T4, T5, T6)</h4>
+<div class="markdown level1 summary"><p>Creates a <span class="xref">System.Threading.Tasks.Task</span> from a BeginAsync.. EndAsync pair of methods.</p>
+</div>
+<div class="markdown level1 conceptual"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static Task&lt;TReturn&gt; FromAsyncCallback&lt;T1, T2, T3, T4, T5, T6, TReturn&gt;(Func&lt;T1, T2, T3, T4, T5, T6, AsyncCallback, object, IAsyncResult&gt; beginAsync, Func&lt;IAsyncResult, TReturn&gt; endAsync, T1 arg1, T2 arg2, T3 arg3, T4 arg4, T5 arg5, T6 arg6)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span class="xref">System.Func</span>&lt;T1, T2, T3, T4, T5, T6, <span class="xref">System.AsyncCallback</span>, <span class="xref">System.Object</span>, <span class="xref">System.IAsyncResult</span>&gt;</td>
+      <td><span class="parametername">beginAsync</span></td>
+      <td><p>A delegate or lambda reprsenting the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">System.Func</span>&lt;<span class="xref">System.IAsyncResult</span>, TReturn&gt;</td>
+      <td><span class="parametername">endAsync</span></td>
+      <td><p>A delegate or lambda representing the paired EndAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T1</span></td>
+      <td><span class="parametername">arg1</span></td>
+      <td><p>The first argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T2</span></td>
+      <td><span class="parametername">arg2</span></td>
+      <td><p>The second argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T3</span></td>
+      <td><span class="parametername">arg3</span></td>
+      <td><p>The third argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T4</span></td>
+      <td><span class="parametername">arg4</span></td>
+      <td><p>The fourth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T5</span></td>
+      <td><span class="parametername">arg5</span></td>
+      <td><p>The fifth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T6</span></td>
+      <td><span class="parametername">arg6</span></td>
+      <td><p>The sixth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span class="xref">Task</span>&lt;TReturn&gt;</td>
+      <td><p>The return value of the paired EndAsync method.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="typeParameters">Type Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span class="parametername">T1</span></td>
+      <td><p>The type of the first argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T2</span></td>
+      <td><p>The type of the second argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T3</span></td>
+      <td><p>The type of the third argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T4</span></td>
+      <td><p>The type of the fourth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T5</span></td>
+      <td><p>The type of the fifth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T6</span></td>
+      <td><p>The type of the sixth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">TReturn</span></td>
+      <td><p>The type of value returned from the EndAsync method.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+
+<a id="ConcurrentSharp_TaskFrom_FromAsyncCallback_" data-uid="ConcurrentSharp.TaskFrom.FromAsyncCallback*"></a>
+<h4 id="ConcurrentSharp_TaskFrom_FromAsyncCallback__8_System_Func___0___1___2___3___4___5___6_System_AsyncCallback_System_Object_System_IAsyncResult__System_Func_System_IAsyncResult___7____0___1___2___3___4___5___6_" data-uid="ConcurrentSharp.TaskFrom.FromAsyncCallback``8(System.Func{``0,``1,``2,``3,``4,``5,``6,System.AsyncCallback,System.Object,System.IAsyncResult},System.Func{System.IAsyncResult,``7},``0,``1,``2,``3,``4,``5,``6)">FromAsyncCallback&lt;T1, T2, T3, T4, T5, T6, T7, TReturn&gt;(Func&lt;T1, T2, T3, T4, T5, T6, T7, AsyncCallback, Object, IAsyncResult&gt;, Func&lt;IAsyncResult, TReturn&gt;, T1, T2, T3, T4, T5, T6, T7)</h4>
+<div class="markdown level1 summary"><p>Creates a <span class="xref">System.Threading.Tasks.Task</span> from a BeginAsync.. EndAsync pair of methods.</p>
+</div>
+<div class="markdown level1 conceptual"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static Task&lt;TReturn&gt; FromAsyncCallback&lt;T1, T2, T3, T4, T5, T6, T7, TReturn&gt;(Func&lt;T1, T2, T3, T4, T5, T6, T7, AsyncCallback, object, IAsyncResult&gt; beginAsync, Func&lt;IAsyncResult, TReturn&gt; endAsync, T1 arg1, T2 arg2, T3 arg3, T4 arg4, T5 arg5, T6 arg6, T7 arg7)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span class="xref">System.Func</span>&lt;T1, T2, T3, T4, T5, T6, T7, <span class="xref">System.AsyncCallback</span>, <span class="xref">System.Object</span>, <span class="xref">System.IAsyncResult</span>&gt;</td>
+      <td><span class="parametername">beginAsync</span></td>
+      <td><p>A delegate or lambda reprsenting the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">System.Func</span>&lt;<span class="xref">System.IAsyncResult</span>, TReturn&gt;</td>
+      <td><span class="parametername">endAsync</span></td>
+      <td><p>A delegate or lambda representing the paired EndAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T1</span></td>
+      <td><span class="parametername">arg1</span></td>
+      <td><p>The first argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T2</span></td>
+      <td><span class="parametername">arg2</span></td>
+      <td><p>The second argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T3</span></td>
+      <td><span class="parametername">arg3</span></td>
+      <td><p>The third argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T4</span></td>
+      <td><span class="parametername">arg4</span></td>
+      <td><p>The fourth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T5</span></td>
+      <td><span class="parametername">arg5</span></td>
+      <td><p>The fifth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T6</span></td>
+      <td><span class="parametername">arg6</span></td>
+      <td><p>The sixth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T7</span></td>
+      <td><span class="parametername">arg7</span></td>
+      <td><p>The seventh argument to the BeginAsync method.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span class="xref">Task</span>&lt;TReturn&gt;</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="typeParameters">Type Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span class="parametername">T1</span></td>
+      <td><p>The type of the first argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T2</span></td>
+      <td><p>The type of the second argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T3</span></td>
+      <td><p>The type of the third argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T4</span></td>
+      <td><p>The type of the fourth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T5</span></td>
+      <td><p>The type of the fifth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T6</span></td>
+      <td><p>The type of the sixth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T7</span></td>
+      <td><p>The type of the seventh argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">TReturn</span></td>
+      <td><p>The type of value returned from the EndAsync method.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+
+<a id="ConcurrentSharp_TaskFrom_FromAsyncCallback_" data-uid="ConcurrentSharp.TaskFrom.FromAsyncCallback*"></a>
+<h4 id="ConcurrentSharp_TaskFrom_FromAsyncCallback__9_System_Func___0___1___2___3___4___5___6___7_System_AsyncCallback_System_Object_System_IAsyncResult__System_Func_System_IAsyncResult___8____0___1___2___3___4___5___6___7_" data-uid="ConcurrentSharp.TaskFrom.FromAsyncCallback``9(System.Func{``0,``1,``2,``3,``4,``5,``6,``7,System.AsyncCallback,System.Object,System.IAsyncResult},System.Func{System.IAsyncResult,``8},``0,``1,``2,``3,``4,``5,``6,``7)">FromAsyncCallback&lt;T1, T2, T3, T4, T5, T6, T7, T8, TReturn&gt;(Func&lt;T1, T2, T3, T4, T5, T6, T7, T8, AsyncCallback, Object, IAsyncResult&gt;, Func&lt;IAsyncResult, TReturn&gt;, T1, T2, T3, T4, T5, T6, T7, T8)</h4>
+<div class="markdown level1 summary"><p>Creates a <span class="xref">System.Threading.Tasks.Task</span> from a BeginAsync.. EndAsync pair of methods.</p>
+</div>
+<div class="markdown level1 conceptual"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static Task&lt;TReturn&gt; FromAsyncCallback&lt;T1, T2, T3, T4, T5, T6, T7, T8, TReturn&gt;(Func&lt;T1, T2, T3, T4, T5, T6, T7, T8, AsyncCallback, object, IAsyncResult&gt; beginAsync, Func&lt;IAsyncResult, TReturn&gt; endAsync, T1 arg1, T2 arg2, T3 arg3, T4 arg4, T5 arg5, T6 arg6, T7 arg7, T8 arg8)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span class="xref">System.Func</span>&lt;T1, T2, T3, T4, T5, T6, T7, T8, <span class="xref">System.AsyncCallback</span>, <span class="xref">System.Object</span>, <span class="xref">System.IAsyncResult</span>&gt;</td>
+      <td><span class="parametername">beginAsync</span></td>
+      <td><p>A delegate or lambda reprsenting the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">System.Func</span>&lt;<span class="xref">System.IAsyncResult</span>, TReturn&gt;</td>
+      <td><span class="parametername">endAsync</span></td>
+      <td><p>A delegate or lambda representing the paired EndAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T1</span></td>
+      <td><span class="parametername">arg1</span></td>
+      <td><p>The first argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T2</span></td>
+      <td><span class="parametername">arg2</span></td>
+      <td><p>The second argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T3</span></td>
+      <td><span class="parametername">arg3</span></td>
+      <td><p>The third argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T4</span></td>
+      <td><span class="parametername">arg4</span></td>
+      <td><p>The fourth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T5</span></td>
+      <td><span class="parametername">arg5</span></td>
+      <td><p>The fifth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T6</span></td>
+      <td><span class="parametername">arg6</span></td>
+      <td><p>The sixth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T7</span></td>
+      <td><span class="parametername">arg7</span></td>
+      <td><p>The seventh argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T8</span></td>
+      <td><span class="parametername">arg8</span></td>
+      <td><p>The eighth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span class="xref">Task</span>&lt;TReturn&gt;</td>
+      <td><p>The return value of the paired EndAsync method.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="typeParameters">Type Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span class="parametername">T1</span></td>
+      <td><p>The type of the first argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T2</span></td>
+      <td><p>The type of the second argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T3</span></td>
+      <td><p>The type of the third argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T4</span></td>
+      <td><p>The type of the fourth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T5</span></td>
+      <td><p>The type of the fifth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T6</span></td>
+      <td><p>The type of the sixth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T7</span></td>
+      <td><p>The type of the seventh argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T8</span></td>
+      <td><p>The type of the eighth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">TReturn</span></td>
+      <td><p>The type of value returned from the EndAsync method.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+
+<a id="ConcurrentSharp_TaskFrom_FromAsyncCallback_" data-uid="ConcurrentSharp.TaskFrom.FromAsyncCallback*"></a>
+<h4 id="ConcurrentSharp_TaskFrom_FromAsyncCallback__10_System_Func___0___1___2___3___4___5___6___7___8_System_AsyncCallback_System_Object_System_IAsyncResult__System_Func_System_IAsyncResult___9____0___1___2___3___4___5___6___7___8_" data-uid="ConcurrentSharp.TaskFrom.FromAsyncCallback``10(System.Func{``0,``1,``2,``3,``4,``5,``6,``7,``8,System.AsyncCallback,System.Object,System.IAsyncResult},System.Func{System.IAsyncResult,``9},``0,``1,``2,``3,``4,``5,``6,``7,``8)">FromAsyncCallback&lt;T1, T2, T3, T4, T5, T6, T7, T8, T9, TReturn&gt;(Func&lt;T1, T2, T3, T4, T5, T6, T7, T8, T9, AsyncCallback, Object, IAsyncResult&gt;, Func&lt;IAsyncResult, TReturn&gt;, T1, T2, T3, T4, T5, T6, T7, T8, T9)</h4>
+<div class="markdown level1 summary"><p>Creates a <span class="xref">System.Threading.Tasks.Task</span> from a BeginAsync.. EndAsync pair of methods.</p>
+</div>
+<div class="markdown level1 conceptual"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static Task&lt;TReturn&gt; FromAsyncCallback&lt;T1, T2, T3, T4, T5, T6, T7, T8, T9, TReturn&gt;(Func&lt;T1, T2, T3, T4, T5, T6, T7, T8, T9, AsyncCallback, object, IAsyncResult&gt; beginAsync, Func&lt;IAsyncResult, TReturn&gt; endAsync, T1 arg1, T2 arg2, T3 arg3, T4 arg4, T5 arg5, T6 arg6, T7 arg7, T8 arg8, T9 arg9)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span class="xref">System.Func</span>&lt;T1, T2, T3, T4, T5, T6, T7, T8, T9, <span class="xref">System.AsyncCallback</span>, <span class="xref">System.Object</span>, <span class="xref">System.IAsyncResult</span>&gt;</td>
+      <td><span class="parametername">beginAsync</span></td>
+      <td><p>A delegate or lambda reprsenting the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">System.Func</span>&lt;<span class="xref">System.IAsyncResult</span>, TReturn&gt;</td>
+      <td><span class="parametername">endAsync</span></td>
+      <td><p>A delegate or lambda representing the paired EndAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T1</span></td>
+      <td><span class="parametername">arg1</span></td>
+      <td><p>The first argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T2</span></td>
+      <td><span class="parametername">arg2</span></td>
+      <td><p>The second argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T3</span></td>
+      <td><span class="parametername">arg3</span></td>
+      <td><p>The third argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T4</span></td>
+      <td><span class="parametername">arg4</span></td>
+      <td><p>The fourth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T5</span></td>
+      <td><span class="parametername">arg5</span></td>
+      <td><p>The fifth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T6</span></td>
+      <td><span class="parametername">arg6</span></td>
+      <td><p>The sixth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T7</span></td>
+      <td><span class="parametername">arg7</span></td>
+      <td><p>The seventh argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T8</span></td>
+      <td><span class="parametername">arg8</span></td>
+      <td><p>The eighth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T9</span></td>
+      <td><span class="parametername">arg9</span></td>
+      <td><p>The ninth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span class="xref">Task</span>&lt;TReturn&gt;</td>
+      <td><p>The return value of the paired EndAsync method.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="typeParameters">Type Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span class="parametername">T1</span></td>
+      <td><p>The type of the first argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T2</span></td>
+      <td><p>The type of the second argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T3</span></td>
+      <td><p>The type of the third argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T4</span></td>
+      <td><p>The type of the fourth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T5</span></td>
+      <td><p>The type of the fifth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T6</span></td>
+      <td><p>The type of the sixth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T7</span></td>
+      <td><p>The type of the seventh argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T8</span></td>
+      <td><p>The type of the eighth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T9</span></td>
+      <td><p>The type of the ninth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">TReturn</span></td>
+      <td><p>The type of value returned from the EndAsync method.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+
+<a id="ConcurrentSharp_TaskFrom_FromAsyncCallback_" data-uid="ConcurrentSharp.TaskFrom.FromAsyncCallback*"></a>
+<h4 id="ConcurrentSharp_TaskFrom_FromAsyncCallback__11_System_Func___0___1___2___3___4___5___6___7___8___9_System_AsyncCallback_System_Object_System_IAsyncResult__System_Func_System_IAsyncResult___10____0___1___2___3___4___5___6___7___8___9_" data-uid="ConcurrentSharp.TaskFrom.FromAsyncCallback``11(System.Func{``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,System.AsyncCallback,System.Object,System.IAsyncResult},System.Func{System.IAsyncResult,``10},``0,``1,``2,``3,``4,``5,``6,``7,``8,``9)">FromAsyncCallback&lt;T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, TReturn&gt;(Func&lt;T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, AsyncCallback, Object, IAsyncResult&gt;, Func&lt;IAsyncResult, TReturn&gt;, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10)</h4>
+<div class="markdown level1 summary"><p>Creates a <span class="xref">System.Threading.Tasks.Task</span> from a BeginAsync.. EndAsync pair of methods.</p>
+</div>
+<div class="markdown level1 conceptual"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static Task&lt;TReturn&gt; FromAsyncCallback&lt;T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, TReturn&gt;(Func&lt;T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, AsyncCallback, object, IAsyncResult&gt; beginAsync, Func&lt;IAsyncResult, TReturn&gt; endAsync, T1 arg1, T2 arg2, T3 arg3, T4 arg4, T5 arg5, T6 arg6, T7 arg7, T8 arg8, T9 arg9, T10 arg10)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span class="xref">System.Func</span>&lt;T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, <span class="xref">System.AsyncCallback</span>, <span class="xref">System.Object</span>, <span class="xref">System.IAsyncResult</span>&gt;</td>
+      <td><span class="parametername">beginAsync</span></td>
+      <td><p>A delegate or lambda reprsenting the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">System.Func</span>&lt;<span class="xref">System.IAsyncResult</span>, TReturn&gt;</td>
+      <td><span class="parametername">endAsync</span></td>
+      <td><p>A delegate or lambda representing the paired EndAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T1</span></td>
+      <td><span class="parametername">arg1</span></td>
+      <td><p>The first argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T2</span></td>
+      <td><span class="parametername">arg2</span></td>
+      <td><p>The second argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T3</span></td>
+      <td><span class="parametername">arg3</span></td>
+      <td><p>The third argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T4</span></td>
+      <td><span class="parametername">arg4</span></td>
+      <td><p>The fourth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T5</span></td>
+      <td><span class="parametername">arg5</span></td>
+      <td><p>The fifth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T6</span></td>
+      <td><span class="parametername">arg6</span></td>
+      <td><p>The sixth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T7</span></td>
+      <td><span class="parametername">arg7</span></td>
+      <td><p>The seventh argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T8</span></td>
+      <td><span class="parametername">arg8</span></td>
+      <td><p>The eighth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T9</span></td>
+      <td><span class="parametername">arg9</span></td>
+      <td><p>The ninth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T10</span></td>
+      <td><span class="parametername">arg10</span></td>
+      <td><p>The tenth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span class="xref">Task</span>&lt;TReturn&gt;</td>
+      <td><p>The return value of the paired EndAsync method.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="typeParameters">Type Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span class="parametername">T1</span></td>
+      <td><p>The type of the first argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T2</span></td>
+      <td><p>The type of the second argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T3</span></td>
+      <td><p>The type of the third argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T4</span></td>
+      <td><p>The type of the fourth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T5</span></td>
+      <td><p>The type of the fifth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T6</span></td>
+      <td><p>The type of the sixth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T7</span></td>
+      <td><p>The type of the seventh argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T8</span></td>
+      <td><p>The type of the eighth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T9</span></td>
+      <td><p>The type of the ninth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T10</span></td>
+      <td><p>The type of the tenth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">TReturn</span></td>
+      <td><p>The type of value returned from the EndAsync method.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+
+<a id="ConcurrentSharp_TaskFrom_FromAsyncCallback_" data-uid="ConcurrentSharp.TaskFrom.FromAsyncCallback*"></a>
+<h4 id="ConcurrentSharp_TaskFrom_FromAsyncCallback__12_System_Func___0___1___2___3___4___5___6___7___8___9___10_System_AsyncCallback_System_Object_System_IAsyncResult__System_Func_System_IAsyncResult___11____0___1___2___3___4___5___6___7___8___9___10_" data-uid="ConcurrentSharp.TaskFrom.FromAsyncCallback``12(System.Func{``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``10,System.AsyncCallback,System.Object,System.IAsyncResult},System.Func{System.IAsyncResult,``11},``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``10)">FromAsyncCallback&lt;T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, TReturn&gt;(Func&lt;T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, AsyncCallback, Object, IAsyncResult&gt;, Func&lt;IAsyncResult, TReturn&gt;, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11)</h4>
+<div class="markdown level1 summary"><p>Creates a <span class="xref">System.Threading.Tasks.Task</span> from a BeginAsync.. EndAsync pair of methods.</p>
+</div>
+<div class="markdown level1 conceptual"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static Task&lt;TReturn&gt; FromAsyncCallback&lt;T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, TReturn&gt;(Func&lt;T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, AsyncCallback, object, IAsyncResult&gt; beginAsync, Func&lt;IAsyncResult, TReturn&gt; endAsync, T1 arg1, T2 arg2, T3 arg3, T4 arg4, T5 arg5, T6 arg6, T7 arg7, T8 arg8, T9 arg9, T10 arg10, T11 arg11)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span class="xref">System.Func</span>&lt;T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, <span class="xref">System.AsyncCallback</span>, <span class="xref">System.Object</span>, <span class="xref">System.IAsyncResult</span>&gt;</td>
+      <td><span class="parametername">beginAsync</span></td>
+      <td><p>A delegate or lambda reprsenting the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">System.Func</span>&lt;<span class="xref">System.IAsyncResult</span>, TReturn&gt;</td>
+      <td><span class="parametername">endAsync</span></td>
+      <td><p>A delegate or lambda representing the paired EndAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T1</span></td>
+      <td><span class="parametername">arg1</span></td>
+      <td><p>The first argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T2</span></td>
+      <td><span class="parametername">arg2</span></td>
+      <td><p>The second argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T3</span></td>
+      <td><span class="parametername">arg3</span></td>
+      <td><p>The third argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T4</span></td>
+      <td><span class="parametername">arg4</span></td>
+      <td><p>The fourth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T5</span></td>
+      <td><span class="parametername">arg5</span></td>
+      <td><p>The fifth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T6</span></td>
+      <td><span class="parametername">arg6</span></td>
+      <td><p>The sixth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T7</span></td>
+      <td><span class="parametername">arg7</span></td>
+      <td><p>The seventh argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T8</span></td>
+      <td><span class="parametername">arg8</span></td>
+      <td><p>The eighth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T9</span></td>
+      <td><span class="parametername">arg9</span></td>
+      <td><p>The ninth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T10</span></td>
+      <td><span class="parametername">arg10</span></td>
+      <td><p>The tenth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T11</span></td>
+      <td><span class="parametername">arg11</span></td>
+      <td><p>The eleventh argument to the BeginAsync method.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span class="xref">Task</span>&lt;TReturn&gt;</td>
+      <td><p>The return value of the paired EndAsync method.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="typeParameters">Type Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span class="parametername">T1</span></td>
+      <td><p>The type of the first argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T2</span></td>
+      <td><p>The type of the second argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T3</span></td>
+      <td><p>The type of the third argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T4</span></td>
+      <td><p>The type of the fourth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T5</span></td>
+      <td><p>The type of the fifth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T6</span></td>
+      <td><p>The type of the sixth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T7</span></td>
+      <td><p>The type of the seventh argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T8</span></td>
+      <td><p>The type of the eighth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T9</span></td>
+      <td><p>The type of the ninth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T10</span></td>
+      <td><p>The type of the tenth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T11</span></td>
+      <td><p>The type of the eleventh argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">TReturn</span></td>
+      <td><p>The type of value returned from the EndAsync method.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+
+<a id="ConcurrentSharp_TaskFrom_FromAsyncCallback_" data-uid="ConcurrentSharp.TaskFrom.FromAsyncCallback*"></a>
+<h4 id="ConcurrentSharp_TaskFrom_FromAsyncCallback__13_System_Func___0___1___2___3___4___5___6___7___8___9___10___11_System_AsyncCallback_System_Object_System_IAsyncResult__System_Func_System_IAsyncResult___12____0___1___2___3___4___5___6___7___8___9___10___11_" data-uid="ConcurrentSharp.TaskFrom.FromAsyncCallback``13(System.Func{``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``10,``11,System.AsyncCallback,System.Object,System.IAsyncResult},System.Func{System.IAsyncResult,``12},``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``10,``11)">FromAsyncCallback&lt;T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, TReturn&gt;(Func&lt;T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, AsyncCallback, Object, IAsyncResult&gt;, Func&lt;IAsyncResult, TReturn&gt;, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12)</h4>
+<div class="markdown level1 summary"><p>Creates a <span class="xref">System.Threading.Tasks.Task</span> from a BeginAsync.. EndAsync pair of methods.</p>
+</div>
+<div class="markdown level1 conceptual"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static Task&lt;TReturn&gt; FromAsyncCallback&lt;T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, TReturn&gt;(Func&lt;T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, AsyncCallback, object, IAsyncResult&gt; beginAsync, Func&lt;IAsyncResult, TReturn&gt; endAsync, T1 arg1, T2 arg2, T3 arg3, T4 arg4, T5 arg5, T6 arg6, T7 arg7, T8 arg8, T9 arg9, T10 arg10, T11 arg11, T12 arg12)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span class="xref">System.Func</span>&lt;T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, <span class="xref">System.AsyncCallback</span>, <span class="xref">System.Object</span>, <span class="xref">System.IAsyncResult</span>&gt;</td>
+      <td><span class="parametername">beginAsync</span></td>
+      <td><p>A delegate or lambda reprsenting the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">System.Func</span>&lt;<span class="xref">System.IAsyncResult</span>, TReturn&gt;</td>
+      <td><span class="parametername">endAsync</span></td>
+      <td><p>A delegate or lambda representing the paired EndAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T1</span></td>
+      <td><span class="parametername">arg1</span></td>
+      <td><p>The first argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T2</span></td>
+      <td><span class="parametername">arg2</span></td>
+      <td><p>The second argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T3</span></td>
+      <td><span class="parametername">arg3</span></td>
+      <td><p>The third argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T4</span></td>
+      <td><span class="parametername">arg4</span></td>
+      <td><p>The fourth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T5</span></td>
+      <td><span class="parametername">arg5</span></td>
+      <td><p>The fifth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T6</span></td>
+      <td><span class="parametername">arg6</span></td>
+      <td><p>The sixth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T7</span></td>
+      <td><span class="parametername">arg7</span></td>
+      <td><p>The seventh argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T8</span></td>
+      <td><span class="parametername">arg8</span></td>
+      <td><p>The eighth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T9</span></td>
+      <td><span class="parametername">arg9</span></td>
+      <td><p>The ninth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T10</span></td>
+      <td><span class="parametername">arg10</span></td>
+      <td><p>The tenth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T11</span></td>
+      <td><span class="parametername">arg11</span></td>
+      <td><p>The eleventh argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T12</span></td>
+      <td><span class="parametername">arg12</span></td>
+      <td><p>The twelfth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span class="xref">Task</span>&lt;TReturn&gt;</td>
+      <td><p>The return value of the paired EndAsync method.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="typeParameters">Type Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span class="parametername">T1</span></td>
+      <td><p>The type of the first argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T2</span></td>
+      <td><p>The type of the second argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T3</span></td>
+      <td><p>The type of the third argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T4</span></td>
+      <td><p>The type of the fourth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T5</span></td>
+      <td><p>The type of the fifth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T6</span></td>
+      <td><p>The type of the sixth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T7</span></td>
+      <td><p>The type of the seventh argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T8</span></td>
+      <td><p>The type of the eighth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T9</span></td>
+      <td><p>The type of the ninth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T10</span></td>
+      <td><p>The type of the tenth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T11</span></td>
+      <td><p>The type of the eleventh argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T12</span></td>
+      <td><p>The type of the twelfth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">TReturn</span></td>
+      <td><p>The type of value returned from the EndAsync method.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+
+<a id="ConcurrentSharp_TaskFrom_FromAsyncCallback_" data-uid="ConcurrentSharp.TaskFrom.FromAsyncCallback*"></a>
+<h4 id="ConcurrentSharp_TaskFrom_FromAsyncCallback__14_System_Func___0___1___2___3___4___5___6___7___8___9___10___11___12_System_AsyncCallback_System_Object_System_IAsyncResult__System_Func_System_IAsyncResult___13____0___1___2___3___4___5___6___7___8___9___10___11___12_" data-uid="ConcurrentSharp.TaskFrom.FromAsyncCallback``14(System.Func{``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``10,``11,``12,System.AsyncCallback,System.Object,System.IAsyncResult},System.Func{System.IAsyncResult,``13},``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``10,``11,``12)">FromAsyncCallback&lt;T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, TReturn&gt;(Func&lt;T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, AsyncCallback, Object, IAsyncResult&gt;, Func&lt;IAsyncResult, TReturn&gt;, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13)</h4>
+<div class="markdown level1 summary"><p>Creates a <span class="xref">System.Threading.Tasks.Task</span> from a BeginAsync.. EndAsync pair of methods.</p>
+</div>
+<div class="markdown level1 conceptual"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static Task&lt;TReturn&gt; FromAsyncCallback&lt;T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, TReturn&gt;(Func&lt;T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, AsyncCallback, object, IAsyncResult&gt; beginAsync, Func&lt;IAsyncResult, TReturn&gt; endAsync, T1 arg1, T2 arg2, T3 arg3, T4 arg4, T5 arg5, T6 arg6, T7 arg7, T8 arg8, T9 arg9, T10 arg10, T11 arg11, T12 arg12, T13 arg13)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span class="xref">System.Func</span>&lt;T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, <span class="xref">System.AsyncCallback</span>, <span class="xref">System.Object</span>, <span class="xref">System.IAsyncResult</span>&gt;</td>
+      <td><span class="parametername">beginAsync</span></td>
+      <td><p>A delegate or lambda reprsenting the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">System.Func</span>&lt;<span class="xref">System.IAsyncResult</span>, TReturn&gt;</td>
+      <td><span class="parametername">endAsync</span></td>
+      <td><p>A delegate or lambda representing the paired EndAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T1</span></td>
+      <td><span class="parametername">arg1</span></td>
+      <td><p>The first argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T2</span></td>
+      <td><span class="parametername">arg2</span></td>
+      <td><p>The second argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T3</span></td>
+      <td><span class="parametername">arg3</span></td>
+      <td><p>The third argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T4</span></td>
+      <td><span class="parametername">arg4</span></td>
+      <td><p>The fourth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T5</span></td>
+      <td><span class="parametername">arg5</span></td>
+      <td><p>The fifth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T6</span></td>
+      <td><span class="parametername">arg6</span></td>
+      <td><p>The sixth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T7</span></td>
+      <td><span class="parametername">arg7</span></td>
+      <td><p>The seventh argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T8</span></td>
+      <td><span class="parametername">arg8</span></td>
+      <td><p>The eighth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T9</span></td>
+      <td><span class="parametername">arg9</span></td>
+      <td><p>The ninth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T10</span></td>
+      <td><span class="parametername">arg10</span></td>
+      <td><p>The tenth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T11</span></td>
+      <td><span class="parametername">arg11</span></td>
+      <td><p>The eleventh argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T12</span></td>
+      <td><span class="parametername">arg12</span></td>
+      <td><p>The twelfth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T13</span></td>
+      <td><span class="parametername">arg13</span></td>
+      <td><p>The thirteenth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span class="xref">Task</span>&lt;TReturn&gt;</td>
+      <td><p>The return value of the paired EndAsync method.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="typeParameters">Type Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span class="parametername">T1</span></td>
+      <td><p>The type of the first argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T2</span></td>
+      <td><p>The type of the second argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T3</span></td>
+      <td><p>The type of the third argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T4</span></td>
+      <td><p>The type of the fourth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T5</span></td>
+      <td><p>The type of the fifth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T6</span></td>
+      <td><p>The type of the sixth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T7</span></td>
+      <td><p>The type of the seventh argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T8</span></td>
+      <td><p>The type of the eighth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T9</span></td>
+      <td><p>The type of the ninth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T10</span></td>
+      <td><p>The type of the tenth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T11</span></td>
+      <td><p>The type of the eleventh argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T12</span></td>
+      <td><p>The type of the twelfth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T13</span></td>
+      <td><p>The type of the thirteenth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">TReturn</span></td>
+      <td><p>The type of value returned from the EndAsync method.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+
+<a id="ConcurrentSharp_TaskFrom_FromAsyncCallback_" data-uid="ConcurrentSharp.TaskFrom.FromAsyncCallback*"></a>
+<h4 id="ConcurrentSharp_TaskFrom_FromAsyncCallback__15_System_Func___0___1___2___3___4___5___6___7___8___9___10___11___12___13_System_AsyncCallback_System_Object_System_IAsyncResult__System_Func_System_IAsyncResult___14____0___1___2___3___4___5___6___7___8___9___10___11___12___13_" data-uid="ConcurrentSharp.TaskFrom.FromAsyncCallback``15(System.Func{``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``10,``11,``12,``13,System.AsyncCallback,System.Object,System.IAsyncResult},System.Func{System.IAsyncResult,``14},``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``10,``11,``12,``13)">FromAsyncCallback&lt;T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, TReturn&gt;(Func&lt;T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, AsyncCallback, Object, IAsyncResult&gt;, Func&lt;IAsyncResult, TReturn&gt;, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14)</h4>
+<div class="markdown level1 summary"><p>Creates a <span class="xref">System.Threading.Tasks.Task</span> from a BeginAsync.. EndAsync pair of methods.</p>
+</div>
+<div class="markdown level1 conceptual"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static Task&lt;TReturn&gt; FromAsyncCallback&lt;T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, TReturn&gt;(Func&lt;T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, AsyncCallback, object, IAsyncResult&gt; beginAsync, Func&lt;IAsyncResult, TReturn&gt; endAsync, T1 arg1, T2 arg2, T3 arg3, T4 arg4, T5 arg5, T6 arg6, T7 arg7, T8 arg8, T9 arg9, T10 arg10, T11 arg11, T12 arg12, T13 arg13, T14 arg14)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span class="xref">System.Func</span>&lt;T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, <span class="xref">System.AsyncCallback</span>, <span class="xref">System.Object</span>, <span class="xref">System.IAsyncResult</span>&gt;</td>
+      <td><span class="parametername">beginAsync</span></td>
+      <td><p>A delegate or lambda reprsenting the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">System.Func</span>&lt;<span class="xref">System.IAsyncResult</span>, TReturn&gt;</td>
+      <td><span class="parametername">endAsync</span></td>
+      <td><p>A delegate or lambda representing the paired EndAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T1</span></td>
+      <td><span class="parametername">arg1</span></td>
+      <td><p>The first argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T2</span></td>
+      <td><span class="parametername">arg2</span></td>
+      <td><p>The second argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T3</span></td>
+      <td><span class="parametername">arg3</span></td>
+      <td><p>The third argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T4</span></td>
+      <td><span class="parametername">arg4</span></td>
+      <td><p>The fourth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T5</span></td>
+      <td><span class="parametername">arg5</span></td>
+      <td><p>The fifth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T6</span></td>
+      <td><span class="parametername">arg6</span></td>
+      <td><p>The sixth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T7</span></td>
+      <td><span class="parametername">arg7</span></td>
+      <td><p>The seventh argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T8</span></td>
+      <td><span class="parametername">arg8</span></td>
+      <td><p>The eighth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T9</span></td>
+      <td><span class="parametername">arg9</span></td>
+      <td><p>The ninth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T10</span></td>
+      <td><span class="parametername">arg10</span></td>
+      <td><p>The tenth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T11</span></td>
+      <td><span class="parametername">arg11</span></td>
+      <td><p>The eleventh argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T12</span></td>
+      <td><span class="parametername">arg12</span></td>
+      <td><p>The twelfth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T13</span></td>
+      <td><span class="parametername">arg13</span></td>
+      <td><p>The thirteenth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T14</span></td>
+      <td><span class="parametername">arg14</span></td>
+      <td><p>The fourteenth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span class="xref">Task</span>&lt;TReturn&gt;</td>
+      <td><p>A <span class="xref">System.Threading.Tasks.Task</span> representing the async operation, the task reuslt is the return value of the paired EndAsync method.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="typeParameters">Type Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span class="parametername">T1</span></td>
+      <td><p>The type of the first argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T2</span></td>
+      <td><p>The type of the second argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T3</span></td>
+      <td><p>The type of the third argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T4</span></td>
+      <td><p>The type of the fourth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T5</span></td>
+      <td><p>The type of the fifth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T6</span></td>
+      <td><p>The type of the sixth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T7</span></td>
+      <td><p>The type of the seventh argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T8</span></td>
+      <td><p>The type of the eighth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T9</span></td>
+      <td><p>The type of the ninth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T10</span></td>
+      <td><p>The type of the tenth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T11</span></td>
+      <td><p>The type of the eleventh argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T12</span></td>
+      <td><p>The type of the twelfth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T13</span></td>
+      <td><p>The type of the thirteenth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T14</span></td>
+      <td><p>The type of the fourteenth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">TReturn</span></td>
+      <td><p>The type of value returned from the EndAsync method.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+
+<a id="ConcurrentSharp_TaskFrom_FromAsyncCallback_" data-uid="ConcurrentSharp.TaskFrom.FromAsyncCallback*"></a>
+<h4 id="ConcurrentSharp_TaskFrom_FromAsyncCallback__1_System_Func___0_System_AsyncCallback_System_Object_System_IAsyncResult__System_Action_System_IAsyncResult____0_" data-uid="ConcurrentSharp.TaskFrom.FromAsyncCallback``1(System.Func{``0,System.AsyncCallback,System.Object,System.IAsyncResult},System.Action{System.IAsyncResult},``0)">FromAsyncCallback&lt;T1&gt;(Func&lt;T1, AsyncCallback, Object, IAsyncResult&gt;, Action&lt;IAsyncResult&gt;, T1)</h4>
+<div class="markdown level1 summary"><p>Creates a <span class="xref">System.Threading.Tasks.Task</span> from a BeginAsync.. EndAsync pair of methods.</p>
+</div>
+<div class="markdown level1 conceptual"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static Task FromAsyncCallback&lt;T1&gt;(Func&lt;T1, AsyncCallback, object, IAsyncResult&gt; beginAsync, Action&lt;IAsyncResult&gt; endAsync, T1 arg1)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span class="xref">System.Func</span>&lt;T1, <span class="xref">System.AsyncCallback</span>, <span class="xref">System.Object</span>, <span class="xref">System.IAsyncResult</span>&gt;</td>
+      <td><span class="parametername">beginAsync</span></td>
+      <td><p>A delegate or lambda reprsenting the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">System.Action</span>&lt;<span class="xref">System.IAsyncResult</span>&gt;</td>
+      <td><span class="parametername">endAsync</span></td>
+      <td><p>A delegate or lambda representing the paired EndAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T1</span></td>
+      <td><span class="parametername">arg1</span></td>
+      <td><p>The first argument to the BeginAsync method.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span class="xref">Task</span></td>
+      <td><p>A <span class="xref">System.Threading.Tasks.Task</span> that represents the async operation.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="typeParameters">Type Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span class="parametername">T1</span></td>
+      <td><p>The type of the first argument to the BeginAsync method.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+
+<a id="ConcurrentSharp_TaskFrom_FromAsyncCallback_" data-uid="ConcurrentSharp.TaskFrom.FromAsyncCallback*"></a>
+<h4 id="ConcurrentSharp_TaskFrom_FromAsyncCallback__2_System_Func___0___1_System_AsyncCallback_System_Object_System_IAsyncResult__System_Action_System_IAsyncResult____0___1_" data-uid="ConcurrentSharp.TaskFrom.FromAsyncCallback``2(System.Func{``0,``1,System.AsyncCallback,System.Object,System.IAsyncResult},System.Action{System.IAsyncResult},``0,``1)">FromAsyncCallback&lt;T1, T2&gt;(Func&lt;T1, T2, AsyncCallback, Object, IAsyncResult&gt;, Action&lt;IAsyncResult&gt;, T1, T2)</h4>
+<div class="markdown level1 summary"><p>Creates a <span class="xref">System.Threading.Tasks.Task</span> from a BeginAsync.. EndAsync pair of methods.</p>
+</div>
+<div class="markdown level1 conceptual"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static Task FromAsyncCallback&lt;T1, T2&gt;(Func&lt;T1, T2, AsyncCallback, object, IAsyncResult&gt; beginAsync, Action&lt;IAsyncResult&gt; endAsync, T1 arg1, T2 arg2)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span class="xref">System.Func</span>&lt;T1, T2, <span class="xref">System.AsyncCallback</span>, <span class="xref">System.Object</span>, <span class="xref">System.IAsyncResult</span>&gt;</td>
+      <td><span class="parametername">beginAsync</span></td>
+      <td><p>A delegate or lambda reprsenting the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">System.Action</span>&lt;<span class="xref">System.IAsyncResult</span>&gt;</td>
+      <td><span class="parametername">endAsync</span></td>
+      <td><p>A delegate or lambda representing the paired EndAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T1</span></td>
+      <td><span class="parametername">arg1</span></td>
+      <td><p>The first argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T2</span></td>
+      <td><span class="parametername">arg2</span></td>
+      <td><p>The second argument to the BeginAsync method.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span class="xref">Task</span></td>
+      <td><p>A <span class="xref">System.Threading.Tasks.Task</span> that represents the async operation.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="typeParameters">Type Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span class="parametername">T1</span></td>
+      <td><p>The type of the first argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T2</span></td>
+      <td><p>The type of the second argument to the BeginAsync method.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+
+<a id="ConcurrentSharp_TaskFrom_FromAsyncCallback_" data-uid="ConcurrentSharp.TaskFrom.FromAsyncCallback*"></a>
+<h4 id="ConcurrentSharp_TaskFrom_FromAsyncCallback__3_System_Func___0___1___2_System_AsyncCallback_System_Object_System_IAsyncResult__System_Action_System_IAsyncResult____0___1___2_" data-uid="ConcurrentSharp.TaskFrom.FromAsyncCallback``3(System.Func{``0,``1,``2,System.AsyncCallback,System.Object,System.IAsyncResult},System.Action{System.IAsyncResult},``0,``1,``2)">FromAsyncCallback&lt;T1, T2, T3&gt;(Func&lt;T1, T2, T3, AsyncCallback, Object, IAsyncResult&gt;, Action&lt;IAsyncResult&gt;, T1, T2, T3)</h4>
+<div class="markdown level1 summary"><p>Creates a <span class="xref">System.Threading.Tasks.Task</span> from a BeginAsync.. EndAsync pair of methods.</p>
+</div>
+<div class="markdown level1 conceptual"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static Task FromAsyncCallback&lt;T1, T2, T3&gt;(Func&lt;T1, T2, T3, AsyncCallback, object, IAsyncResult&gt; beginAsync, Action&lt;IAsyncResult&gt; endAsync, T1 arg1, T2 arg2, T3 arg3)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span class="xref">System.Func</span>&lt;T1, T2, T3, <span class="xref">System.AsyncCallback</span>, <span class="xref">System.Object</span>, <span class="xref">System.IAsyncResult</span>&gt;</td>
+      <td><span class="parametername">beginAsync</span></td>
+      <td><p>A delegate or lambda reprsenting the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">System.Action</span>&lt;<span class="xref">System.IAsyncResult</span>&gt;</td>
+      <td><span class="parametername">endAsync</span></td>
+      <td><p>A delegate or lambda representing the paired EndAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T1</span></td>
+      <td><span class="parametername">arg1</span></td>
+      <td><p>The first argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T2</span></td>
+      <td><span class="parametername">arg2</span></td>
+      <td><p>The second argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T3</span></td>
+      <td><span class="parametername">arg3</span></td>
+      <td><p>The third argument to the BeginAsync method.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span class="xref">Task</span></td>
+      <td><p>A <span class="xref">System.Threading.Tasks.Task</span> that represents the async operation.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="typeParameters">Type Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span class="parametername">T1</span></td>
+      <td><p>The type of the first argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T2</span></td>
+      <td><p>The type of the second argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T3</span></td>
+      <td><p>The type of the third argument to the BeginAsync method.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+
+<a id="ConcurrentSharp_TaskFrom_FromAsyncCallback_" data-uid="ConcurrentSharp.TaskFrom.FromAsyncCallback*"></a>
+<h4 id="ConcurrentSharp_TaskFrom_FromAsyncCallback__4_System_Func___0___1___2___3_System_AsyncCallback_System_Object_System_IAsyncResult__System_Action_System_IAsyncResult____0___1___2___3_" data-uid="ConcurrentSharp.TaskFrom.FromAsyncCallback``4(System.Func{``0,``1,``2,``3,System.AsyncCallback,System.Object,System.IAsyncResult},System.Action{System.IAsyncResult},``0,``1,``2,``3)">FromAsyncCallback&lt;T1, T2, T3, T4&gt;(Func&lt;T1, T2, T3, T4, AsyncCallback, Object, IAsyncResult&gt;, Action&lt;IAsyncResult&gt;, T1, T2, T3, T4)</h4>
+<div class="markdown level1 summary"><p>Creates a <span class="xref">System.Threading.Tasks.Task</span> from a BeginAsync.. EndAsync pair of methods.</p>
+</div>
+<div class="markdown level1 conceptual"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static Task FromAsyncCallback&lt;T1, T2, T3, T4&gt;(Func&lt;T1, T2, T3, T4, AsyncCallback, object, IAsyncResult&gt; beginAsync, Action&lt;IAsyncResult&gt; endAsync, T1 arg1, T2 arg2, T3 arg3, T4 arg4)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span class="xref">System.Func</span>&lt;T1, T2, T3, T4, <span class="xref">System.AsyncCallback</span>, <span class="xref">System.Object</span>, <span class="xref">System.IAsyncResult</span>&gt;</td>
+      <td><span class="parametername">beginAsync</span></td>
+      <td><p>A delegate or lambda reprsenting the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">System.Action</span>&lt;<span class="xref">System.IAsyncResult</span>&gt;</td>
+      <td><span class="parametername">endAsync</span></td>
+      <td><p>A delegate or lambda representing the paired EndAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T1</span></td>
+      <td><span class="parametername">arg1</span></td>
+      <td><p>The first argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T2</span></td>
+      <td><span class="parametername">arg2</span></td>
+      <td><p>The second argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T3</span></td>
+      <td><span class="parametername">arg3</span></td>
+      <td><p>The third argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T4</span></td>
+      <td><span class="parametername">arg4</span></td>
+      <td><p>The fourth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span class="xref">Task</span></td>
+      <td><p>A <span class="xref">System.Threading.Tasks.Task</span> that represents the async operation.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="typeParameters">Type Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span class="parametername">T1</span></td>
+      <td><p>The type of the first argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T2</span></td>
+      <td><p>The type of the second argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T3</span></td>
+      <td><p>The type of the third argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T4</span></td>
+      <td><p>The type of the fourth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+
+<a id="ConcurrentSharp_TaskFrom_FromAsyncCallback_" data-uid="ConcurrentSharp.TaskFrom.FromAsyncCallback*"></a>
+<h4 id="ConcurrentSharp_TaskFrom_FromAsyncCallback__5_System_Func___0___1___2___3___4_System_AsyncCallback_System_Object_System_IAsyncResult__System_Action_System_IAsyncResult____0___1___2___3___4_" data-uid="ConcurrentSharp.TaskFrom.FromAsyncCallback``5(System.Func{``0,``1,``2,``3,``4,System.AsyncCallback,System.Object,System.IAsyncResult},System.Action{System.IAsyncResult},``0,``1,``2,``3,``4)">FromAsyncCallback&lt;T1, T2, T3, T4, T5&gt;(Func&lt;T1, T2, T3, T4, T5, AsyncCallback, Object, IAsyncResult&gt;, Action&lt;IAsyncResult&gt;, T1, T2, T3, T4, T5)</h4>
+<div class="markdown level1 summary"><p>Creates a <span class="xref">System.Threading.Tasks.Task</span> from a BeginAsync.. EndAsync pair of methods.</p>
+</div>
+<div class="markdown level1 conceptual"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static Task FromAsyncCallback&lt;T1, T2, T3, T4, T5&gt;(Func&lt;T1, T2, T3, T4, T5, AsyncCallback, object, IAsyncResult&gt; beginAsync, Action&lt;IAsyncResult&gt; endAsync, T1 arg1, T2 arg2, T3 arg3, T4 arg4, T5 arg5)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span class="xref">System.Func</span>&lt;T1, T2, T3, T4, T5, <span class="xref">System.AsyncCallback</span>, <span class="xref">System.Object</span>, <span class="xref">System.IAsyncResult</span>&gt;</td>
+      <td><span class="parametername">beginAsync</span></td>
+      <td><p>A delegate or lambda reprsenting the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">System.Action</span>&lt;<span class="xref">System.IAsyncResult</span>&gt;</td>
+      <td><span class="parametername">endAsync</span></td>
+      <td><p>A delegate or lambda representing the paired EndAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T1</span></td>
+      <td><span class="parametername">arg1</span></td>
+      <td><p>The first argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T2</span></td>
+      <td><span class="parametername">arg2</span></td>
+      <td><p>The second argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T3</span></td>
+      <td><span class="parametername">arg3</span></td>
+      <td><p>The third argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T4</span></td>
+      <td><span class="parametername">arg4</span></td>
+      <td><p>The fourth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T5</span></td>
+      <td><span class="parametername">arg5</span></td>
+      <td><p>The fifth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span class="xref">Task</span></td>
+      <td><p>A <span class="xref">System.Threading.Tasks.Task</span> that represents the async operation.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="typeParameters">Type Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span class="parametername">T1</span></td>
+      <td><p>The type of the first argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T2</span></td>
+      <td><p>The type of the second argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T3</span></td>
+      <td><p>The type of the third argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T4</span></td>
+      <td><p>The type of the fourth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T5</span></td>
+      <td><p>The type of the fifth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+
+<a id="ConcurrentSharp_TaskFrom_FromAsyncCallback_" data-uid="ConcurrentSharp.TaskFrom.FromAsyncCallback*"></a>
+<h4 id="ConcurrentSharp_TaskFrom_FromAsyncCallback__6_System_Func___0___1___2___3___4___5_System_AsyncCallback_System_Object_System_IAsyncResult__System_Action_System_IAsyncResult____0___1___2___3___4___5_" data-uid="ConcurrentSharp.TaskFrom.FromAsyncCallback``6(System.Func{``0,``1,``2,``3,``4,``5,System.AsyncCallback,System.Object,System.IAsyncResult},System.Action{System.IAsyncResult},``0,``1,``2,``3,``4,``5)">FromAsyncCallback&lt;T1, T2, T3, T4, T5, T6&gt;(Func&lt;T1, T2, T3, T4, T5, T6, AsyncCallback, Object, IAsyncResult&gt;, Action&lt;IAsyncResult&gt;, T1, T2, T3, T4, T5, T6)</h4>
+<div class="markdown level1 summary"><p>Creates a <span class="xref">System.Threading.Tasks.Task</span> from a BeginAsync.. EndAsync pair of methods.</p>
+</div>
+<div class="markdown level1 conceptual"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static Task FromAsyncCallback&lt;T1, T2, T3, T4, T5, T6&gt;(Func&lt;T1, T2, T3, T4, T5, T6, AsyncCallback, object, IAsyncResult&gt; beginAsync, Action&lt;IAsyncResult&gt; endAsync, T1 arg1, T2 arg2, T3 arg3, T4 arg4, T5 arg5, T6 arg6)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span class="xref">System.Func</span>&lt;T1, T2, T3, T4, T5, T6, <span class="xref">System.AsyncCallback</span>, <span class="xref">System.Object</span>, <span class="xref">System.IAsyncResult</span>&gt;</td>
+      <td><span class="parametername">beginAsync</span></td>
+      <td><p>A delegate or lambda reprsenting the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">System.Action</span>&lt;<span class="xref">System.IAsyncResult</span>&gt;</td>
+      <td><span class="parametername">endAsync</span></td>
+      <td><p>A delegate or lambda representing the paired EndAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T1</span></td>
+      <td><span class="parametername">arg1</span></td>
+      <td><p>The first argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T2</span></td>
+      <td><span class="parametername">arg2</span></td>
+      <td><p>The second argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T3</span></td>
+      <td><span class="parametername">arg3</span></td>
+      <td><p>The third argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T4</span></td>
+      <td><span class="parametername">arg4</span></td>
+      <td><p>The fourth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T5</span></td>
+      <td><span class="parametername">arg5</span></td>
+      <td><p>The fifth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T6</span></td>
+      <td><span class="parametername">arg6</span></td>
+      <td><p>The sixth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span class="xref">Task</span></td>
+      <td><p>A <span class="xref">System.Threading.Tasks.Task</span> that represents the async operation.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="typeParameters">Type Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span class="parametername">T1</span></td>
+      <td><p>The type of the first argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T2</span></td>
+      <td><p>The type of the second argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T3</span></td>
+      <td><p>The type of the third argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T4</span></td>
+      <td><p>The type of the fourth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T5</span></td>
+      <td><p>The type of the fifth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T6</span></td>
+      <td><p>The type of the sixth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+
+<a id="ConcurrentSharp_TaskFrom_FromAsyncCallback_" data-uid="ConcurrentSharp.TaskFrom.FromAsyncCallback*"></a>
+<h4 id="ConcurrentSharp_TaskFrom_FromAsyncCallback__7_System_Func___0___1___2___3___4___5___6_System_AsyncCallback_System_Object_System_IAsyncResult__System_Action_System_IAsyncResult____0___1___2___3___4___5___6_" data-uid="ConcurrentSharp.TaskFrom.FromAsyncCallback``7(System.Func{``0,``1,``2,``3,``4,``5,``6,System.AsyncCallback,System.Object,System.IAsyncResult},System.Action{System.IAsyncResult},``0,``1,``2,``3,``4,``5,``6)">FromAsyncCallback&lt;T1, T2, T3, T4, T5, T6, T7&gt;(Func&lt;T1, T2, T3, T4, T5, T6, T7, AsyncCallback, Object, IAsyncResult&gt;, Action&lt;IAsyncResult&gt;, T1, T2, T3, T4, T5, T6, T7)</h4>
+<div class="markdown level1 summary"><p>Creates a <span class="xref">System.Threading.Tasks.Task</span> from a BeginAsync.. EndAsync pair of methods.</p>
+</div>
+<div class="markdown level1 conceptual"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static Task FromAsyncCallback&lt;T1, T2, T3, T4, T5, T6, T7&gt;(Func&lt;T1, T2, T3, T4, T5, T6, T7, AsyncCallback, object, IAsyncResult&gt; beginAsync, Action&lt;IAsyncResult&gt; endAsync, T1 arg1, T2 arg2, T3 arg3, T4 arg4, T5 arg5, T6 arg6, T7 arg7)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span class="xref">System.Func</span>&lt;T1, T2, T3, T4, T5, T6, T7, <span class="xref">System.AsyncCallback</span>, <span class="xref">System.Object</span>, <span class="xref">System.IAsyncResult</span>&gt;</td>
+      <td><span class="parametername">beginAsync</span></td>
+      <td><p>A delegate or lambda reprsenting the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">System.Action</span>&lt;<span class="xref">System.IAsyncResult</span>&gt;</td>
+      <td><span class="parametername">endAsync</span></td>
+      <td><p>A delegate or lambda representing the paired EndAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T1</span></td>
+      <td><span class="parametername">arg1</span></td>
+      <td><p>The first argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T2</span></td>
+      <td><span class="parametername">arg2</span></td>
+      <td><p>The second argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T3</span></td>
+      <td><span class="parametername">arg3</span></td>
+      <td><p>The third argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T4</span></td>
+      <td><span class="parametername">arg4</span></td>
+      <td><p>The fourth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T5</span></td>
+      <td><span class="parametername">arg5</span></td>
+      <td><p>The fifth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T6</span></td>
+      <td><span class="parametername">arg6</span></td>
+      <td><p>The sixth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T7</span></td>
+      <td><span class="parametername">arg7</span></td>
+      <td><p>The seventh argument to the BeginAsync method.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span class="xref">Task</span></td>
+      <td><p>A <span class="xref">System.Threading.Tasks.Task</span> that represents the async operation.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="typeParameters">Type Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span class="parametername">T1</span></td>
+      <td><p>The type of the first argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T2</span></td>
+      <td><p>The type of the second argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T3</span></td>
+      <td><p>The type of the third argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T4</span></td>
+      <td><p>The type of the fourth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T5</span></td>
+      <td><p>The type of the fifth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T6</span></td>
+      <td><p>The type of the sixth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T7</span></td>
+      <td><p>The type of the seventh argument to the BeginAsync method.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+
+<a id="ConcurrentSharp_TaskFrom_FromAsyncCallback_" data-uid="ConcurrentSharp.TaskFrom.FromAsyncCallback*"></a>
+<h4 id="ConcurrentSharp_TaskFrom_FromAsyncCallback__8_System_Func___0___1___2___3___4___5___6___7_System_AsyncCallback_System_Object_System_IAsyncResult__System_Action_System_IAsyncResult____0___1___2___3___4___5___6___7_" data-uid="ConcurrentSharp.TaskFrom.FromAsyncCallback``8(System.Func{``0,``1,``2,``3,``4,``5,``6,``7,System.AsyncCallback,System.Object,System.IAsyncResult},System.Action{System.IAsyncResult},``0,``1,``2,``3,``4,``5,``6,``7)">FromAsyncCallback&lt;T1, T2, T3, T4, T5, T6, T7, T8&gt;(Func&lt;T1, T2, T3, T4, T5, T6, T7, T8, AsyncCallback, Object, IAsyncResult&gt;, Action&lt;IAsyncResult&gt;, T1, T2, T3, T4, T5, T6, T7, T8)</h4>
+<div class="markdown level1 summary"><p>Creates a <span class="xref">System.Threading.Tasks.Task</span> from a BeginAsync.. EndAsync pair of methods.</p>
+</div>
+<div class="markdown level1 conceptual"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static Task FromAsyncCallback&lt;T1, T2, T3, T4, T5, T6, T7, T8&gt;(Func&lt;T1, T2, T3, T4, T5, T6, T7, T8, AsyncCallback, object, IAsyncResult&gt; beginAsync, Action&lt;IAsyncResult&gt; endAsync, T1 arg1, T2 arg2, T3 arg3, T4 arg4, T5 arg5, T6 arg6, T7 arg7, T8 arg8)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span class="xref">System.Func</span>&lt;T1, T2, T3, T4, T5, T6, T7, T8, <span class="xref">System.AsyncCallback</span>, <span class="xref">System.Object</span>, <span class="xref">System.IAsyncResult</span>&gt;</td>
+      <td><span class="parametername">beginAsync</span></td>
+      <td><p>A delegate or lambda reprsenting the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">System.Action</span>&lt;<span class="xref">System.IAsyncResult</span>&gt;</td>
+      <td><span class="parametername">endAsync</span></td>
+      <td><p>A delegate or lambda representing the paired EndAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T1</span></td>
+      <td><span class="parametername">arg1</span></td>
+      <td><p>The first argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T2</span></td>
+      <td><span class="parametername">arg2</span></td>
+      <td><p>The second argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T3</span></td>
+      <td><span class="parametername">arg3</span></td>
+      <td><p>The third argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T4</span></td>
+      <td><span class="parametername">arg4</span></td>
+      <td><p>The fourth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T5</span></td>
+      <td><span class="parametername">arg5</span></td>
+      <td><p>The fifth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T6</span></td>
+      <td><span class="parametername">arg6</span></td>
+      <td><p>The sixth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T7</span></td>
+      <td><span class="parametername">arg7</span></td>
+      <td><p>The seventh argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T8</span></td>
+      <td><span class="parametername">arg8</span></td>
+      <td><p>The eighth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span class="xref">Task</span></td>
+      <td><p>A <span class="xref">System.Threading.Tasks.Task</span> that represents the async operation.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="typeParameters">Type Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span class="parametername">T1</span></td>
+      <td><p>The type of the first argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T2</span></td>
+      <td><p>The type of the second argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T3</span></td>
+      <td><p>The type of the third argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T4</span></td>
+      <td><p>The type of the fourth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T5</span></td>
+      <td><p>The type of the fifth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T6</span></td>
+      <td><p>The type of the sixth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T7</span></td>
+      <td><p>The type of the seventh argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T8</span></td>
+      <td><p>The type of the eighth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+
+<a id="ConcurrentSharp_TaskFrom_FromAsyncCallback_" data-uid="ConcurrentSharp.TaskFrom.FromAsyncCallback*"></a>
+<h4 id="ConcurrentSharp_TaskFrom_FromAsyncCallback__9_System_Func___0___1___2___3___4___5___6___7___8_System_AsyncCallback_System_Object_System_IAsyncResult__System_Action_System_IAsyncResult____0___1___2___3___4___5___6___7___8_" data-uid="ConcurrentSharp.TaskFrom.FromAsyncCallback``9(System.Func{``0,``1,``2,``3,``4,``5,``6,``7,``8,System.AsyncCallback,System.Object,System.IAsyncResult},System.Action{System.IAsyncResult},``0,``1,``2,``3,``4,``5,``6,``7,``8)">FromAsyncCallback&lt;T1, T2, T3, T4, T5, T6, T7, T8, T9&gt;(Func&lt;T1, T2, T3, T4, T5, T6, T7, T8, T9, AsyncCallback, Object, IAsyncResult&gt;, Action&lt;IAsyncResult&gt;, T1, T2, T3, T4, T5, T6, T7, T8, T9)</h4>
+<div class="markdown level1 summary"><p>Creates a <span class="xref">System.Threading.Tasks.Task</span> from a BeginAsync.. EndAsync pair of methods.</p>
+</div>
+<div class="markdown level1 conceptual"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static Task FromAsyncCallback&lt;T1, T2, T3, T4, T5, T6, T7, T8, T9&gt;(Func&lt;T1, T2, T3, T4, T5, T6, T7, T8, T9, AsyncCallback, object, IAsyncResult&gt; beginAsync, Action&lt;IAsyncResult&gt; endAsync, T1 arg1, T2 arg2, T3 arg3, T4 arg4, T5 arg5, T6 arg6, T7 arg7, T8 arg8, T9 arg9)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span class="xref">System.Func</span>&lt;T1, T2, T3, T4, T5, T6, T7, T8, T9, <span class="xref">System.AsyncCallback</span>, <span class="xref">System.Object</span>, <span class="xref">System.IAsyncResult</span>&gt;</td>
+      <td><span class="parametername">beginAsync</span></td>
+      <td><p>A delegate or lambda reprsenting the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">System.Action</span>&lt;<span class="xref">System.IAsyncResult</span>&gt;</td>
+      <td><span class="parametername">endAsync</span></td>
+      <td><p>A delegate or lambda representing the paired EndAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T1</span></td>
+      <td><span class="parametername">arg1</span></td>
+      <td><p>The first argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T2</span></td>
+      <td><span class="parametername">arg2</span></td>
+      <td><p>The second argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T3</span></td>
+      <td><span class="parametername">arg3</span></td>
+      <td><p>The third argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T4</span></td>
+      <td><span class="parametername">arg4</span></td>
+      <td><p>The fourth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T5</span></td>
+      <td><span class="parametername">arg5</span></td>
+      <td><p>The fifth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T6</span></td>
+      <td><span class="parametername">arg6</span></td>
+      <td><p>The sixth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T7</span></td>
+      <td><span class="parametername">arg7</span></td>
+      <td><p>The seventh argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T8</span></td>
+      <td><span class="parametername">arg8</span></td>
+      <td><p>The eighth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T9</span></td>
+      <td><span class="parametername">arg9</span></td>
+      <td><p>The ninth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span class="xref">Task</span></td>
+      <td><p>A <span class="xref">System.Threading.Tasks.Task</span> that represents the async operation.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="typeParameters">Type Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span class="parametername">T1</span></td>
+      <td><p>The type of the first argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T2</span></td>
+      <td><p>The type of the second argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T3</span></td>
+      <td><p>The type of the third argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T4</span></td>
+      <td><p>The type of the fourth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T5</span></td>
+      <td><p>The type of the fifth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T6</span></td>
+      <td><p>The type of the sixth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T7</span></td>
+      <td><p>The type of the seventh argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T8</span></td>
+      <td><p>The type of the eighth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T9</span></td>
+      <td><p>The type of the ninth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+
+<a id="ConcurrentSharp_TaskFrom_FromAsyncCallback_" data-uid="ConcurrentSharp.TaskFrom.FromAsyncCallback*"></a>
+<h4 id="ConcurrentSharp_TaskFrom_FromAsyncCallback__10_System_Func___0___1___2___3___4___5___6___7___8___9_System_AsyncCallback_System_Object_System_IAsyncResult__System_Action_System_IAsyncResult____0___1___2___3___4___5___6___7___8___9_" data-uid="ConcurrentSharp.TaskFrom.FromAsyncCallback``10(System.Func{``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,System.AsyncCallback,System.Object,System.IAsyncResult},System.Action{System.IAsyncResult},``0,``1,``2,``3,``4,``5,``6,``7,``8,``9)">FromAsyncCallback&lt;T1, T2, T3, T4, T5, T6, T7, T8, T9, T10&gt;(Func&lt;T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, AsyncCallback, Object, IAsyncResult&gt;, Action&lt;IAsyncResult&gt;, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10)</h4>
+<div class="markdown level1 summary"><p>Creates a <span class="xref">System.Threading.Tasks.Task</span> from a BeginAsync.. EndAsync pair of methods.</p>
+</div>
+<div class="markdown level1 conceptual"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static Task FromAsyncCallback&lt;T1, T2, T3, T4, T5, T6, T7, T8, T9, T10&gt;(Func&lt;T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, AsyncCallback, object, IAsyncResult&gt; beginAsync, Action&lt;IAsyncResult&gt; endAsync, T1 arg1, T2 arg2, T3 arg3, T4 arg4, T5 arg5, T6 arg6, T7 arg7, T8 arg8, T9 arg9, T10 arg10)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span class="xref">System.Func</span>&lt;T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, <span class="xref">System.AsyncCallback</span>, <span class="xref">System.Object</span>, <span class="xref">System.IAsyncResult</span>&gt;</td>
+      <td><span class="parametername">beginAsync</span></td>
+      <td><p>A delegate or lambda reprsenting the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">System.Action</span>&lt;<span class="xref">System.IAsyncResult</span>&gt;</td>
+      <td><span class="parametername">endAsync</span></td>
+      <td><p>A delegate or lambda representing the paired EndAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T1</span></td>
+      <td><span class="parametername">arg1</span></td>
+      <td><p>The first argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T2</span></td>
+      <td><span class="parametername">arg2</span></td>
+      <td><p>The second argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T3</span></td>
+      <td><span class="parametername">arg3</span></td>
+      <td><p>The third argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T4</span></td>
+      <td><span class="parametername">arg4</span></td>
+      <td><p>The fourth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T5</span></td>
+      <td><span class="parametername">arg5</span></td>
+      <td><p>The fifth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T6</span></td>
+      <td><span class="parametername">arg6</span></td>
+      <td><p>The sixth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T7</span></td>
+      <td><span class="parametername">arg7</span></td>
+      <td><p>The seventh argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T8</span></td>
+      <td><span class="parametername">arg8</span></td>
+      <td><p>The eighth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T9</span></td>
+      <td><span class="parametername">arg9</span></td>
+      <td><p>The ninth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T10</span></td>
+      <td><span class="parametername">arg10</span></td>
+      <td><p>The tenth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span class="xref">Task</span></td>
+      <td><p>A <span class="xref">System.Threading.Tasks.Task</span> that represents the async operation.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="typeParameters">Type Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span class="parametername">T1</span></td>
+      <td><p>The type of the first argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T2</span></td>
+      <td><p>The type of the second argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T3</span></td>
+      <td><p>The type of the third argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T4</span></td>
+      <td><p>The type of the fourth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T5</span></td>
+      <td><p>The type of the fifth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T6</span></td>
+      <td><p>The type of the sixth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T7</span></td>
+      <td><p>The type of the seventh argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T8</span></td>
+      <td><p>The type of the eighth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T9</span></td>
+      <td><p>The type of the ninth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T10</span></td>
+      <td><p>The type of the tenth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+
+<a id="ConcurrentSharp_TaskFrom_FromAsyncCallback_" data-uid="ConcurrentSharp.TaskFrom.FromAsyncCallback*"></a>
+<h4 id="ConcurrentSharp_TaskFrom_FromAsyncCallback__11_System_Func___0___1___2___3___4___5___6___7___8___9___10_System_AsyncCallback_System_Object_System_IAsyncResult__System_Action_System_IAsyncResult____0___1___2___3___4___5___6___7___8___9___10_" data-uid="ConcurrentSharp.TaskFrom.FromAsyncCallback``11(System.Func{``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``10,System.AsyncCallback,System.Object,System.IAsyncResult},System.Action{System.IAsyncResult},``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``10)">FromAsyncCallback&lt;T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11&gt;(Func&lt;T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, AsyncCallback, Object, IAsyncResult&gt;, Action&lt;IAsyncResult&gt;, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11)</h4>
+<div class="markdown level1 summary"><p>Creates a <span class="xref">System.Threading.Tasks.Task</span> from a BeginAsync.. EndAsync pair of methods.</p>
+</div>
+<div class="markdown level1 conceptual"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static Task FromAsyncCallback&lt;T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11&gt;(Func&lt;T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, AsyncCallback, object, IAsyncResult&gt; beginAsync, Action&lt;IAsyncResult&gt; endAsync, T1 arg1, T2 arg2, T3 arg3, T4 arg4, T5 arg5, T6 arg6, T7 arg7, T8 arg8, T9 arg9, T10 arg10, T11 arg11)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span class="xref">System.Func</span>&lt;T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, <span class="xref">System.AsyncCallback</span>, <span class="xref">System.Object</span>, <span class="xref">System.IAsyncResult</span>&gt;</td>
+      <td><span class="parametername">beginAsync</span></td>
+      <td><p>A delegate or lambda reprsenting the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">System.Action</span>&lt;<span class="xref">System.IAsyncResult</span>&gt;</td>
+      <td><span class="parametername">endAsync</span></td>
+      <td><p>A delegate or lambda representing the paired EndAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T1</span></td>
+      <td><span class="parametername">arg1</span></td>
+      <td><p>The first argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T2</span></td>
+      <td><span class="parametername">arg2</span></td>
+      <td><p>The second argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T3</span></td>
+      <td><span class="parametername">arg3</span></td>
+      <td><p>The third argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T4</span></td>
+      <td><span class="parametername">arg4</span></td>
+      <td><p>The fourth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T5</span></td>
+      <td><span class="parametername">arg5</span></td>
+      <td><p>The fifth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T6</span></td>
+      <td><span class="parametername">arg6</span></td>
+      <td><p>The sixth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T7</span></td>
+      <td><span class="parametername">arg7</span></td>
+      <td><p>The seventh argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T8</span></td>
+      <td><span class="parametername">arg8</span></td>
+      <td><p>The eighth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T9</span></td>
+      <td><span class="parametername">arg9</span></td>
+      <td><p>The ninth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T10</span></td>
+      <td><span class="parametername">arg10</span></td>
+      <td><p>The tenth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T11</span></td>
+      <td><span class="parametername">arg11</span></td>
+      <td><p>The eleventh argument to the BeginAsync method.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span class="xref">Task</span></td>
+      <td><p>A <span class="xref">System.Threading.Tasks.Task</span> that represents the async operation.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="typeParameters">Type Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span class="parametername">T1</span></td>
+      <td><p>The type of the first argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T2</span></td>
+      <td><p>The type of the second argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T3</span></td>
+      <td><p>The type of the third argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T4</span></td>
+      <td><p>The type of the fourth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T5</span></td>
+      <td><p>The type of the fifth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T6</span></td>
+      <td><p>The type of the sixth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T7</span></td>
+      <td><p>The type of the seventh argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T8</span></td>
+      <td><p>The type of the eighth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T9</span></td>
+      <td><p>The type of the ninth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T10</span></td>
+      <td><p>The type of the tenth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T11</span></td>
+      <td><p>The type of the eleventh argument to the BeginAsync method.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+
+<a id="ConcurrentSharp_TaskFrom_FromAsyncCallback_" data-uid="ConcurrentSharp.TaskFrom.FromAsyncCallback*"></a>
+<h4 id="ConcurrentSharp_TaskFrom_FromAsyncCallback__12_System_Func___0___1___2___3___4___5___6___7___8___9___10___11_System_AsyncCallback_System_Object_System_IAsyncResult__System_Action_System_IAsyncResult____0___1___2___3___4___5___6___7___8___9___10___11_" data-uid="ConcurrentSharp.TaskFrom.FromAsyncCallback``12(System.Func{``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``10,``11,System.AsyncCallback,System.Object,System.IAsyncResult},System.Action{System.IAsyncResult},``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``10,``11)">FromAsyncCallback&lt;T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12&gt;(Func&lt;T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, AsyncCallback, Object, IAsyncResult&gt;, Action&lt;IAsyncResult&gt;, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12)</h4>
+<div class="markdown level1 summary"><p>Creates a <span class="xref">System.Threading.Tasks.Task</span> from a BeginAsync.. EndAsync pair of methods.</p>
+</div>
+<div class="markdown level1 conceptual"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static Task FromAsyncCallback&lt;T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12&gt;(Func&lt;T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, AsyncCallback, object, IAsyncResult&gt; beginAsync, Action&lt;IAsyncResult&gt; endAsync, T1 arg1, T2 arg2, T3 arg3, T4 arg4, T5 arg5, T6 arg6, T7 arg7, T8 arg8, T9 arg9, T10 arg10, T11 arg11, T12 arg12)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span class="xref">System.Func</span>&lt;T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, <span class="xref">System.AsyncCallback</span>, <span class="xref">System.Object</span>, <span class="xref">System.IAsyncResult</span>&gt;</td>
+      <td><span class="parametername">beginAsync</span></td>
+      <td><p>A delegate or lambda reprsenting the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">System.Action</span>&lt;<span class="xref">System.IAsyncResult</span>&gt;</td>
+      <td><span class="parametername">endAsync</span></td>
+      <td><p>A delegate or lambda representing the paired EndAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T1</span></td>
+      <td><span class="parametername">arg1</span></td>
+      <td><p>The first argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T2</span></td>
+      <td><span class="parametername">arg2</span></td>
+      <td><p>The second argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T3</span></td>
+      <td><span class="parametername">arg3</span></td>
+      <td><p>The third argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T4</span></td>
+      <td><span class="parametername">arg4</span></td>
+      <td><p>The fourth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T5</span></td>
+      <td><span class="parametername">arg5</span></td>
+      <td><p>The fifth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T6</span></td>
+      <td><span class="parametername">arg6</span></td>
+      <td><p>The sixth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T7</span></td>
+      <td><span class="parametername">arg7</span></td>
+      <td><p>The seventh argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T8</span></td>
+      <td><span class="parametername">arg8</span></td>
+      <td><p>The eighth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T9</span></td>
+      <td><span class="parametername">arg9</span></td>
+      <td><p>The ninth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T10</span></td>
+      <td><span class="parametername">arg10</span></td>
+      <td><p>The tenth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T11</span></td>
+      <td><span class="parametername">arg11</span></td>
+      <td><p>The eleventh argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T12</span></td>
+      <td><span class="parametername">arg12</span></td>
+      <td><p>The twelfth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span class="xref">Task</span></td>
+      <td><p>A <span class="xref">System.Threading.Tasks.Task</span> that represents the async operation.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="typeParameters">Type Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span class="parametername">T1</span></td>
+      <td><p>The type of the first argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T2</span></td>
+      <td><p>The type of the second argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T3</span></td>
+      <td><p>The type of the third argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T4</span></td>
+      <td><p>The type of the fourth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T5</span></td>
+      <td><p>The type of the fifth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T6</span></td>
+      <td><p>The type of the sixth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T7</span></td>
+      <td><p>The type of the seventh argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T8</span></td>
+      <td><p>The type of the eighth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T9</span></td>
+      <td><p>The type of the ninth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T10</span></td>
+      <td><p>The type of the tenth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T11</span></td>
+      <td><p>The type of the eleventh argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T12</span></td>
+      <td><p>The type of the twelfth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+
+<a id="ConcurrentSharp_TaskFrom_FromAsyncCallback_" data-uid="ConcurrentSharp.TaskFrom.FromAsyncCallback*"></a>
+<h4 id="ConcurrentSharp_TaskFrom_FromAsyncCallback__13_System_Func___0___1___2___3___4___5___6___7___8___9___10___11___12_System_AsyncCallback_System_Object_System_IAsyncResult__System_Action_System_IAsyncResult____0___1___2___3___4___5___6___7___8___9___10___11___12_" data-uid="ConcurrentSharp.TaskFrom.FromAsyncCallback``13(System.Func{``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``10,``11,``12,System.AsyncCallback,System.Object,System.IAsyncResult},System.Action{System.IAsyncResult},``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``10,``11,``12)">FromAsyncCallback&lt;T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13&gt;(Func&lt;T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, AsyncCallback, Object, IAsyncResult&gt;, Action&lt;IAsyncResult&gt;, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13)</h4>
+<div class="markdown level1 summary"><p>Creates a <span class="xref">System.Threading.Tasks.Task</span> from a BeginAsync.. EndAsync pair of methods.</p>
+</div>
+<div class="markdown level1 conceptual"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static Task FromAsyncCallback&lt;T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13&gt;(Func&lt;T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, AsyncCallback, object, IAsyncResult&gt; beginAsync, Action&lt;IAsyncResult&gt; endAsync, T1 arg1, T2 arg2, T3 arg3, T4 arg4, T5 arg5, T6 arg6, T7 arg7, T8 arg8, T9 arg9, T10 arg10, T11 arg11, T12 arg12, T13 arg13)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span class="xref">System.Func</span>&lt;T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, <span class="xref">System.AsyncCallback</span>, <span class="xref">System.Object</span>, <span class="xref">System.IAsyncResult</span>&gt;</td>
+      <td><span class="parametername">beginAsync</span></td>
+      <td><p>A delegate or lambda reprsenting the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">System.Action</span>&lt;<span class="xref">System.IAsyncResult</span>&gt;</td>
+      <td><span class="parametername">endAsync</span></td>
+      <td><p>A delegate or lambda representing the paired EndAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T1</span></td>
+      <td><span class="parametername">arg1</span></td>
+      <td><p>The first argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T2</span></td>
+      <td><span class="parametername">arg2</span></td>
+      <td><p>The second argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T3</span></td>
+      <td><span class="parametername">arg3</span></td>
+      <td><p>The third argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T4</span></td>
+      <td><span class="parametername">arg4</span></td>
+      <td><p>The fourth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T5</span></td>
+      <td><span class="parametername">arg5</span></td>
+      <td><p>The fifth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T6</span></td>
+      <td><span class="parametername">arg6</span></td>
+      <td><p>The sixth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T7</span></td>
+      <td><span class="parametername">arg7</span></td>
+      <td><p>The seventh argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T8</span></td>
+      <td><span class="parametername">arg8</span></td>
+      <td><p>The eighth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T9</span></td>
+      <td><span class="parametername">arg9</span></td>
+      <td><p>The ninth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T10</span></td>
+      <td><span class="parametername">arg10</span></td>
+      <td><p>The tenth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T11</span></td>
+      <td><span class="parametername">arg11</span></td>
+      <td><p>The eleventh argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T12</span></td>
+      <td><span class="parametername">arg12</span></td>
+      <td><p>The twelfth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T13</span></td>
+      <td><span class="parametername">arg13</span></td>
+      <td><p>The thirteenth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span class="xref">Task</span></td>
+      <td><p>A <span class="xref">System.Threading.Tasks.Task</span> that represents the async operation.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="typeParameters">Type Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span class="parametername">T1</span></td>
+      <td><p>The type of the first argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T2</span></td>
+      <td><p>The type of the second argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T3</span></td>
+      <td><p>The type of the third argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T4</span></td>
+      <td><p>The type of the fourth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T5</span></td>
+      <td><p>The type of the fifth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T6</span></td>
+      <td><p>The type of the sixth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T7</span></td>
+      <td><p>The type of the seventh argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T8</span></td>
+      <td><p>The type of the eighth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T9</span></td>
+      <td><p>The type of the ninth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T10</span></td>
+      <td><p>The type of the tenth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T11</span></td>
+      <td><p>The type of the eleventh argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T12</span></td>
+      <td><p>The type of the twelfth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T13</span></td>
+      <td><p>The type of the thirteenth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+
+<a id="ConcurrentSharp_TaskFrom_FromAsyncCallback_" data-uid="ConcurrentSharp.TaskFrom.FromAsyncCallback*"></a>
+<h4 id="ConcurrentSharp_TaskFrom_FromAsyncCallback__14_System_Func___0___1___2___3___4___5___6___7___8___9___10___11___12___13_System_AsyncCallback_System_Object_System_IAsyncResult__System_Action_System_IAsyncResult____0___1___2___3___4___5___6___7___8___9___10___11___12___13_" data-uid="ConcurrentSharp.TaskFrom.FromAsyncCallback``14(System.Func{``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``10,``11,``12,``13,System.AsyncCallback,System.Object,System.IAsyncResult},System.Action{System.IAsyncResult},``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``10,``11,``12,``13)">FromAsyncCallback&lt;T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14&gt;(Func&lt;T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, AsyncCallback, Object, IAsyncResult&gt;, Action&lt;IAsyncResult&gt;, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14)</h4>
+<div class="markdown level1 summary"><p>Creates a <span class="xref">System.Threading.Tasks.Task</span> from a BeginAsync.. EndAsync pair of methods.</p>
+</div>
+<div class="markdown level1 conceptual"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static Task FromAsyncCallback&lt;T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14&gt;(Func&lt;T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, AsyncCallback, object, IAsyncResult&gt; beginAsync, Action&lt;IAsyncResult&gt; endAsync, T1 arg1, T2 arg2, T3 arg3, T4 arg4, T5 arg5, T6 arg6, T7 arg7, T8 arg8, T9 arg9, T10 arg10, T11 arg11, T12 arg12, T13 arg13, T14 arg14)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span class="xref">System.Func</span>&lt;T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, <span class="xref">System.AsyncCallback</span>, <span class="xref">System.Object</span>, <span class="xref">System.IAsyncResult</span>&gt;</td>
+      <td><span class="parametername">beginAsync</span></td>
+      <td><p>A delegate or lambda reprsenting the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">System.Action</span>&lt;<span class="xref">System.IAsyncResult</span>&gt;</td>
+      <td><span class="parametername">endAsync</span></td>
+      <td><p>A delegate or lambda representing the paired EndAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T1</span></td>
+      <td><span class="parametername">arg1</span></td>
+      <td><p>The first argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T2</span></td>
+      <td><span class="parametername">arg2</span></td>
+      <td><p>The second argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T3</span></td>
+      <td><span class="parametername">arg3</span></td>
+      <td><p>The third argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T4</span></td>
+      <td><span class="parametername">arg4</span></td>
+      <td><p>The fourth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T5</span></td>
+      <td><span class="parametername">arg5</span></td>
+      <td><p>The fifth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T6</span></td>
+      <td><span class="parametername">arg6</span></td>
+      <td><p>The sixth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T7</span></td>
+      <td><span class="parametername">arg7</span></td>
+      <td><p>The seventh argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T8</span></td>
+      <td><span class="parametername">arg8</span></td>
+      <td><p>The eighth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T9</span></td>
+      <td><span class="parametername">arg9</span></td>
+      <td><p>The ninth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T10</span></td>
+      <td><span class="parametername">arg10</span></td>
+      <td><p>The tenth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T11</span></td>
+      <td><span class="parametername">arg11</span></td>
+      <td><p>The eleventh argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T12</span></td>
+      <td><span class="parametername">arg12</span></td>
+      <td><p>The twelfth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T13</span></td>
+      <td><span class="parametername">arg13</span></td>
+      <td><p>The thirteenth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T14</span></td>
+      <td><span class="parametername">arg14</span></td>
+      <td><p>The fourteenth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span class="xref">Task</span></td>
+      <td><p>A <span class="xref">System.Threading.Tasks.Task</span> that represents the async operation.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="typeParameters">Type Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span class="parametername">T1</span></td>
+      <td><p>The type of the first argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T2</span></td>
+      <td><p>The type of the second argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T3</span></td>
+      <td><p>The type of the third argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T4</span></td>
+      <td><p>The type of the fourth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T5</span></td>
+      <td><p>The type of the fifth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T6</span></td>
+      <td><p>The type of the sixth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T7</span></td>
+      <td><p>The type of the seventh argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T8</span></td>
+      <td><p>The type of the eighth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T9</span></td>
+      <td><p>The type of the ninth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T10</span></td>
+      <td><p>The type of the tenth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T11</span></td>
+      <td><p>The type of the eleventh argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T12</span></td>
+      <td><p>The type of the twelfth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T13</span></td>
+      <td><p>The type of the thirteenth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">T14</span></td>
+      <td><p>The type of the fourteenth argument to the BeginAsync method.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Copyright (c) 2017 Troy Willmot
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

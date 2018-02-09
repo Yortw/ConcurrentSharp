@@ -69,6 +69,7 @@
     <Compile Include="CounterTests.cs" />
     <Compile Include="GlobalSuppressions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TaskFromTests.cs" />
     <Compile Include="TaskTimeoutTests.cs" />
     <Compile Include="ThrottleTests.cs" />
   </ItemGroup>

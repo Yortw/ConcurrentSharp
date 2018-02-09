@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Namespace ConcurrentSharp
+    <title>Method Event
    | ConcurrentSharp </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Namespace ConcurrentSharp
+    <meta name="title" content="Method Event
    | ConcurrentSharp ">
     <meta name="generator" content="docfx 2.26.3.0">
     
@@ -78,9 +78,9 @@
                 <div class="toc" id="toc">
                   
                   <ul class="nav level1">
-                    <li class="active">
+                    <li class="">
                       <span class="expand-stub"></span>
-                      <a href="ConcurrentSharp.html" title="ConcurrentSharp" class="active">ConcurrentSharp</a>
+                      <a href="ConcurrentSharp.html" title="ConcurrentSharp" class="">ConcurrentSharp</a>
                         
                         <ul class="nav level2">
                           <li class="">
@@ -154,8 +154,8 @@
                             <a href="ConcurrentSharp.TaskFrom.html" title="TaskFrom" class="">TaskFrom</a>
                               
                               <ul class="nav level3">
-                                <li class="">
-                                  <a href="ConcurrentSharp.TaskFrom.Event.html" title="Event" class="">Event</a>
+                                <li class="active">
+                                  <a href="ConcurrentSharp.TaskFrom.Event.html" title="Event" class="active">Event</a>
                                 </li>
                                 <li class="">
                                   <a href="ConcurrentSharp.TaskFrom.FromAsyncCallback.html" title="FromAsyncCallback" class="">FromAsyncCallback</a>
@@ -196,38 +196,152 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="ConcurrentSharp">
-  
-  <h1 id="ConcurrentSharp" data-uid="ConcurrentSharp" class="text-break">Namespace ConcurrentSharp
-  </h1>
-  <div class="markdown level0 summary"></div>
-  <div class="markdown level0 conceptual"></div>
-  <div class="markdown level0 remarks"></div>
-    <h3 id="classes">Classes
-  </h3>
-      <h4><a class="xref" href="ConcurrentSharp.BlockingCollectionProcessor-1.html">BlockingCollectionProcessor&lt;T&gt;</a></h4>
-      <section><p>Instances of <a class="xref" href="ConcurrentSharp.BlockingCollectionProcessor-1.html">BlockingCollectionProcessor&lt;T&gt;</a> are used to manage threads for processing <see cref="!:System.Collections.Concurrent.BlockingCollection&lt;T>"></see> instances.</p>
-</section>
-      <h4><a class="xref" href="ConcurrentSharp.Counter.html">Counter</a></h4>
-      <section><p>Provides thread-safe operations around a signed long integer.</p>
-</section>
-      <h4><a class="xref" href="ConcurrentSharp.TaskExtensions.html">TaskExtensions</a></h4>
-      <section><p>Extensions for <span class="xref">System.Threading.Tasks.Task</span> instances.</p>
-</section>
-      <h4><a class="xref" href="ConcurrentSharp.TaskFrom.html">TaskFrom</a></h4>
-      <section><p>Provides utility methods for creating <span class="xref">System.Threading.Tasks</span> from various sources or common patterns.</p>
-</section>
-      <h4><a class="xref" href="ConcurrentSharp.Throttle.html">Throttle</a></h4>
-      <section><p>Instances of the <a class="xref" href="ConcurrentSharp.Throttle.html">Throttle</a> class can be used to restrict the number of simultaneous operations taking place using the same throttle.</p>
-</section>
-      <h4><a class="xref" href="ConcurrentSharp.ThrottleToken.html">ThrottleToken</a></h4>
-      <section><p>An object returned by <a class="xref" href="ConcurrentSharp.Throttle.Enter.html#ConcurrentSharp_Throttle_Enter">Enter()</a> that is used to notify the parent <a class="xref" href="ConcurrentSharp.Throttle.html">Throttle</a> instance the job owning this token has completed.</p>
-</section>
-    <h3 id="enums">Enums
-  </h3>
-      <h4><a class="xref" href="ConcurrentSharp.ExpectedThreadLifetime.html">ExpectedThreadLifetime</a></h4>
-      <section><p>An enumeration that specifies the (relative) expected lifetime of a thread or background operation, helping to decide how the thread should be created.</p>
-</section>
+            <article class="content wrap" id="_content" data-uid="ConcurrentSharp.TaskFrom.Event*">
+
+<h1 id="ConcurrentSharp_TaskFrom_Event_" data-uid="ConcurrentSharp.TaskFrom.Event*">Method Event
+</h1>
+<div class="markdown level0 summary"></div>
+<div class="markdown level0 conceptual"></div>
+
+
+
+<a id="ConcurrentSharp_TaskFrom_Event_" data-uid="ConcurrentSharp.TaskFrom.Event*"></a>
+<h4 id="ConcurrentSharp_TaskFrom_Event__1___0_System_String_" data-uid="ConcurrentSharp.TaskFrom.Event``1(``0,System.String)">Event&lt;TSource&gt;(TSource, String)</h4>
+<div class="markdown level1 summary"><p>Creates a task that completes when an event is raised.</p>
+</div>
+<div class="markdown level1 conceptual"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static Task Event&lt;TSource&gt;(TSource source, string eventName)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span class="xref">TSource</span></td>
+      <td><span class="parametername">source</span></td>
+      <td><p>An instance of <code data-dev-comment-type="typeparamref" class="typeparamref">TSource</code> that will raise the event.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">System.String</span></td>
+      <td><span class="parametername">eventName</span></td>
+      <td><p>The name of the event to wait for.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span class="xref">Task</span></td>
+      <td><p>A <span class="xref">System.Threading.Tasks.Task</span> that completes when the specified event is raised.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="typeParameters">Type Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span class="parametername">TSource</span></td>
+      <td><p>The type of object that publishes the event.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+
+<a id="ConcurrentSharp_TaskFrom_Event_" data-uid="ConcurrentSharp.TaskFrom.Event*"></a>
+<h4 id="ConcurrentSharp_TaskFrom_Event__2___0_System_String_" data-uid="ConcurrentSharp.TaskFrom.Event``2(``0,System.String)">Event&lt;TSource, TEventArgs&gt;(TSource, String)</h4>
+<div class="markdown level1 summary"><p>Creates a task that completes when an event is raised, the result of the task is the event arguments passed to the event handler.</p>
+</div>
+<div class="markdown level1 conceptual"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static Task&lt;TEventArgs&gt; Event&lt;TSource, TEventArgs&gt;(TSource source, string eventName)where TEventArgs : EventArgs</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span class="xref">TSource</span></td>
+      <td><span class="parametername">source</span></td>
+      <td><p>An instance of <code data-dev-comment-type="typeparamref" class="typeparamref">TSource</code> that will raise the event.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">System.String</span></td>
+      <td><span class="parametername">eventName</span></td>
+      <td><p>The name of the event to wait for.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span class="xref">Task</span>&lt;TEventArgs&gt;</td>
+      <td><p>A <span class="xref">System.Threading.Tasks.Task</span> that completes when the specified event is raised.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="typeParameters">Type Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span class="parametername">TSource</span></td>
+      <td><p>The type of object that publishes the event.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">TEventArgs</span></td>
+      <td><p>The type of event arguments used by the event.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
 </article>
           </div>
           
