@@ -12,7 +12,7 @@
         <iconUrl>https://raw.githubusercontent.com/Yortw/ConcurrentSharp/master/ConcurrentSharp.png</iconUrl>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
         <description>A grab-bag of types, extensions and utility methods for working with threads, tasks and other threading/parallelisation/concurrent stuff.</description>
-        <copyright>Copyright 2017</copyright>
+        <copyright>Copyright 2018</copyright>
         <language>en-AU</language>
         <tags>portable xamarin ios android mac concurrent thread threading net40</tags>
     </metadata>

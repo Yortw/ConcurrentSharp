@@ -672,6 +672,30 @@ references:
   fullName.vb: ConcurrentSharp.Throttle.Execute(Of T, TResult)(System.Func(Of T, TResult), T)
   nameWithType: Throttle.Execute<T, TResult>(Func<T, TResult>, T)
   nameWithType.vb: Throttle.Execute(Of T, TResult)(Func(Of T, TResult), T)
+- uid: ConcurrentSharp.Throttle.ExecuteAllAsync*
+  name: ExecuteAllAsync
+  href: api/ConcurrentSharp.Throttle.ExecuteAllAsync.html
+  commentId: Overload:ConcurrentSharp.Throttle.ExecuteAllAsync
+  fullName: ConcurrentSharp.Throttle.ExecuteAllAsync
+  nameWithType: Throttle.ExecuteAllAsync
+- uid: ConcurrentSharp.Throttle.ExecuteAllAsync``1(IEnumerable{``0},System.Func{``0,Task})
+  name: ExecuteAllAsync<T>(IEnumerable<T>, Func<T, Task>)
+  href: api/ConcurrentSharp.Throttle.ExecuteAllAsync.html#ConcurrentSharp_Throttle_ExecuteAllAsync__1_IEnumerable___0__System_Func___0_Task__
+  commentId: M:ConcurrentSharp.Throttle.ExecuteAllAsync``1(IEnumerable{``0},System.Func{``0,Task})
+  name.vb: ExecuteAllAsync(Of T)(IEnumerable(Of T), Func(Of T, Task))
+  fullName: ConcurrentSharp.Throttle.ExecuteAllAsync<T>(IEnumerable<T>, System.Func<T, Task>)
+  fullName.vb: ConcurrentSharp.Throttle.ExecuteAllAsync(Of T)(IEnumerable(Of T), System.Func(Of T, Task))
+  nameWithType: Throttle.ExecuteAllAsync<T>(IEnumerable<T>, Func<T, Task>)
+  nameWithType.vb: Throttle.ExecuteAllAsync(Of T)(IEnumerable(Of T), Func(Of T, Task))
+- uid: ConcurrentSharp.Throttle.ExecuteAllAsync``2(IEnumerable{``0},System.Func{``0,Task{``1}})
+  name: ExecuteAllAsync<TArg, TResult>(IEnumerable<TArg>, Func<TArg, Task<TResult>>)
+  href: api/ConcurrentSharp.Throttle.ExecuteAllAsync.html#ConcurrentSharp_Throttle_ExecuteAllAsync__2_IEnumerable___0__System_Func___0_Task___1___
+  commentId: M:ConcurrentSharp.Throttle.ExecuteAllAsync``2(IEnumerable{``0},System.Func{``0,Task{``1}})
+  name.vb: ExecuteAllAsync(Of TArg, TResult)(IEnumerable(Of TArg), Func(Of TArg, Task(Of TResult)))
+  fullName: ConcurrentSharp.Throttle.ExecuteAllAsync<TArg, TResult>(IEnumerable<TArg>, System.Func<TArg, Task<TResult>>)
+  fullName.vb: ConcurrentSharp.Throttle.ExecuteAllAsync(Of TArg, TResult)(IEnumerable(Of TArg), System.Func(Of TArg, Task(Of TResult)))
+  nameWithType: Throttle.ExecuteAllAsync<TArg, TResult>(IEnumerable<TArg>, Func<TArg, Task<TResult>>)
+  nameWithType.vb: Throttle.ExecuteAllAsync(Of TArg, TResult)(IEnumerable(Of TArg), Func(Of TArg, Task(Of TResult)))
 - uid: ConcurrentSharp.ThrottleToken
   name: ThrottleToken
   href: api/ConcurrentSharp.ThrottleToken.html

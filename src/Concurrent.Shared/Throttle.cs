@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace ConcurrentSharp
 {
@@ -38,6 +39,7 @@ namespace ConcurrentSharp
 
 		private System.Threading.Semaphore _Semaphore;
 		private object _Synchroniser;
+		private int _MaxConcurrency;
 
 		/// <summary>
 		/// Constructs a new <see cref="Throttle"/> instance that allows up to the specified number of concurrent operations.
@@ -50,6 +52,7 @@ namespace ConcurrentSharp
 
 			_Synchroniser = new object();
 			_Semaphore = new System.Threading.Semaphore(maxConcurrency, maxConcurrency);
+			_MaxConcurrency = maxConcurrency;
 		}
 
 		/// <summary>
@@ -186,6 +189,75 @@ namespace ConcurrentSharp
 			{
 				return func(arg);
 			}
+		}
+
+		/// <summary>
+		/// Executes <paramref name="asyncAction"/> over all items in <paramref name="items"/>, using the throttle to restrict the maximum number of parallel executing tasks.
+		/// </summary>
+		/// <typeparam name="T">The type of value in <paramref name="items"/>.</typeparam>
+		/// <param name="items">The items to process.</param>
+		/// <param name="asyncAction">A function that returns a task and takes a value of {T}.</param>
+		/// <returns>Returns a <see cref="System.Threading.Tasks.Task"/> that represents completion processing all items in <paramref name="items"/>.</returns>
+		/// <exception cref="System.ArgumentNullException">Thrown if <paramref name="items"/> or <paramref name="asyncAction"/> is null.</exception>
+		public async Task ExecuteAllAsync<T>(IEnumerable<T> items, Func<T, Task> asyncAction)
+		{
+			if (items == null) throw new ArgumentNullException(nameof(items));
+			if (asyncAction == null) throw new ArgumentNullException(nameof(asyncAction));
+
+			var tasks = new List<Task>(_MaxConcurrency);
+			foreach (var item in items)
+			{
+				_Semaphore.WaitOne();
+				var t = asyncAction(item).ContinueWith
+				(
+					(pt) => _Semaphore.Release(),
+					TaskContinuationOptions.ExecuteSynchronously
+				);
+				
+				tasks.Add(t);
+			}
+
+#if BCL_ASYNC
+			await TaskEx.WhenAll(tasks).ConfigureAwait(false);
+#else
+			await Task.WhenAll(tasks).ConfigureAwait(false);
+#endif
+		}
+
+		/// <summary>
+		/// Executes <paramref name="asyncAction"/> over all items in <paramref name="items"/>, using the throttle to restrict the maximum number of parallel executing tasks.
+		/// </summary>
+		/// <typeparam name="TArg">The type of value in <paramref name="items"/>.</typeparam>
+		/// <typeparam name="TResult"></typeparam>
+		/// <param name="items">The items to process.</param>
+		/// <param name="asyncAction">A function that returns a task of {TResult} and takes a value of {TArg}.</param>
+		/// <returns>Returns a task whose result is an enumerable of completed tasks.</returns>
+		/// <exception cref="System.ArgumentNullException">Thrown if <paramref name="items"/> or <paramref name="asyncAction"/> is null.</exception>
+		public async Task<IEnumerable<Task<TResult>>> ExecuteAllAsync<TArg, TResult>(IEnumerable<TArg> items, Func<TArg, Task<TResult>> asyncAction)
+		{
+			if (items == null) throw new ArgumentNullException(nameof(items));
+			if (asyncAction == null) throw new ArgumentNullException(nameof(asyncAction));
+
+			var tasks = new List<Task<TResult>>(_MaxConcurrency);
+			foreach (var item in items)
+			{
+				_Semaphore.WaitOne();
+				var t = asyncAction(item).ContinueWith
+				(
+					(pt) => { _Semaphore.Release(); return pt.Result; },
+					TaskContinuationOptions.ExecuteSynchronously
+				);
+
+				tasks.Add(t);
+			}
+
+#if BCL_ASYNC
+			await TaskEx.WhenAll(tasks).ConfigureAwait(false);
+#else
+			await Task.WhenAll(tasks).ConfigureAwait(false);
+#endif
+
+			return tasks;
 		}
 
 		private void ThrowIfDisposed()

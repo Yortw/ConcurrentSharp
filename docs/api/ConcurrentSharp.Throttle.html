@@ -157,6 +157,9 @@
                                 <li class="">
                                   <a href="ConcurrentSharp.TaskFrom.Event.html" title="Event" class="">Event</a>
                                 </li>
+                                <li class="">
+                                  <a href="ConcurrentSharp.TaskFrom.FromAsyncCallback.html" title="FromAsyncCallback" class="">FromAsyncCallback</a>
+                                </li>
                               </ul>  </li>
                           <li class="active">
                             <span class="expand-stub"></span>
@@ -171,6 +174,9 @@
                                 </li>
                                 <li class="">
                                   <a href="ConcurrentSharp.Throttle.Execute.html" title="Execute" class="">Execute</a>
+                                </li>
+                                <li class="">
+                                  <a href="ConcurrentSharp.Throttle.ExecuteAllAsync.html" title="ExecuteAllAsync" class="">ExecuteAllAsync</a>
                                 </li>
                                 <li class="">
                                   <a href="ConcurrentSharp.Throttle.-ctor.html" title="Throttle" class="">Throttle</a>
@@ -333,6 +339,20 @@ operations running using this throttle, then this method will block the calling 
           <a class="xref" href="ConcurrentSharp.Throttle.Execute.html#ConcurrentSharp_Throttle_Execute__2_System_Func___0___1____0_">Execute&lt;T, TResult&gt;(Func&lt;T, TResult&gt;, T)</a>
         </td>
         <td class="markdown level1 summary"><p>A convenience method that executes the <code data-dev-comment-type="paramref" class="paramref">func</code> operation using the throttle and returning it&apos;s result while eliminating manual management of the throttle token.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ConcurrentSharp_Throttle_ExecuteAllAsync__1_IEnumerable___0__System_Func___0_Task__" data-uid="ConcurrentSharp.Throttle.ExecuteAllAsync``1(IEnumerable{``0},System.Func{``0,Task})">
+          <a class="xref" href="ConcurrentSharp.Throttle.ExecuteAllAsync.html#ConcurrentSharp_Throttle_ExecuteAllAsync__1_IEnumerable___0__System_Func___0_Task__">ExecuteAllAsync&lt;T&gt;(IEnumerable&lt;T&gt;, Func&lt;T, Task&gt;)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Executes <code data-dev-comment-type="paramref" class="paramref">asyncAction</code> over all items in <code data-dev-comment-type="paramref" class="paramref">items</code>, using the throttle to restrict the maximum number of parallel executing tasks.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ConcurrentSharp_Throttle_ExecuteAllAsync__2_IEnumerable___0__System_Func___0_Task___1___" data-uid="ConcurrentSharp.Throttle.ExecuteAllAsync``2(IEnumerable{``0},System.Func{``0,Task{``1}})">
+          <a class="xref" href="ConcurrentSharp.Throttle.ExecuteAllAsync.html#ConcurrentSharp_Throttle_ExecuteAllAsync__2_IEnumerable___0__System_Func___0_Task___1___">ExecuteAllAsync&lt;TArg, TResult&gt;(IEnumerable&lt;TArg&gt;, Func&lt;TArg, Task&lt;TResult&gt;&gt;)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Executes <code data-dev-comment-type="paramref" class="paramref">asyncAction</code> over all items in <code data-dev-comment-type="paramref" class="paramref">items</code>, using the throttle to restrict the maximum number of parallel executing tasks.</p>
 </td>
       </tr>
     </tbody>

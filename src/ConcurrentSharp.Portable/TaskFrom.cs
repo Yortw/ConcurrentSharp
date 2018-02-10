@@ -86,18 +86,18 @@ namespace ConcurrentSharp
 		/// <summary>
 		/// Creates a <see cref="System.Threading.Tasks.Task"/> from a BeginAsync.. EndAsync pair of methods.
 		/// </summary>
-		/// <typeparam name="T1">The type of the first argument to the BeginAsync method.</typeparam>
 		/// <typeparam name="TReturn">The type of value returned from the EndAsync method.</typeparam>
 		/// <param name="beginAsync">A delegate or lambda reprsenting the BeginAsync method.</param>
 		/// <param name="endAsync">A delegate or lambda representing the paired EndAsync method.</param>
-		/// <param name="arg1">The first argument to the BeginAsync method.</param>
+		/// <exception cref="System.ArgumentNullException">Thrown if <paramref name="beginAsync"/> or <paramref name="endAsync"/> is null.</exception>
 		public static Task<TReturn> FromAsyncCallback<TReturn>(Func<AsyncCallback, object, IAsyncResult> beginAsync, Func<IAsyncResult, TReturn> endAsync)
 		{
+			if (beginAsync == null) throw new ArgumentNullException(nameof(beginAsync));
+			if (endAsync == null) throw new ArgumentNullException(nameof(endAsync));
+
 			var tcs = new TaskCompletionSource<TReturn>();
 
-			IAsyncResult result = null;
-
-			result = beginAsync
+			beginAsync
 			(
 				(ar) =>
 				{
@@ -127,10 +127,12 @@ namespace ConcurrentSharp
 		/// <returns>The return value of the paired EndAsync method.</returns>
 		public static Task<TReturn> FromAsyncCallback<T1, TReturn>(Func<T1, AsyncCallback, object, IAsyncResult> beginAsync, Func<IAsyncResult, TReturn> endAsync, T1 arg1)
 		{
+			if (beginAsync == null) throw new ArgumentNullException(nameof(beginAsync));
+			if (endAsync == null) throw new ArgumentNullException(nameof(endAsync));
+
 			var tcs = new TaskCompletionSource<TReturn>();
 
-			IAsyncResult result = null;
-			result = beginAsync
+			beginAsync
 			(
 				arg1,
 				(ar) =>
@@ -162,11 +164,12 @@ namespace ConcurrentSharp
 		/// <returns>The return value of the paired EndAsync method.</returns>
 		public static Task<TReturn> FromAsyncCallback<T1, T2, TReturn>(Func<T1, T2, AsyncCallback, object, IAsyncResult> beginAsync, Func<IAsyncResult, TReturn> endAsync, T1 arg1, T2 arg2)
 		{
+			if (beginAsync == null) throw new ArgumentNullException(nameof(beginAsync));
+			if (endAsync == null) throw new ArgumentNullException(nameof(endAsync));
+
 			var tcs = new TaskCompletionSource<TReturn>();
 
-			IAsyncResult result = null;
-
-			result = beginAsync
+			beginAsync
 			(
 				arg1, arg2,
 				(ar) =>
@@ -200,11 +203,12 @@ namespace ConcurrentSharp
 		/// <param name="arg3">The third argument to the BeginAsync method.</param>
 		public static Task<TReturn> FromAsyncCallback<T1, T2, T3, TReturn>(Func<T1, T2, T3, AsyncCallback, object, IAsyncResult> beginAsync, Func<IAsyncResult, TReturn> endAsync, T1 arg1, T2 arg2, T3 arg3)
 		{
+			if (beginAsync == null) throw new ArgumentNullException(nameof(beginAsync));
+			if (endAsync == null) throw new ArgumentNullException(nameof(endAsync));
+
 			var tcs = new TaskCompletionSource<TReturn>();
 
-			IAsyncResult result = null;
-
-			result = beginAsync
+			beginAsync
 			(
 				arg1, arg2, arg3,
 				(ar) =>
@@ -240,11 +244,12 @@ namespace ConcurrentSharp
 		/// <param name="arg4">The fourth argument to the BeginAsync method.</param>
 		public static Task<TReturn> FromAsyncCallback<T1, T2, T3, T4, TReturn>(Func<T1, T2, T3, T4, AsyncCallback, object, IAsyncResult> beginAsync, Func<IAsyncResult, TReturn> endAsync, T1 arg1, T2 arg2, T3 arg3, T4 arg4)
 		{
+			if (beginAsync == null) throw new ArgumentNullException(nameof(beginAsync));
+			if (endAsync == null) throw new ArgumentNullException(nameof(endAsync));
+
 			var tcs = new TaskCompletionSource<TReturn>();
 
-			IAsyncResult result = null;
-			
-			result = beginAsync
+			beginAsync
 			(
 				arg1, arg2, arg3, arg4,
 				(ar) =>
@@ -283,11 +288,12 @@ namespace ConcurrentSharp
 		/// <returns>The return value of the paired EndAsync method.</returns>
 		public static Task<TReturn> FromAsyncCallback<T1, T2, T3, T4, T5, TReturn>(Func<T1, T2, T3, T4, T5, AsyncCallback, object, IAsyncResult> beginAsync, Func<IAsyncResult, TReturn> endAsync, T1 arg1, T2 arg2, T3 arg3, T4 arg4, T5 arg5)
 		{
+			if (beginAsync == null) throw new ArgumentNullException(nameof(beginAsync));
+			if (endAsync == null) throw new ArgumentNullException(nameof(endAsync));
+
 			var tcs = new TaskCompletionSource<TReturn>();
 
-			IAsyncResult result = null;
-			
-			result = beginAsync
+			beginAsync
 			(
 				arg1, arg2, arg3, arg4, arg5, 
 				(ar) =>
@@ -328,11 +334,12 @@ namespace ConcurrentSharp
 		/// <returns>The return value of the paired EndAsync method.</returns>
 		public static Task<TReturn> FromAsyncCallback<T1, T2, T3, T4, T5, T6, TReturn>(Func<T1, T2, T3, T4, T5, T6, AsyncCallback, object, IAsyncResult> beginAsync, Func<IAsyncResult, TReturn> endAsync, T1 arg1, T2 arg2, T3 arg3, T4 arg4, T5 arg5, T6 arg6)
 		{
+			if (beginAsync == null) throw new ArgumentNullException(nameof(beginAsync));
+			if (endAsync == null) throw new ArgumentNullException(nameof(endAsync));
+
 			var tcs = new TaskCompletionSource<TReturn>();
 
-			IAsyncResult result = null;
-			
-			result = beginAsync
+			beginAsync
 			(
 				arg1, arg2, arg3, arg4, arg5, arg6, 
 				(ar) =>
@@ -374,11 +381,12 @@ namespace ConcurrentSharp
 		/// <param name="arg7">The seventh argument to the BeginAsync method.</param>
 		public static Task<TReturn> FromAsyncCallback<T1, T2, T3, T4, T5, T6, T7, TReturn>(Func<T1, T2, T3, T4, T5, T6, T7, AsyncCallback, object, IAsyncResult> beginAsync, Func<IAsyncResult, TReturn> endAsync, T1 arg1, T2 arg2, T3 arg3, T4 arg4, T5 arg5, T6 arg6, T7 arg7)
 		{
+			if (beginAsync == null) throw new ArgumentNullException(nameof(beginAsync));
+			if (endAsync == null) throw new ArgumentNullException(nameof(endAsync));
+
 			var tcs = new TaskCompletionSource<TReturn>();
 
-			IAsyncResult result = null;
-			
-			result = beginAsync
+			beginAsync
 			(
 				arg1, arg2, arg3, arg4, arg5, arg6, arg7, 
 				(ar) =>
@@ -423,11 +431,12 @@ namespace ConcurrentSharp
 		/// <returns>The return value of the paired EndAsync method.</returns>
 		public static Task<TReturn> FromAsyncCallback<T1, T2, T3, T4, T5, T6, T7, T8, TReturn>(Func<T1, T2, T3, T4, T5, T6, T7, T8, AsyncCallback, object, IAsyncResult> beginAsync, Func<IAsyncResult, TReturn> endAsync, T1 arg1, T2 arg2, T3 arg3, T4 arg4, T5 arg5, T6 arg6, T7 arg7, T8 arg8)
 		{
+			if (beginAsync == null) throw new ArgumentNullException(nameof(beginAsync));
+			if (endAsync == null) throw new ArgumentNullException(nameof(endAsync));
+
 			var tcs = new TaskCompletionSource<TReturn>();
 
-			IAsyncResult result = null;
-			
-			result = beginAsync
+			beginAsync
 			(
 				arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8,
 				(ar) =>
@@ -474,11 +483,12 @@ namespace ConcurrentSharp
 		/// <returns>The return value of the paired EndAsync method.</returns>
 		public static Task<TReturn> FromAsyncCallback<T1, T2, T3, T4, T5, T6, T7, T8, T9, TReturn>(Func<T1, T2, T3, T4, T5, T6, T7, T8, T9, AsyncCallback, object, IAsyncResult> beginAsync, Func<IAsyncResult, TReturn> endAsync, T1 arg1, T2 arg2, T3 arg3, T4 arg4, T5 arg5, T6 arg6, T7 arg7, T8 arg8, T9 arg9)
 		{
+			if (beginAsync == null) throw new ArgumentNullException(nameof(beginAsync));
+			if (endAsync == null) throw new ArgumentNullException(nameof(endAsync));
+
 			var tcs = new TaskCompletionSource<TReturn>();
 
-			IAsyncResult result = null;
-			
-			result = beginAsync
+			beginAsync
 			(
 				arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, 
 				(ar) =>
@@ -527,11 +537,12 @@ namespace ConcurrentSharp
 		/// <returns>The return value of the paired EndAsync method.</returns>
 		public static Task<TReturn> FromAsyncCallback<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, TReturn>(Func<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, AsyncCallback, object, IAsyncResult> beginAsync, Func<IAsyncResult, TReturn> endAsync, T1 arg1, T2 arg2, T3 arg3, T4 arg4, T5 arg5, T6 arg6, T7 arg7, T8 arg8, T9 arg9, T10 arg10)
 		{
+			if (beginAsync == null) throw new ArgumentNullException(nameof(beginAsync));
+			if (endAsync == null) throw new ArgumentNullException(nameof(endAsync));
+
 			var tcs = new TaskCompletionSource<TReturn>();
 
-			IAsyncResult result = null;
-			
-			result = beginAsync
+			beginAsync
 			(
 				arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10,
 				(ar) =>
@@ -582,11 +593,12 @@ namespace ConcurrentSharp
 		/// <returns>The return value of the paired EndAsync method.</returns>
 		public static Task<TReturn> FromAsyncCallback<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, TReturn>(Func<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, AsyncCallback, object, IAsyncResult> beginAsync, Func<IAsyncResult, TReturn> endAsync, T1 arg1, T2 arg2, T3 arg3, T4 arg4, T5 arg5, T6 arg6, T7 arg7, T8 arg8, T9 arg9, T10 arg10, T11 arg11)
 		{
+			if (beginAsync == null) throw new ArgumentNullException(nameof(beginAsync));
+			if (endAsync == null) throw new ArgumentNullException(nameof(endAsync));
+
 			var tcs = new TaskCompletionSource<TReturn>();
 
-			IAsyncResult result = null;
-			
-			result = beginAsync
+			beginAsync
 			(
 				arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11,
 				(ar) =>
@@ -639,11 +651,12 @@ namespace ConcurrentSharp
 		/// <returns>The return value of the paired EndAsync method.</returns>
 		public static Task<TReturn> FromAsyncCallback<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, TReturn>(Func<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, AsyncCallback, object, IAsyncResult> beginAsync, Func<IAsyncResult, TReturn> endAsync, T1 arg1, T2 arg2, T3 arg3, T4 arg4, T5 arg5, T6 arg6, T7 arg7, T8 arg8, T9 arg9, T10 arg10, T11 arg11, T12 arg12)
 		{
+			if (beginAsync == null) throw new ArgumentNullException(nameof(beginAsync));
+			if (endAsync == null) throw new ArgumentNullException(nameof(endAsync));
+
 			var tcs = new TaskCompletionSource<TReturn>();
 
-			IAsyncResult result = null;
-			
-			result = beginAsync
+			beginAsync
 			(
 				arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, 
 				(ar) =>
@@ -698,11 +711,12 @@ namespace ConcurrentSharp
 		/// <returns>The return value of the paired EndAsync method.</returns>
 		public static Task<TReturn> FromAsyncCallback<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, TReturn>(Func<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, AsyncCallback, object, IAsyncResult> beginAsync, Func<IAsyncResult, TReturn> endAsync, T1 arg1, T2 arg2, T3 arg3, T4 arg4, T5 arg5, T6 arg6, T7 arg7, T8 arg8, T9 arg9, T10 arg10, T11 arg11, T12 arg12, T13 arg13)
 		{
+			if (beginAsync == null) throw new ArgumentNullException(nameof(beginAsync));
+			if (endAsync == null) throw new ArgumentNullException(nameof(endAsync));
+
 			var tcs = new TaskCompletionSource<TReturn>();
 
-			IAsyncResult result = null;
-			
-			result = beginAsync
+			beginAsync
 			(
 				arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13,
 				(ar) =>
@@ -759,11 +773,12 @@ namespace ConcurrentSharp
 		/// <returns>A <see cref="System.Threading.Tasks.Task"/> representing the async operation, the task reuslt is the return value of the paired EndAsync method.</returns>
 		public static Task<TReturn> FromAsyncCallback<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, TReturn>(Func<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14,  AsyncCallback, object, IAsyncResult> beginAsync, Func<IAsyncResult, TReturn> endAsync, T1 arg1, T2 arg2, T3 arg3, T4 arg4, T5 arg5, T6 arg6, T7 arg7, T8 arg8, T9 arg9, T10 arg10, T11 arg11, T12 arg12, T13 arg13, T14 arg14)
 		{
+			if (beginAsync == null) throw new ArgumentNullException(nameof(beginAsync));
+			if (endAsync == null) throw new ArgumentNullException(nameof(endAsync));
+
 			var tcs = new TaskCompletionSource<TReturn>();
 
-			IAsyncResult result = null;
-
-			result = beginAsync
+			beginAsync
 			(
 				arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13, arg14, 
 				(ar) =>
@@ -797,11 +812,12 @@ namespace ConcurrentSharp
 		/// <returns>A <see cref="System.Threading.Tasks.Task"/> that represents the async operation.</returns>
 		public static Task FromAsyncCallback<T1>(Func<T1, AsyncCallback, object, IAsyncResult> beginAsync, Action<IAsyncResult> endAsync, T1 arg1)
 		{
+			if (beginAsync == null) throw new ArgumentNullException(nameof(beginAsync));
+			if (endAsync == null) throw new ArgumentNullException(nameof(endAsync));
+
 			var tcs = new TaskCompletionSource<object>();
 
-			IAsyncResult result = null;
-
-			result = beginAsync
+			beginAsync
 			(
 				arg1,
 				(ar) =>
@@ -833,11 +849,12 @@ namespace ConcurrentSharp
 		/// <returns>A <see cref="System.Threading.Tasks.Task"/> that represents the async operation.</returns>
 		public static Task FromAsyncCallback<T1, T2>(Func<T1, T2, AsyncCallback, object, IAsyncResult> beginAsync, Action<IAsyncResult> endAsync, T1 arg1, T2 arg2)
 		{
+			if (beginAsync == null) throw new ArgumentNullException(nameof(beginAsync));
+			if (endAsync == null) throw new ArgumentNullException(nameof(endAsync));
+
 			var tcs = new TaskCompletionSource<object>();
 
-			IAsyncResult result = null;
-
-			result = beginAsync
+			beginAsync
 			(
 				arg1, arg2, 
 				(ar) =>
@@ -871,11 +888,12 @@ namespace ConcurrentSharp
 		/// <returns>A <see cref="System.Threading.Tasks.Task"/> that represents the async operation.</returns>
 		public static Task FromAsyncCallback<T1, T2, T3>(Func<T1, T2, T3, AsyncCallback, object, IAsyncResult> beginAsync, Action<IAsyncResult> endAsync, T1 arg1, T2 arg2, T3 arg3)
 		{
+			if (beginAsync == null) throw new ArgumentNullException(nameof(beginAsync));
+			if (endAsync == null) throw new ArgumentNullException(nameof(endAsync));
+
 			var tcs = new TaskCompletionSource<object>();
 
-			IAsyncResult result = null;
-
-			result = beginAsync
+			beginAsync
 			(
 				arg1, arg2, arg3,
 				(ar) =>
@@ -911,11 +929,12 @@ namespace ConcurrentSharp
 		/// <returns>A <see cref="System.Threading.Tasks.Task"/> that represents the async operation.</returns>
 		public static Task FromAsyncCallback<T1, T2, T3, T4>(Func<T1, T2, T3, T4, AsyncCallback, object, IAsyncResult> beginAsync, Action<IAsyncResult> endAsync, T1 arg1, T2 arg2, T3 arg3, T4 arg4)
 		{
+			if (beginAsync == null) throw new ArgumentNullException(nameof(beginAsync));
+			if (endAsync == null) throw new ArgumentNullException(nameof(endAsync));
+
 			var tcs = new TaskCompletionSource<object>();
 
-			IAsyncResult result = null;
-
-			result = beginAsync
+			beginAsync
 			(
 				arg1, arg2, arg3, arg4,
 				(ar) =>
@@ -953,11 +972,12 @@ namespace ConcurrentSharp
 		/// <returns>A <see cref="System.Threading.Tasks.Task"/> that represents the async operation.</returns>
 		public static Task FromAsyncCallback<T1, T2, T3, T4, T5>(Func<T1, T2, T3, T4, T5, AsyncCallback, object, IAsyncResult> beginAsync, Action<IAsyncResult> endAsync, T1 arg1, T2 arg2, T3 arg3, T4 arg4, T5 arg5)
 		{
+			if (beginAsync == null) throw new ArgumentNullException(nameof(beginAsync));
+			if (endAsync == null) throw new ArgumentNullException(nameof(endAsync));
+
 			var tcs = new TaskCompletionSource<object>();
 
-			IAsyncResult result = null;
-
-			result = beginAsync
+			beginAsync
 			(
 				arg1, arg2, arg3, arg4, arg5, 
 				(ar) =>
@@ -997,11 +1017,12 @@ namespace ConcurrentSharp
 		/// <returns>A <see cref="System.Threading.Tasks.Task"/> that represents the async operation.</returns>
 		public static Task FromAsyncCallback<T1, T2, T3, T4, T5, T6>(Func<T1, T2, T3, T4, T5, T6, AsyncCallback, object, IAsyncResult> beginAsync, Action<IAsyncResult> endAsync, T1 arg1, T2 arg2, T3 arg3, T4 arg4, T5 arg5, T6 arg6)
 		{
+			if (beginAsync == null) throw new ArgumentNullException(nameof(beginAsync));
+			if (endAsync == null) throw new ArgumentNullException(nameof(endAsync));
+
 			var tcs = new TaskCompletionSource<object>();
 
-			IAsyncResult result = null;
-
-			result = beginAsync
+			beginAsync
 			(
 				arg1, arg2, arg3, arg4, arg5, arg6, 
 
@@ -1044,11 +1065,12 @@ namespace ConcurrentSharp
 		/// <returns>A <see cref="System.Threading.Tasks.Task"/> that represents the async operation.</returns>
 		public static Task FromAsyncCallback<T1, T2, T3, T4, T5, T6, T7>(Func<T1, T2, T3, T4, T5, T6, T7, AsyncCallback, object, IAsyncResult> beginAsync, Action<IAsyncResult> endAsync, T1 arg1, T2 arg2, T3 arg3, T4 arg4, T5 arg5, T6 arg6, T7 arg7)
 		{
+			if (beginAsync == null) throw new ArgumentNullException(nameof(beginAsync));
+			if (endAsync == null) throw new ArgumentNullException(nameof(endAsync));
+
 			var tcs = new TaskCompletionSource<object>();
 
-			IAsyncResult result = null;
-
-			result = beginAsync
+			beginAsync
 			(
 				arg1, arg2, arg3, arg4, arg5, arg6, arg7,
 
@@ -1093,11 +1115,12 @@ namespace ConcurrentSharp
 		/// <returns>A <see cref="System.Threading.Tasks.Task"/> that represents the async operation.</returns>
 		public static Task FromAsyncCallback<T1, T2, T3, T4, T5, T6, T7, T8>(Func<T1, T2, T3, T4, T5, T6, T7, T8, AsyncCallback, object, IAsyncResult> beginAsync, Action<IAsyncResult> endAsync, T1 arg1, T2 arg2, T3 arg3, T4 arg4, T5 arg5, T6 arg6, T7 arg7, T8 arg8)
 		{
+			if (beginAsync == null) throw new ArgumentNullException(nameof(beginAsync));
+			if (endAsync == null) throw new ArgumentNullException(nameof(endAsync));
+
 			var tcs = new TaskCompletionSource<object>();
 
-			IAsyncResult result = null;
-
-			result = beginAsync
+			beginAsync
 			(
 				arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, 
 
@@ -1144,11 +1167,12 @@ namespace ConcurrentSharp
 		/// <returns>A <see cref="System.Threading.Tasks.Task"/> that represents the async operation.</returns>
 		public static Task FromAsyncCallback<T1, T2, T3, T4, T5, T6, T7, T8, T9>(Func<T1, T2, T3, T4, T5, T6, T7, T8, T9, AsyncCallback, object, IAsyncResult> beginAsync, Action<IAsyncResult> endAsync, T1 arg1, T2 arg2, T3 arg3, T4 arg4, T5 arg5, T6 arg6, T7 arg7, T8 arg8, T9 arg9)
 		{
+			if (beginAsync == null) throw new ArgumentNullException(nameof(beginAsync));
+			if (endAsync == null) throw new ArgumentNullException(nameof(endAsync));
+
 			var tcs = new TaskCompletionSource<object>();
 
-			IAsyncResult result = null;
-
-			result = beginAsync
+			beginAsync
 			(
 				arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, 
 
@@ -1197,11 +1221,12 @@ namespace ConcurrentSharp
 		/// <returns>A <see cref="System.Threading.Tasks.Task"/> that represents the async operation.</returns>
 		public static Task FromAsyncCallback<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10>(Func<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, AsyncCallback, object, IAsyncResult> beginAsync, Action<IAsyncResult> endAsync, T1 arg1, T2 arg2, T3 arg3, T4 arg4, T5 arg5, T6 arg6, T7 arg7, T8 arg8, T9 arg9, T10 arg10)
 		{
+			if (beginAsync == null) throw new ArgumentNullException(nameof(beginAsync));
+			if (endAsync == null) throw new ArgumentNullException(nameof(endAsync));
+
 			var tcs = new TaskCompletionSource<object>();
 
-			IAsyncResult result = null;
-
-			result = beginAsync
+			beginAsync
 			(
 				arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, 
 
@@ -1252,11 +1277,12 @@ namespace ConcurrentSharp
 		/// <returns>A <see cref="System.Threading.Tasks.Task"/> that represents the async operation.</returns>
 		public static Task FromAsyncCallback<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11>(Func<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, AsyncCallback, object, IAsyncResult> beginAsync, Action<IAsyncResult> endAsync, T1 arg1, T2 arg2, T3 arg3, T4 arg4, T5 arg5, T6 arg6, T7 arg7, T8 arg8, T9 arg9, T10 arg10, T11 arg11)
 		{
+			if (beginAsync == null) throw new ArgumentNullException(nameof(beginAsync));
+			if (endAsync == null) throw new ArgumentNullException(nameof(endAsync));
+
 			var tcs = new TaskCompletionSource<object>();
 
-			IAsyncResult result = null;
-
-			result = beginAsync
+			beginAsync
 			(
 				arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, 
 
@@ -1309,11 +1335,12 @@ namespace ConcurrentSharp
 		/// <returns>A <see cref="System.Threading.Tasks.Task"/> that represents the async operation.</returns>
 		public static Task FromAsyncCallback<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12>(Func<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, AsyncCallback, object, IAsyncResult> beginAsync, Action<IAsyncResult> endAsync, T1 arg1, T2 arg2, T3 arg3, T4 arg4, T5 arg5, T6 arg6, T7 arg7, T8 arg8, T9 arg9, T10 arg10, T11 arg11, T12 arg12)
 		{
+			if (beginAsync == null) throw new ArgumentNullException(nameof(beginAsync));
+			if (endAsync == null) throw new ArgumentNullException(nameof(endAsync));
+
 			var tcs = new TaskCompletionSource<object>();
 
-			IAsyncResult result = null;
-
-			result = beginAsync
+			beginAsync
 			(
 				arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, 
 
@@ -1368,11 +1395,12 @@ namespace ConcurrentSharp
 		/// <returns>A <see cref="System.Threading.Tasks.Task"/> that represents the async operation.</returns>
 		public static Task FromAsyncCallback<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13>(Func<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, AsyncCallback, object, IAsyncResult> beginAsync, Action<IAsyncResult> endAsync, T1 arg1, T2 arg2, T3 arg3, T4 arg4, T5 arg5, T6 arg6, T7 arg7, T8 arg8, T9 arg9, T10 arg10, T11 arg11, T12 arg12, T13 arg13)
 		{
+			if (beginAsync == null) throw new ArgumentNullException(nameof(beginAsync));
+			if (endAsync == null) throw new ArgumentNullException(nameof(endAsync));
+
 			var tcs = new TaskCompletionSource<object>();
 
-			IAsyncResult result = null;
-
-			result = beginAsync
+			beginAsync
 			(
 				arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13, 
 
@@ -1429,11 +1457,12 @@ namespace ConcurrentSharp
 		/// <returns>A <see cref="System.Threading.Tasks.Task"/> that represents the async operation.</returns>
 		public static Task FromAsyncCallback<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14>(Func<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, AsyncCallback, object, IAsyncResult> beginAsync, Action<IAsyncResult> endAsync, T1 arg1, T2 arg2, T3 arg3, T4 arg4, T5 arg5, T6 arg6, T7 arg7, T8 arg8, T9 arg9, T10 arg10, T11 arg11, T12 arg12, T13 arg13, T14 arg14)
 		{
+			if (beginAsync == null) throw new ArgumentNullException(nameof(beginAsync));
+			if (endAsync == null) throw new ArgumentNullException(nameof(endAsync));
+
 			var tcs = new TaskCompletionSource<object>();
 
-			IAsyncResult result = null;
-
-			result = beginAsync
+			beginAsync
 			(
 				arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13, arg14, 
 				(ar) =>
