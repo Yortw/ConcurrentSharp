@@ -39,7 +39,6 @@ namespace ConcurrentSharp
 
 		private System.Threading.Semaphore _Semaphore;
 		private object _Synchroniser;
-		private int _MaxConcurrency;
 
 		/// <summary>
 		/// Constructs a new <see cref="Throttle"/> instance that allows up to the specified number of concurrent operations.
@@ -52,7 +51,6 @@ namespace ConcurrentSharp
 
 			_Synchroniser = new object();
 			_Semaphore = new System.Threading.Semaphore(maxConcurrency, maxConcurrency);
-			_MaxConcurrency = maxConcurrency;
 		}
 
 		/// <summary>
