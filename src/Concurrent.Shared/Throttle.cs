@@ -238,13 +238,14 @@ namespace ConcurrentSharp
 			if (items == null) throw new ArgumentNullException(nameof(items));
 			if (asyncAction == null) throw new ArgumentNullException(nameof(asyncAction));
 
+			var asyncSemaphore = new AsyncSemaphore(_Semaphore);
 			var tasks = new List<Task<TResult>>(_MaxConcurrency);
 			foreach (var item in items)
 			{
-				_Semaphore.WaitOne();
+				var lease = await asyncSemaphore.WaitAsync().ConfigureAwait(false);
 				var t = asyncAction(item).ContinueWith
 				(
-					(pt) => { _Semaphore.Release(); return pt.Result; },
+					(pt) => { lease.Dispose(); return pt.Result; },
 					TaskContinuationOptions.ExecuteSynchronously
 				);
 
