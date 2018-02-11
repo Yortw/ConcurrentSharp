@@ -65,22 +65,25 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AsyncLockTests.cs" />
     <Compile Include="BlockingCollectionProcessorTests.cs" />
     <Compile Include="CounterTests.cs" />
     <Compile Include="GlobalSuppressions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TaskFromTests.cs" />
     <Compile Include="TaskTimeoutTests.cs" />
+    <Compile Include="TaskWaitExceptionless.cs" />
+    <Compile Include="TaskWaitWithUnwrappedExceptionTests.cs" />
     <Compile Include="ThrottleTests.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ConcurrentSharp.Portable\ConcurrentSharp.csproj">
-      <Project>{c9a5f462-ef0e-421e-9259-297f0b092410}</Project>
-      <Name>ConcurrentSharp</Name>
-    </ProjectReference>
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
+    <ProjectReference Include="..\Concurrent.Net45\Concurrent.Net45.csproj">
+      <Project>{9cb85d39-e539-4a01-b00b-4366deedda2b}</Project>
+      <Name>Concurrent.Net45</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

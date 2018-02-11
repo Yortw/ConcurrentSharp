@@ -7,6 +7,54 @@ references:
   commentId: N:ConcurrentSharp
   fullName: ConcurrentSharp
   nameWithType: ConcurrentSharp
+- uid: ConcurrentSharp.AsyncLock
+  name: AsyncLock
+  href: api/ConcurrentSharp.AsyncLock.html
+  commentId: T:ConcurrentSharp.AsyncLock
+  fullName: ConcurrentSharp.AsyncLock
+  nameWithType: AsyncLock
+- uid: ConcurrentSharp.AsyncLock.#ctor
+  name: AsyncLock()
+  href: api/ConcurrentSharp.AsyncLock.-ctor.html#ConcurrentSharp_AsyncLock__ctor
+  commentId: M:ConcurrentSharp.AsyncLock.#ctor
+  fullName: ConcurrentSharp.AsyncLock.AsyncLock()
+  nameWithType: AsyncLock.AsyncLock()
+- uid: ConcurrentSharp.AsyncLock.#ctor*
+  name: AsyncLock
+  href: api/ConcurrentSharp.AsyncLock.-ctor.html
+  commentId: Overload:ConcurrentSharp.AsyncLock.#ctor
+  fullName: ConcurrentSharp.AsyncLock.AsyncLock
+  nameWithType: AsyncLock.AsyncLock
+- uid: ConcurrentSharp.AsyncLock.Lock
+  name: Lock()
+  href: api/ConcurrentSharp.AsyncLock.Lock.html#ConcurrentSharp_AsyncLock_Lock
+  commentId: M:ConcurrentSharp.AsyncLock.Lock
+  fullName: ConcurrentSharp.AsyncLock.Lock()
+  nameWithType: AsyncLock.Lock()
+- uid: ConcurrentSharp.AsyncLock.Lock*
+  name: Lock
+  href: api/ConcurrentSharp.AsyncLock.Lock.html
+  commentId: Overload:ConcurrentSharp.AsyncLock.Lock
+  fullName: ConcurrentSharp.AsyncLock.Lock
+  nameWithType: AsyncLock.Lock
+- uid: ConcurrentSharp.AsyncLock.LockAsync
+  name: LockAsync()
+  href: api/ConcurrentSharp.AsyncLock.LockAsync.html#ConcurrentSharp_AsyncLock_LockAsync
+  commentId: M:ConcurrentSharp.AsyncLock.LockAsync
+  fullName: ConcurrentSharp.AsyncLock.LockAsync()
+  nameWithType: AsyncLock.LockAsync()
+- uid: ConcurrentSharp.AsyncLock.LockAsync(System.Threading.CancellationToken)
+  name: LockAsync(CancellationToken)
+  href: api/ConcurrentSharp.AsyncLock.LockAsync.html#ConcurrentSharp_AsyncLock_LockAsync_System_Threading_CancellationToken_
+  commentId: M:ConcurrentSharp.AsyncLock.LockAsync(System.Threading.CancellationToken)
+  fullName: ConcurrentSharp.AsyncLock.LockAsync(System.Threading.CancellationToken)
+  nameWithType: AsyncLock.LockAsync(CancellationToken)
+- uid: ConcurrentSharp.AsyncLock.LockAsync*
+  name: LockAsync
+  href: api/ConcurrentSharp.AsyncLock.LockAsync.html
+  commentId: Overload:ConcurrentSharp.AsyncLock.LockAsync
+  fullName: ConcurrentSharp.AsyncLock.LockAsync
+  nameWithType: AsyncLock.LockAsync
 - uid: ConcurrentSharp.BlockingCollectionProcessor`1
   name: BlockingCollectionProcessor<T>
   href: api/ConcurrentSharp.BlockingCollectionProcessor-1.html
@@ -16,13 +64,13 @@ references:
   fullName.vb: ConcurrentSharp.BlockingCollectionProcessor(Of T)
   nameWithType: BlockingCollectionProcessor<T>
   nameWithType.vb: BlockingCollectionProcessor(Of T)
-- uid: ConcurrentSharp.BlockingCollectionProcessor`1.#ctor(BlockingCollection{`0},System.Int32,System.Action{`0},ConcurrentSharp.ExpectedThreadLifetime)
+- uid: ConcurrentSharp.BlockingCollectionProcessor`1.#ctor(BlockingCollection{`0},System.Int32,Action{`0},ConcurrentSharp.ExpectedThreadLifetime)
   name: BlockingCollectionProcessor(BlockingCollection<T>, Int32, Action<T>, ExpectedThreadLifetime)
-  href: api/ConcurrentSharp.BlockingCollectionProcessor-1.-ctor.html#ConcurrentSharp_BlockingCollectionProcessor_1__ctor_BlockingCollection__0__System_Int32_System_Action__0__ConcurrentSharp_ExpectedThreadLifetime_
-  commentId: M:ConcurrentSharp.BlockingCollectionProcessor`1.#ctor(BlockingCollection{`0},System.Int32,System.Action{`0},ConcurrentSharp.ExpectedThreadLifetime)
+  href: api/ConcurrentSharp.BlockingCollectionProcessor-1.-ctor.html#ConcurrentSharp_BlockingCollectionProcessor_1__ctor_BlockingCollection__0__System_Int32_Action__0__ConcurrentSharp_ExpectedThreadLifetime_
+  commentId: M:ConcurrentSharp.BlockingCollectionProcessor`1.#ctor(BlockingCollection{`0},System.Int32,Action{`0},ConcurrentSharp.ExpectedThreadLifetime)
   name.vb: BlockingCollectionProcessor(BlockingCollection(Of T), Int32, Action(Of T), ExpectedThreadLifetime)
-  fullName: ConcurrentSharp.BlockingCollectionProcessor<T>.BlockingCollectionProcessor(BlockingCollection<T>, System.Int32, System.Action<T>, ConcurrentSharp.ExpectedThreadLifetime)
-  fullName.vb: ConcurrentSharp.BlockingCollectionProcessor(Of T).BlockingCollectionProcessor(BlockingCollection(Of T), System.Int32, System.Action(Of T), ConcurrentSharp.ExpectedThreadLifetime)
+  fullName: ConcurrentSharp.BlockingCollectionProcessor<T>.BlockingCollectionProcessor(BlockingCollection<T>, System.Int32, Action<T>, ConcurrentSharp.ExpectedThreadLifetime)
+  fullName.vb: ConcurrentSharp.BlockingCollectionProcessor(Of T).BlockingCollectionProcessor(BlockingCollection(Of T), System.Int32, Action(Of T), ConcurrentSharp.ExpectedThreadLifetime)
   nameWithType: BlockingCollectionProcessor<T>.BlockingCollectionProcessor(BlockingCollection<T>, Int32, Action<T>, ExpectedThreadLifetime)
   nameWithType.vb: BlockingCollectionProcessor(Of T).BlockingCollectionProcessor(BlockingCollection(Of T), Int32, Action(Of T), ExpectedThreadLifetime)
 - uid: ConcurrentSharp.BlockingCollectionProcessor`1.#ctor*
@@ -49,13 +97,13 @@ references:
   fullName.vb: ConcurrentSharp.BlockingCollectionProcessor(Of T).Dispose
   nameWithType: BlockingCollectionProcessor<T>.Dispose
   nameWithType.vb: BlockingCollectionProcessor(Of T).Dispose
-- uid: ConcurrentSharp.BlockingCollectionProcessor`1.ProcessItems(IEnumerable{`0},System.Int32,System.Action{`0},ConcurrentSharp.ExpectedThreadLifetime)
+- uid: ConcurrentSharp.BlockingCollectionProcessor`1.ProcessItems(IEnumerable{`0},System.Int32,Action{`0},ConcurrentSharp.ExpectedThreadLifetime)
   name: ProcessItems(IEnumerable<T>, Int32, Action<T>, ExpectedThreadLifetime)
-  href: api/ConcurrentSharp.BlockingCollectionProcessor-1.ProcessItems.html#ConcurrentSharp_BlockingCollectionProcessor_1_ProcessItems_IEnumerable__0__System_Int32_System_Action__0__ConcurrentSharp_ExpectedThreadLifetime_
-  commentId: M:ConcurrentSharp.BlockingCollectionProcessor`1.ProcessItems(IEnumerable{`0},System.Int32,System.Action{`0},ConcurrentSharp.ExpectedThreadLifetime)
+  href: api/ConcurrentSharp.BlockingCollectionProcessor-1.ProcessItems.html#ConcurrentSharp_BlockingCollectionProcessor_1_ProcessItems_IEnumerable__0__System_Int32_Action__0__ConcurrentSharp_ExpectedThreadLifetime_
+  commentId: M:ConcurrentSharp.BlockingCollectionProcessor`1.ProcessItems(IEnumerable{`0},System.Int32,Action{`0},ConcurrentSharp.ExpectedThreadLifetime)
   name.vb: ProcessItems(IEnumerable(Of T), Int32, Action(Of T), ExpectedThreadLifetime)
-  fullName: ConcurrentSharp.BlockingCollectionProcessor<T>.ProcessItems(IEnumerable<T>, System.Int32, System.Action<T>, ConcurrentSharp.ExpectedThreadLifetime)
-  fullName.vb: ConcurrentSharp.BlockingCollectionProcessor(Of T).ProcessItems(IEnumerable(Of T), System.Int32, System.Action(Of T), ConcurrentSharp.ExpectedThreadLifetime)
+  fullName: ConcurrentSharp.BlockingCollectionProcessor<T>.ProcessItems(IEnumerable<T>, System.Int32, Action<T>, ConcurrentSharp.ExpectedThreadLifetime)
+  fullName.vb: ConcurrentSharp.BlockingCollectionProcessor(Of T).ProcessItems(IEnumerable(Of T), System.Int32, Action(Of T), ConcurrentSharp.ExpectedThreadLifetime)
   nameWithType: BlockingCollectionProcessor<T>.ProcessItems(IEnumerable<T>, Int32, Action<T>, ExpectedThreadLifetime)
   nameWithType.vb: BlockingCollectionProcessor(Of T).ProcessItems(IEnumerable(Of T), Int32, Action(Of T), ExpectedThreadLifetime)
 - uid: ConcurrentSharp.BlockingCollectionProcessor`1.ProcessItems*
@@ -74,12 +122,12 @@ references:
   fullName.vb: ConcurrentSharp.BlockingCollectionProcessor(Of T).WaitForCompletion()
   nameWithType: BlockingCollectionProcessor<T>.WaitForCompletion()
   nameWithType.vb: BlockingCollectionProcessor(Of T).WaitForCompletion()
-- uid: ConcurrentSharp.BlockingCollectionProcessor`1.WaitForCompletion(System.TimeSpan)
+- uid: ConcurrentSharp.BlockingCollectionProcessor`1.WaitForCompletion(TimeSpan)
   name: WaitForCompletion(TimeSpan)
-  href: api/ConcurrentSharp.BlockingCollectionProcessor-1.WaitForCompletion.html#ConcurrentSharp_BlockingCollectionProcessor_1_WaitForCompletion_System_TimeSpan_
-  commentId: M:ConcurrentSharp.BlockingCollectionProcessor`1.WaitForCompletion(System.TimeSpan)
-  fullName: ConcurrentSharp.BlockingCollectionProcessor<T>.WaitForCompletion(System.TimeSpan)
-  fullName.vb: ConcurrentSharp.BlockingCollectionProcessor(Of T).WaitForCompletion(System.TimeSpan)
+  href: api/ConcurrentSharp.BlockingCollectionProcessor-1.WaitForCompletion.html#ConcurrentSharp_BlockingCollectionProcessor_1_WaitForCompletion_TimeSpan_
+  commentId: M:ConcurrentSharp.BlockingCollectionProcessor`1.WaitForCompletion(TimeSpan)
+  fullName: ConcurrentSharp.BlockingCollectionProcessor<T>.WaitForCompletion(TimeSpan)
+  fullName.vb: ConcurrentSharp.BlockingCollectionProcessor(Of T).WaitForCompletion(TimeSpan)
   nameWithType: BlockingCollectionProcessor<T>.WaitForCompletion(TimeSpan)
   nameWithType.vb: BlockingCollectionProcessor(Of T).WaitForCompletion(TimeSpan)
 - uid: ConcurrentSharp.BlockingCollectionProcessor`1.WaitForCompletion*
@@ -90,6 +138,113 @@ references:
   fullName.vb: ConcurrentSharp.BlockingCollectionProcessor(Of T).WaitForCompletion
   nameWithType: BlockingCollectionProcessor<T>.WaitForCompletion
   nameWithType.vb: BlockingCollectionProcessor(Of T).WaitForCompletion
+- uid: ConcurrentSharp.CancellableTaskSource`1
+  name: CancellableTaskSource<T>
+  href: api/ConcurrentSharp.CancellableTaskSource-1.html
+  commentId: T:ConcurrentSharp.CancellableTaskSource`1
+  name.vb: CancellableTaskSource(Of T)
+  fullName: ConcurrentSharp.CancellableTaskSource<T>
+  fullName.vb: ConcurrentSharp.CancellableTaskSource(Of T)
+  nameWithType: CancellableTaskSource<T>
+  nameWithType.vb: CancellableTaskSource(Of T)
+- uid: ConcurrentSharp.CancellableTaskSource`1.#ctor
+  name: CancellableTaskSource()
+  href: api/ConcurrentSharp.CancellableTaskSource-1.-ctor.html#ConcurrentSharp_CancellableTaskSource_1__ctor
+  commentId: M:ConcurrentSharp.CancellableTaskSource`1.#ctor
+  fullName: ConcurrentSharp.CancellableTaskSource<T>.CancellableTaskSource()
+  fullName.vb: ConcurrentSharp.CancellableTaskSource(Of T).CancellableTaskSource()
+  nameWithType: CancellableTaskSource<T>.CancellableTaskSource()
+  nameWithType.vb: CancellableTaskSource(Of T).CancellableTaskSource()
+- uid: ConcurrentSharp.CancellableTaskSource`1.#ctor(TaskCompletionSource{`0})
+  name: CancellableTaskSource(TaskCompletionSource<T>)
+  href: api/ConcurrentSharp.CancellableTaskSource-1.-ctor.html#ConcurrentSharp_CancellableTaskSource_1__ctor_TaskCompletionSource__0__
+  commentId: M:ConcurrentSharp.CancellableTaskSource`1.#ctor(TaskCompletionSource{`0})
+  name.vb: CancellableTaskSource(TaskCompletionSource(Of T))
+  fullName: ConcurrentSharp.CancellableTaskSource<T>.CancellableTaskSource(TaskCompletionSource<T>)
+  fullName.vb: ConcurrentSharp.CancellableTaskSource(Of T).CancellableTaskSource(TaskCompletionSource(Of T))
+  nameWithType: CancellableTaskSource<T>.CancellableTaskSource(TaskCompletionSource<T>)
+  nameWithType.vb: CancellableTaskSource(Of T).CancellableTaskSource(TaskCompletionSource(Of T))
+- uid: ConcurrentSharp.CancellableTaskSource`1.#ctor(TaskCompletionSource{`0},System.Threading.CancellationToken)
+  name: CancellableTaskSource(TaskCompletionSource<T>, CancellationToken)
+  href: api/ConcurrentSharp.CancellableTaskSource-1.-ctor.html#ConcurrentSharp_CancellableTaskSource_1__ctor_TaskCompletionSource__0__System_Threading_CancellationToken_
+  commentId: M:ConcurrentSharp.CancellableTaskSource`1.#ctor(TaskCompletionSource{`0},System.Threading.CancellationToken)
+  name.vb: CancellableTaskSource(TaskCompletionSource(Of T), CancellationToken)
+  fullName: ConcurrentSharp.CancellableTaskSource<T>.CancellableTaskSource(TaskCompletionSource<T>, System.Threading.CancellationToken)
+  fullName.vb: ConcurrentSharp.CancellableTaskSource(Of T).CancellableTaskSource(TaskCompletionSource(Of T), System.Threading.CancellationToken)
+  nameWithType: CancellableTaskSource<T>.CancellableTaskSource(TaskCompletionSource<T>, CancellationToken)
+  nameWithType.vb: CancellableTaskSource(Of T).CancellableTaskSource(TaskCompletionSource(Of T), CancellationToken)
+- uid: ConcurrentSharp.CancellableTaskSource`1.#ctor*
+  name: CancellableTaskSource
+  href: api/ConcurrentSharp.CancellableTaskSource-1.-ctor.html
+  commentId: Overload:ConcurrentSharp.CancellableTaskSource`1.#ctor
+  fullName: ConcurrentSharp.CancellableTaskSource<T>.CancellableTaskSource
+  fullName.vb: ConcurrentSharp.CancellableTaskSource(Of T).CancellableTaskSource
+  nameWithType: CancellableTaskSource<T>.CancellableTaskSource
+  nameWithType.vb: CancellableTaskSource(Of T).CancellableTaskSource
+- uid: ConcurrentSharp.CancellableTaskSource`1.Cancel
+  name: Cancel()
+  href: api/ConcurrentSharp.CancellableTaskSource-1.Cancel.html#ConcurrentSharp_CancellableTaskSource_1_Cancel
+  commentId: M:ConcurrentSharp.CancellableTaskSource`1.Cancel
+  fullName: ConcurrentSharp.CancellableTaskSource<T>.Cancel()
+  fullName.vb: ConcurrentSharp.CancellableTaskSource(Of T).Cancel()
+  nameWithType: CancellableTaskSource<T>.Cancel()
+  nameWithType.vb: CancellableTaskSource(Of T).Cancel()
+- uid: ConcurrentSharp.CancellableTaskSource`1.Cancel*
+  name: Cancel
+  href: api/ConcurrentSharp.CancellableTaskSource-1.Cancel.html
+  commentId: Overload:ConcurrentSharp.CancellableTaskSource`1.Cancel
+  fullName: ConcurrentSharp.CancellableTaskSource<T>.Cancel
+  fullName.vb: ConcurrentSharp.CancellableTaskSource(Of T).Cancel
+  nameWithType: CancellableTaskSource<T>.Cancel
+  nameWithType.vb: CancellableTaskSource(Of T).Cancel
+- uid: ConcurrentSharp.CancellableTaskSource`1.CancellationToken
+  name: CancellationToken
+  href: api/ConcurrentSharp.CancellableTaskSource-1.CancellationToken.html#ConcurrentSharp_CancellableTaskSource_1_CancellationToken
+  commentId: P:ConcurrentSharp.CancellableTaskSource`1.CancellationToken
+  fullName: ConcurrentSharp.CancellableTaskSource<T>.CancellationToken
+  fullName.vb: ConcurrentSharp.CancellableTaskSource(Of T).CancellationToken
+  nameWithType: CancellableTaskSource<T>.CancellationToken
+  nameWithType.vb: CancellableTaskSource(Of T).CancellationToken
+- uid: ConcurrentSharp.CancellableTaskSource`1.CancellationToken*
+  name: CancellationToken
+  href: api/ConcurrentSharp.CancellableTaskSource-1.CancellationToken.html
+  commentId: Overload:ConcurrentSharp.CancellableTaskSource`1.CancellationToken
+  fullName: ConcurrentSharp.CancellableTaskSource<T>.CancellationToken
+  fullName.vb: ConcurrentSharp.CancellableTaskSource(Of T).CancellationToken
+  nameWithType: CancellableTaskSource<T>.CancellationToken
+  nameWithType.vb: CancellableTaskSource(Of T).CancellationToken
+- uid: ConcurrentSharp.CancellableTaskSource`1.Dispose
+  name: Dispose()
+  href: api/ConcurrentSharp.CancellableTaskSource-1.Dispose.html#ConcurrentSharp_CancellableTaskSource_1_Dispose
+  commentId: M:ConcurrentSharp.CancellableTaskSource`1.Dispose
+  fullName: ConcurrentSharp.CancellableTaskSource<T>.Dispose()
+  fullName.vb: ConcurrentSharp.CancellableTaskSource(Of T).Dispose()
+  nameWithType: CancellableTaskSource<T>.Dispose()
+  nameWithType.vb: CancellableTaskSource(Of T).Dispose()
+- uid: ConcurrentSharp.CancellableTaskSource`1.Dispose*
+  name: Dispose
+  href: api/ConcurrentSharp.CancellableTaskSource-1.Dispose.html
+  commentId: Overload:ConcurrentSharp.CancellableTaskSource`1.Dispose
+  fullName: ConcurrentSharp.CancellableTaskSource<T>.Dispose
+  fullName.vb: ConcurrentSharp.CancellableTaskSource(Of T).Dispose
+  nameWithType: CancellableTaskSource<T>.Dispose
+  nameWithType.vb: CancellableTaskSource(Of T).Dispose
+- uid: ConcurrentSharp.CancellableTaskSource`1.TaskCompletionSource
+  name: TaskCompletionSource
+  href: api/ConcurrentSharp.CancellableTaskSource-1.TaskCompletionSource.html#ConcurrentSharp_CancellableTaskSource_1_TaskCompletionSource
+  commentId: P:ConcurrentSharp.CancellableTaskSource`1.TaskCompletionSource
+  fullName: ConcurrentSharp.CancellableTaskSource<T>.TaskCompletionSource
+  fullName.vb: ConcurrentSharp.CancellableTaskSource(Of T).TaskCompletionSource
+  nameWithType: CancellableTaskSource<T>.TaskCompletionSource
+  nameWithType.vb: CancellableTaskSource(Of T).TaskCompletionSource
+- uid: ConcurrentSharp.CancellableTaskSource`1.TaskCompletionSource*
+  name: TaskCompletionSource
+  href: api/ConcurrentSharp.CancellableTaskSource-1.TaskCompletionSource.html
+  commentId: Overload:ConcurrentSharp.CancellableTaskSource`1.TaskCompletionSource
+  fullName: ConcurrentSharp.CancellableTaskSource<T>.TaskCompletionSource
+  fullName.vb: ConcurrentSharp.CancellableTaskSource(Of T).TaskCompletionSource
+  nameWithType: CancellableTaskSource<T>.TaskCompletionSource
+  nameWithType.vb: CancellableTaskSource(Of T).TaskCompletionSource
 - uid: ConcurrentSharp.Counter
   name: Counter
   href: api/ConcurrentSharp.Counter.html
@@ -210,6 +365,24 @@ references:
   commentId: F:ConcurrentSharp.ExpectedThreadLifetime.Short
   fullName: ConcurrentSharp.ExpectedThreadLifetime.Short
   nameWithType: ExpectedThreadLifetime.Short
+- uid: ConcurrentSharp.ReleaseToken
+  name: ReleaseToken
+  href: api/ConcurrentSharp.ReleaseToken.html
+  commentId: T:ConcurrentSharp.ReleaseToken
+  fullName: ConcurrentSharp.ReleaseToken
+  nameWithType: ReleaseToken
+- uid: ConcurrentSharp.ReleaseToken.Dispose
+  name: Dispose()
+  href: api/ConcurrentSharp.ReleaseToken.Dispose.html#ConcurrentSharp_ReleaseToken_Dispose
+  commentId: M:ConcurrentSharp.ReleaseToken.Dispose
+  fullName: ConcurrentSharp.ReleaseToken.Dispose()
+  nameWithType: ReleaseToken.Dispose()
+- uid: ConcurrentSharp.ReleaseToken.Dispose*
+  name: Dispose
+  href: api/ConcurrentSharp.ReleaseToken.Dispose.html
+  commentId: Overload:ConcurrentSharp.ReleaseToken.Dispose
+  fullName: ConcurrentSharp.ReleaseToken.Dispose
+  nameWithType: ReleaseToken.Dispose
 - uid: ConcurrentSharp.TaskExtensions
   name: TaskExtensions
   href: api/ConcurrentSharp.TaskExtensions.html
@@ -240,17 +413,17 @@ references:
   commentId: M:ConcurrentSharp.TaskExtensions.TimeoutAfter(Task,System.Int32,CancellationTokenSource)
   fullName: ConcurrentSharp.TaskExtensions.TimeoutAfter(Task, System.Int32, CancellationTokenSource)
   nameWithType: TaskExtensions.TimeoutAfter(Task, Int32, CancellationTokenSource)
-- uid: ConcurrentSharp.TaskExtensions.TimeoutAfter(Task,System.TimeSpan)
+- uid: ConcurrentSharp.TaskExtensions.TimeoutAfter(Task,TimeSpan)
   name: TimeoutAfter(Task, TimeSpan)
-  href: api/ConcurrentSharp.TaskExtensions.TimeoutAfter.html#ConcurrentSharp_TaskExtensions_TimeoutAfter_Task_System_TimeSpan_
-  commentId: M:ConcurrentSharp.TaskExtensions.TimeoutAfter(Task,System.TimeSpan)
-  fullName: ConcurrentSharp.TaskExtensions.TimeoutAfter(Task, System.TimeSpan)
+  href: api/ConcurrentSharp.TaskExtensions.TimeoutAfter.html#ConcurrentSharp_TaskExtensions_TimeoutAfter_Task_TimeSpan_
+  commentId: M:ConcurrentSharp.TaskExtensions.TimeoutAfter(Task,TimeSpan)
+  fullName: ConcurrentSharp.TaskExtensions.TimeoutAfter(Task, TimeSpan)
   nameWithType: TaskExtensions.TimeoutAfter(Task, TimeSpan)
-- uid: ConcurrentSharp.TaskExtensions.TimeoutAfter(Task,System.TimeSpan,CancellationTokenSource)
+- uid: ConcurrentSharp.TaskExtensions.TimeoutAfter(Task,TimeSpan,CancellationTokenSource)
   name: TimeoutAfter(Task, TimeSpan, CancellationTokenSource)
-  href: api/ConcurrentSharp.TaskExtensions.TimeoutAfter.html#ConcurrentSharp_TaskExtensions_TimeoutAfter_Task_System_TimeSpan_CancellationTokenSource_
-  commentId: M:ConcurrentSharp.TaskExtensions.TimeoutAfter(Task,System.TimeSpan,CancellationTokenSource)
-  fullName: ConcurrentSharp.TaskExtensions.TimeoutAfter(Task, System.TimeSpan, CancellationTokenSource)
+  href: api/ConcurrentSharp.TaskExtensions.TimeoutAfter.html#ConcurrentSharp_TaskExtensions_TimeoutAfter_Task_TimeSpan_CancellationTokenSource_
+  commentId: M:ConcurrentSharp.TaskExtensions.TimeoutAfter(Task,TimeSpan,CancellationTokenSource)
+  fullName: ConcurrentSharp.TaskExtensions.TimeoutAfter(Task, TimeSpan, CancellationTokenSource)
   nameWithType: TaskExtensions.TimeoutAfter(Task, TimeSpan, CancellationTokenSource)
 - uid: ConcurrentSharp.TaskExtensions.TimeoutAfter*
   name: TimeoutAfter
@@ -276,24 +449,60 @@ references:
   fullName.vb: ConcurrentSharp.TaskExtensions.TimeoutAfter(Of T)(Task(Of T), System.Int32, CancellationTokenSource)
   nameWithType: TaskExtensions.TimeoutAfter<T>(Task<T>, Int32, CancellationTokenSource)
   nameWithType.vb: TaskExtensions.TimeoutAfter(Of T)(Task(Of T), Int32, CancellationTokenSource)
-- uid: ConcurrentSharp.TaskExtensions.TimeoutAfter``1(Task{``0},System.TimeSpan)
+- uid: ConcurrentSharp.TaskExtensions.TimeoutAfter``1(Task{``0},TimeSpan)
   name: TimeoutAfter<T>(Task<T>, TimeSpan)
-  href: api/ConcurrentSharp.TaskExtensions.TimeoutAfter.html#ConcurrentSharp_TaskExtensions_TimeoutAfter__1_Task___0__System_TimeSpan_
-  commentId: M:ConcurrentSharp.TaskExtensions.TimeoutAfter``1(Task{``0},System.TimeSpan)
+  href: api/ConcurrentSharp.TaskExtensions.TimeoutAfter.html#ConcurrentSharp_TaskExtensions_TimeoutAfter__1_Task___0__TimeSpan_
+  commentId: M:ConcurrentSharp.TaskExtensions.TimeoutAfter``1(Task{``0},TimeSpan)
   name.vb: TimeoutAfter(Of T)(Task(Of T), TimeSpan)
-  fullName: ConcurrentSharp.TaskExtensions.TimeoutAfter<T>(Task<T>, System.TimeSpan)
-  fullName.vb: ConcurrentSharp.TaskExtensions.TimeoutAfter(Of T)(Task(Of T), System.TimeSpan)
+  fullName: ConcurrentSharp.TaskExtensions.TimeoutAfter<T>(Task<T>, TimeSpan)
+  fullName.vb: ConcurrentSharp.TaskExtensions.TimeoutAfter(Of T)(Task(Of T), TimeSpan)
   nameWithType: TaskExtensions.TimeoutAfter<T>(Task<T>, TimeSpan)
   nameWithType.vb: TaskExtensions.TimeoutAfter(Of T)(Task(Of T), TimeSpan)
-- uid: ConcurrentSharp.TaskExtensions.TimeoutAfter``1(Task{``0},System.TimeSpan,CancellationTokenSource)
+- uid: ConcurrentSharp.TaskExtensions.TimeoutAfter``1(Task{``0},TimeSpan,CancellationTokenSource)
   name: TimeoutAfter<T>(Task<T>, TimeSpan, CancellationTokenSource)
-  href: api/ConcurrentSharp.TaskExtensions.TimeoutAfter.html#ConcurrentSharp_TaskExtensions_TimeoutAfter__1_Task___0__System_TimeSpan_CancellationTokenSource_
-  commentId: M:ConcurrentSharp.TaskExtensions.TimeoutAfter``1(Task{``0},System.TimeSpan,CancellationTokenSource)
+  href: api/ConcurrentSharp.TaskExtensions.TimeoutAfter.html#ConcurrentSharp_TaskExtensions_TimeoutAfter__1_Task___0__TimeSpan_CancellationTokenSource_
+  commentId: M:ConcurrentSharp.TaskExtensions.TimeoutAfter``1(Task{``0},TimeSpan,CancellationTokenSource)
   name.vb: TimeoutAfter(Of T)(Task(Of T), TimeSpan, CancellationTokenSource)
-  fullName: ConcurrentSharp.TaskExtensions.TimeoutAfter<T>(Task<T>, System.TimeSpan, CancellationTokenSource)
-  fullName.vb: ConcurrentSharp.TaskExtensions.TimeoutAfter(Of T)(Task(Of T), System.TimeSpan, CancellationTokenSource)
+  fullName: ConcurrentSharp.TaskExtensions.TimeoutAfter<T>(Task<T>, TimeSpan, CancellationTokenSource)
+  fullName.vb: ConcurrentSharp.TaskExtensions.TimeoutAfter(Of T)(Task(Of T), TimeSpan, CancellationTokenSource)
   nameWithType: TaskExtensions.TimeoutAfter<T>(Task<T>, TimeSpan, CancellationTokenSource)
   nameWithType.vb: TaskExtensions.TimeoutAfter(Of T)(Task(Of T), TimeSpan, CancellationTokenSource)
+- uid: ConcurrentSharp.TaskExtensions.WaitExceptionless(Task)
+  name: WaitExceptionless(Task)
+  href: api/ConcurrentSharp.TaskExtensions.WaitExceptionless.html#ConcurrentSharp_TaskExtensions_WaitExceptionless_Task_
+  commentId: M:ConcurrentSharp.TaskExtensions.WaitExceptionless(Task)
+  fullName: ConcurrentSharp.TaskExtensions.WaitExceptionless(Task)
+  nameWithType: TaskExtensions.WaitExceptionless(Task)
+- uid: ConcurrentSharp.TaskExtensions.WaitExceptionless(Task,CancellationToken)
+  name: WaitExceptionless(Task, CancellationToken)
+  href: api/ConcurrentSharp.TaskExtensions.WaitExceptionless.html#ConcurrentSharp_TaskExtensions_WaitExceptionless_Task_CancellationToken_
+  commentId: M:ConcurrentSharp.TaskExtensions.WaitExceptionless(Task,CancellationToken)
+  fullName: ConcurrentSharp.TaskExtensions.WaitExceptionless(Task, CancellationToken)
+  nameWithType: TaskExtensions.WaitExceptionless(Task, CancellationToken)
+- uid: ConcurrentSharp.TaskExtensions.WaitExceptionless*
+  name: WaitExceptionless
+  href: api/ConcurrentSharp.TaskExtensions.WaitExceptionless.html
+  commentId: Overload:ConcurrentSharp.TaskExtensions.WaitExceptionless
+  fullName: ConcurrentSharp.TaskExtensions.WaitExceptionless
+  nameWithType: TaskExtensions.WaitExceptionless
+- uid: ConcurrentSharp.TaskExtensions.WaitExceptionless``1(Task{``0})
+  name: WaitExceptionless<T>(Task<T>)
+  href: api/ConcurrentSharp.TaskExtensions.WaitExceptionless.html#ConcurrentSharp_TaskExtensions_WaitExceptionless__1_Task___0__
+  commentId: M:ConcurrentSharp.TaskExtensions.WaitExceptionless``1(Task{``0})
+  name.vb: WaitExceptionless(Of T)(Task(Of T))
+  fullName: ConcurrentSharp.TaskExtensions.WaitExceptionless<T>(Task<T>)
+  fullName.vb: ConcurrentSharp.TaskExtensions.WaitExceptionless(Of T)(Task(Of T))
+  nameWithType: TaskExtensions.WaitExceptionless<T>(Task<T>)
+  nameWithType.vb: TaskExtensions.WaitExceptionless(Of T)(Task(Of T))
+- uid: ConcurrentSharp.TaskExtensions.WaitExceptionless``1(Task{``0},CancellationToken)
+  name: WaitExceptionless<T>(Task<T>, CancellationToken)
+  href: api/ConcurrentSharp.TaskExtensions.WaitExceptionless.html#ConcurrentSharp_TaskExtensions_WaitExceptionless__1_Task___0__CancellationToken_
+  commentId: M:ConcurrentSharp.TaskExtensions.WaitExceptionless``1(Task{``0},CancellationToken)
+  name.vb: WaitExceptionless(Of T)(Task(Of T), CancellationToken)
+  fullName: ConcurrentSharp.TaskExtensions.WaitExceptionless<T>(Task<T>, CancellationToken)
+  fullName.vb: ConcurrentSharp.TaskExtensions.WaitExceptionless(Of T)(Task(Of T), CancellationToken)
+  nameWithType: TaskExtensions.WaitExceptionless<T>(Task<T>, CancellationToken)
+  nameWithType.vb: TaskExtensions.WaitExceptionless(Of T)(Task(Of T), CancellationToken)
 - uid: ConcurrentSharp.TaskFrom
   name: TaskFrom
   href: api/ConcurrentSharp.TaskFrom.html
@@ -330,267 +539,327 @@ references:
   commentId: Overload:ConcurrentSharp.TaskFrom.FromAsyncCallback
   fullName: ConcurrentSharp.TaskFrom.FromAsyncCallback
   nameWithType: TaskFrom.FromAsyncCallback
-- uid: ConcurrentSharp.TaskFrom.FromAsyncCallback``1(System.Func{``0,System.AsyncCallback,System.Object,System.IAsyncResult},System.Action{System.IAsyncResult},``0)
+- uid: ConcurrentSharp.TaskFrom.FromAsyncCallback``1(Func{``0,AsyncCallback,System.Object,IAsyncResult},Action{IAsyncResult},``0)
   name: FromAsyncCallback<T1>(Func<T1, AsyncCallback, Object, IAsyncResult>, Action<IAsyncResult>, T1)
-  href: api/ConcurrentSharp.TaskFrom.FromAsyncCallback.html#ConcurrentSharp_TaskFrom_FromAsyncCallback__1_System_Func___0_System_AsyncCallback_System_Object_System_IAsyncResult__System_Action_System_IAsyncResult____0_
-  commentId: M:ConcurrentSharp.TaskFrom.FromAsyncCallback``1(System.Func{``0,System.AsyncCallback,System.Object,System.IAsyncResult},System.Action{System.IAsyncResult},``0)
+  href: api/ConcurrentSharp.TaskFrom.FromAsyncCallback.html#ConcurrentSharp_TaskFrom_FromAsyncCallback__1_Func___0_AsyncCallback_System_Object_IAsyncResult__Action_IAsyncResult____0_
+  commentId: M:ConcurrentSharp.TaskFrom.FromAsyncCallback``1(Func{``0,AsyncCallback,System.Object,IAsyncResult},Action{IAsyncResult},``0)
   name.vb: FromAsyncCallback(Of T1)(Func(Of T1, AsyncCallback, Object, IAsyncResult), Action(Of IAsyncResult), T1)
-  fullName: ConcurrentSharp.TaskFrom.FromAsyncCallback<T1>(System.Func<T1, System.AsyncCallback, System.Object, System.IAsyncResult>, System.Action<System.IAsyncResult>, T1)
-  fullName.vb: ConcurrentSharp.TaskFrom.FromAsyncCallback(Of T1)(System.Func(Of T1, System.AsyncCallback, System.Object, System.IAsyncResult), System.Action(Of System.IAsyncResult), T1)
+  fullName: ConcurrentSharp.TaskFrom.FromAsyncCallback<T1>(Func<T1, AsyncCallback, System.Object, IAsyncResult>, Action<IAsyncResult>, T1)
+  fullName.vb: ConcurrentSharp.TaskFrom.FromAsyncCallback(Of T1)(Func(Of T1, AsyncCallback, System.Object, IAsyncResult), Action(Of IAsyncResult), T1)
   nameWithType: TaskFrom.FromAsyncCallback<T1>(Func<T1, AsyncCallback, Object, IAsyncResult>, Action<IAsyncResult>, T1)
   nameWithType.vb: TaskFrom.FromAsyncCallback(Of T1)(Func(Of T1, AsyncCallback, Object, IAsyncResult), Action(Of IAsyncResult), T1)
-- uid: ConcurrentSharp.TaskFrom.FromAsyncCallback``1(System.Func{System.AsyncCallback,System.Object,System.IAsyncResult},System.Func{System.IAsyncResult,``0})
+- uid: ConcurrentSharp.TaskFrom.FromAsyncCallback``1(Func{AsyncCallback,System.Object,IAsyncResult},Func{IAsyncResult,``0})
   name: FromAsyncCallback<TReturn>(Func<AsyncCallback, Object, IAsyncResult>, Func<IAsyncResult, TReturn>)
-  href: api/ConcurrentSharp.TaskFrom.FromAsyncCallback.html#ConcurrentSharp_TaskFrom_FromAsyncCallback__1_System_Func_System_AsyncCallback_System_Object_System_IAsyncResult__System_Func_System_IAsyncResult___0__
-  commentId: M:ConcurrentSharp.TaskFrom.FromAsyncCallback``1(System.Func{System.AsyncCallback,System.Object,System.IAsyncResult},System.Func{System.IAsyncResult,``0})
+  href: api/ConcurrentSharp.TaskFrom.FromAsyncCallback.html#ConcurrentSharp_TaskFrom_FromAsyncCallback__1_Func_AsyncCallback_System_Object_IAsyncResult__Func_IAsyncResult___0__
+  commentId: M:ConcurrentSharp.TaskFrom.FromAsyncCallback``1(Func{AsyncCallback,System.Object,IAsyncResult},Func{IAsyncResult,``0})
   name.vb: FromAsyncCallback(Of TReturn)(Func(Of AsyncCallback, Object, IAsyncResult), Func(Of IAsyncResult, TReturn))
-  fullName: ConcurrentSharp.TaskFrom.FromAsyncCallback<TReturn>(System.Func<System.AsyncCallback, System.Object, System.IAsyncResult>, System.Func<System.IAsyncResult, TReturn>)
-  fullName.vb: ConcurrentSharp.TaskFrom.FromAsyncCallback(Of TReturn)(System.Func(Of System.AsyncCallback, System.Object, System.IAsyncResult), System.Func(Of System.IAsyncResult, TReturn))
+  fullName: ConcurrentSharp.TaskFrom.FromAsyncCallback<TReturn>(Func<AsyncCallback, System.Object, IAsyncResult>, Func<IAsyncResult, TReturn>)
+  fullName.vb: ConcurrentSharp.TaskFrom.FromAsyncCallback(Of TReturn)(Func(Of AsyncCallback, System.Object, IAsyncResult), Func(Of IAsyncResult, TReturn))
   nameWithType: TaskFrom.FromAsyncCallback<TReturn>(Func<AsyncCallback, Object, IAsyncResult>, Func<IAsyncResult, TReturn>)
   nameWithType.vb: TaskFrom.FromAsyncCallback(Of TReturn)(Func(Of AsyncCallback, Object, IAsyncResult), Func(Of IAsyncResult, TReturn))
-- uid: ConcurrentSharp.TaskFrom.FromAsyncCallback``10(System.Func{``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,System.AsyncCallback,System.Object,System.IAsyncResult},System.Action{System.IAsyncResult},``0,``1,``2,``3,``4,``5,``6,``7,``8,``9)
+- uid: ConcurrentSharp.TaskFrom.FromAsyncCallback``10(Func{``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,AsyncCallback,System.Object,IAsyncResult},Action{IAsyncResult},``0,``1,``2,``3,``4,``5,``6,``7,``8,``9)
   name: FromAsyncCallback<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10>(Func<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, AsyncCallback, Object, IAsyncResult>, Action<IAsyncResult>, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10)
-  href: api/ConcurrentSharp.TaskFrom.FromAsyncCallback.html#ConcurrentSharp_TaskFrom_FromAsyncCallback__10_System_Func___0___1___2___3___4___5___6___7___8___9_System_AsyncCallback_System_Object_System_IAsyncResult__System_Action_System_IAsyncResult____0___1___2___3___4___5___6___7___8___9_
-  commentId: M:ConcurrentSharp.TaskFrom.FromAsyncCallback``10(System.Func{``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,System.AsyncCallback,System.Object,System.IAsyncResult},System.Action{System.IAsyncResult},``0,``1,``2,``3,``4,``5,``6,``7,``8,``9)
+  href: api/ConcurrentSharp.TaskFrom.FromAsyncCallback.html#ConcurrentSharp_TaskFrom_FromAsyncCallback__10_Func___0___1___2___3___4___5___6___7___8___9_AsyncCallback_System_Object_IAsyncResult__Action_IAsyncResult____0___1___2___3___4___5___6___7___8___9_
+  commentId: M:ConcurrentSharp.TaskFrom.FromAsyncCallback``10(Func{``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,AsyncCallback,System.Object,IAsyncResult},Action{IAsyncResult},``0,``1,``2,``3,``4,``5,``6,``7,``8,``9)
   name.vb: FromAsyncCallback(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10)(Func(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, AsyncCallback, Object, IAsyncResult), Action(Of IAsyncResult), T1, T2, T3, T4, T5, T6, T7, T8, T9, T10)
-  fullName: ConcurrentSharp.TaskFrom.FromAsyncCallback<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10>(System.Func<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, System.AsyncCallback, System.Object, System.IAsyncResult>, System.Action<System.IAsyncResult>, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10)
-  fullName.vb: ConcurrentSharp.TaskFrom.FromAsyncCallback(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10)(System.Func(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, System.AsyncCallback, System.Object, System.IAsyncResult), System.Action(Of System.IAsyncResult), T1, T2, T3, T4, T5, T6, T7, T8, T9, T10)
+  fullName: ConcurrentSharp.TaskFrom.FromAsyncCallback<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10>(Func<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, AsyncCallback, System.Object, IAsyncResult>, Action<IAsyncResult>, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10)
+  fullName.vb: ConcurrentSharp.TaskFrom.FromAsyncCallback(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10)(Func(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, AsyncCallback, System.Object, IAsyncResult), Action(Of IAsyncResult), T1, T2, T3, T4, T5, T6, T7, T8, T9, T10)
   nameWithType: TaskFrom.FromAsyncCallback<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10>(Func<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, AsyncCallback, Object, IAsyncResult>, Action<IAsyncResult>, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10)
   nameWithType.vb: TaskFrom.FromAsyncCallback(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10)(Func(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, AsyncCallback, Object, IAsyncResult), Action(Of IAsyncResult), T1, T2, T3, T4, T5, T6, T7, T8, T9, T10)
-- uid: ConcurrentSharp.TaskFrom.FromAsyncCallback``10(System.Func{``0,``1,``2,``3,``4,``5,``6,``7,``8,System.AsyncCallback,System.Object,System.IAsyncResult},System.Func{System.IAsyncResult,``9},``0,``1,``2,``3,``4,``5,``6,``7,``8)
+- uid: ConcurrentSharp.TaskFrom.FromAsyncCallback``10(Func{``0,``1,``2,``3,``4,``5,``6,``7,``8,AsyncCallback,System.Object,IAsyncResult},Func{IAsyncResult,``9},``0,``1,``2,``3,``4,``5,``6,``7,``8)
   name: FromAsyncCallback<T1, T2, T3, T4, T5, T6, T7, T8, T9, TReturn>(Func<T1, T2, T3, T4, T5, T6, T7, T8, T9, AsyncCallback, Object, IAsyncResult>, Func<IAsyncResult, TReturn>, T1, T2, T3, T4, T5, T6, T7, T8, T9)
-  href: api/ConcurrentSharp.TaskFrom.FromAsyncCallback.html#ConcurrentSharp_TaskFrom_FromAsyncCallback__10_System_Func___0___1___2___3___4___5___6___7___8_System_AsyncCallback_System_Object_System_IAsyncResult__System_Func_System_IAsyncResult___9____0___1___2___3___4___5___6___7___8_
-  commentId: M:ConcurrentSharp.TaskFrom.FromAsyncCallback``10(System.Func{``0,``1,``2,``3,``4,``5,``6,``7,``8,System.AsyncCallback,System.Object,System.IAsyncResult},System.Func{System.IAsyncResult,``9},``0,``1,``2,``3,``4,``5,``6,``7,``8)
+  href: api/ConcurrentSharp.TaskFrom.FromAsyncCallback.html#ConcurrentSharp_TaskFrom_FromAsyncCallback__10_Func___0___1___2___3___4___5___6___7___8_AsyncCallback_System_Object_IAsyncResult__Func_IAsyncResult___9____0___1___2___3___4___5___6___7___8_
+  commentId: M:ConcurrentSharp.TaskFrom.FromAsyncCallback``10(Func{``0,``1,``2,``3,``4,``5,``6,``7,``8,AsyncCallback,System.Object,IAsyncResult},Func{IAsyncResult,``9},``0,``1,``2,``3,``4,``5,``6,``7,``8)
   name.vb: FromAsyncCallback(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, TReturn)(Func(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, AsyncCallback, Object, IAsyncResult), Func(Of IAsyncResult, TReturn), T1, T2, T3, T4, T5, T6, T7, T8, T9)
-  fullName: ConcurrentSharp.TaskFrom.FromAsyncCallback<T1, T2, T3, T4, T5, T6, T7, T8, T9, TReturn>(System.Func<T1, T2, T3, T4, T5, T6, T7, T8, T9, System.AsyncCallback, System.Object, System.IAsyncResult>, System.Func<System.IAsyncResult, TReturn>, T1, T2, T3, T4, T5, T6, T7, T8, T9)
-  fullName.vb: ConcurrentSharp.TaskFrom.FromAsyncCallback(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, TReturn)(System.Func(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, System.AsyncCallback, System.Object, System.IAsyncResult), System.Func(Of System.IAsyncResult, TReturn), T1, T2, T3, T4, T5, T6, T7, T8, T9)
+  fullName: ConcurrentSharp.TaskFrom.FromAsyncCallback<T1, T2, T3, T4, T5, T6, T7, T8, T9, TReturn>(Func<T1, T2, T3, T4, T5, T6, T7, T8, T9, AsyncCallback, System.Object, IAsyncResult>, Func<IAsyncResult, TReturn>, T1, T2, T3, T4, T5, T6, T7, T8, T9)
+  fullName.vb: ConcurrentSharp.TaskFrom.FromAsyncCallback(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, TReturn)(Func(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, AsyncCallback, System.Object, IAsyncResult), Func(Of IAsyncResult, TReturn), T1, T2, T3, T4, T5, T6, T7, T8, T9)
   nameWithType: TaskFrom.FromAsyncCallback<T1, T2, T3, T4, T5, T6, T7, T8, T9, TReturn>(Func<T1, T2, T3, T4, T5, T6, T7, T8, T9, AsyncCallback, Object, IAsyncResult>, Func<IAsyncResult, TReturn>, T1, T2, T3, T4, T5, T6, T7, T8, T9)
   nameWithType.vb: TaskFrom.FromAsyncCallback(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, TReturn)(Func(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, AsyncCallback, Object, IAsyncResult), Func(Of IAsyncResult, TReturn), T1, T2, T3, T4, T5, T6, T7, T8, T9)
-- uid: ConcurrentSharp.TaskFrom.FromAsyncCallback``11(System.Func{``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``10,System.AsyncCallback,System.Object,System.IAsyncResult},System.Action{System.IAsyncResult},``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``10)
+- uid: ConcurrentSharp.TaskFrom.FromAsyncCallback``11(Func{``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``10,AsyncCallback,System.Object,IAsyncResult},Action{IAsyncResult},``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``10)
   name: FromAsyncCallback<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11>(Func<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, AsyncCallback, Object, IAsyncResult>, Action<IAsyncResult>, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11)
-  href: api/ConcurrentSharp.TaskFrom.FromAsyncCallback.html#ConcurrentSharp_TaskFrom_FromAsyncCallback__11_System_Func___0___1___2___3___4___5___6___7___8___9___10_System_AsyncCallback_System_Object_System_IAsyncResult__System_Action_System_IAsyncResult____0___1___2___3___4___5___6___7___8___9___10_
-  commentId: M:ConcurrentSharp.TaskFrom.FromAsyncCallback``11(System.Func{``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``10,System.AsyncCallback,System.Object,System.IAsyncResult},System.Action{System.IAsyncResult},``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``10)
+  href: api/ConcurrentSharp.TaskFrom.FromAsyncCallback.html#ConcurrentSharp_TaskFrom_FromAsyncCallback__11_Func___0___1___2___3___4___5___6___7___8___9___10_AsyncCallback_System_Object_IAsyncResult__Action_IAsyncResult____0___1___2___3___4___5___6___7___8___9___10_
+  commentId: M:ConcurrentSharp.TaskFrom.FromAsyncCallback``11(Func{``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``10,AsyncCallback,System.Object,IAsyncResult},Action{IAsyncResult},``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``10)
   name.vb: FromAsyncCallback(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11)(Func(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, AsyncCallback, Object, IAsyncResult), Action(Of IAsyncResult), T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11)
-  fullName: ConcurrentSharp.TaskFrom.FromAsyncCallback<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11>(System.Func<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, System.AsyncCallback, System.Object, System.IAsyncResult>, System.Action<System.IAsyncResult>, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11)
-  fullName.vb: ConcurrentSharp.TaskFrom.FromAsyncCallback(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11)(System.Func(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, System.AsyncCallback, System.Object, System.IAsyncResult), System.Action(Of System.IAsyncResult), T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11)
+  fullName: ConcurrentSharp.TaskFrom.FromAsyncCallback<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11>(Func<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, AsyncCallback, System.Object, IAsyncResult>, Action<IAsyncResult>, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11)
+  fullName.vb: ConcurrentSharp.TaskFrom.FromAsyncCallback(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11)(Func(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, AsyncCallback, System.Object, IAsyncResult), Action(Of IAsyncResult), T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11)
   nameWithType: TaskFrom.FromAsyncCallback<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11>(Func<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, AsyncCallback, Object, IAsyncResult>, Action<IAsyncResult>, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11)
   nameWithType.vb: TaskFrom.FromAsyncCallback(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11)(Func(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, AsyncCallback, Object, IAsyncResult), Action(Of IAsyncResult), T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11)
-- uid: ConcurrentSharp.TaskFrom.FromAsyncCallback``11(System.Func{``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,System.AsyncCallback,System.Object,System.IAsyncResult},System.Func{System.IAsyncResult,``10},``0,``1,``2,``3,``4,``5,``6,``7,``8,``9)
+- uid: ConcurrentSharp.TaskFrom.FromAsyncCallback``11(Func{``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,AsyncCallback,System.Object,IAsyncResult},Func{IAsyncResult,``10},``0,``1,``2,``3,``4,``5,``6,``7,``8,``9)
   name: FromAsyncCallback<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, TReturn>(Func<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, AsyncCallback, Object, IAsyncResult>, Func<IAsyncResult, TReturn>, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10)
-  href: api/ConcurrentSharp.TaskFrom.FromAsyncCallback.html#ConcurrentSharp_TaskFrom_FromAsyncCallback__11_System_Func___0___1___2___3___4___5___6___7___8___9_System_AsyncCallback_System_Object_System_IAsyncResult__System_Func_System_IAsyncResult___10____0___1___2___3___4___5___6___7___8___9_
-  commentId: M:ConcurrentSharp.TaskFrom.FromAsyncCallback``11(System.Func{``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,System.AsyncCallback,System.Object,System.IAsyncResult},System.Func{System.IAsyncResult,``10},``0,``1,``2,``3,``4,``5,``6,``7,``8,``9)
+  href: api/ConcurrentSharp.TaskFrom.FromAsyncCallback.html#ConcurrentSharp_TaskFrom_FromAsyncCallback__11_Func___0___1___2___3___4___5___6___7___8___9_AsyncCallback_System_Object_IAsyncResult__Func_IAsyncResult___10____0___1___2___3___4___5___6___7___8___9_
+  commentId: M:ConcurrentSharp.TaskFrom.FromAsyncCallback``11(Func{``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,AsyncCallback,System.Object,IAsyncResult},Func{IAsyncResult,``10},``0,``1,``2,``3,``4,``5,``6,``7,``8,``9)
   name.vb: FromAsyncCallback(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, TReturn)(Func(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, AsyncCallback, Object, IAsyncResult), Func(Of IAsyncResult, TReturn), T1, T2, T3, T4, T5, T6, T7, T8, T9, T10)
-  fullName: ConcurrentSharp.TaskFrom.FromAsyncCallback<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, TReturn>(System.Func<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, System.AsyncCallback, System.Object, System.IAsyncResult>, System.Func<System.IAsyncResult, TReturn>, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10)
-  fullName.vb: ConcurrentSharp.TaskFrom.FromAsyncCallback(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, TReturn)(System.Func(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, System.AsyncCallback, System.Object, System.IAsyncResult), System.Func(Of System.IAsyncResult, TReturn), T1, T2, T3, T4, T5, T6, T7, T8, T9, T10)
+  fullName: ConcurrentSharp.TaskFrom.FromAsyncCallback<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, TReturn>(Func<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, AsyncCallback, System.Object, IAsyncResult>, Func<IAsyncResult, TReturn>, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10)
+  fullName.vb: ConcurrentSharp.TaskFrom.FromAsyncCallback(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, TReturn)(Func(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, AsyncCallback, System.Object, IAsyncResult), Func(Of IAsyncResult, TReturn), T1, T2, T3, T4, T5, T6, T7, T8, T9, T10)
   nameWithType: TaskFrom.FromAsyncCallback<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, TReturn>(Func<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, AsyncCallback, Object, IAsyncResult>, Func<IAsyncResult, TReturn>, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10)
   nameWithType.vb: TaskFrom.FromAsyncCallback(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, TReturn)(Func(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, AsyncCallback, Object, IAsyncResult), Func(Of IAsyncResult, TReturn), T1, T2, T3, T4, T5, T6, T7, T8, T9, T10)
-- uid: ConcurrentSharp.TaskFrom.FromAsyncCallback``12(System.Func{``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``10,``11,System.AsyncCallback,System.Object,System.IAsyncResult},System.Action{System.IAsyncResult},``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``10,``11)
+- uid: ConcurrentSharp.TaskFrom.FromAsyncCallback``12(Func{``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``10,``11,AsyncCallback,System.Object,IAsyncResult},Action{IAsyncResult},``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``10,``11)
   name: FromAsyncCallback<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12>(Func<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, AsyncCallback, Object, IAsyncResult>, Action<IAsyncResult>, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12)
-  href: api/ConcurrentSharp.TaskFrom.FromAsyncCallback.html#ConcurrentSharp_TaskFrom_FromAsyncCallback__12_System_Func___0___1___2___3___4___5___6___7___8___9___10___11_System_AsyncCallback_System_Object_System_IAsyncResult__System_Action_System_IAsyncResult____0___1___2___3___4___5___6___7___8___9___10___11_
-  commentId: M:ConcurrentSharp.TaskFrom.FromAsyncCallback``12(System.Func{``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``10,``11,System.AsyncCallback,System.Object,System.IAsyncResult},System.Action{System.IAsyncResult},``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``10,``11)
+  href: api/ConcurrentSharp.TaskFrom.FromAsyncCallback.html#ConcurrentSharp_TaskFrom_FromAsyncCallback__12_Func___0___1___2___3___4___5___6___7___8___9___10___11_AsyncCallback_System_Object_IAsyncResult__Action_IAsyncResult____0___1___2___3___4___5___6___7___8___9___10___11_
+  commentId: M:ConcurrentSharp.TaskFrom.FromAsyncCallback``12(Func{``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``10,``11,AsyncCallback,System.Object,IAsyncResult},Action{IAsyncResult},``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``10,``11)
   name.vb: FromAsyncCallback(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12)(Func(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, AsyncCallback, Object, IAsyncResult), Action(Of IAsyncResult), T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12)
-  fullName: ConcurrentSharp.TaskFrom.FromAsyncCallback<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12>(System.Func<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, System.AsyncCallback, System.Object, System.IAsyncResult>, System.Action<System.IAsyncResult>, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12)
-  fullName.vb: ConcurrentSharp.TaskFrom.FromAsyncCallback(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12)(System.Func(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, System.AsyncCallback, System.Object, System.IAsyncResult), System.Action(Of System.IAsyncResult), T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12)
+  fullName: ConcurrentSharp.TaskFrom.FromAsyncCallback<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12>(Func<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, AsyncCallback, System.Object, IAsyncResult>, Action<IAsyncResult>, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12)
+  fullName.vb: ConcurrentSharp.TaskFrom.FromAsyncCallback(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12)(Func(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, AsyncCallback, System.Object, IAsyncResult), Action(Of IAsyncResult), T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12)
   nameWithType: TaskFrom.FromAsyncCallback<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12>(Func<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, AsyncCallback, Object, IAsyncResult>, Action<IAsyncResult>, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12)
   nameWithType.vb: TaskFrom.FromAsyncCallback(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12)(Func(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, AsyncCallback, Object, IAsyncResult), Action(Of IAsyncResult), T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12)
-- uid: ConcurrentSharp.TaskFrom.FromAsyncCallback``12(System.Func{``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``10,System.AsyncCallback,System.Object,System.IAsyncResult},System.Func{System.IAsyncResult,``11},``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``10)
+- uid: ConcurrentSharp.TaskFrom.FromAsyncCallback``12(Func{``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``10,AsyncCallback,System.Object,IAsyncResult},Func{IAsyncResult,``11},``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``10)
   name: FromAsyncCallback<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, TReturn>(Func<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, AsyncCallback, Object, IAsyncResult>, Func<IAsyncResult, TReturn>, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11)
-  href: api/ConcurrentSharp.TaskFrom.FromAsyncCallback.html#ConcurrentSharp_TaskFrom_FromAsyncCallback__12_System_Func___0___1___2___3___4___5___6___7___8___9___10_System_AsyncCallback_System_Object_System_IAsyncResult__System_Func_System_IAsyncResult___11____0___1___2___3___4___5___6___7___8___9___10_
-  commentId: M:ConcurrentSharp.TaskFrom.FromAsyncCallback``12(System.Func{``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``10,System.AsyncCallback,System.Object,System.IAsyncResult},System.Func{System.IAsyncResult,``11},``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``10)
+  href: api/ConcurrentSharp.TaskFrom.FromAsyncCallback.html#ConcurrentSharp_TaskFrom_FromAsyncCallback__12_Func___0___1___2___3___4___5___6___7___8___9___10_AsyncCallback_System_Object_IAsyncResult__Func_IAsyncResult___11____0___1___2___3___4___5___6___7___8___9___10_
+  commentId: M:ConcurrentSharp.TaskFrom.FromAsyncCallback``12(Func{``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``10,AsyncCallback,System.Object,IAsyncResult},Func{IAsyncResult,``11},``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``10)
   name.vb: FromAsyncCallback(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, TReturn)(Func(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, AsyncCallback, Object, IAsyncResult), Func(Of IAsyncResult, TReturn), T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11)
-  fullName: ConcurrentSharp.TaskFrom.FromAsyncCallback<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, TReturn>(System.Func<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, System.AsyncCallback, System.Object, System.IAsyncResult>, System.Func<System.IAsyncResult, TReturn>, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11)
-  fullName.vb: ConcurrentSharp.TaskFrom.FromAsyncCallback(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, TReturn)(System.Func(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, System.AsyncCallback, System.Object, System.IAsyncResult), System.Func(Of System.IAsyncResult, TReturn), T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11)
+  fullName: ConcurrentSharp.TaskFrom.FromAsyncCallback<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, TReturn>(Func<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, AsyncCallback, System.Object, IAsyncResult>, Func<IAsyncResult, TReturn>, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11)
+  fullName.vb: ConcurrentSharp.TaskFrom.FromAsyncCallback(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, TReturn)(Func(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, AsyncCallback, System.Object, IAsyncResult), Func(Of IAsyncResult, TReturn), T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11)
   nameWithType: TaskFrom.FromAsyncCallback<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, TReturn>(Func<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, AsyncCallback, Object, IAsyncResult>, Func<IAsyncResult, TReturn>, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11)
   nameWithType.vb: TaskFrom.FromAsyncCallback(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, TReturn)(Func(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, AsyncCallback, Object, IAsyncResult), Func(Of IAsyncResult, TReturn), T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11)
-- uid: ConcurrentSharp.TaskFrom.FromAsyncCallback``13(System.Func{``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``10,``11,``12,System.AsyncCallback,System.Object,System.IAsyncResult},System.Action{System.IAsyncResult},``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``10,``11,``12)
+- uid: ConcurrentSharp.TaskFrom.FromAsyncCallback``13(Func{``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``10,``11,``12,AsyncCallback,System.Object,IAsyncResult},Action{IAsyncResult},``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``10,``11,``12)
   name: FromAsyncCallback<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13>(Func<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, AsyncCallback, Object, IAsyncResult>, Action<IAsyncResult>, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13)
-  href: api/ConcurrentSharp.TaskFrom.FromAsyncCallback.html#ConcurrentSharp_TaskFrom_FromAsyncCallback__13_System_Func___0___1___2___3___4___5___6___7___8___9___10___11___12_System_AsyncCallback_System_Object_System_IAsyncResult__System_Action_System_IAsyncResult____0___1___2___3___4___5___6___7___8___9___10___11___12_
-  commentId: M:ConcurrentSharp.TaskFrom.FromAsyncCallback``13(System.Func{``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``10,``11,``12,System.AsyncCallback,System.Object,System.IAsyncResult},System.Action{System.IAsyncResult},``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``10,``11,``12)
+  href: api/ConcurrentSharp.TaskFrom.FromAsyncCallback.html#ConcurrentSharp_TaskFrom_FromAsyncCallback__13_Func___0___1___2___3___4___5___6___7___8___9___10___11___12_AsyncCallback_System_Object_IAsyncResult__Action_IAsyncResult____0___1___2___3___4___5___6___7___8___9___10___11___12_
+  commentId: M:ConcurrentSharp.TaskFrom.FromAsyncCallback``13(Func{``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``10,``11,``12,AsyncCallback,System.Object,IAsyncResult},Action{IAsyncResult},``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``10,``11,``12)
   name.vb: FromAsyncCallback(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13)(Func(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, AsyncCallback, Object, IAsyncResult), Action(Of IAsyncResult), T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13)
-  fullName: ConcurrentSharp.TaskFrom.FromAsyncCallback<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13>(System.Func<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, System.AsyncCallback, System.Object, System.IAsyncResult>, System.Action<System.IAsyncResult>, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13)
-  fullName.vb: ConcurrentSharp.TaskFrom.FromAsyncCallback(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13)(System.Func(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, System.AsyncCallback, System.Object, System.IAsyncResult), System.Action(Of System.IAsyncResult), T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13)
+  fullName: ConcurrentSharp.TaskFrom.FromAsyncCallback<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13>(Func<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, AsyncCallback, System.Object, IAsyncResult>, Action<IAsyncResult>, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13)
+  fullName.vb: ConcurrentSharp.TaskFrom.FromAsyncCallback(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13)(Func(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, AsyncCallback, System.Object, IAsyncResult), Action(Of IAsyncResult), T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13)
   nameWithType: TaskFrom.FromAsyncCallback<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13>(Func<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, AsyncCallback, Object, IAsyncResult>, Action<IAsyncResult>, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13)
   nameWithType.vb: TaskFrom.FromAsyncCallback(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13)(Func(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, AsyncCallback, Object, IAsyncResult), Action(Of IAsyncResult), T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13)
-- uid: ConcurrentSharp.TaskFrom.FromAsyncCallback``13(System.Func{``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``10,``11,System.AsyncCallback,System.Object,System.IAsyncResult},System.Func{System.IAsyncResult,``12},``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``10,``11)
+- uid: ConcurrentSharp.TaskFrom.FromAsyncCallback``13(Func{``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``10,``11,AsyncCallback,System.Object,IAsyncResult},Func{IAsyncResult,``12},``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``10,``11)
   name: FromAsyncCallback<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, TReturn>(Func<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, AsyncCallback, Object, IAsyncResult>, Func<IAsyncResult, TReturn>, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12)
-  href: api/ConcurrentSharp.TaskFrom.FromAsyncCallback.html#ConcurrentSharp_TaskFrom_FromAsyncCallback__13_System_Func___0___1___2___3___4___5___6___7___8___9___10___11_System_AsyncCallback_System_Object_System_IAsyncResult__System_Func_System_IAsyncResult___12____0___1___2___3___4___5___6___7___8___9___10___11_
-  commentId: M:ConcurrentSharp.TaskFrom.FromAsyncCallback``13(System.Func{``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``10,``11,System.AsyncCallback,System.Object,System.IAsyncResult},System.Func{System.IAsyncResult,``12},``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``10,``11)
+  href: api/ConcurrentSharp.TaskFrom.FromAsyncCallback.html#ConcurrentSharp_TaskFrom_FromAsyncCallback__13_Func___0___1___2___3___4___5___6___7___8___9___10___11_AsyncCallback_System_Object_IAsyncResult__Func_IAsyncResult___12____0___1___2___3___4___5___6___7___8___9___10___11_
+  commentId: M:ConcurrentSharp.TaskFrom.FromAsyncCallback``13(Func{``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``10,``11,AsyncCallback,System.Object,IAsyncResult},Func{IAsyncResult,``12},``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``10,``11)
   name.vb: FromAsyncCallback(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, TReturn)(Func(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, AsyncCallback, Object, IAsyncResult), Func(Of IAsyncResult, TReturn), T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12)
-  fullName: ConcurrentSharp.TaskFrom.FromAsyncCallback<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, TReturn>(System.Func<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, System.AsyncCallback, System.Object, System.IAsyncResult>, System.Func<System.IAsyncResult, TReturn>, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12)
-  fullName.vb: ConcurrentSharp.TaskFrom.FromAsyncCallback(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, TReturn)(System.Func(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, System.AsyncCallback, System.Object, System.IAsyncResult), System.Func(Of System.IAsyncResult, TReturn), T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12)
+  fullName: ConcurrentSharp.TaskFrom.FromAsyncCallback<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, TReturn>(Func<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, AsyncCallback, System.Object, IAsyncResult>, Func<IAsyncResult, TReturn>, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12)
+  fullName.vb: ConcurrentSharp.TaskFrom.FromAsyncCallback(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, TReturn)(Func(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, AsyncCallback, System.Object, IAsyncResult), Func(Of IAsyncResult, TReturn), T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12)
   nameWithType: TaskFrom.FromAsyncCallback<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, TReturn>(Func<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, AsyncCallback, Object, IAsyncResult>, Func<IAsyncResult, TReturn>, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12)
   nameWithType.vb: TaskFrom.FromAsyncCallback(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, TReturn)(Func(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, AsyncCallback, Object, IAsyncResult), Func(Of IAsyncResult, TReturn), T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12)
-- uid: ConcurrentSharp.TaskFrom.FromAsyncCallback``14(System.Func{``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``10,``11,``12,``13,System.AsyncCallback,System.Object,System.IAsyncResult},System.Action{System.IAsyncResult},``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``10,``11,``12,``13)
+- uid: ConcurrentSharp.TaskFrom.FromAsyncCallback``14(Func{``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``10,``11,``12,``13,AsyncCallback,System.Object,IAsyncResult},Action{IAsyncResult},``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``10,``11,``12,``13)
   name: FromAsyncCallback<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14>(Func<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, AsyncCallback, Object, IAsyncResult>, Action<IAsyncResult>, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14)
-  href: api/ConcurrentSharp.TaskFrom.FromAsyncCallback.html#ConcurrentSharp_TaskFrom_FromAsyncCallback__14_System_Func___0___1___2___3___4___5___6___7___8___9___10___11___12___13_System_AsyncCallback_System_Object_System_IAsyncResult__System_Action_System_IAsyncResult____0___1___2___3___4___5___6___7___8___9___10___11___12___13_
-  commentId: M:ConcurrentSharp.TaskFrom.FromAsyncCallback``14(System.Func{``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``10,``11,``12,``13,System.AsyncCallback,System.Object,System.IAsyncResult},System.Action{System.IAsyncResult},``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``10,``11,``12,``13)
+  href: api/ConcurrentSharp.TaskFrom.FromAsyncCallback.html#ConcurrentSharp_TaskFrom_FromAsyncCallback__14_Func___0___1___2___3___4___5___6___7___8___9___10___11___12___13_AsyncCallback_System_Object_IAsyncResult__Action_IAsyncResult____0___1___2___3___4___5___6___7___8___9___10___11___12___13_
+  commentId: M:ConcurrentSharp.TaskFrom.FromAsyncCallback``14(Func{``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``10,``11,``12,``13,AsyncCallback,System.Object,IAsyncResult},Action{IAsyncResult},``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``10,``11,``12,``13)
   name.vb: FromAsyncCallback(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14)(Func(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, AsyncCallback, Object, IAsyncResult), Action(Of IAsyncResult), T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14)
-  fullName: ConcurrentSharp.TaskFrom.FromAsyncCallback<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14>(System.Func<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, System.AsyncCallback, System.Object, System.IAsyncResult>, System.Action<System.IAsyncResult>, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14)
-  fullName.vb: ConcurrentSharp.TaskFrom.FromAsyncCallback(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14)(System.Func(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, System.AsyncCallback, System.Object, System.IAsyncResult), System.Action(Of System.IAsyncResult), T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14)
+  fullName: ConcurrentSharp.TaskFrom.FromAsyncCallback<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14>(Func<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, AsyncCallback, System.Object, IAsyncResult>, Action<IAsyncResult>, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14)
+  fullName.vb: ConcurrentSharp.TaskFrom.FromAsyncCallback(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14)(Func(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, AsyncCallback, System.Object, IAsyncResult), Action(Of IAsyncResult), T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14)
   nameWithType: TaskFrom.FromAsyncCallback<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14>(Func<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, AsyncCallback, Object, IAsyncResult>, Action<IAsyncResult>, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14)
   nameWithType.vb: TaskFrom.FromAsyncCallback(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14)(Func(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, AsyncCallback, Object, IAsyncResult), Action(Of IAsyncResult), T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14)
-- uid: ConcurrentSharp.TaskFrom.FromAsyncCallback``14(System.Func{``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``10,``11,``12,System.AsyncCallback,System.Object,System.IAsyncResult},System.Func{System.IAsyncResult,``13},``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``10,``11,``12)
+- uid: ConcurrentSharp.TaskFrom.FromAsyncCallback``14(Func{``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``10,``11,``12,AsyncCallback,System.Object,IAsyncResult},Func{IAsyncResult,``13},``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``10,``11,``12)
   name: FromAsyncCallback<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, TReturn>(Func<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, AsyncCallback, Object, IAsyncResult>, Func<IAsyncResult, TReturn>, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13)
-  href: api/ConcurrentSharp.TaskFrom.FromAsyncCallback.html#ConcurrentSharp_TaskFrom_FromAsyncCallback__14_System_Func___0___1___2___3___4___5___6___7___8___9___10___11___12_System_AsyncCallback_System_Object_System_IAsyncResult__System_Func_System_IAsyncResult___13____0___1___2___3___4___5___6___7___8___9___10___11___12_
-  commentId: M:ConcurrentSharp.TaskFrom.FromAsyncCallback``14(System.Func{``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``10,``11,``12,System.AsyncCallback,System.Object,System.IAsyncResult},System.Func{System.IAsyncResult,``13},``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``10,``11,``12)
+  href: api/ConcurrentSharp.TaskFrom.FromAsyncCallback.html#ConcurrentSharp_TaskFrom_FromAsyncCallback__14_Func___0___1___2___3___4___5___6___7___8___9___10___11___12_AsyncCallback_System_Object_IAsyncResult__Func_IAsyncResult___13____0___1___2___3___4___5___6___7___8___9___10___11___12_
+  commentId: M:ConcurrentSharp.TaskFrom.FromAsyncCallback``14(Func{``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``10,``11,``12,AsyncCallback,System.Object,IAsyncResult},Func{IAsyncResult,``13},``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``10,``11,``12)
   name.vb: FromAsyncCallback(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, TReturn)(Func(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, AsyncCallback, Object, IAsyncResult), Func(Of IAsyncResult, TReturn), T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13)
-  fullName: ConcurrentSharp.TaskFrom.FromAsyncCallback<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, TReturn>(System.Func<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, System.AsyncCallback, System.Object, System.IAsyncResult>, System.Func<System.IAsyncResult, TReturn>, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13)
-  fullName.vb: ConcurrentSharp.TaskFrom.FromAsyncCallback(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, TReturn)(System.Func(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, System.AsyncCallback, System.Object, System.IAsyncResult), System.Func(Of System.IAsyncResult, TReturn), T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13)
+  fullName: ConcurrentSharp.TaskFrom.FromAsyncCallback<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, TReturn>(Func<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, AsyncCallback, System.Object, IAsyncResult>, Func<IAsyncResult, TReturn>, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13)
+  fullName.vb: ConcurrentSharp.TaskFrom.FromAsyncCallback(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, TReturn)(Func(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, AsyncCallback, System.Object, IAsyncResult), Func(Of IAsyncResult, TReturn), T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13)
   nameWithType: TaskFrom.FromAsyncCallback<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, TReturn>(Func<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, AsyncCallback, Object, IAsyncResult>, Func<IAsyncResult, TReturn>, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13)
   nameWithType.vb: TaskFrom.FromAsyncCallback(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, TReturn)(Func(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, AsyncCallback, Object, IAsyncResult), Func(Of IAsyncResult, TReturn), T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13)
-- uid: ConcurrentSharp.TaskFrom.FromAsyncCallback``15(System.Func{``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``10,``11,``12,``13,System.AsyncCallback,System.Object,System.IAsyncResult},System.Func{System.IAsyncResult,``14},``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``10,``11,``12,``13)
+- uid: ConcurrentSharp.TaskFrom.FromAsyncCallback``15(Func{``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``10,``11,``12,``13,AsyncCallback,System.Object,IAsyncResult},Func{IAsyncResult,``14},``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``10,``11,``12,``13)
   name: FromAsyncCallback<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, TReturn>(Func<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, AsyncCallback, Object, IAsyncResult>, Func<IAsyncResult, TReturn>, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14)
-  href: api/ConcurrentSharp.TaskFrom.FromAsyncCallback.html#ConcurrentSharp_TaskFrom_FromAsyncCallback__15_System_Func___0___1___2___3___4___5___6___7___8___9___10___11___12___13_System_AsyncCallback_System_Object_System_IAsyncResult__System_Func_System_IAsyncResult___14____0___1___2___3___4___5___6___7___8___9___10___11___12___13_
-  commentId: M:ConcurrentSharp.TaskFrom.FromAsyncCallback``15(System.Func{``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``10,``11,``12,``13,System.AsyncCallback,System.Object,System.IAsyncResult},System.Func{System.IAsyncResult,``14},``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``10,``11,``12,``13)
+  href: api/ConcurrentSharp.TaskFrom.FromAsyncCallback.html#ConcurrentSharp_TaskFrom_FromAsyncCallback__15_Func___0___1___2___3___4___5___6___7___8___9___10___11___12___13_AsyncCallback_System_Object_IAsyncResult__Func_IAsyncResult___14____0___1___2___3___4___5___6___7___8___9___10___11___12___13_
+  commentId: M:ConcurrentSharp.TaskFrom.FromAsyncCallback``15(Func{``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``10,``11,``12,``13,AsyncCallback,System.Object,IAsyncResult},Func{IAsyncResult,``14},``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``10,``11,``12,``13)
   name.vb: FromAsyncCallback(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, TReturn)(Func(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, AsyncCallback, Object, IAsyncResult), Func(Of IAsyncResult, TReturn), T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14)
-  fullName: ConcurrentSharp.TaskFrom.FromAsyncCallback<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, TReturn>(System.Func<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, System.AsyncCallback, System.Object, System.IAsyncResult>, System.Func<System.IAsyncResult, TReturn>, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14)
-  fullName.vb: ConcurrentSharp.TaskFrom.FromAsyncCallback(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, TReturn)(System.Func(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, System.AsyncCallback, System.Object, System.IAsyncResult), System.Func(Of System.IAsyncResult, TReturn), T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14)
+  fullName: ConcurrentSharp.TaskFrom.FromAsyncCallback<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, TReturn>(Func<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, AsyncCallback, System.Object, IAsyncResult>, Func<IAsyncResult, TReturn>, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14)
+  fullName.vb: ConcurrentSharp.TaskFrom.FromAsyncCallback(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, TReturn)(Func(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, AsyncCallback, System.Object, IAsyncResult), Func(Of IAsyncResult, TReturn), T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14)
   nameWithType: TaskFrom.FromAsyncCallback<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, TReturn>(Func<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, AsyncCallback, Object, IAsyncResult>, Func<IAsyncResult, TReturn>, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14)
   nameWithType.vb: TaskFrom.FromAsyncCallback(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, TReturn)(Func(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, AsyncCallback, Object, IAsyncResult), Func(Of IAsyncResult, TReturn), T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14)
-- uid: ConcurrentSharp.TaskFrom.FromAsyncCallback``2(System.Func{``0,``1,System.AsyncCallback,System.Object,System.IAsyncResult},System.Action{System.IAsyncResult},``0,``1)
+- uid: ConcurrentSharp.TaskFrom.FromAsyncCallback``2(Func{``0,``1,AsyncCallback,System.Object,IAsyncResult},Action{IAsyncResult},``0,``1)
   name: FromAsyncCallback<T1, T2>(Func<T1, T2, AsyncCallback, Object, IAsyncResult>, Action<IAsyncResult>, T1, T2)
-  href: api/ConcurrentSharp.TaskFrom.FromAsyncCallback.html#ConcurrentSharp_TaskFrom_FromAsyncCallback__2_System_Func___0___1_System_AsyncCallback_System_Object_System_IAsyncResult__System_Action_System_IAsyncResult____0___1_
-  commentId: M:ConcurrentSharp.TaskFrom.FromAsyncCallback``2(System.Func{``0,``1,System.AsyncCallback,System.Object,System.IAsyncResult},System.Action{System.IAsyncResult},``0,``1)
+  href: api/ConcurrentSharp.TaskFrom.FromAsyncCallback.html#ConcurrentSharp_TaskFrom_FromAsyncCallback__2_Func___0___1_AsyncCallback_System_Object_IAsyncResult__Action_IAsyncResult____0___1_
+  commentId: M:ConcurrentSharp.TaskFrom.FromAsyncCallback``2(Func{``0,``1,AsyncCallback,System.Object,IAsyncResult},Action{IAsyncResult},``0,``1)
   name.vb: FromAsyncCallback(Of T1, T2)(Func(Of T1, T2, AsyncCallback, Object, IAsyncResult), Action(Of IAsyncResult), T1, T2)
-  fullName: ConcurrentSharp.TaskFrom.FromAsyncCallback<T1, T2>(System.Func<T1, T2, System.AsyncCallback, System.Object, System.IAsyncResult>, System.Action<System.IAsyncResult>, T1, T2)
-  fullName.vb: ConcurrentSharp.TaskFrom.FromAsyncCallback(Of T1, T2)(System.Func(Of T1, T2, System.AsyncCallback, System.Object, System.IAsyncResult), System.Action(Of System.IAsyncResult), T1, T2)
+  fullName: ConcurrentSharp.TaskFrom.FromAsyncCallback<T1, T2>(Func<T1, T2, AsyncCallback, System.Object, IAsyncResult>, Action<IAsyncResult>, T1, T2)
+  fullName.vb: ConcurrentSharp.TaskFrom.FromAsyncCallback(Of T1, T2)(Func(Of T1, T2, AsyncCallback, System.Object, IAsyncResult), Action(Of IAsyncResult), T1, T2)
   nameWithType: TaskFrom.FromAsyncCallback<T1, T2>(Func<T1, T2, AsyncCallback, Object, IAsyncResult>, Action<IAsyncResult>, T1, T2)
   nameWithType.vb: TaskFrom.FromAsyncCallback(Of T1, T2)(Func(Of T1, T2, AsyncCallback, Object, IAsyncResult), Action(Of IAsyncResult), T1, T2)
-- uid: ConcurrentSharp.TaskFrom.FromAsyncCallback``2(System.Func{``0,System.AsyncCallback,System.Object,System.IAsyncResult},System.Func{System.IAsyncResult,``1},``0)
+- uid: ConcurrentSharp.TaskFrom.FromAsyncCallback``2(Func{``0,AsyncCallback,System.Object,IAsyncResult},Func{IAsyncResult,``1},``0)
   name: FromAsyncCallback<T1, TReturn>(Func<T1, AsyncCallback, Object, IAsyncResult>, Func<IAsyncResult, TReturn>, T1)
-  href: api/ConcurrentSharp.TaskFrom.FromAsyncCallback.html#ConcurrentSharp_TaskFrom_FromAsyncCallback__2_System_Func___0_System_AsyncCallback_System_Object_System_IAsyncResult__System_Func_System_IAsyncResult___1____0_
-  commentId: M:ConcurrentSharp.TaskFrom.FromAsyncCallback``2(System.Func{``0,System.AsyncCallback,System.Object,System.IAsyncResult},System.Func{System.IAsyncResult,``1},``0)
+  href: api/ConcurrentSharp.TaskFrom.FromAsyncCallback.html#ConcurrentSharp_TaskFrom_FromAsyncCallback__2_Func___0_AsyncCallback_System_Object_IAsyncResult__Func_IAsyncResult___1____0_
+  commentId: M:ConcurrentSharp.TaskFrom.FromAsyncCallback``2(Func{``0,AsyncCallback,System.Object,IAsyncResult},Func{IAsyncResult,``1},``0)
   name.vb: FromAsyncCallback(Of T1, TReturn)(Func(Of T1, AsyncCallback, Object, IAsyncResult), Func(Of IAsyncResult, TReturn), T1)
-  fullName: ConcurrentSharp.TaskFrom.FromAsyncCallback<T1, TReturn>(System.Func<T1, System.AsyncCallback, System.Object, System.IAsyncResult>, System.Func<System.IAsyncResult, TReturn>, T1)
-  fullName.vb: ConcurrentSharp.TaskFrom.FromAsyncCallback(Of T1, TReturn)(System.Func(Of T1, System.AsyncCallback, System.Object, System.IAsyncResult), System.Func(Of System.IAsyncResult, TReturn), T1)
+  fullName: ConcurrentSharp.TaskFrom.FromAsyncCallback<T1, TReturn>(Func<T1, AsyncCallback, System.Object, IAsyncResult>, Func<IAsyncResult, TReturn>, T1)
+  fullName.vb: ConcurrentSharp.TaskFrom.FromAsyncCallback(Of T1, TReturn)(Func(Of T1, AsyncCallback, System.Object, IAsyncResult), Func(Of IAsyncResult, TReturn), T1)
   nameWithType: TaskFrom.FromAsyncCallback<T1, TReturn>(Func<T1, AsyncCallback, Object, IAsyncResult>, Func<IAsyncResult, TReturn>, T1)
   nameWithType.vb: TaskFrom.FromAsyncCallback(Of T1, TReturn)(Func(Of T1, AsyncCallback, Object, IAsyncResult), Func(Of IAsyncResult, TReturn), T1)
-- uid: ConcurrentSharp.TaskFrom.FromAsyncCallback``3(System.Func{``0,``1,``2,System.AsyncCallback,System.Object,System.IAsyncResult},System.Action{System.IAsyncResult},``0,``1,``2)
+- uid: ConcurrentSharp.TaskFrom.FromAsyncCallback``3(Func{``0,``1,``2,AsyncCallback,System.Object,IAsyncResult},Action{IAsyncResult},``0,``1,``2)
   name: FromAsyncCallback<T1, T2, T3>(Func<T1, T2, T3, AsyncCallback, Object, IAsyncResult>, Action<IAsyncResult>, T1, T2, T3)
-  href: api/ConcurrentSharp.TaskFrom.FromAsyncCallback.html#ConcurrentSharp_TaskFrom_FromAsyncCallback__3_System_Func___0___1___2_System_AsyncCallback_System_Object_System_IAsyncResult__System_Action_System_IAsyncResult____0___1___2_
-  commentId: M:ConcurrentSharp.TaskFrom.FromAsyncCallback``3(System.Func{``0,``1,``2,System.AsyncCallback,System.Object,System.IAsyncResult},System.Action{System.IAsyncResult},``0,``1,``2)
+  href: api/ConcurrentSharp.TaskFrom.FromAsyncCallback.html#ConcurrentSharp_TaskFrom_FromAsyncCallback__3_Func___0___1___2_AsyncCallback_System_Object_IAsyncResult__Action_IAsyncResult____0___1___2_
+  commentId: M:ConcurrentSharp.TaskFrom.FromAsyncCallback``3(Func{``0,``1,``2,AsyncCallback,System.Object,IAsyncResult},Action{IAsyncResult},``0,``1,``2)
   name.vb: FromAsyncCallback(Of T1, T2, T3)(Func(Of T1, T2, T3, AsyncCallback, Object, IAsyncResult), Action(Of IAsyncResult), T1, T2, T3)
-  fullName: ConcurrentSharp.TaskFrom.FromAsyncCallback<T1, T2, T3>(System.Func<T1, T2, T3, System.AsyncCallback, System.Object, System.IAsyncResult>, System.Action<System.IAsyncResult>, T1, T2, T3)
-  fullName.vb: ConcurrentSharp.TaskFrom.FromAsyncCallback(Of T1, T2, T3)(System.Func(Of T1, T2, T3, System.AsyncCallback, System.Object, System.IAsyncResult), System.Action(Of System.IAsyncResult), T1, T2, T3)
+  fullName: ConcurrentSharp.TaskFrom.FromAsyncCallback<T1, T2, T3>(Func<T1, T2, T3, AsyncCallback, System.Object, IAsyncResult>, Action<IAsyncResult>, T1, T2, T3)
+  fullName.vb: ConcurrentSharp.TaskFrom.FromAsyncCallback(Of T1, T2, T3)(Func(Of T1, T2, T3, AsyncCallback, System.Object, IAsyncResult), Action(Of IAsyncResult), T1, T2, T3)
   nameWithType: TaskFrom.FromAsyncCallback<T1, T2, T3>(Func<T1, T2, T3, AsyncCallback, Object, IAsyncResult>, Action<IAsyncResult>, T1, T2, T3)
   nameWithType.vb: TaskFrom.FromAsyncCallback(Of T1, T2, T3)(Func(Of T1, T2, T3, AsyncCallback, Object, IAsyncResult), Action(Of IAsyncResult), T1, T2, T3)
-- uid: ConcurrentSharp.TaskFrom.FromAsyncCallback``3(System.Func{``0,``1,System.AsyncCallback,System.Object,System.IAsyncResult},System.Func{System.IAsyncResult,``2},``0,``1)
+- uid: ConcurrentSharp.TaskFrom.FromAsyncCallback``3(Func{``0,``1,AsyncCallback,System.Object,IAsyncResult},Func{IAsyncResult,``2},``0,``1)
   name: FromAsyncCallback<T1, T2, TReturn>(Func<T1, T2, AsyncCallback, Object, IAsyncResult>, Func<IAsyncResult, TReturn>, T1, T2)
-  href: api/ConcurrentSharp.TaskFrom.FromAsyncCallback.html#ConcurrentSharp_TaskFrom_FromAsyncCallback__3_System_Func___0___1_System_AsyncCallback_System_Object_System_IAsyncResult__System_Func_System_IAsyncResult___2____0___1_
-  commentId: M:ConcurrentSharp.TaskFrom.FromAsyncCallback``3(System.Func{``0,``1,System.AsyncCallback,System.Object,System.IAsyncResult},System.Func{System.IAsyncResult,``2},``0,``1)
+  href: api/ConcurrentSharp.TaskFrom.FromAsyncCallback.html#ConcurrentSharp_TaskFrom_FromAsyncCallback__3_Func___0___1_AsyncCallback_System_Object_IAsyncResult__Func_IAsyncResult___2____0___1_
+  commentId: M:ConcurrentSharp.TaskFrom.FromAsyncCallback``3(Func{``0,``1,AsyncCallback,System.Object,IAsyncResult},Func{IAsyncResult,``2},``0,``1)
   name.vb: FromAsyncCallback(Of T1, T2, TReturn)(Func(Of T1, T2, AsyncCallback, Object, IAsyncResult), Func(Of IAsyncResult, TReturn), T1, T2)
-  fullName: ConcurrentSharp.TaskFrom.FromAsyncCallback<T1, T2, TReturn>(System.Func<T1, T2, System.AsyncCallback, System.Object, System.IAsyncResult>, System.Func<System.IAsyncResult, TReturn>, T1, T2)
-  fullName.vb: ConcurrentSharp.TaskFrom.FromAsyncCallback(Of T1, T2, TReturn)(System.Func(Of T1, T2, System.AsyncCallback, System.Object, System.IAsyncResult), System.Func(Of System.IAsyncResult, TReturn), T1, T2)
+  fullName: ConcurrentSharp.TaskFrom.FromAsyncCallback<T1, T2, TReturn>(Func<T1, T2, AsyncCallback, System.Object, IAsyncResult>, Func<IAsyncResult, TReturn>, T1, T2)
+  fullName.vb: ConcurrentSharp.TaskFrom.FromAsyncCallback(Of T1, T2, TReturn)(Func(Of T1, T2, AsyncCallback, System.Object, IAsyncResult), Func(Of IAsyncResult, TReturn), T1, T2)
   nameWithType: TaskFrom.FromAsyncCallback<T1, T2, TReturn>(Func<T1, T2, AsyncCallback, Object, IAsyncResult>, Func<IAsyncResult, TReturn>, T1, T2)
   nameWithType.vb: TaskFrom.FromAsyncCallback(Of T1, T2, TReturn)(Func(Of T1, T2, AsyncCallback, Object, IAsyncResult), Func(Of IAsyncResult, TReturn), T1, T2)
-- uid: ConcurrentSharp.TaskFrom.FromAsyncCallback``4(System.Func{``0,``1,``2,``3,System.AsyncCallback,System.Object,System.IAsyncResult},System.Action{System.IAsyncResult},``0,``1,``2,``3)
+- uid: ConcurrentSharp.TaskFrom.FromAsyncCallback``4(Func{``0,``1,``2,``3,AsyncCallback,System.Object,IAsyncResult},Action{IAsyncResult},``0,``1,``2,``3)
   name: FromAsyncCallback<T1, T2, T3, T4>(Func<T1, T2, T3, T4, AsyncCallback, Object, IAsyncResult>, Action<IAsyncResult>, T1, T2, T3, T4)
-  href: api/ConcurrentSharp.TaskFrom.FromAsyncCallback.html#ConcurrentSharp_TaskFrom_FromAsyncCallback__4_System_Func___0___1___2___3_System_AsyncCallback_System_Object_System_IAsyncResult__System_Action_System_IAsyncResult____0___1___2___3_
-  commentId: M:ConcurrentSharp.TaskFrom.FromAsyncCallback``4(System.Func{``0,``1,``2,``3,System.AsyncCallback,System.Object,System.IAsyncResult},System.Action{System.IAsyncResult},``0,``1,``2,``3)
+  href: api/ConcurrentSharp.TaskFrom.FromAsyncCallback.html#ConcurrentSharp_TaskFrom_FromAsyncCallback__4_Func___0___1___2___3_AsyncCallback_System_Object_IAsyncResult__Action_IAsyncResult____0___1___2___3_
+  commentId: M:ConcurrentSharp.TaskFrom.FromAsyncCallback``4(Func{``0,``1,``2,``3,AsyncCallback,System.Object,IAsyncResult},Action{IAsyncResult},``0,``1,``2,``3)
   name.vb: FromAsyncCallback(Of T1, T2, T3, T4)(Func(Of T1, T2, T3, T4, AsyncCallback, Object, IAsyncResult), Action(Of IAsyncResult), T1, T2, T3, T4)
-  fullName: ConcurrentSharp.TaskFrom.FromAsyncCallback<T1, T2, T3, T4>(System.Func<T1, T2, T3, T4, System.AsyncCallback, System.Object, System.IAsyncResult>, System.Action<System.IAsyncResult>, T1, T2, T3, T4)
-  fullName.vb: ConcurrentSharp.TaskFrom.FromAsyncCallback(Of T1, T2, T3, T4)(System.Func(Of T1, T2, T3, T4, System.AsyncCallback, System.Object, System.IAsyncResult), System.Action(Of System.IAsyncResult), T1, T2, T3, T4)
+  fullName: ConcurrentSharp.TaskFrom.FromAsyncCallback<T1, T2, T3, T4>(Func<T1, T2, T3, T4, AsyncCallback, System.Object, IAsyncResult>, Action<IAsyncResult>, T1, T2, T3, T4)
+  fullName.vb: ConcurrentSharp.TaskFrom.FromAsyncCallback(Of T1, T2, T3, T4)(Func(Of T1, T2, T3, T4, AsyncCallback, System.Object, IAsyncResult), Action(Of IAsyncResult), T1, T2, T3, T4)
   nameWithType: TaskFrom.FromAsyncCallback<T1, T2, T3, T4>(Func<T1, T2, T3, T4, AsyncCallback, Object, IAsyncResult>, Action<IAsyncResult>, T1, T2, T3, T4)
   nameWithType.vb: TaskFrom.FromAsyncCallback(Of T1, T2, T3, T4)(Func(Of T1, T2, T3, T4, AsyncCallback, Object, IAsyncResult), Action(Of IAsyncResult), T1, T2, T3, T4)
-- uid: ConcurrentSharp.TaskFrom.FromAsyncCallback``4(System.Func{``0,``1,``2,System.AsyncCallback,System.Object,System.IAsyncResult},System.Func{System.IAsyncResult,``3},``0,``1,``2)
+- uid: ConcurrentSharp.TaskFrom.FromAsyncCallback``4(Func{``0,``1,``2,AsyncCallback,System.Object,IAsyncResult},Func{IAsyncResult,``3},``0,``1,``2)
   name: FromAsyncCallback<T1, T2, T3, TReturn>(Func<T1, T2, T3, AsyncCallback, Object, IAsyncResult>, Func<IAsyncResult, TReturn>, T1, T2, T3)
-  href: api/ConcurrentSharp.TaskFrom.FromAsyncCallback.html#ConcurrentSharp_TaskFrom_FromAsyncCallback__4_System_Func___0___1___2_System_AsyncCallback_System_Object_System_IAsyncResult__System_Func_System_IAsyncResult___3____0___1___2_
-  commentId: M:ConcurrentSharp.TaskFrom.FromAsyncCallback``4(System.Func{``0,``1,``2,System.AsyncCallback,System.Object,System.IAsyncResult},System.Func{System.IAsyncResult,``3},``0,``1,``2)
+  href: api/ConcurrentSharp.TaskFrom.FromAsyncCallback.html#ConcurrentSharp_TaskFrom_FromAsyncCallback__4_Func___0___1___2_AsyncCallback_System_Object_IAsyncResult__Func_IAsyncResult___3____0___1___2_
+  commentId: M:ConcurrentSharp.TaskFrom.FromAsyncCallback``4(Func{``0,``1,``2,AsyncCallback,System.Object,IAsyncResult},Func{IAsyncResult,``3},``0,``1,``2)
   name.vb: FromAsyncCallback(Of T1, T2, T3, TReturn)(Func(Of T1, T2, T3, AsyncCallback, Object, IAsyncResult), Func(Of IAsyncResult, TReturn), T1, T2, T3)
-  fullName: ConcurrentSharp.TaskFrom.FromAsyncCallback<T1, T2, T3, TReturn>(System.Func<T1, T2, T3, System.AsyncCallback, System.Object, System.IAsyncResult>, System.Func<System.IAsyncResult, TReturn>, T1, T2, T3)
-  fullName.vb: ConcurrentSharp.TaskFrom.FromAsyncCallback(Of T1, T2, T3, TReturn)(System.Func(Of T1, T2, T3, System.AsyncCallback, System.Object, System.IAsyncResult), System.Func(Of System.IAsyncResult, TReturn), T1, T2, T3)
+  fullName: ConcurrentSharp.TaskFrom.FromAsyncCallback<T1, T2, T3, TReturn>(Func<T1, T2, T3, AsyncCallback, System.Object, IAsyncResult>, Func<IAsyncResult, TReturn>, T1, T2, T3)
+  fullName.vb: ConcurrentSharp.TaskFrom.FromAsyncCallback(Of T1, T2, T3, TReturn)(Func(Of T1, T2, T3, AsyncCallback, System.Object, IAsyncResult), Func(Of IAsyncResult, TReturn), T1, T2, T3)
   nameWithType: TaskFrom.FromAsyncCallback<T1, T2, T3, TReturn>(Func<T1, T2, T3, AsyncCallback, Object, IAsyncResult>, Func<IAsyncResult, TReturn>, T1, T2, T3)
   nameWithType.vb: TaskFrom.FromAsyncCallback(Of T1, T2, T3, TReturn)(Func(Of T1, T2, T3, AsyncCallback, Object, IAsyncResult), Func(Of IAsyncResult, TReturn), T1, T2, T3)
-- uid: ConcurrentSharp.TaskFrom.FromAsyncCallback``5(System.Func{``0,``1,``2,``3,``4,System.AsyncCallback,System.Object,System.IAsyncResult},System.Action{System.IAsyncResult},``0,``1,``2,``3,``4)
+- uid: ConcurrentSharp.TaskFrom.FromAsyncCallback``5(Func{``0,``1,``2,``3,``4,AsyncCallback,System.Object,IAsyncResult},Action{IAsyncResult},``0,``1,``2,``3,``4)
   name: FromAsyncCallback<T1, T2, T3, T4, T5>(Func<T1, T2, T3, T4, T5, AsyncCallback, Object, IAsyncResult>, Action<IAsyncResult>, T1, T2, T3, T4, T5)
-  href: api/ConcurrentSharp.TaskFrom.FromAsyncCallback.html#ConcurrentSharp_TaskFrom_FromAsyncCallback__5_System_Func___0___1___2___3___4_System_AsyncCallback_System_Object_System_IAsyncResult__System_Action_System_IAsyncResult____0___1___2___3___4_
-  commentId: M:ConcurrentSharp.TaskFrom.FromAsyncCallback``5(System.Func{``0,``1,``2,``3,``4,System.AsyncCallback,System.Object,System.IAsyncResult},System.Action{System.IAsyncResult},``0,``1,``2,``3,``4)
+  href: api/ConcurrentSharp.TaskFrom.FromAsyncCallback.html#ConcurrentSharp_TaskFrom_FromAsyncCallback__5_Func___0___1___2___3___4_AsyncCallback_System_Object_IAsyncResult__Action_IAsyncResult____0___1___2___3___4_
+  commentId: M:ConcurrentSharp.TaskFrom.FromAsyncCallback``5(Func{``0,``1,``2,``3,``4,AsyncCallback,System.Object,IAsyncResult},Action{IAsyncResult},``0,``1,``2,``3,``4)
   name.vb: FromAsyncCallback(Of T1, T2, T3, T4, T5)(Func(Of T1, T2, T3, T4, T5, AsyncCallback, Object, IAsyncResult), Action(Of IAsyncResult), T1, T2, T3, T4, T5)
-  fullName: ConcurrentSharp.TaskFrom.FromAsyncCallback<T1, T2, T3, T4, T5>(System.Func<T1, T2, T3, T4, T5, System.AsyncCallback, System.Object, System.IAsyncResult>, System.Action<System.IAsyncResult>, T1, T2, T3, T4, T5)
-  fullName.vb: ConcurrentSharp.TaskFrom.FromAsyncCallback(Of T1, T2, T3, T4, T5)(System.Func(Of T1, T2, T3, T4, T5, System.AsyncCallback, System.Object, System.IAsyncResult), System.Action(Of System.IAsyncResult), T1, T2, T3, T4, T5)
+  fullName: ConcurrentSharp.TaskFrom.FromAsyncCallback<T1, T2, T3, T4, T5>(Func<T1, T2, T3, T4, T5, AsyncCallback, System.Object, IAsyncResult>, Action<IAsyncResult>, T1, T2, T3, T4, T5)
+  fullName.vb: ConcurrentSharp.TaskFrom.FromAsyncCallback(Of T1, T2, T3, T4, T5)(Func(Of T1, T2, T3, T4, T5, AsyncCallback, System.Object, IAsyncResult), Action(Of IAsyncResult), T1, T2, T3, T4, T5)
   nameWithType: TaskFrom.FromAsyncCallback<T1, T2, T3, T4, T5>(Func<T1, T2, T3, T4, T5, AsyncCallback, Object, IAsyncResult>, Action<IAsyncResult>, T1, T2, T3, T4, T5)
   nameWithType.vb: TaskFrom.FromAsyncCallback(Of T1, T2, T3, T4, T5)(Func(Of T1, T2, T3, T4, T5, AsyncCallback, Object, IAsyncResult), Action(Of IAsyncResult), T1, T2, T3, T4, T5)
-- uid: ConcurrentSharp.TaskFrom.FromAsyncCallback``5(System.Func{``0,``1,``2,``3,System.AsyncCallback,System.Object,System.IAsyncResult},System.Func{System.IAsyncResult,``4},``0,``1,``2,``3)
+- uid: ConcurrentSharp.TaskFrom.FromAsyncCallback``5(Func{``0,``1,``2,``3,AsyncCallback,System.Object,IAsyncResult},Func{IAsyncResult,``4},``0,``1,``2,``3)
   name: FromAsyncCallback<T1, T2, T3, T4, TReturn>(Func<T1, T2, T3, T4, AsyncCallback, Object, IAsyncResult>, Func<IAsyncResult, TReturn>, T1, T2, T3, T4)
-  href: api/ConcurrentSharp.TaskFrom.FromAsyncCallback.html#ConcurrentSharp_TaskFrom_FromAsyncCallback__5_System_Func___0___1___2___3_System_AsyncCallback_System_Object_System_IAsyncResult__System_Func_System_IAsyncResult___4____0___1___2___3_
-  commentId: M:ConcurrentSharp.TaskFrom.FromAsyncCallback``5(System.Func{``0,``1,``2,``3,System.AsyncCallback,System.Object,System.IAsyncResult},System.Func{System.IAsyncResult,``4},``0,``1,``2,``3)
+  href: api/ConcurrentSharp.TaskFrom.FromAsyncCallback.html#ConcurrentSharp_TaskFrom_FromAsyncCallback__5_Func___0___1___2___3_AsyncCallback_System_Object_IAsyncResult__Func_IAsyncResult___4____0___1___2___3_
+  commentId: M:ConcurrentSharp.TaskFrom.FromAsyncCallback``5(Func{``0,``1,``2,``3,AsyncCallback,System.Object,IAsyncResult},Func{IAsyncResult,``4},``0,``1,``2,``3)
   name.vb: FromAsyncCallback(Of T1, T2, T3, T4, TReturn)(Func(Of T1, T2, T3, T4, AsyncCallback, Object, IAsyncResult), Func(Of IAsyncResult, TReturn), T1, T2, T3, T4)
-  fullName: ConcurrentSharp.TaskFrom.FromAsyncCallback<T1, T2, T3, T4, TReturn>(System.Func<T1, T2, T3, T4, System.AsyncCallback, System.Object, System.IAsyncResult>, System.Func<System.IAsyncResult, TReturn>, T1, T2, T3, T4)
-  fullName.vb: ConcurrentSharp.TaskFrom.FromAsyncCallback(Of T1, T2, T3, T4, TReturn)(System.Func(Of T1, T2, T3, T4, System.AsyncCallback, System.Object, System.IAsyncResult), System.Func(Of System.IAsyncResult, TReturn), T1, T2, T3, T4)
+  fullName: ConcurrentSharp.TaskFrom.FromAsyncCallback<T1, T2, T3, T4, TReturn>(Func<T1, T2, T3, T4, AsyncCallback, System.Object, IAsyncResult>, Func<IAsyncResult, TReturn>, T1, T2, T3, T4)
+  fullName.vb: ConcurrentSharp.TaskFrom.FromAsyncCallback(Of T1, T2, T3, T4, TReturn)(Func(Of T1, T2, T3, T4, AsyncCallback, System.Object, IAsyncResult), Func(Of IAsyncResult, TReturn), T1, T2, T3, T4)
   nameWithType: TaskFrom.FromAsyncCallback<T1, T2, T3, T4, TReturn>(Func<T1, T2, T3, T4, AsyncCallback, Object, IAsyncResult>, Func<IAsyncResult, TReturn>, T1, T2, T3, T4)
   nameWithType.vb: TaskFrom.FromAsyncCallback(Of T1, T2, T3, T4, TReturn)(Func(Of T1, T2, T3, T4, AsyncCallback, Object, IAsyncResult), Func(Of IAsyncResult, TReturn), T1, T2, T3, T4)
-- uid: ConcurrentSharp.TaskFrom.FromAsyncCallback``6(System.Func{``0,``1,``2,``3,``4,``5,System.AsyncCallback,System.Object,System.IAsyncResult},System.Action{System.IAsyncResult},``0,``1,``2,``3,``4,``5)
+- uid: ConcurrentSharp.TaskFrom.FromAsyncCallback``6(Func{``0,``1,``2,``3,``4,``5,AsyncCallback,System.Object,IAsyncResult},Action{IAsyncResult},``0,``1,``2,``3,``4,``5)
   name: FromAsyncCallback<T1, T2, T3, T4, T5, T6>(Func<T1, T2, T3, T4, T5, T6, AsyncCallback, Object, IAsyncResult>, Action<IAsyncResult>, T1, T2, T3, T4, T5, T6)
-  href: api/ConcurrentSharp.TaskFrom.FromAsyncCallback.html#ConcurrentSharp_TaskFrom_FromAsyncCallback__6_System_Func___0___1___2___3___4___5_System_AsyncCallback_System_Object_System_IAsyncResult__System_Action_System_IAsyncResult____0___1___2___3___4___5_
-  commentId: M:ConcurrentSharp.TaskFrom.FromAsyncCallback``6(System.Func{``0,``1,``2,``3,``4,``5,System.AsyncCallback,System.Object,System.IAsyncResult},System.Action{System.IAsyncResult},``0,``1,``2,``3,``4,``5)
+  href: api/ConcurrentSharp.TaskFrom.FromAsyncCallback.html#ConcurrentSharp_TaskFrom_FromAsyncCallback__6_Func___0___1___2___3___4___5_AsyncCallback_System_Object_IAsyncResult__Action_IAsyncResult____0___1___2___3___4___5_
+  commentId: M:ConcurrentSharp.TaskFrom.FromAsyncCallback``6(Func{``0,``1,``2,``3,``4,``5,AsyncCallback,System.Object,IAsyncResult},Action{IAsyncResult},``0,``1,``2,``3,``4,``5)
   name.vb: FromAsyncCallback(Of T1, T2, T3, T4, T5, T6)(Func(Of T1, T2, T3, T4, T5, T6, AsyncCallback, Object, IAsyncResult), Action(Of IAsyncResult), T1, T2, T3, T4, T5, T6)
-  fullName: ConcurrentSharp.TaskFrom.FromAsyncCallback<T1, T2, T3, T4, T5, T6>(System.Func<T1, T2, T3, T4, T5, T6, System.AsyncCallback, System.Object, System.IAsyncResult>, System.Action<System.IAsyncResult>, T1, T2, T3, T4, T5, T6)
-  fullName.vb: ConcurrentSharp.TaskFrom.FromAsyncCallback(Of T1, T2, T3, T4, T5, T6)(System.Func(Of T1, T2, T3, T4, T5, T6, System.AsyncCallback, System.Object, System.IAsyncResult), System.Action(Of System.IAsyncResult), T1, T2, T3, T4, T5, T6)
+  fullName: ConcurrentSharp.TaskFrom.FromAsyncCallback<T1, T2, T3, T4, T5, T6>(Func<T1, T2, T3, T4, T5, T6, AsyncCallback, System.Object, IAsyncResult>, Action<IAsyncResult>, T1, T2, T3, T4, T5, T6)
+  fullName.vb: ConcurrentSharp.TaskFrom.FromAsyncCallback(Of T1, T2, T3, T4, T5, T6)(Func(Of T1, T2, T3, T4, T5, T6, AsyncCallback, System.Object, IAsyncResult), Action(Of IAsyncResult), T1, T2, T3, T4, T5, T6)
   nameWithType: TaskFrom.FromAsyncCallback<T1, T2, T3, T4, T5, T6>(Func<T1, T2, T3, T4, T5, T6, AsyncCallback, Object, IAsyncResult>, Action<IAsyncResult>, T1, T2, T3, T4, T5, T6)
   nameWithType.vb: TaskFrom.FromAsyncCallback(Of T1, T2, T3, T4, T5, T6)(Func(Of T1, T2, T3, T4, T5, T6, AsyncCallback, Object, IAsyncResult), Action(Of IAsyncResult), T1, T2, T3, T4, T5, T6)
-- uid: ConcurrentSharp.TaskFrom.FromAsyncCallback``6(System.Func{``0,``1,``2,``3,``4,System.AsyncCallback,System.Object,System.IAsyncResult},System.Func{System.IAsyncResult,``5},``0,``1,``2,``3,``4)
+- uid: ConcurrentSharp.TaskFrom.FromAsyncCallback``6(Func{``0,``1,``2,``3,``4,AsyncCallback,System.Object,IAsyncResult},Func{IAsyncResult,``5},``0,``1,``2,``3,``4)
   name: FromAsyncCallback<T1, T2, T3, T4, T5, TReturn>(Func<T1, T2, T3, T4, T5, AsyncCallback, Object, IAsyncResult>, Func<IAsyncResult, TReturn>, T1, T2, T3, T4, T5)
-  href: api/ConcurrentSharp.TaskFrom.FromAsyncCallback.html#ConcurrentSharp_TaskFrom_FromAsyncCallback__6_System_Func___0___1___2___3___4_System_AsyncCallback_System_Object_System_IAsyncResult__System_Func_System_IAsyncResult___5____0___1___2___3___4_
-  commentId: M:ConcurrentSharp.TaskFrom.FromAsyncCallback``6(System.Func{``0,``1,``2,``3,``4,System.AsyncCallback,System.Object,System.IAsyncResult},System.Func{System.IAsyncResult,``5},``0,``1,``2,``3,``4)
+  href: api/ConcurrentSharp.TaskFrom.FromAsyncCallback.html#ConcurrentSharp_TaskFrom_FromAsyncCallback__6_Func___0___1___2___3___4_AsyncCallback_System_Object_IAsyncResult__Func_IAsyncResult___5____0___1___2___3___4_
+  commentId: M:ConcurrentSharp.TaskFrom.FromAsyncCallback``6(Func{``0,``1,``2,``3,``4,AsyncCallback,System.Object,IAsyncResult},Func{IAsyncResult,``5},``0,``1,``2,``3,``4)
   name.vb: FromAsyncCallback(Of T1, T2, T3, T4, T5, TReturn)(Func(Of T1, T2, T3, T4, T5, AsyncCallback, Object, IAsyncResult), Func(Of IAsyncResult, TReturn), T1, T2, T3, T4, T5)
-  fullName: ConcurrentSharp.TaskFrom.FromAsyncCallback<T1, T2, T3, T4, T5, TReturn>(System.Func<T1, T2, T3, T4, T5, System.AsyncCallback, System.Object, System.IAsyncResult>, System.Func<System.IAsyncResult, TReturn>, T1, T2, T3, T4, T5)
-  fullName.vb: ConcurrentSharp.TaskFrom.FromAsyncCallback(Of T1, T2, T3, T4, T5, TReturn)(System.Func(Of T1, T2, T3, T4, T5, System.AsyncCallback, System.Object, System.IAsyncResult), System.Func(Of System.IAsyncResult, TReturn), T1, T2, T3, T4, T5)
+  fullName: ConcurrentSharp.TaskFrom.FromAsyncCallback<T1, T2, T3, T4, T5, TReturn>(Func<T1, T2, T3, T4, T5, AsyncCallback, System.Object, IAsyncResult>, Func<IAsyncResult, TReturn>, T1, T2, T3, T4, T5)
+  fullName.vb: ConcurrentSharp.TaskFrom.FromAsyncCallback(Of T1, T2, T3, T4, T5, TReturn)(Func(Of T1, T2, T3, T4, T5, AsyncCallback, System.Object, IAsyncResult), Func(Of IAsyncResult, TReturn), T1, T2, T3, T4, T5)
   nameWithType: TaskFrom.FromAsyncCallback<T1, T2, T3, T4, T5, TReturn>(Func<T1, T2, T3, T4, T5, AsyncCallback, Object, IAsyncResult>, Func<IAsyncResult, TReturn>, T1, T2, T3, T4, T5)
   nameWithType.vb: TaskFrom.FromAsyncCallback(Of T1, T2, T3, T4, T5, TReturn)(Func(Of T1, T2, T3, T4, T5, AsyncCallback, Object, IAsyncResult), Func(Of IAsyncResult, TReturn), T1, T2, T3, T4, T5)
-- uid: ConcurrentSharp.TaskFrom.FromAsyncCallback``7(System.Func{``0,``1,``2,``3,``4,``5,``6,System.AsyncCallback,System.Object,System.IAsyncResult},System.Action{System.IAsyncResult},``0,``1,``2,``3,``4,``5,``6)
+- uid: ConcurrentSharp.TaskFrom.FromAsyncCallback``7(Func{``0,``1,``2,``3,``4,``5,``6,AsyncCallback,System.Object,IAsyncResult},Action{IAsyncResult},``0,``1,``2,``3,``4,``5,``6)
   name: FromAsyncCallback<T1, T2, T3, T4, T5, T6, T7>(Func<T1, T2, T3, T4, T5, T6, T7, AsyncCallback, Object, IAsyncResult>, Action<IAsyncResult>, T1, T2, T3, T4, T5, T6, T7)
-  href: api/ConcurrentSharp.TaskFrom.FromAsyncCallback.html#ConcurrentSharp_TaskFrom_FromAsyncCallback__7_System_Func___0___1___2___3___4___5___6_System_AsyncCallback_System_Object_System_IAsyncResult__System_Action_System_IAsyncResult____0___1___2___3___4___5___6_
-  commentId: M:ConcurrentSharp.TaskFrom.FromAsyncCallback``7(System.Func{``0,``1,``2,``3,``4,``5,``6,System.AsyncCallback,System.Object,System.IAsyncResult},System.Action{System.IAsyncResult},``0,``1,``2,``3,``4,``5,``6)
+  href: api/ConcurrentSharp.TaskFrom.FromAsyncCallback.html#ConcurrentSharp_TaskFrom_FromAsyncCallback__7_Func___0___1___2___3___4___5___6_AsyncCallback_System_Object_IAsyncResult__Action_IAsyncResult____0___1___2___3___4___5___6_
+  commentId: M:ConcurrentSharp.TaskFrom.FromAsyncCallback``7(Func{``0,``1,``2,``3,``4,``5,``6,AsyncCallback,System.Object,IAsyncResult},Action{IAsyncResult},``0,``1,``2,``3,``4,``5,``6)
   name.vb: FromAsyncCallback(Of T1, T2, T3, T4, T5, T6, T7)(Func(Of T1, T2, T3, T4, T5, T6, T7, AsyncCallback, Object, IAsyncResult), Action(Of IAsyncResult), T1, T2, T3, T4, T5, T6, T7)
-  fullName: ConcurrentSharp.TaskFrom.FromAsyncCallback<T1, T2, T3, T4, T5, T6, T7>(System.Func<T1, T2, T3, T4, T5, T6, T7, System.AsyncCallback, System.Object, System.IAsyncResult>, System.Action<System.IAsyncResult>, T1, T2, T3, T4, T5, T6, T7)
-  fullName.vb: ConcurrentSharp.TaskFrom.FromAsyncCallback(Of T1, T2, T3, T4, T5, T6, T7)(System.Func(Of T1, T2, T3, T4, T5, T6, T7, System.AsyncCallback, System.Object, System.IAsyncResult), System.Action(Of System.IAsyncResult), T1, T2, T3, T4, T5, T6, T7)
+  fullName: ConcurrentSharp.TaskFrom.FromAsyncCallback<T1, T2, T3, T4, T5, T6, T7>(Func<T1, T2, T3, T4, T5, T6, T7, AsyncCallback, System.Object, IAsyncResult>, Action<IAsyncResult>, T1, T2, T3, T4, T5, T6, T7)
+  fullName.vb: ConcurrentSharp.TaskFrom.FromAsyncCallback(Of T1, T2, T3, T4, T5, T6, T7)(Func(Of T1, T2, T3, T4, T5, T6, T7, AsyncCallback, System.Object, IAsyncResult), Action(Of IAsyncResult), T1, T2, T3, T4, T5, T6, T7)
   nameWithType: TaskFrom.FromAsyncCallback<T1, T2, T3, T4, T5, T6, T7>(Func<T1, T2, T3, T4, T5, T6, T7, AsyncCallback, Object, IAsyncResult>, Action<IAsyncResult>, T1, T2, T3, T4, T5, T6, T7)
   nameWithType.vb: TaskFrom.FromAsyncCallback(Of T1, T2, T3, T4, T5, T6, T7)(Func(Of T1, T2, T3, T4, T5, T6, T7, AsyncCallback, Object, IAsyncResult), Action(Of IAsyncResult), T1, T2, T3, T4, T5, T6, T7)
-- uid: ConcurrentSharp.TaskFrom.FromAsyncCallback``7(System.Func{``0,``1,``2,``3,``4,``5,System.AsyncCallback,System.Object,System.IAsyncResult},System.Func{System.IAsyncResult,``6},``0,``1,``2,``3,``4,``5)
+- uid: ConcurrentSharp.TaskFrom.FromAsyncCallback``7(Func{``0,``1,``2,``3,``4,``5,AsyncCallback,System.Object,IAsyncResult},Func{IAsyncResult,``6},``0,``1,``2,``3,``4,``5)
   name: FromAsyncCallback<T1, T2, T3, T4, T5, T6, TReturn>(Func<T1, T2, T3, T4, T5, T6, AsyncCallback, Object, IAsyncResult>, Func<IAsyncResult, TReturn>, T1, T2, T3, T4, T5, T6)
-  href: api/ConcurrentSharp.TaskFrom.FromAsyncCallback.html#ConcurrentSharp_TaskFrom_FromAsyncCallback__7_System_Func___0___1___2___3___4___5_System_AsyncCallback_System_Object_System_IAsyncResult__System_Func_System_IAsyncResult___6____0___1___2___3___4___5_
-  commentId: M:ConcurrentSharp.TaskFrom.FromAsyncCallback``7(System.Func{``0,``1,``2,``3,``4,``5,System.AsyncCallback,System.Object,System.IAsyncResult},System.Func{System.IAsyncResult,``6},``0,``1,``2,``3,``4,``5)
+  href: api/ConcurrentSharp.TaskFrom.FromAsyncCallback.html#ConcurrentSharp_TaskFrom_FromAsyncCallback__7_Func___0___1___2___3___4___5_AsyncCallback_System_Object_IAsyncResult__Func_IAsyncResult___6____0___1___2___3___4___5_
+  commentId: M:ConcurrentSharp.TaskFrom.FromAsyncCallback``7(Func{``0,``1,``2,``3,``4,``5,AsyncCallback,System.Object,IAsyncResult},Func{IAsyncResult,``6},``0,``1,``2,``3,``4,``5)
   name.vb: FromAsyncCallback(Of T1, T2, T3, T4, T5, T6, TReturn)(Func(Of T1, T2, T3, T4, T5, T6, AsyncCallback, Object, IAsyncResult), Func(Of IAsyncResult, TReturn), T1, T2, T3, T4, T5, T6)
-  fullName: ConcurrentSharp.TaskFrom.FromAsyncCallback<T1, T2, T3, T4, T5, T6, TReturn>(System.Func<T1, T2, T3, T4, T5, T6, System.AsyncCallback, System.Object, System.IAsyncResult>, System.Func<System.IAsyncResult, TReturn>, T1, T2, T3, T4, T5, T6)
-  fullName.vb: ConcurrentSharp.TaskFrom.FromAsyncCallback(Of T1, T2, T3, T4, T5, T6, TReturn)(System.Func(Of T1, T2, T3, T4, T5, T6, System.AsyncCallback, System.Object, System.IAsyncResult), System.Func(Of System.IAsyncResult, TReturn), T1, T2, T3, T4, T5, T6)
+  fullName: ConcurrentSharp.TaskFrom.FromAsyncCallback<T1, T2, T3, T4, T5, T6, TReturn>(Func<T1, T2, T3, T4, T5, T6, AsyncCallback, System.Object, IAsyncResult>, Func<IAsyncResult, TReturn>, T1, T2, T3, T4, T5, T6)
+  fullName.vb: ConcurrentSharp.TaskFrom.FromAsyncCallback(Of T1, T2, T3, T4, T5, T6, TReturn)(Func(Of T1, T2, T3, T4, T5, T6, AsyncCallback, System.Object, IAsyncResult), Func(Of IAsyncResult, TReturn), T1, T2, T3, T4, T5, T6)
   nameWithType: TaskFrom.FromAsyncCallback<T1, T2, T3, T4, T5, T6, TReturn>(Func<T1, T2, T3, T4, T5, T6, AsyncCallback, Object, IAsyncResult>, Func<IAsyncResult, TReturn>, T1, T2, T3, T4, T5, T6)
   nameWithType.vb: TaskFrom.FromAsyncCallback(Of T1, T2, T3, T4, T5, T6, TReturn)(Func(Of T1, T2, T3, T4, T5, T6, AsyncCallback, Object, IAsyncResult), Func(Of IAsyncResult, TReturn), T1, T2, T3, T4, T5, T6)
-- uid: ConcurrentSharp.TaskFrom.FromAsyncCallback``8(System.Func{``0,``1,``2,``3,``4,``5,``6,``7,System.AsyncCallback,System.Object,System.IAsyncResult},System.Action{System.IAsyncResult},``0,``1,``2,``3,``4,``5,``6,``7)
+- uid: ConcurrentSharp.TaskFrom.FromAsyncCallback``8(Func{``0,``1,``2,``3,``4,``5,``6,``7,AsyncCallback,System.Object,IAsyncResult},Action{IAsyncResult},``0,``1,``2,``3,``4,``5,``6,``7)
   name: FromAsyncCallback<T1, T2, T3, T4, T5, T6, T7, T8>(Func<T1, T2, T3, T4, T5, T6, T7, T8, AsyncCallback, Object, IAsyncResult>, Action<IAsyncResult>, T1, T2, T3, T4, T5, T6, T7, T8)
-  href: api/ConcurrentSharp.TaskFrom.FromAsyncCallback.html#ConcurrentSharp_TaskFrom_FromAsyncCallback__8_System_Func___0___1___2___3___4___5___6___7_System_AsyncCallback_System_Object_System_IAsyncResult__System_Action_System_IAsyncResult____0___1___2___3___4___5___6___7_
-  commentId: M:ConcurrentSharp.TaskFrom.FromAsyncCallback``8(System.Func{``0,``1,``2,``3,``4,``5,``6,``7,System.AsyncCallback,System.Object,System.IAsyncResult},System.Action{System.IAsyncResult},``0,``1,``2,``3,``4,``5,``6,``7)
+  href: api/ConcurrentSharp.TaskFrom.FromAsyncCallback.html#ConcurrentSharp_TaskFrom_FromAsyncCallback__8_Func___0___1___2___3___4___5___6___7_AsyncCallback_System_Object_IAsyncResult__Action_IAsyncResult____0___1___2___3___4___5___6___7_
+  commentId: M:ConcurrentSharp.TaskFrom.FromAsyncCallback``8(Func{``0,``1,``2,``3,``4,``5,``6,``7,AsyncCallback,System.Object,IAsyncResult},Action{IAsyncResult},``0,``1,``2,``3,``4,``5,``6,``7)
   name.vb: FromAsyncCallback(Of T1, T2, T3, T4, T5, T6, T7, T8)(Func(Of T1, T2, T3, T4, T5, T6, T7, T8, AsyncCallback, Object, IAsyncResult), Action(Of IAsyncResult), T1, T2, T3, T4, T5, T6, T7, T8)
-  fullName: ConcurrentSharp.TaskFrom.FromAsyncCallback<T1, T2, T3, T4, T5, T6, T7, T8>(System.Func<T1, T2, T3, T4, T5, T6, T7, T8, System.AsyncCallback, System.Object, System.IAsyncResult>, System.Action<System.IAsyncResult>, T1, T2, T3, T4, T5, T6, T7, T8)
-  fullName.vb: ConcurrentSharp.TaskFrom.FromAsyncCallback(Of T1, T2, T3, T4, T5, T6, T7, T8)(System.Func(Of T1, T2, T3, T4, T5, T6, T7, T8, System.AsyncCallback, System.Object, System.IAsyncResult), System.Action(Of System.IAsyncResult), T1, T2, T3, T4, T5, T6, T7, T8)
+  fullName: ConcurrentSharp.TaskFrom.FromAsyncCallback<T1, T2, T3, T4, T5, T6, T7, T8>(Func<T1, T2, T3, T4, T5, T6, T7, T8, AsyncCallback, System.Object, IAsyncResult>, Action<IAsyncResult>, T1, T2, T3, T4, T5, T6, T7, T8)
+  fullName.vb: ConcurrentSharp.TaskFrom.FromAsyncCallback(Of T1, T2, T3, T4, T5, T6, T7, T8)(Func(Of T1, T2, T3, T4, T5, T6, T7, T8, AsyncCallback, System.Object, IAsyncResult), Action(Of IAsyncResult), T1, T2, T3, T4, T5, T6, T7, T8)
   nameWithType: TaskFrom.FromAsyncCallback<T1, T2, T3, T4, T5, T6, T7, T8>(Func<T1, T2, T3, T4, T5, T6, T7, T8, AsyncCallback, Object, IAsyncResult>, Action<IAsyncResult>, T1, T2, T3, T4, T5, T6, T7, T8)
   nameWithType.vb: TaskFrom.FromAsyncCallback(Of T1, T2, T3, T4, T5, T6, T7, T8)(Func(Of T1, T2, T3, T4, T5, T6, T7, T8, AsyncCallback, Object, IAsyncResult), Action(Of IAsyncResult), T1, T2, T3, T4, T5, T6, T7, T8)
-- uid: ConcurrentSharp.TaskFrom.FromAsyncCallback``8(System.Func{``0,``1,``2,``3,``4,``5,``6,System.AsyncCallback,System.Object,System.IAsyncResult},System.Func{System.IAsyncResult,``7},``0,``1,``2,``3,``4,``5,``6)
+- uid: ConcurrentSharp.TaskFrom.FromAsyncCallback``8(Func{``0,``1,``2,``3,``4,``5,``6,AsyncCallback,System.Object,IAsyncResult},Func{IAsyncResult,``7},``0,``1,``2,``3,``4,``5,``6)
   name: FromAsyncCallback<T1, T2, T3, T4, T5, T6, T7, TReturn>(Func<T1, T2, T3, T4, T5, T6, T7, AsyncCallback, Object, IAsyncResult>, Func<IAsyncResult, TReturn>, T1, T2, T3, T4, T5, T6, T7)
-  href: api/ConcurrentSharp.TaskFrom.FromAsyncCallback.html#ConcurrentSharp_TaskFrom_FromAsyncCallback__8_System_Func___0___1___2___3___4___5___6_System_AsyncCallback_System_Object_System_IAsyncResult__System_Func_System_IAsyncResult___7____0___1___2___3___4___5___6_
-  commentId: M:ConcurrentSharp.TaskFrom.FromAsyncCallback``8(System.Func{``0,``1,``2,``3,``4,``5,``6,System.AsyncCallback,System.Object,System.IAsyncResult},System.Func{System.IAsyncResult,``7},``0,``1,``2,``3,``4,``5,``6)
+  href: api/ConcurrentSharp.TaskFrom.FromAsyncCallback.html#ConcurrentSharp_TaskFrom_FromAsyncCallback__8_Func___0___1___2___3___4___5___6_AsyncCallback_System_Object_IAsyncResult__Func_IAsyncResult___7____0___1___2___3___4___5___6_
+  commentId: M:ConcurrentSharp.TaskFrom.FromAsyncCallback``8(Func{``0,``1,``2,``3,``4,``5,``6,AsyncCallback,System.Object,IAsyncResult},Func{IAsyncResult,``7},``0,``1,``2,``3,``4,``5,``6)
   name.vb: FromAsyncCallback(Of T1, T2, T3, T4, T5, T6, T7, TReturn)(Func(Of T1, T2, T3, T4, T5, T6, T7, AsyncCallback, Object, IAsyncResult), Func(Of IAsyncResult, TReturn), T1, T2, T3, T4, T5, T6, T7)
-  fullName: ConcurrentSharp.TaskFrom.FromAsyncCallback<T1, T2, T3, T4, T5, T6, T7, TReturn>(System.Func<T1, T2, T3, T4, T5, T6, T7, System.AsyncCallback, System.Object, System.IAsyncResult>, System.Func<System.IAsyncResult, TReturn>, T1, T2, T3, T4, T5, T6, T7)
-  fullName.vb: ConcurrentSharp.TaskFrom.FromAsyncCallback(Of T1, T2, T3, T4, T5, T6, T7, TReturn)(System.Func(Of T1, T2, T3, T4, T5, T6, T7, System.AsyncCallback, System.Object, System.IAsyncResult), System.Func(Of System.IAsyncResult, TReturn), T1, T2, T3, T4, T5, T6, T7)
+  fullName: ConcurrentSharp.TaskFrom.FromAsyncCallback<T1, T2, T3, T4, T5, T6, T7, TReturn>(Func<T1, T2, T3, T4, T5, T6, T7, AsyncCallback, System.Object, IAsyncResult>, Func<IAsyncResult, TReturn>, T1, T2, T3, T4, T5, T6, T7)
+  fullName.vb: ConcurrentSharp.TaskFrom.FromAsyncCallback(Of T1, T2, T3, T4, T5, T6, T7, TReturn)(Func(Of T1, T2, T3, T4, T5, T6, T7, AsyncCallback, System.Object, IAsyncResult), Func(Of IAsyncResult, TReturn), T1, T2, T3, T4, T5, T6, T7)
   nameWithType: TaskFrom.FromAsyncCallback<T1, T2, T3, T4, T5, T6, T7, TReturn>(Func<T1, T2, T3, T4, T5, T6, T7, AsyncCallback, Object, IAsyncResult>, Func<IAsyncResult, TReturn>, T1, T2, T3, T4, T5, T6, T7)
   nameWithType.vb: TaskFrom.FromAsyncCallback(Of T1, T2, T3, T4, T5, T6, T7, TReturn)(Func(Of T1, T2, T3, T4, T5, T6, T7, AsyncCallback, Object, IAsyncResult), Func(Of IAsyncResult, TReturn), T1, T2, T3, T4, T5, T6, T7)
-- uid: ConcurrentSharp.TaskFrom.FromAsyncCallback``9(System.Func{``0,``1,``2,``3,``4,``5,``6,``7,``8,System.AsyncCallback,System.Object,System.IAsyncResult},System.Action{System.IAsyncResult},``0,``1,``2,``3,``4,``5,``6,``7,``8)
+- uid: ConcurrentSharp.TaskFrom.FromAsyncCallback``9(Func{``0,``1,``2,``3,``4,``5,``6,``7,``8,AsyncCallback,System.Object,IAsyncResult},Action{IAsyncResult},``0,``1,``2,``3,``4,``5,``6,``7,``8)
   name: FromAsyncCallback<T1, T2, T3, T4, T5, T6, T7, T8, T9>(Func<T1, T2, T3, T4, T5, T6, T7, T8, T9, AsyncCallback, Object, IAsyncResult>, Action<IAsyncResult>, T1, T2, T3, T4, T5, T6, T7, T8, T9)
-  href: api/ConcurrentSharp.TaskFrom.FromAsyncCallback.html#ConcurrentSharp_TaskFrom_FromAsyncCallback__9_System_Func___0___1___2___3___4___5___6___7___8_System_AsyncCallback_System_Object_System_IAsyncResult__System_Action_System_IAsyncResult____0___1___2___3___4___5___6___7___8_
-  commentId: M:ConcurrentSharp.TaskFrom.FromAsyncCallback``9(System.Func{``0,``1,``2,``3,``4,``5,``6,``7,``8,System.AsyncCallback,System.Object,System.IAsyncResult},System.Action{System.IAsyncResult},``0,``1,``2,``3,``4,``5,``6,``7,``8)
+  href: api/ConcurrentSharp.TaskFrom.FromAsyncCallback.html#ConcurrentSharp_TaskFrom_FromAsyncCallback__9_Func___0___1___2___3___4___5___6___7___8_AsyncCallback_System_Object_IAsyncResult__Action_IAsyncResult____0___1___2___3___4___5___6___7___8_
+  commentId: M:ConcurrentSharp.TaskFrom.FromAsyncCallback``9(Func{``0,``1,``2,``3,``4,``5,``6,``7,``8,AsyncCallback,System.Object,IAsyncResult},Action{IAsyncResult},``0,``1,``2,``3,``4,``5,``6,``7,``8)
   name.vb: FromAsyncCallback(Of T1, T2, T3, T4, T5, T6, T7, T8, T9)(Func(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, AsyncCallback, Object, IAsyncResult), Action(Of IAsyncResult), T1, T2, T3, T4, T5, T6, T7, T8, T9)
-  fullName: ConcurrentSharp.TaskFrom.FromAsyncCallback<T1, T2, T3, T4, T5, T6, T7, T8, T9>(System.Func<T1, T2, T3, T4, T5, T6, T7, T8, T9, System.AsyncCallback, System.Object, System.IAsyncResult>, System.Action<System.IAsyncResult>, T1, T2, T3, T4, T5, T6, T7, T8, T9)
-  fullName.vb: ConcurrentSharp.TaskFrom.FromAsyncCallback(Of T1, T2, T3, T4, T5, T6, T7, T8, T9)(System.Func(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, System.AsyncCallback, System.Object, System.IAsyncResult), System.Action(Of System.IAsyncResult), T1, T2, T3, T4, T5, T6, T7, T8, T9)
+  fullName: ConcurrentSharp.TaskFrom.FromAsyncCallback<T1, T2, T3, T4, T5, T6, T7, T8, T9>(Func<T1, T2, T3, T4, T5, T6, T7, T8, T9, AsyncCallback, System.Object, IAsyncResult>, Action<IAsyncResult>, T1, T2, T3, T4, T5, T6, T7, T8, T9)
+  fullName.vb: ConcurrentSharp.TaskFrom.FromAsyncCallback(Of T1, T2, T3, T4, T5, T6, T7, T8, T9)(Func(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, AsyncCallback, System.Object, IAsyncResult), Action(Of IAsyncResult), T1, T2, T3, T4, T5, T6, T7, T8, T9)
   nameWithType: TaskFrom.FromAsyncCallback<T1, T2, T3, T4, T5, T6, T7, T8, T9>(Func<T1, T2, T3, T4, T5, T6, T7, T8, T9, AsyncCallback, Object, IAsyncResult>, Action<IAsyncResult>, T1, T2, T3, T4, T5, T6, T7, T8, T9)
   nameWithType.vb: TaskFrom.FromAsyncCallback(Of T1, T2, T3, T4, T5, T6, T7, T8, T9)(Func(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, AsyncCallback, Object, IAsyncResult), Action(Of IAsyncResult), T1, T2, T3, T4, T5, T6, T7, T8, T9)
-- uid: ConcurrentSharp.TaskFrom.FromAsyncCallback``9(System.Func{``0,``1,``2,``3,``4,``5,``6,``7,System.AsyncCallback,System.Object,System.IAsyncResult},System.Func{System.IAsyncResult,``8},``0,``1,``2,``3,``4,``5,``6,``7)
+- uid: ConcurrentSharp.TaskFrom.FromAsyncCallback``9(Func{``0,``1,``2,``3,``4,``5,``6,``7,AsyncCallback,System.Object,IAsyncResult},Func{IAsyncResult,``8},``0,``1,``2,``3,``4,``5,``6,``7)
   name: FromAsyncCallback<T1, T2, T3, T4, T5, T6, T7, T8, TReturn>(Func<T1, T2, T3, T4, T5, T6, T7, T8, AsyncCallback, Object, IAsyncResult>, Func<IAsyncResult, TReturn>, T1, T2, T3, T4, T5, T6, T7, T8)
-  href: api/ConcurrentSharp.TaskFrom.FromAsyncCallback.html#ConcurrentSharp_TaskFrom_FromAsyncCallback__9_System_Func___0___1___2___3___4___5___6___7_System_AsyncCallback_System_Object_System_IAsyncResult__System_Func_System_IAsyncResult___8____0___1___2___3___4___5___6___7_
-  commentId: M:ConcurrentSharp.TaskFrom.FromAsyncCallback``9(System.Func{``0,``1,``2,``3,``4,``5,``6,``7,System.AsyncCallback,System.Object,System.IAsyncResult},System.Func{System.IAsyncResult,``8},``0,``1,``2,``3,``4,``5,``6,``7)
+  href: api/ConcurrentSharp.TaskFrom.FromAsyncCallback.html#ConcurrentSharp_TaskFrom_FromAsyncCallback__9_Func___0___1___2___3___4___5___6___7_AsyncCallback_System_Object_IAsyncResult__Func_IAsyncResult___8____0___1___2___3___4___5___6___7_
+  commentId: M:ConcurrentSharp.TaskFrom.FromAsyncCallback``9(Func{``0,``1,``2,``3,``4,``5,``6,``7,AsyncCallback,System.Object,IAsyncResult},Func{IAsyncResult,``8},``0,``1,``2,``3,``4,``5,``6,``7)
   name.vb: FromAsyncCallback(Of T1, T2, T3, T4, T5, T6, T7, T8, TReturn)(Func(Of T1, T2, T3, T4, T5, T6, T7, T8, AsyncCallback, Object, IAsyncResult), Func(Of IAsyncResult, TReturn), T1, T2, T3, T4, T5, T6, T7, T8)
-  fullName: ConcurrentSharp.TaskFrom.FromAsyncCallback<T1, T2, T3, T4, T5, T6, T7, T8, TReturn>(System.Func<T1, T2, T3, T4, T5, T6, T7, T8, System.AsyncCallback, System.Object, System.IAsyncResult>, System.Func<System.IAsyncResult, TReturn>, T1, T2, T3, T4, T5, T6, T7, T8)
-  fullName.vb: ConcurrentSharp.TaskFrom.FromAsyncCallback(Of T1, T2, T3, T4, T5, T6, T7, T8, TReturn)(System.Func(Of T1, T2, T3, T4, T5, T6, T7, T8, System.AsyncCallback, System.Object, System.IAsyncResult), System.Func(Of System.IAsyncResult, TReturn), T1, T2, T3, T4, T5, T6, T7, T8)
+  fullName: ConcurrentSharp.TaskFrom.FromAsyncCallback<T1, T2, T3, T4, T5, T6, T7, T8, TReturn>(Func<T1, T2, T3, T4, T5, T6, T7, T8, AsyncCallback, System.Object, IAsyncResult>, Func<IAsyncResult, TReturn>, T1, T2, T3, T4, T5, T6, T7, T8)
+  fullName.vb: ConcurrentSharp.TaskFrom.FromAsyncCallback(Of T1, T2, T3, T4, T5, T6, T7, T8, TReturn)(Func(Of T1, T2, T3, T4, T5, T6, T7, T8, AsyncCallback, System.Object, IAsyncResult), Func(Of IAsyncResult, TReturn), T1, T2, T3, T4, T5, T6, T7, T8)
   nameWithType: TaskFrom.FromAsyncCallback<T1, T2, T3, T4, T5, T6, T7, T8, TReturn>(Func<T1, T2, T3, T4, T5, T6, T7, T8, AsyncCallback, Object, IAsyncResult>, Func<IAsyncResult, TReturn>, T1, T2, T3, T4, T5, T6, T7, T8)
   nameWithType.vb: TaskFrom.FromAsyncCallback(Of T1, T2, T3, T4, T5, T6, T7, T8, TReturn)(Func(Of T1, T2, T3, T4, T5, T6, T7, T8, AsyncCallback, Object, IAsyncResult), Func(Of IAsyncResult, TReturn), T1, T2, T3, T4, T5, T6, T7, T8)
+- uid: ConcurrentSharp.Tests
+  name: ConcurrentSharp.Tests
+  href: api/ConcurrentSharp.Tests.html
+  commentId: N:ConcurrentSharp.Tests
+  fullName: ConcurrentSharp.Tests
+  nameWithType: ConcurrentSharp.Tests
+- uid: ConcurrentSharp.Tests.TaskWaitExceptionless
+  name: TaskWaitExceptionless
+  href: api/ConcurrentSharp.Tests.TaskWaitExceptionless.html
+  commentId: T:ConcurrentSharp.Tests.TaskWaitExceptionless
+  fullName: ConcurrentSharp.Tests.TaskWaitExceptionless
+  nameWithType: TaskWaitExceptionless
+- uid: ConcurrentSharp.Tests.TaskWaitExceptionless.WaitExceptionless_IgnoresExceptions
+  name: WaitExceptionless_IgnoresExceptions()
+  href: api/ConcurrentSharp.Tests.TaskWaitExceptionless.WaitExceptionless_IgnoresExceptions.html#ConcurrentSharp_Tests_TaskWaitExceptionless_WaitExceptionless_IgnoresExceptions
+  commentId: M:ConcurrentSharp.Tests.TaskWaitExceptionless.WaitExceptionless_IgnoresExceptions
+  fullName: ConcurrentSharp.Tests.TaskWaitExceptionless.WaitExceptionless_IgnoresExceptions()
+  nameWithType: TaskWaitExceptionless.WaitExceptionless_IgnoresExceptions()
+- uid: ConcurrentSharp.Tests.TaskWaitExceptionless.WaitExceptionless_IgnoresExceptions*
+  name: WaitExceptionless_IgnoresExceptions
+  href: api/ConcurrentSharp.Tests.TaskWaitExceptionless.WaitExceptionless_IgnoresExceptions.html
+  commentId: Overload:ConcurrentSharp.Tests.TaskWaitExceptionless.WaitExceptionless_IgnoresExceptions
+  fullName: ConcurrentSharp.Tests.TaskWaitExceptionless.WaitExceptionless_IgnoresExceptions
+  nameWithType: TaskWaitExceptionless.WaitExceptionless_IgnoresExceptions
+- uid: ConcurrentSharp.Tests.TaskWaitExceptionless.WaitExceptionless_ReturnsDefaultValueWhenExceptionThrown
+  name: WaitExceptionless_ReturnsDefaultValueWhenExceptionThrown()
+  href: api/ConcurrentSharp.Tests.TaskWaitExceptionless.WaitExceptionless_ReturnsDefaultValueWhenExceptionThrown.html#ConcurrentSharp_Tests_TaskWaitExceptionless_WaitExceptionless_ReturnsDefaultValueWhenExceptionThrown
+  commentId: M:ConcurrentSharp.Tests.TaskWaitExceptionless.WaitExceptionless_ReturnsDefaultValueWhenExceptionThrown
+  fullName: ConcurrentSharp.Tests.TaskWaitExceptionless.WaitExceptionless_ReturnsDefaultValueWhenExceptionThrown()
+  nameWithType: TaskWaitExceptionless.WaitExceptionless_ReturnsDefaultValueWhenExceptionThrown()
+- uid: ConcurrentSharp.Tests.TaskWaitExceptionless.WaitExceptionless_ReturnsDefaultValueWhenExceptionThrown*
+  name: WaitExceptionless_ReturnsDefaultValueWhenExceptionThrown
+  href: api/ConcurrentSharp.Tests.TaskWaitExceptionless.WaitExceptionless_ReturnsDefaultValueWhenExceptionThrown.html
+  commentId: Overload:ConcurrentSharp.Tests.TaskWaitExceptionless.WaitExceptionless_ReturnsDefaultValueWhenExceptionThrown
+  fullName: ConcurrentSharp.Tests.TaskWaitExceptionless.WaitExceptionless_ReturnsDefaultValueWhenExceptionThrown
+  nameWithType: TaskWaitExceptionless.WaitExceptionless_ReturnsDefaultValueWhenExceptionThrown
+- uid: ConcurrentSharp.Tests.TaskWaitExceptionless.WaitExceptionless_ReturnsResultWhenNoException
+  name: WaitExceptionless_ReturnsResultWhenNoException()
+  href: api/ConcurrentSharp.Tests.TaskWaitExceptionless.WaitExceptionless_ReturnsResultWhenNoException.html#ConcurrentSharp_Tests_TaskWaitExceptionless_WaitExceptionless_ReturnsResultWhenNoException
+  commentId: M:ConcurrentSharp.Tests.TaskWaitExceptionless.WaitExceptionless_ReturnsResultWhenNoException
+  fullName: ConcurrentSharp.Tests.TaskWaitExceptionless.WaitExceptionless_ReturnsResultWhenNoException()
+  nameWithType: TaskWaitExceptionless.WaitExceptionless_ReturnsResultWhenNoException()
+- uid: ConcurrentSharp.Tests.TaskWaitExceptionless.WaitExceptionless_ReturnsResultWhenNoException*
+  name: WaitExceptionless_ReturnsResultWhenNoException
+  href: api/ConcurrentSharp.Tests.TaskWaitExceptionless.WaitExceptionless_ReturnsResultWhenNoException.html
+  commentId: Overload:ConcurrentSharp.Tests.TaskWaitExceptionless.WaitExceptionless_ReturnsResultWhenNoException
+  fullName: ConcurrentSharp.Tests.TaskWaitExceptionless.WaitExceptionless_ReturnsResultWhenNoException
+  nameWithType: TaskWaitExceptionless.WaitExceptionless_ReturnsResultWhenNoException
+- uid: ConcurrentSharp.Tests.TaskWaitExceptionless.WaitExceptionless_ThrowsTaskCanceledExceptionWhenWaitCancelled
+  name: WaitExceptionless_ThrowsTaskCanceledExceptionWhenWaitCancelled()
+  href: api/ConcurrentSharp.Tests.TaskWaitExceptionless.WaitExceptionless_ThrowsTaskCanceledExceptionWhenWaitCancelled.html#ConcurrentSharp_Tests_TaskWaitExceptionless_WaitExceptionless_ThrowsTaskCanceledExceptionWhenWaitCancelled
+  commentId: M:ConcurrentSharp.Tests.TaskWaitExceptionless.WaitExceptionless_ThrowsTaskCanceledExceptionWhenWaitCancelled
+  fullName: ConcurrentSharp.Tests.TaskWaitExceptionless.WaitExceptionless_ThrowsTaskCanceledExceptionWhenWaitCancelled()
+  nameWithType: TaskWaitExceptionless.WaitExceptionless_ThrowsTaskCanceledExceptionWhenWaitCancelled()
+- uid: ConcurrentSharp.Tests.TaskWaitExceptionless.WaitExceptionless_ThrowsTaskCanceledExceptionWhenWaitCancelled*
+  name: WaitExceptionless_ThrowsTaskCanceledExceptionWhenWaitCancelled
+  href: api/ConcurrentSharp.Tests.TaskWaitExceptionless.WaitExceptionless_ThrowsTaskCanceledExceptionWhenWaitCancelled.html
+  commentId: Overload:ConcurrentSharp.Tests.TaskWaitExceptionless.WaitExceptionless_ThrowsTaskCanceledExceptionWhenWaitCancelled
+  fullName: ConcurrentSharp.Tests.TaskWaitExceptionless.WaitExceptionless_ThrowsTaskCanceledExceptionWhenWaitCancelled
+  nameWithType: TaskWaitExceptionless.WaitExceptionless_ThrowsTaskCanceledExceptionWhenWaitCancelled
 - uid: ConcurrentSharp.Throttle
   name: Throttle
   href: api/ConcurrentSharp.Throttle.html
@@ -633,11 +902,11 @@ references:
   commentId: Overload:ConcurrentSharp.Throttle.Enter
   fullName: ConcurrentSharp.Throttle.Enter
   nameWithType: Throttle.Enter
-- uid: ConcurrentSharp.Throttle.Execute(System.Action)
+- uid: ConcurrentSharp.Throttle.Execute(Action)
   name: Execute(Action)
-  href: api/ConcurrentSharp.Throttle.Execute.html#ConcurrentSharp_Throttle_Execute_System_Action_
-  commentId: M:ConcurrentSharp.Throttle.Execute(System.Action)
-  fullName: ConcurrentSharp.Throttle.Execute(System.Action)
+  href: api/ConcurrentSharp.Throttle.Execute.html#ConcurrentSharp_Throttle_Execute_Action_
+  commentId: M:ConcurrentSharp.Throttle.Execute(Action)
+  fullName: ConcurrentSharp.Throttle.Execute(Action)
   nameWithType: Throttle.Execute(Action)
 - uid: ConcurrentSharp.Throttle.Execute*
   name: Execute
@@ -645,31 +914,31 @@ references:
   commentId: Overload:ConcurrentSharp.Throttle.Execute
   fullName: ConcurrentSharp.Throttle.Execute
   nameWithType: Throttle.Execute
-- uid: ConcurrentSharp.Throttle.Execute``1(System.Action{``0},``0)
+- uid: ConcurrentSharp.Throttle.Execute``1(Action{``0},``0)
   name: Execute<T>(Action<T>, T)
-  href: api/ConcurrentSharp.Throttle.Execute.html#ConcurrentSharp_Throttle_Execute__1_System_Action___0____0_
-  commentId: M:ConcurrentSharp.Throttle.Execute``1(System.Action{``0},``0)
+  href: api/ConcurrentSharp.Throttle.Execute.html#ConcurrentSharp_Throttle_Execute__1_Action___0____0_
+  commentId: M:ConcurrentSharp.Throttle.Execute``1(Action{``0},``0)
   name.vb: Execute(Of T)(Action(Of T), T)
-  fullName: ConcurrentSharp.Throttle.Execute<T>(System.Action<T>, T)
-  fullName.vb: ConcurrentSharp.Throttle.Execute(Of T)(System.Action(Of T), T)
+  fullName: ConcurrentSharp.Throttle.Execute<T>(Action<T>, T)
+  fullName.vb: ConcurrentSharp.Throttle.Execute(Of T)(Action(Of T), T)
   nameWithType: Throttle.Execute<T>(Action<T>, T)
   nameWithType.vb: Throttle.Execute(Of T)(Action(Of T), T)
-- uid: ConcurrentSharp.Throttle.Execute``1(System.Func{``0})
+- uid: ConcurrentSharp.Throttle.Execute``1(Func{``0})
   name: Execute<TResult>(Func<TResult>)
-  href: api/ConcurrentSharp.Throttle.Execute.html#ConcurrentSharp_Throttle_Execute__1_System_Func___0__
-  commentId: M:ConcurrentSharp.Throttle.Execute``1(System.Func{``0})
+  href: api/ConcurrentSharp.Throttle.Execute.html#ConcurrentSharp_Throttle_Execute__1_Func___0__
+  commentId: M:ConcurrentSharp.Throttle.Execute``1(Func{``0})
   name.vb: Execute(Of TResult)(Func(Of TResult))
-  fullName: ConcurrentSharp.Throttle.Execute<TResult>(System.Func<TResult>)
-  fullName.vb: ConcurrentSharp.Throttle.Execute(Of TResult)(System.Func(Of TResult))
+  fullName: ConcurrentSharp.Throttle.Execute<TResult>(Func<TResult>)
+  fullName.vb: ConcurrentSharp.Throttle.Execute(Of TResult)(Func(Of TResult))
   nameWithType: Throttle.Execute<TResult>(Func<TResult>)
   nameWithType.vb: Throttle.Execute(Of TResult)(Func(Of TResult))
-- uid: ConcurrentSharp.Throttle.Execute``2(System.Func{``0,``1},``0)
+- uid: ConcurrentSharp.Throttle.Execute``2(Func{``0,``1},``0)
   name: Execute<T, TResult>(Func<T, TResult>, T)
-  href: api/ConcurrentSharp.Throttle.Execute.html#ConcurrentSharp_Throttle_Execute__2_System_Func___0___1____0_
-  commentId: M:ConcurrentSharp.Throttle.Execute``2(System.Func{``0,``1},``0)
+  href: api/ConcurrentSharp.Throttle.Execute.html#ConcurrentSharp_Throttle_Execute__2_Func___0___1____0_
+  commentId: M:ConcurrentSharp.Throttle.Execute``2(Func{``0,``1},``0)
   name.vb: Execute(Of T, TResult)(Func(Of T, TResult), T)
-  fullName: ConcurrentSharp.Throttle.Execute<T, TResult>(System.Func<T, TResult>, T)
-  fullName.vb: ConcurrentSharp.Throttle.Execute(Of T, TResult)(System.Func(Of T, TResult), T)
+  fullName: ConcurrentSharp.Throttle.Execute<T, TResult>(Func<T, TResult>, T)
+  fullName.vb: ConcurrentSharp.Throttle.Execute(Of T, TResult)(Func(Of T, TResult), T)
   nameWithType: Throttle.Execute<T, TResult>(Func<T, TResult>, T)
   nameWithType.vb: Throttle.Execute(Of T, TResult)(Func(Of T, TResult), T)
 - uid: ConcurrentSharp.Throttle.ExecuteAllAsync*
@@ -678,22 +947,22 @@ references:
   commentId: Overload:ConcurrentSharp.Throttle.ExecuteAllAsync
   fullName: ConcurrentSharp.Throttle.ExecuteAllAsync
   nameWithType: Throttle.ExecuteAllAsync
-- uid: ConcurrentSharp.Throttle.ExecuteAllAsync``1(IEnumerable{``0},System.Func{``0,Task})
+- uid: ConcurrentSharp.Throttle.ExecuteAllAsync``1(IEnumerable{``0},Func{``0,Task})
   name: ExecuteAllAsync<T>(IEnumerable<T>, Func<T, Task>)
-  href: api/ConcurrentSharp.Throttle.ExecuteAllAsync.html#ConcurrentSharp_Throttle_ExecuteAllAsync__1_IEnumerable___0__System_Func___0_Task__
-  commentId: M:ConcurrentSharp.Throttle.ExecuteAllAsync``1(IEnumerable{``0},System.Func{``0,Task})
+  href: api/ConcurrentSharp.Throttle.ExecuteAllAsync.html#ConcurrentSharp_Throttle_ExecuteAllAsync__1_IEnumerable___0__Func___0_Task__
+  commentId: M:ConcurrentSharp.Throttle.ExecuteAllAsync``1(IEnumerable{``0},Func{``0,Task})
   name.vb: ExecuteAllAsync(Of T)(IEnumerable(Of T), Func(Of T, Task))
-  fullName: ConcurrentSharp.Throttle.ExecuteAllAsync<T>(IEnumerable<T>, System.Func<T, Task>)
-  fullName.vb: ConcurrentSharp.Throttle.ExecuteAllAsync(Of T)(IEnumerable(Of T), System.Func(Of T, Task))
+  fullName: ConcurrentSharp.Throttle.ExecuteAllAsync<T>(IEnumerable<T>, Func<T, Task>)
+  fullName.vb: ConcurrentSharp.Throttle.ExecuteAllAsync(Of T)(IEnumerable(Of T), Func(Of T, Task))
   nameWithType: Throttle.ExecuteAllAsync<T>(IEnumerable<T>, Func<T, Task>)
   nameWithType.vb: Throttle.ExecuteAllAsync(Of T)(IEnumerable(Of T), Func(Of T, Task))
-- uid: ConcurrentSharp.Throttle.ExecuteAllAsync``2(IEnumerable{``0},System.Func{``0,Task{``1}})
+- uid: ConcurrentSharp.Throttle.ExecuteAllAsync``2(IEnumerable{``0},Func{``0,Task{``1}})
   name: ExecuteAllAsync<TArg, TResult>(IEnumerable<TArg>, Func<TArg, Task<TResult>>)
-  href: api/ConcurrentSharp.Throttle.ExecuteAllAsync.html#ConcurrentSharp_Throttle_ExecuteAllAsync__2_IEnumerable___0__System_Func___0_Task___1___
-  commentId: M:ConcurrentSharp.Throttle.ExecuteAllAsync``2(IEnumerable{``0},System.Func{``0,Task{``1}})
+  href: api/ConcurrentSharp.Throttle.ExecuteAllAsync.html#ConcurrentSharp_Throttle_ExecuteAllAsync__2_IEnumerable___0__Func___0_Task___1___
+  commentId: M:ConcurrentSharp.Throttle.ExecuteAllAsync``2(IEnumerable{``0},Func{``0,Task{``1}})
   name.vb: ExecuteAllAsync(Of TArg, TResult)(IEnumerable(Of TArg), Func(Of TArg, Task(Of TResult)))
-  fullName: ConcurrentSharp.Throttle.ExecuteAllAsync<TArg, TResult>(IEnumerable<TArg>, System.Func<TArg, Task<TResult>>)
-  fullName.vb: ConcurrentSharp.Throttle.ExecuteAllAsync(Of TArg, TResult)(IEnumerable(Of TArg), System.Func(Of TArg, Task(Of TResult)))
+  fullName: ConcurrentSharp.Throttle.ExecuteAllAsync<TArg, TResult>(IEnumerable<TArg>, Func<TArg, Task<TResult>>)
+  fullName.vb: ConcurrentSharp.Throttle.ExecuteAllAsync(Of TArg, TResult)(IEnumerable(Of TArg), Func(Of TArg, Task(Of TResult)))
   nameWithType: Throttle.ExecuteAllAsync<TArg, TResult>(IEnumerable<TArg>, Func<TArg, Task<TResult>>)
   nameWithType.vb: Throttle.ExecuteAllAsync(Of TArg, TResult)(IEnumerable(Of TArg), Func(Of TArg, Task(Of TResult)))
 - uid: ConcurrentSharp.ThrottleToken

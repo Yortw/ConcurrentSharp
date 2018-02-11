@@ -8,12 +8,12 @@
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <DefineConstants>TRACE;DEBUG;NETSTANDARD2_0;SUPPORTS_THREAD;SUPPORTS_THREADPOOL</DefineConstants>
+    <DefineConstants>TRACE;DEBUG;NETSTANDARD2_0;SUPPORTS_THREAD;SUPPORTS_THREADPOOL;NETSTANDARD2_0;SUPPORTS_THREADABORTEXCEPTION;NETSTANDARD2_0;SUPPORTS_EXCEPTIONSERVICES</DefineConstants>
     <DocumentationFile>bin\Debug\netstandard2.0\ConcurrentSharp.xml</DocumentationFile>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <DefineConstants>TRACE;RELEASE;NETSTANDARD2_0SUPPORTS_THREAD;SUPPORTS_THREADPOOL</DefineConstants>
+    <DefineConstants>TRACE;RELEASE;NETSTANDARD2_0SUPPORTS_THREAD;SUPPORTS_THREADPOOL;RELEASE;NETSTANDARD2_0;SUPPORTS_THREADABORTEXCEPTION;RELEASE;NETSTANDARD2_0;SUPPORTS_EXCEPTIONSERVICES</DefineConstants>
     <DocumentationFile>bin\Release\netstandard2.0\ConcurrentSharp.xml</DocumentationFile>
   </PropertyGroup>
 

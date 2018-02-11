@@ -10,10 +10,15 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)AssemblyInfoCommon.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)AsyncLock.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)BlockingCollectionProcessor.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)CancellableTaskSource.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Counter.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ExpectedThreadLifetime.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)IReleasable.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ReleaseToken.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)TaskExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)TaskFrom.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Throttle.cs" />
   </ItemGroup>
 </Project>

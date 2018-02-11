@@ -58,7 +58,6 @@
   <ItemGroup>
     <Compile Include="GlobalSuppressions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TaskFrom.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="ManagedReference.extension.js" />

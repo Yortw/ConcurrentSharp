@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.27004.2005
+VisualStudioVersion = 15.0.27130.2027
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConcurrentSharp", "ConcurrentSharp.Portable\ConcurrentSharp.csproj", "{C9A5F462-EF0E-421E-9259-297F0B092410}"
 EndProject
@@ -12,15 +12,18 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConcurrentSharp.Tests", "ConcurrentSharp.Tests\ConcurrentSharp.Tests.csproj", "{1303E845-1557-4BE1-9115-DB234953242E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConcurrentSharp.NetStandard20", "ConcurrentSharp.NetStandard20\ConcurrentSharp.NetStandard20.csproj", "{0A515EBA-76E5-412D-B74D-4F199F90889A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConcurrentSharp.NetStandard20", "ConcurrentSharp.NetStandard20\ConcurrentSharp.NetStandard20.csproj", "{0A515EBA-76E5-412D-B74D-4F199F90889A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConcurrentSharp.Net40", "ConcurrentSharp.Net40\ConcurrentSharp.Net40.csproj", "{4E43FBA2-5F94-4EA3-AA1B-5605BA801F4F}"
 EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Concurrent.Shared", "Concurrent.Shared\Concurrent.Shared.shproj", "{EED8B73E-40F9-4638-A07A-A2F2FA60C8AD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Concurrent.Net45", "Concurrent.Net45\Concurrent.Net45.csproj", "{9CB85D39-E539-4A01-B00B-4366DEEDDA2B}"
+EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		Concurrent.Shared\Concurrent.Shared.projitems*{4e43fba2-5f94-4ea3-aa1b-5605ba801f4f}*SharedItemsImports = 4
+		Concurrent.Shared\Concurrent.Shared.projitems*{9cb85d39-e539-4a01-b00b-4366deedda2b}*SharedItemsImports = 4
 		Concurrent.Shared\Concurrent.Shared.projitems*{c9a5f462-ef0e-421e-9259-297f0b092410}*SharedItemsImports = 4
 		Concurrent.Shared\Concurrent.Shared.projitems*{eed8b73e-40f9-4638-a07a-a2f2fa60c8ad}*SharedItemsImports = 13
 	EndGlobalSection
@@ -45,6 +48,10 @@ Global
 		{4E43FBA2-5F94-4EA3-AA1B-5605BA801F4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4E43FBA2-5F94-4EA3-AA1B-5605BA801F4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4E43FBA2-5F94-4EA3-AA1B-5605BA801F4F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9CB85D39-E539-4A01-B00B-4366DEEDDA2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9CB85D39-E539-4A01-B00B-4366DEEDDA2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9CB85D39-E539-4A01-B00B-4366DEEDDA2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9CB85D39-E539-4A01-B00B-4366DEEDDA2B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

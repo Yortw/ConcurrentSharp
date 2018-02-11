@@ -1,4 +1,7 @@
 using System;
+#if SUPPORTS_EXCEPTIONSERVICES
+using System.Runtime.ExceptionServices;
+#endif
 using System.Threading;
 using System.Threading.Tasks;
 
@@ -23,6 +26,8 @@ namespace ConcurrentSharp
 		public static void Ignore(this Task task)
 		{
 		}
+
+		#region TimeoutAfter Methods
 
 		/// <summary>
 		/// Waits for the specified task to complete, or a timeout to occur, whichever happens first.
@@ -236,6 +241,156 @@ namespace ConcurrentSharp
 			//If we got here, we timed out.
 			throw new TimeoutException();
 		}
+
+		#endregion
+
+		#region WaitWithUnwrappedException
+
+#if SUPPORTS_EXCEPTIONSERVICES
+
+		/// <summary>
+		/// Synchronously waits for <paramref name="task"/> to complete, and if an <see cref="AggregateException"/> is thrown the inner exception is unwrapped and re-thrown.
+		/// </summary>
+		/// <param name="task">The task to wait for.</param>
+		/// <exception cref="System.ArgumentNullException">Thrown if <paramref name="task"/> is null.</exception>
+		public static void WaitWithUnwrappedException(this Task task)
+		{
+			WaitWithUnwrappedException(task, CancellationToken.None);
+		}
+
+		/// <summary>
+		/// Synchronously waits for <paramref name="task"/> to complete, and if an <see cref="AggregateException"/> is thrown the inner exception is unwrapped and re-thrown.
+		/// </summary>
+		/// <param name="task">The task to wait for.</param>
+		/// <param name="cancellationToken">A <see cref="CancellationToken"/> used to cancel waiting for the task to complete.</param>
+		/// <exception cref="System.ArgumentNullException">Thrown if <paramref name="task"/> is null.</exception>
+		/// <exception cref="OperationCanceledException">Thrown if the wait is cancelled via the <paramref name="cancellationToken"/> before the task completes.</exception>
+		public static void WaitWithUnwrappedException(this Task task, CancellationToken cancellationToken)
+		{
+			if (task == null) throw new ArgumentNullException(nameof(task));
+
+			try
+			{
+				task.Wait(cancellationToken);
+			}
+			catch (AggregateException aex)
+			{
+				ExceptionDispatchInfo.Capture(aex.InnerException).Throw();
+			}
+		}
+
+		/// <summary>
+		/// Synchronously waits for <paramref name="task"/> to complete, and if an <see cref="AggregateException"/> is thrown the inner exception is unwrapped and re-thrown.
+		/// </summary>
+		/// <param name="task">The task to wait for.</param>
+		/// <exception cref="System.ArgumentNullException">Thrown if <paramref name="task"/> is null.</exception>
+		/// <returns>The result of the task (a value of type {T}).</returns>
+		public static T WaitWithUnwrappedException<T>(this Task<T> task)
+		{
+			return WaitWithUnwrappedException<T>(task, CancellationToken.None);
+		}
+
+		/// <summary>
+		/// Synchronously waits for <paramref name="task"/> to complete, and if an <see cref="AggregateException"/> is thrown the inner exception is unwrapped and re-thrown.
+		/// </summary>
+		/// <param name="task">The task to wait for.</param>
+		/// <param name="cancellationToken">A <see cref="CancellationToken"/> used to cancel waiting for the task to complete.</param>
+		/// <exception cref="System.ArgumentNullException">Thrown if <paramref name="task"/> is null.</exception>
+		/// <exception cref="OperationCanceledException">Thrown if the wait is cancelled via the <paramref name="cancellationToken"/> before the task completes.</exception>
+		/// <returns>The result of the task (a value of type {T}).</returns>
+		public static T WaitWithUnwrappedException<T>(this Task<T> task, CancellationToken cancellationToken)
+		{
+			if (task == null) throw new ArgumentNullException(nameof(task));
+
+			try
+			{
+				task.Wait(cancellationToken);
+				return task.Result;
+			}
+			catch (AggregateException aex)
+			{
+				ExceptionDispatchInfo.Capture(aex.InnerException).Throw();
+				return default(T); // Will never get here, but avoids compiler error.
+			}
+		}
+
+#endif
+
+		#endregion
+
+		#region WaitExceptionless
+
+		/// <summary>
+		/// Synchronously waits for <paramref name="task"/> to complete and ignores any exceptions thrown.
+		/// </summary>
+		/// <param name="task">The task to wait for.</param>
+		/// <exception cref="System.ArgumentNullException">Thrown if <paramref name="task"/> is null.</exception>
+		public static void WaitExceptionless(this Task task)
+		{
+			WaitExceptionless(task, CancellationToken.None);
+		}
+
+		/// <summary>
+		/// Synchronously waits for <paramref name="task"/> to complete and ignores any exceptions thrown.
+		/// </summary>
+		/// <param name="task">The task to wait for.</param>
+		/// <param name="cancellationToken">A <see cref="CancellationToken"/> used to cancel waiting for the task to complete.</param>
+		/// <exception cref="System.ArgumentNullException">Thrown if <paramref name="task"/> is null.</exception>
+		/// <exception cref="OperationCanceledException">Thrown if the wait is cancelled via the <paramref name="cancellationToken"/> before the task completes.</exception>
+		public static void WaitExceptionless(this Task task, CancellationToken cancellationToken)
+		{
+			if (task == null) throw new ArgumentNullException(nameof(task));
+
+			try
+			{
+				task.Wait(cancellationToken);
+			}
+			catch (AggregateException)
+			{
+			}
+		}
+
+		/// <summary>
+		/// Synchronously waits for <paramref name="task"/> to complete and ignores any exceptions thrown.
+		/// </summary>
+		/// <remarks>
+		/// <para>If any exception is thrown by the task, the result of the call is the default value of {T}.</para>
+		/// </remarks>
+		/// <param name="task">The task to wait for.</param>
+		/// <exception cref="System.ArgumentNullException">Thrown if <paramref name="task"/> is null.</exception>
+		/// <returns>The result of the task (a value of type {T}).</returns>
+		public static T WaitExceptionless<T>(this Task<T> task)
+		{
+			return WaitExceptionless<T>(task, CancellationToken.None);
+		}
+
+		/// <summary>
+		/// Synchronously waits for <paramref name="task"/> to complete and ignores any exceptions thrown.
+		/// </summary>
+		/// <remarks>
+		/// <para>If any exception is thrown by the task, the result of the call is the default value of {T}.</para>
+		/// </remarks>
+		/// <param name="task">The task to wait for.</param>
+		/// <param name="cancellationToken">A <see cref="CancellationToken"/> used to cancel waiting for the task to complete.</param>
+		/// <exception cref="System.ArgumentNullException">Thrown if <paramref name="task"/> is null.</exception>
+		/// <exception cref="OperationCanceledException">Thrown if the wait is cancelled via the <paramref name="cancellationToken"/> before the task completes.</exception>
+		/// <returns>The result of the task (a value of type {T}).</returns>
+		public static T WaitExceptionless<T>(this Task<T> task, CancellationToken cancellationToken)
+		{
+			if (task == null) throw new ArgumentNullException(nameof(task));
+
+			try
+			{
+				task.Wait(cancellationToken);
+				return task.Result;
+			}
+			catch (AggregateException)
+			{
+				return default(T); 
+			}
+		}
+
+		#endregion
 
 	}
 }

@@ -23,6 +23,9 @@
         <file src="ConcurrentSharp.Net40\bin\Release\ConcurrentSharp.dll" target="lib\net40\ConcurrentSharp.dll" />
         <file src="ConcurrentSharp.Net40\bin\Release\ConcurrentSharp.pdb" target="lib\net40\ConcurrentSharp.pdb" />
         <file src="ConcurrentSharp.Net40\bin\Release\ConcurrentSharp.XML" target="lib\net40\ConcurrentSharp.XML" />
+        <file src="ConcurrentSharp.Net45\bin\Release\ConcurrentSharp.dll" target="lib\net45\ConcurrentSharp.dll" />
+        <file src="ConcurrentSharp.Net45\bin\Release\ConcurrentSharp.pdb" target="lib\net45\ConcurrentSharp.pdb" />
+        <file src="ConcurrentSharp.Net45\bin\Release\ConcurrentSharp.XML" target="lib\net45\ConcurrentSharp.XML" />
         <file src="ConcurrentSharp.Portable\bin\Release\ConcurrentSharp.dll" target="lib\portable-net40+win8\ConcurrentSharp.dll" />
         <file src="ConcurrentSharp.Portable\bin\Release\ConcurrentSharp.pdb" target="lib\portable-net40+win8\ConcurrentSharp.pdb" />
         <file src="ConcurrentSharp.Portable\bin\Release\ConcurrentSharp.XML" target="lib\portable-net40+win8\ConcurrentSharp.XML" />
