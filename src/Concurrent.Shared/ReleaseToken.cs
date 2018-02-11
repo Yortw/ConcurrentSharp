@@ -7,7 +7,7 @@ namespace ConcurrentSharp
 	/// <summary>
 	/// A token that when disposed releases a lock or other associated synchronisation primitive.
 	/// </summary>
-	public sealed class ReleaseToken : IDisposable
+	internal sealed class ReleaseToken : IDisposable
 	{
 		private bool _IsDisposed;
 		private IReleasable _Releasable;

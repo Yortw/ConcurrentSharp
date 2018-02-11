@@ -449,24 +449,6 @@ references:
   commentId: F:ConcurrentSharp.ExpectedThreadLifetime.Short
   fullName: ConcurrentSharp.ExpectedThreadLifetime.Short
   nameWithType: ExpectedThreadLifetime.Short
-- uid: ConcurrentSharp.ReleaseToken
-  name: ReleaseToken
-  href: api/ConcurrentSharp.ReleaseToken.html
-  commentId: T:ConcurrentSharp.ReleaseToken
-  fullName: ConcurrentSharp.ReleaseToken
-  nameWithType: ReleaseToken
-- uid: ConcurrentSharp.ReleaseToken.Dispose
-  name: Dispose()
-  href: api/ConcurrentSharp.ReleaseToken.Dispose.html#ConcurrentSharp_ReleaseToken_Dispose
-  commentId: M:ConcurrentSharp.ReleaseToken.Dispose
-  fullName: ConcurrentSharp.ReleaseToken.Dispose()
-  nameWithType: ReleaseToken.Dispose()
-- uid: ConcurrentSharp.ReleaseToken.Dispose*
-  name: Dispose
-  href: api/ConcurrentSharp.ReleaseToken.Dispose.html
-  commentId: Overload:ConcurrentSharp.ReleaseToken.Dispose
-  fullName: ConcurrentSharp.ReleaseToken.Dispose
-  nameWithType: ReleaseToken.Dispose
 - uid: ConcurrentSharp.TaskExtensions
   name: TaskExtensions
   href: api/ConcurrentSharp.TaskExtensions.html
@@ -884,66 +866,6 @@ references:
   fullName.vb: ConcurrentSharp.TaskFrom.FromAsyncCallback(Of T1, T2, T3, T4, T5, T6, T7, T8, TReturn)(Func(Of T1, T2, T3, T4, T5, T6, T7, T8, AsyncCallback, System.Object, IAsyncResult), Func(Of IAsyncResult, TReturn), T1, T2, T3, T4, T5, T6, T7, T8)
   nameWithType: TaskFrom.FromAsyncCallback<T1, T2, T3, T4, T5, T6, T7, T8, TReturn>(Func<T1, T2, T3, T4, T5, T6, T7, T8, AsyncCallback, Object, IAsyncResult>, Func<IAsyncResult, TReturn>, T1, T2, T3, T4, T5, T6, T7, T8)
   nameWithType.vb: TaskFrom.FromAsyncCallback(Of T1, T2, T3, T4, T5, T6, T7, T8, TReturn)(Func(Of T1, T2, T3, T4, T5, T6, T7, T8, AsyncCallback, Object, IAsyncResult), Func(Of IAsyncResult, TReturn), T1, T2, T3, T4, T5, T6, T7, T8)
-- uid: ConcurrentSharp.Tests
-  name: ConcurrentSharp.Tests
-  href: api/ConcurrentSharp.Tests.html
-  commentId: N:ConcurrentSharp.Tests
-  fullName: ConcurrentSharp.Tests
-  nameWithType: ConcurrentSharp.Tests
-- uid: ConcurrentSharp.Tests.TaskWaitExceptionless
-  name: TaskWaitExceptionless
-  href: api/ConcurrentSharp.Tests.TaskWaitExceptionless.html
-  commentId: T:ConcurrentSharp.Tests.TaskWaitExceptionless
-  fullName: ConcurrentSharp.Tests.TaskWaitExceptionless
-  nameWithType: TaskWaitExceptionless
-- uid: ConcurrentSharp.Tests.TaskWaitExceptionless.WaitExceptionless_IgnoresExceptions
-  name: WaitExceptionless_IgnoresExceptions()
-  href: api/ConcurrentSharp.Tests.TaskWaitExceptionless.WaitExceptionless_IgnoresExceptions.html#ConcurrentSharp_Tests_TaskWaitExceptionless_WaitExceptionless_IgnoresExceptions
-  commentId: M:ConcurrentSharp.Tests.TaskWaitExceptionless.WaitExceptionless_IgnoresExceptions
-  fullName: ConcurrentSharp.Tests.TaskWaitExceptionless.WaitExceptionless_IgnoresExceptions()
-  nameWithType: TaskWaitExceptionless.WaitExceptionless_IgnoresExceptions()
-- uid: ConcurrentSharp.Tests.TaskWaitExceptionless.WaitExceptionless_IgnoresExceptions*
-  name: WaitExceptionless_IgnoresExceptions
-  href: api/ConcurrentSharp.Tests.TaskWaitExceptionless.WaitExceptionless_IgnoresExceptions.html
-  commentId: Overload:ConcurrentSharp.Tests.TaskWaitExceptionless.WaitExceptionless_IgnoresExceptions
-  fullName: ConcurrentSharp.Tests.TaskWaitExceptionless.WaitExceptionless_IgnoresExceptions
-  nameWithType: TaskWaitExceptionless.WaitExceptionless_IgnoresExceptions
-- uid: ConcurrentSharp.Tests.TaskWaitExceptionless.WaitExceptionless_ReturnsDefaultValueWhenExceptionThrown
-  name: WaitExceptionless_ReturnsDefaultValueWhenExceptionThrown()
-  href: api/ConcurrentSharp.Tests.TaskWaitExceptionless.WaitExceptionless_ReturnsDefaultValueWhenExceptionThrown.html#ConcurrentSharp_Tests_TaskWaitExceptionless_WaitExceptionless_ReturnsDefaultValueWhenExceptionThrown
-  commentId: M:ConcurrentSharp.Tests.TaskWaitExceptionless.WaitExceptionless_ReturnsDefaultValueWhenExceptionThrown
-  fullName: ConcurrentSharp.Tests.TaskWaitExceptionless.WaitExceptionless_ReturnsDefaultValueWhenExceptionThrown()
-  nameWithType: TaskWaitExceptionless.WaitExceptionless_ReturnsDefaultValueWhenExceptionThrown()
-- uid: ConcurrentSharp.Tests.TaskWaitExceptionless.WaitExceptionless_ReturnsDefaultValueWhenExceptionThrown*
-  name: WaitExceptionless_ReturnsDefaultValueWhenExceptionThrown
-  href: api/ConcurrentSharp.Tests.TaskWaitExceptionless.WaitExceptionless_ReturnsDefaultValueWhenExceptionThrown.html
-  commentId: Overload:ConcurrentSharp.Tests.TaskWaitExceptionless.WaitExceptionless_ReturnsDefaultValueWhenExceptionThrown
-  fullName: ConcurrentSharp.Tests.TaskWaitExceptionless.WaitExceptionless_ReturnsDefaultValueWhenExceptionThrown
-  nameWithType: TaskWaitExceptionless.WaitExceptionless_ReturnsDefaultValueWhenExceptionThrown
-- uid: ConcurrentSharp.Tests.TaskWaitExceptionless.WaitExceptionless_ReturnsResultWhenNoException
-  name: WaitExceptionless_ReturnsResultWhenNoException()
-  href: api/ConcurrentSharp.Tests.TaskWaitExceptionless.WaitExceptionless_ReturnsResultWhenNoException.html#ConcurrentSharp_Tests_TaskWaitExceptionless_WaitExceptionless_ReturnsResultWhenNoException
-  commentId: M:ConcurrentSharp.Tests.TaskWaitExceptionless.WaitExceptionless_ReturnsResultWhenNoException
-  fullName: ConcurrentSharp.Tests.TaskWaitExceptionless.WaitExceptionless_ReturnsResultWhenNoException()
-  nameWithType: TaskWaitExceptionless.WaitExceptionless_ReturnsResultWhenNoException()
-- uid: ConcurrentSharp.Tests.TaskWaitExceptionless.WaitExceptionless_ReturnsResultWhenNoException*
-  name: WaitExceptionless_ReturnsResultWhenNoException
-  href: api/ConcurrentSharp.Tests.TaskWaitExceptionless.WaitExceptionless_ReturnsResultWhenNoException.html
-  commentId: Overload:ConcurrentSharp.Tests.TaskWaitExceptionless.WaitExceptionless_ReturnsResultWhenNoException
-  fullName: ConcurrentSharp.Tests.TaskWaitExceptionless.WaitExceptionless_ReturnsResultWhenNoException
-  nameWithType: TaskWaitExceptionless.WaitExceptionless_ReturnsResultWhenNoException
-- uid: ConcurrentSharp.Tests.TaskWaitExceptionless.WaitExceptionless_ThrowsTaskCanceledExceptionWhenWaitCancelled
-  name: WaitExceptionless_ThrowsTaskCanceledExceptionWhenWaitCancelled()
-  href: api/ConcurrentSharp.Tests.TaskWaitExceptionless.WaitExceptionless_ThrowsTaskCanceledExceptionWhenWaitCancelled.html#ConcurrentSharp_Tests_TaskWaitExceptionless_WaitExceptionless_ThrowsTaskCanceledExceptionWhenWaitCancelled
-  commentId: M:ConcurrentSharp.Tests.TaskWaitExceptionless.WaitExceptionless_ThrowsTaskCanceledExceptionWhenWaitCancelled
-  fullName: ConcurrentSharp.Tests.TaskWaitExceptionless.WaitExceptionless_ThrowsTaskCanceledExceptionWhenWaitCancelled()
-  nameWithType: TaskWaitExceptionless.WaitExceptionless_ThrowsTaskCanceledExceptionWhenWaitCancelled()
-- uid: ConcurrentSharp.Tests.TaskWaitExceptionless.WaitExceptionless_ThrowsTaskCanceledExceptionWhenWaitCancelled*
-  name: WaitExceptionless_ThrowsTaskCanceledExceptionWhenWaitCancelled
-  href: api/ConcurrentSharp.Tests.TaskWaitExceptionless.WaitExceptionless_ThrowsTaskCanceledExceptionWhenWaitCancelled.html
-  commentId: Overload:ConcurrentSharp.Tests.TaskWaitExceptionless.WaitExceptionless_ThrowsTaskCanceledExceptionWhenWaitCancelled
-  fullName: ConcurrentSharp.Tests.TaskWaitExceptionless.WaitExceptionless_ThrowsTaskCanceledExceptionWhenWaitCancelled
-  nameWithType: TaskWaitExceptionless.WaitExceptionless_ThrowsTaskCanceledExceptionWhenWaitCancelled
 - uid: ConcurrentSharp.Throttle
   name: Throttle
   href: api/ConcurrentSharp.Throttle.html

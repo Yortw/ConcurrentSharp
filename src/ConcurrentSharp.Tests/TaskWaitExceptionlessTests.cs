@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace ConcurrentSharp.Tests
 {
 	[TestClass]
-	public class TaskWaitExceptionless
+	public class TaskWaitExceptionlessTests
 	{
 
 		[TestMethod]
