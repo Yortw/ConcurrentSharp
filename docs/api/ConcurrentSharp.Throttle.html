@@ -116,10 +116,43 @@
                                   <a href="ConcurrentSharp.AsyncSemaphore.-ctor.html" title="AsyncSemaphore" class="">AsyncSemaphore</a>
                                 </li>
                                 <li class="">
+                                  <a href="ConcurrentSharp.AsyncSemaphore.Dispose.html" title="Dispose" class="">Dispose</a>
+                                </li>
+                                <li class="">
                                   <a href="ConcurrentSharp.AsyncSemaphore.Wait.html" title="Wait" class="">Wait</a>
                                 </li>
                                 <li class="">
                                   <a href="ConcurrentSharp.AsyncSemaphore.WaitAsync.html" title="WaitAsync" class="">WaitAsync</a>
+                                </li>
+                              </ul>  </li>
+                          <li class="">
+                            <span class="expand-stub"></span>
+                            <a href="ConcurrentSharp.AsyncThrottle.html" title="AsyncThrottle" class="">AsyncThrottle</a>
+                              
+                              <ul class="nav level3">
+                                <li class="">
+                                  <a href="ConcurrentSharp.AsyncThrottle.-ctor.html" title="AsyncThrottle" class="">AsyncThrottle</a>
+                                </li>
+                                <li class="">
+                                  <a href="ConcurrentSharp.AsyncThrottle.Dispose.html" title="Dispose" class="">Dispose</a>
+                                </li>
+                                <li class="">
+                                  <a href="ConcurrentSharp.AsyncThrottle.Enter.html" title="Enter" class="">Enter</a>
+                                </li>
+                                <li class="">
+                                  <a href="ConcurrentSharp.AsyncThrottle.EnterAsync.html" title="EnterAsync" class="">EnterAsync</a>
+                                </li>
+                                <li class="">
+                                  <a href="ConcurrentSharp.AsyncThrottle.Execute.html" title="Execute" class="">Execute</a>
+                                </li>
+                                <li class="">
+                                  <a href="ConcurrentSharp.AsyncThrottle.ExecuteAll.html" title="ExecuteAll" class="">ExecuteAll</a>
+                                </li>
+                                <li class="">
+                                  <a href="ConcurrentSharp.AsyncThrottle.ExecuteAllAsync.html" title="ExecuteAllAsync" class="">ExecuteAllAsync</a>
+                                </li>
+                                <li class="">
+                                  <a href="ConcurrentSharp.AsyncThrottle.ExecuteAsync.html" title="ExecuteAsync" class="">ExecuteAsync</a>
                                 </li>
                               </ul>  </li>
                           <li class="">
@@ -239,19 +272,10 @@
                                   <a href="ConcurrentSharp.Throttle.Execute.html" title="Execute" class="">Execute</a>
                                 </li>
                                 <li class="">
-                                  <a href="ConcurrentSharp.Throttle.ExecuteAllAsync.html" title="ExecuteAllAsync" class="">ExecuteAllAsync</a>
+                                  <a href="ConcurrentSharp.Throttle.ExecuteAll.html" title="ExecuteAll" class="">ExecuteAll</a>
                                 </li>
                                 <li class="">
                                   <a href="ConcurrentSharp.Throttle.-ctor.html" title="Throttle" class="">Throttle</a>
-                                </li>
-                              </ul>  </li>
-                          <li class="">
-                            <span class="expand-stub"></span>
-                            <a href="ConcurrentSharp.ThrottleToken.html" title="ThrottleToken" class="">ThrottleToken</a>
-                              
-                              <ul class="nav level3">
-                                <li class="">
-                                  <a href="ConcurrentSharp.ThrottleToken.Dispose.html" title="Dispose" class="">Dispose</a>
                                 </li>
                               </ul>  </li>
                         </ul>  </li>
@@ -283,7 +307,7 @@
   </div>
   <h5 id="ConcurrentSharp_Throttle_remarks"><strong>Remarks</strong></h5>
   <div class="markdown level0 remarks"><p>To use a <a class="xref" href="ConcurrentSharp.Throttle.html">Throttle</a> create an instance specifying the maximum number of concurrent operations you want to occur. 
-Then have each operation call <a class="xref" href="ConcurrentSharp.Throttle.Enter.html#ConcurrentSharp_Throttle_Enter">Enter()</a> when it begins and capture the returned token. When the operation completes, call <a class="xref" href="ConcurrentSharp.ThrottleToken.Dispose.html#ConcurrentSharp_ThrottleToken_Dispose">Dispose()</a>.
+Then have each operation call <a class="xref" href="ConcurrentSharp.Throttle.Enter.html#ConcurrentSharp_Throttle_Enter">Enter()</a> when it begins and capture the returned token. When the operation completes, call <see cref="!:IDisposable.Dispose()"></see> on the returned token.
 The Throttle will ensure no more than the specified number of operations run at the same time.</p>
 </div>
   <h5 id="ConcurrentSharp_Throttle_examples"><strong>Examples</strong></h5>
@@ -344,7 +368,7 @@ for (int cnt = 0; cnt &lt; 100; cnt++)
         <td id="ConcurrentSharp_Throttle_Enter" data-uid="ConcurrentSharp.Throttle.Enter">
           <a class="xref" href="ConcurrentSharp.Throttle.Enter.html#ConcurrentSharp_Throttle_Enter">Enter()</a>
         </td>
-        <td class="markdown level1 summary"><p>Creates and returns a <a class="xref" href="ConcurrentSharp.ThrottleToken.html">ThrottleToken</a> that can be used to notify this throttle that a job has completed. If there are already the maximum number of 
+        <td class="markdown level1 summary"><p>Creates and returns an object implementing <see cref="!:IDisposable"></see> that can be used to notify this throttle that a job has completed. If there are already the maximum number of 
 operations running using this throttle, then this method will block the calling thread until another job completes.</p>
 </td>
       </tr>
@@ -377,15 +401,15 @@ operations running using this throttle, then this method will block the calling 
 </td>
       </tr>
       <tr>
-        <td id="ConcurrentSharp_Throttle_ExecuteAllAsync__1_IEnumerable___0__Func___0_Task__" data-uid="ConcurrentSharp.Throttle.ExecuteAllAsync``1(IEnumerable{``0},Func{``0,Task})">
-          <a class="xref" href="ConcurrentSharp.Throttle.ExecuteAllAsync.html#ConcurrentSharp_Throttle_ExecuteAllAsync__1_IEnumerable___0__Func___0_Task__">ExecuteAllAsync&lt;T&gt;(IEnumerable&lt;T&gt;, Func&lt;T, Task&gt;)</a>
+        <td id="ConcurrentSharp_Throttle_ExecuteAll__1_IEnumerable___0__Action___0__" data-uid="ConcurrentSharp.Throttle.ExecuteAll``1(IEnumerable{``0},Action{``0})">
+          <a class="xref" href="ConcurrentSharp.Throttle.ExecuteAll.html#ConcurrentSharp_Throttle_ExecuteAll__1_IEnumerable___0__Action___0__">ExecuteAll&lt;T&gt;(IEnumerable&lt;T&gt;, Action&lt;T&gt;)</a>
         </td>
         <td class="markdown level1 summary"><p>Executes <code data-dev-comment-type="paramref" class="paramref">asyncAction</code> over all items in <code data-dev-comment-type="paramref" class="paramref">items</code>, using the throttle to restrict the maximum number of parallel executing tasks.</p>
 </td>
       </tr>
       <tr>
-        <td id="ConcurrentSharp_Throttle_ExecuteAllAsync__2_IEnumerable___0__Func___0_Task___1___" data-uid="ConcurrentSharp.Throttle.ExecuteAllAsync``2(IEnumerable{``0},Func{``0,Task{``1}})">
-          <a class="xref" href="ConcurrentSharp.Throttle.ExecuteAllAsync.html#ConcurrentSharp_Throttle_ExecuteAllAsync__2_IEnumerable___0__Func___0_Task___1___">ExecuteAllAsync&lt;TArg, TResult&gt;(IEnumerable&lt;TArg&gt;, Func&lt;TArg, Task&lt;TResult&gt;&gt;)</a>
+        <td id="ConcurrentSharp_Throttle_ExecuteAll__2_IEnumerable___0__Func___0___1__" data-uid="ConcurrentSharp.Throttle.ExecuteAll``2(IEnumerable{``0},Func{``0,``1})">
+          <a class="xref" href="ConcurrentSharp.Throttle.ExecuteAll.html#ConcurrentSharp_Throttle_ExecuteAll__2_IEnumerable___0__Func___0___1__">ExecuteAll&lt;TArg, TResult&gt;(IEnumerable&lt;TArg&gt;, Func&lt;TArg, TResult&gt;)</a>
         </td>
         <td class="markdown level1 summary"><p>Executes <code data-dev-comment-type="paramref" class="paramref">asyncAction</code> over all items in <code data-dev-comment-type="paramref" class="paramref">items</code>, using the throttle to restrict the maximum number of parallel executing tasks.</p>
 </td>

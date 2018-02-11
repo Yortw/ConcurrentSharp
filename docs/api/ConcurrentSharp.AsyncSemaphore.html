@@ -116,10 +116,43 @@
                                   <a href="ConcurrentSharp.AsyncSemaphore.-ctor.html" title="AsyncSemaphore" class="">AsyncSemaphore</a>
                                 </li>
                                 <li class="">
+                                  <a href="ConcurrentSharp.AsyncSemaphore.Dispose.html" title="Dispose" class="">Dispose</a>
+                                </li>
+                                <li class="">
                                   <a href="ConcurrentSharp.AsyncSemaphore.Wait.html" title="Wait" class="">Wait</a>
                                 </li>
                                 <li class="">
                                   <a href="ConcurrentSharp.AsyncSemaphore.WaitAsync.html" title="WaitAsync" class="">WaitAsync</a>
+                                </li>
+                              </ul>  </li>
+                          <li class="">
+                            <span class="expand-stub"></span>
+                            <a href="ConcurrentSharp.AsyncThrottle.html" title="AsyncThrottle" class="">AsyncThrottle</a>
+                              
+                              <ul class="nav level3">
+                                <li class="">
+                                  <a href="ConcurrentSharp.AsyncThrottle.-ctor.html" title="AsyncThrottle" class="">AsyncThrottle</a>
+                                </li>
+                                <li class="">
+                                  <a href="ConcurrentSharp.AsyncThrottle.Dispose.html" title="Dispose" class="">Dispose</a>
+                                </li>
+                                <li class="">
+                                  <a href="ConcurrentSharp.AsyncThrottle.Enter.html" title="Enter" class="">Enter</a>
+                                </li>
+                                <li class="">
+                                  <a href="ConcurrentSharp.AsyncThrottle.EnterAsync.html" title="EnterAsync" class="">EnterAsync</a>
+                                </li>
+                                <li class="">
+                                  <a href="ConcurrentSharp.AsyncThrottle.Execute.html" title="Execute" class="">Execute</a>
+                                </li>
+                                <li class="">
+                                  <a href="ConcurrentSharp.AsyncThrottle.ExecuteAll.html" title="ExecuteAll" class="">ExecuteAll</a>
+                                </li>
+                                <li class="">
+                                  <a href="ConcurrentSharp.AsyncThrottle.ExecuteAllAsync.html" title="ExecuteAllAsync" class="">ExecuteAllAsync</a>
+                                </li>
+                                <li class="">
+                                  <a href="ConcurrentSharp.AsyncThrottle.ExecuteAsync.html" title="ExecuteAsync" class="">ExecuteAsync</a>
                                 </li>
                               </ul>  </li>
                           <li class="">
@@ -239,19 +272,10 @@
                                   <a href="ConcurrentSharp.Throttle.Execute.html" title="Execute" class="">Execute</a>
                                 </li>
                                 <li class="">
-                                  <a href="ConcurrentSharp.Throttle.ExecuteAllAsync.html" title="ExecuteAllAsync" class="">ExecuteAllAsync</a>
+                                  <a href="ConcurrentSharp.Throttle.ExecuteAll.html" title="ExecuteAll" class="">ExecuteAll</a>
                                 </li>
                                 <li class="">
                                   <a href="ConcurrentSharp.Throttle.-ctor.html" title="Throttle" class="">Throttle</a>
-                                </li>
-                              </ul>  </li>
-                          <li class="">
-                            <span class="expand-stub"></span>
-                            <a href="ConcurrentSharp.ThrottleToken.html" title="ThrottleToken" class="">ThrottleToken</a>
-                              
-                              <ul class="nav level3">
-                                <li class="">
-                                  <a href="ConcurrentSharp.ThrottleToken.Dispose.html" title="Dispose" class="">Dispose</a>
                                 </li>
                               </ul>  </li>
                         </ul>  </li>
@@ -274,6 +298,10 @@
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">AsyncSemaphore</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">IDisposable</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -303,7 +331,7 @@
   <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
   <h5 id="ConcurrentSharp_AsyncSemaphore_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class AsyncSemaphore : IReleasable</code></pre>
+    <pre><code class="lang-csharp hljs">public sealed class AsyncSemaphore : IReleasable, IDisposable</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -322,13 +350,6 @@
         <td class="markdown level1 summary"><p>Constructs a new <a class="xref" href="ConcurrentSharp.AsyncSemaphore.html">AsyncSemaphore</a>.</p>
 </td>
       </tr>
-      <tr>
-        <td id="ConcurrentSharp_AsyncSemaphore__ctor_System_Threading_Semaphore_" data-uid="ConcurrentSharp.AsyncSemaphore.#ctor(System.Threading.Semaphore)">
-          <a class="xref" href="ConcurrentSharp.AsyncSemaphore.-ctor.html#ConcurrentSharp_AsyncSemaphore__ctor_System_Threading_Semaphore_">AsyncSemaphore(Semaphore)</a>
-        </td>
-        <td class="markdown level1 summary"><p>Constructs a new <a class="xref" href="ConcurrentSharp.AsyncSemaphore.html">AsyncSemaphore</a> using an existing (synchronous) <see cref="!:System.Threading.Semaphore"></see> as the synchronisation primitive.</p>
-</td>
-      </tr>
     </tbody>
   </table>
   <h3 id="methods">Methods
@@ -341,6 +362,13 @@
       </tr>
     </thead>
     <tbody>
+      <tr>
+        <td id="ConcurrentSharp_AsyncSemaphore_Dispose" data-uid="ConcurrentSharp.AsyncSemaphore.Dispose">
+          <a class="xref" href="ConcurrentSharp.AsyncSemaphore.Dispose.html#ConcurrentSharp_AsyncSemaphore_Dispose">Dispose()</a>
+        </td>
+        <td class="markdown level1 summary"><p>Disposes this instance and all internal resources.</p>
+</td>
+      </tr>
       <tr>
         <td id="ConcurrentSharp_AsyncSemaphore_Wait" data-uid="ConcurrentSharp.AsyncSemaphore.Wait">
           <a class="xref" href="ConcurrentSharp.AsyncSemaphore.Wait.html#ConcurrentSharp_AsyncSemaphore_Wait">Wait()</a>

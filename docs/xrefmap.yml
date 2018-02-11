@@ -91,18 +91,24 @@ references:
   commentId: M:ConcurrentSharp.AsyncSemaphore.#ctor(System.Int32,System.Int32)
   fullName: ConcurrentSharp.AsyncSemaphore.AsyncSemaphore(System.Int32, System.Int32)
   nameWithType: AsyncSemaphore.AsyncSemaphore(Int32, Int32)
-- uid: ConcurrentSharp.AsyncSemaphore.#ctor(System.Threading.Semaphore)
-  name: AsyncSemaphore(Semaphore)
-  href: api/ConcurrentSharp.AsyncSemaphore.-ctor.html#ConcurrentSharp_AsyncSemaphore__ctor_System_Threading_Semaphore_
-  commentId: M:ConcurrentSharp.AsyncSemaphore.#ctor(System.Threading.Semaphore)
-  fullName: ConcurrentSharp.AsyncSemaphore.AsyncSemaphore(System.Threading.Semaphore)
-  nameWithType: AsyncSemaphore.AsyncSemaphore(Semaphore)
 - uid: ConcurrentSharp.AsyncSemaphore.#ctor*
   name: AsyncSemaphore
   href: api/ConcurrentSharp.AsyncSemaphore.-ctor.html
   commentId: Overload:ConcurrentSharp.AsyncSemaphore.#ctor
   fullName: ConcurrentSharp.AsyncSemaphore.AsyncSemaphore
   nameWithType: AsyncSemaphore.AsyncSemaphore
+- uid: ConcurrentSharp.AsyncSemaphore.Dispose
+  name: Dispose()
+  href: api/ConcurrentSharp.AsyncSemaphore.Dispose.html#ConcurrentSharp_AsyncSemaphore_Dispose
+  commentId: M:ConcurrentSharp.AsyncSemaphore.Dispose
+  fullName: ConcurrentSharp.AsyncSemaphore.Dispose()
+  nameWithType: AsyncSemaphore.Dispose()
+- uid: ConcurrentSharp.AsyncSemaphore.Dispose*
+  name: Dispose
+  href: api/ConcurrentSharp.AsyncSemaphore.Dispose.html
+  commentId: Overload:ConcurrentSharp.AsyncSemaphore.Dispose
+  fullName: ConcurrentSharp.AsyncSemaphore.Dispose
+  nameWithType: AsyncSemaphore.Dispose
 - uid: ConcurrentSharp.AsyncSemaphore.Wait
   name: Wait()
   href: api/ConcurrentSharp.AsyncSemaphore.Wait.html#ConcurrentSharp_AsyncSemaphore_Wait
@@ -139,6 +145,195 @@ references:
   commentId: Overload:ConcurrentSharp.AsyncSemaphore.WaitAsync
   fullName: ConcurrentSharp.AsyncSemaphore.WaitAsync
   nameWithType: AsyncSemaphore.WaitAsync
+- uid: ConcurrentSharp.AsyncThrottle
+  name: AsyncThrottle
+  href: api/ConcurrentSharp.AsyncThrottle.html
+  commentId: T:ConcurrentSharp.AsyncThrottle
+  fullName: ConcurrentSharp.AsyncThrottle
+  nameWithType: AsyncThrottle
+- uid: ConcurrentSharp.AsyncThrottle.#ctor(System.Int32)
+  name: AsyncThrottle(Int32)
+  href: api/ConcurrentSharp.AsyncThrottle.-ctor.html#ConcurrentSharp_AsyncThrottle__ctor_System_Int32_
+  commentId: M:ConcurrentSharp.AsyncThrottle.#ctor(System.Int32)
+  fullName: ConcurrentSharp.AsyncThrottle.AsyncThrottle(System.Int32)
+  nameWithType: AsyncThrottle.AsyncThrottle(Int32)
+- uid: ConcurrentSharp.AsyncThrottle.#ctor*
+  name: AsyncThrottle
+  href: api/ConcurrentSharp.AsyncThrottle.-ctor.html
+  commentId: Overload:ConcurrentSharp.AsyncThrottle.#ctor
+  fullName: ConcurrentSharp.AsyncThrottle.AsyncThrottle
+  nameWithType: AsyncThrottle.AsyncThrottle
+- uid: ConcurrentSharp.AsyncThrottle.Dispose
+  name: Dispose()
+  href: api/ConcurrentSharp.AsyncThrottle.Dispose.html#ConcurrentSharp_AsyncThrottle_Dispose
+  commentId: M:ConcurrentSharp.AsyncThrottle.Dispose
+  fullName: ConcurrentSharp.AsyncThrottle.Dispose()
+  nameWithType: AsyncThrottle.Dispose()
+- uid: ConcurrentSharp.AsyncThrottle.Dispose*
+  name: Dispose
+  href: api/ConcurrentSharp.AsyncThrottle.Dispose.html
+  commentId: Overload:ConcurrentSharp.AsyncThrottle.Dispose
+  fullName: ConcurrentSharp.AsyncThrottle.Dispose
+  nameWithType: AsyncThrottle.Dispose
+- uid: ConcurrentSharp.AsyncThrottle.Enter
+  name: Enter()
+  href: api/ConcurrentSharp.AsyncThrottle.Enter.html#ConcurrentSharp_AsyncThrottle_Enter
+  commentId: M:ConcurrentSharp.AsyncThrottle.Enter
+  fullName: ConcurrentSharp.AsyncThrottle.Enter()
+  nameWithType: AsyncThrottle.Enter()
+- uid: ConcurrentSharp.AsyncThrottle.Enter*
+  name: Enter
+  href: api/ConcurrentSharp.AsyncThrottle.Enter.html
+  commentId: Overload:ConcurrentSharp.AsyncThrottle.Enter
+  fullName: ConcurrentSharp.AsyncThrottle.Enter
+  nameWithType: AsyncThrottle.Enter
+- uid: ConcurrentSharp.AsyncThrottle.EnterAsync
+  name: EnterAsync()
+  href: api/ConcurrentSharp.AsyncThrottle.EnterAsync.html#ConcurrentSharp_AsyncThrottle_EnterAsync
+  commentId: M:ConcurrentSharp.AsyncThrottle.EnterAsync
+  fullName: ConcurrentSharp.AsyncThrottle.EnterAsync()
+  nameWithType: AsyncThrottle.EnterAsync()
+- uid: ConcurrentSharp.AsyncThrottle.EnterAsync*
+  name: EnterAsync
+  href: api/ConcurrentSharp.AsyncThrottle.EnterAsync.html
+  commentId: Overload:ConcurrentSharp.AsyncThrottle.EnterAsync
+  fullName: ConcurrentSharp.AsyncThrottle.EnterAsync
+  nameWithType: AsyncThrottle.EnterAsync
+- uid: ConcurrentSharp.AsyncThrottle.Execute(Action)
+  name: Execute(Action)
+  href: api/ConcurrentSharp.AsyncThrottle.Execute.html#ConcurrentSharp_AsyncThrottle_Execute_Action_
+  commentId: M:ConcurrentSharp.AsyncThrottle.Execute(Action)
+  fullName: ConcurrentSharp.AsyncThrottle.Execute(Action)
+  nameWithType: AsyncThrottle.Execute(Action)
+- uid: ConcurrentSharp.AsyncThrottle.Execute*
+  name: Execute
+  href: api/ConcurrentSharp.AsyncThrottle.Execute.html
+  commentId: Overload:ConcurrentSharp.AsyncThrottle.Execute
+  fullName: ConcurrentSharp.AsyncThrottle.Execute
+  nameWithType: AsyncThrottle.Execute
+- uid: ConcurrentSharp.AsyncThrottle.Execute``1(Action{``0},``0)
+  name: Execute<T>(Action<T>, T)
+  href: api/ConcurrentSharp.AsyncThrottle.Execute.html#ConcurrentSharp_AsyncThrottle_Execute__1_Action___0____0_
+  commentId: M:ConcurrentSharp.AsyncThrottle.Execute``1(Action{``0},``0)
+  name.vb: Execute(Of T)(Action(Of T), T)
+  fullName: ConcurrentSharp.AsyncThrottle.Execute<T>(Action<T>, T)
+  fullName.vb: ConcurrentSharp.AsyncThrottle.Execute(Of T)(Action(Of T), T)
+  nameWithType: AsyncThrottle.Execute<T>(Action<T>, T)
+  nameWithType.vb: AsyncThrottle.Execute(Of T)(Action(Of T), T)
+- uid: ConcurrentSharp.AsyncThrottle.Execute``1(Func{``0})
+  name: Execute<TResult>(Func<TResult>)
+  href: api/ConcurrentSharp.AsyncThrottle.Execute.html#ConcurrentSharp_AsyncThrottle_Execute__1_Func___0__
+  commentId: M:ConcurrentSharp.AsyncThrottle.Execute``1(Func{``0})
+  name.vb: Execute(Of TResult)(Func(Of TResult))
+  fullName: ConcurrentSharp.AsyncThrottle.Execute<TResult>(Func<TResult>)
+  fullName.vb: ConcurrentSharp.AsyncThrottle.Execute(Of TResult)(Func(Of TResult))
+  nameWithType: AsyncThrottle.Execute<TResult>(Func<TResult>)
+  nameWithType.vb: AsyncThrottle.Execute(Of TResult)(Func(Of TResult))
+- uid: ConcurrentSharp.AsyncThrottle.Execute``2(Func{``0,``1},``0)
+  name: Execute<T, TResult>(Func<T, TResult>, T)
+  href: api/ConcurrentSharp.AsyncThrottle.Execute.html#ConcurrentSharp_AsyncThrottle_Execute__2_Func___0___1____0_
+  commentId: M:ConcurrentSharp.AsyncThrottle.Execute``2(Func{``0,``1},``0)
+  name.vb: Execute(Of T, TResult)(Func(Of T, TResult), T)
+  fullName: ConcurrentSharp.AsyncThrottle.Execute<T, TResult>(Func<T, TResult>, T)
+  fullName.vb: ConcurrentSharp.AsyncThrottle.Execute(Of T, TResult)(Func(Of T, TResult), T)
+  nameWithType: AsyncThrottle.Execute<T, TResult>(Func<T, TResult>, T)
+  nameWithType.vb: AsyncThrottle.Execute(Of T, TResult)(Func(Of T, TResult), T)
+- uid: ConcurrentSharp.AsyncThrottle.ExecuteAll*
+  name: ExecuteAll
+  href: api/ConcurrentSharp.AsyncThrottle.ExecuteAll.html
+  commentId: Overload:ConcurrentSharp.AsyncThrottle.ExecuteAll
+  fullName: ConcurrentSharp.AsyncThrottle.ExecuteAll
+  nameWithType: AsyncThrottle.ExecuteAll
+- uid: ConcurrentSharp.AsyncThrottle.ExecuteAll``1(IEnumerable{``0},Action{``0})
+  name: ExecuteAll<T>(IEnumerable<T>, Action<T>)
+  href: api/ConcurrentSharp.AsyncThrottle.ExecuteAll.html#ConcurrentSharp_AsyncThrottle_ExecuteAll__1_IEnumerable___0__Action___0__
+  commentId: M:ConcurrentSharp.AsyncThrottle.ExecuteAll``1(IEnumerable{``0},Action{``0})
+  name.vb: ExecuteAll(Of T)(IEnumerable(Of T), Action(Of T))
+  fullName: ConcurrentSharp.AsyncThrottle.ExecuteAll<T>(IEnumerable<T>, Action<T>)
+  fullName.vb: ConcurrentSharp.AsyncThrottle.ExecuteAll(Of T)(IEnumerable(Of T), Action(Of T))
+  nameWithType: AsyncThrottle.ExecuteAll<T>(IEnumerable<T>, Action<T>)
+  nameWithType.vb: AsyncThrottle.ExecuteAll(Of T)(IEnumerable(Of T), Action(Of T))
+- uid: ConcurrentSharp.AsyncThrottle.ExecuteAll``2(IEnumerable{``0},Func{``0,``1})
+  name: ExecuteAll<TArg, TResult>(IEnumerable<TArg>, Func<TArg, TResult>)
+  href: api/ConcurrentSharp.AsyncThrottle.ExecuteAll.html#ConcurrentSharp_AsyncThrottle_ExecuteAll__2_IEnumerable___0__Func___0___1__
+  commentId: M:ConcurrentSharp.AsyncThrottle.ExecuteAll``2(IEnumerable{``0},Func{``0,``1})
+  name.vb: ExecuteAll(Of TArg, TResult)(IEnumerable(Of TArg), Func(Of TArg, TResult))
+  fullName: ConcurrentSharp.AsyncThrottle.ExecuteAll<TArg, TResult>(IEnumerable<TArg>, Func<TArg, TResult>)
+  fullName.vb: ConcurrentSharp.AsyncThrottle.ExecuteAll(Of TArg, TResult)(IEnumerable(Of TArg), Func(Of TArg, TResult))
+  nameWithType: AsyncThrottle.ExecuteAll<TArg, TResult>(IEnumerable<TArg>, Func<TArg, TResult>)
+  nameWithType.vb: AsyncThrottle.ExecuteAll(Of TArg, TResult)(IEnumerable(Of TArg), Func(Of TArg, TResult))
+- uid: ConcurrentSharp.AsyncThrottle.ExecuteAllAsync*
+  name: ExecuteAllAsync
+  href: api/ConcurrentSharp.AsyncThrottle.ExecuteAllAsync.html
+  commentId: Overload:ConcurrentSharp.AsyncThrottle.ExecuteAllAsync
+  fullName: ConcurrentSharp.AsyncThrottle.ExecuteAllAsync
+  nameWithType: AsyncThrottle.ExecuteAllAsync
+- uid: ConcurrentSharp.AsyncThrottle.ExecuteAllAsync``1(IEnumerable{``0},Func{``0,Task})
+  name: ExecuteAllAsync<T>(IEnumerable<T>, Func<T, Task>)
+  href: api/ConcurrentSharp.AsyncThrottle.ExecuteAllAsync.html#ConcurrentSharp_AsyncThrottle_ExecuteAllAsync__1_IEnumerable___0__Func___0_Task__
+  commentId: M:ConcurrentSharp.AsyncThrottle.ExecuteAllAsync``1(IEnumerable{``0},Func{``0,Task})
+  name.vb: ExecuteAllAsync(Of T)(IEnumerable(Of T), Func(Of T, Task))
+  fullName: ConcurrentSharp.AsyncThrottle.ExecuteAllAsync<T>(IEnumerable<T>, Func<T, Task>)
+  fullName.vb: ConcurrentSharp.AsyncThrottle.ExecuteAllAsync(Of T)(IEnumerable(Of T), Func(Of T, Task))
+  nameWithType: AsyncThrottle.ExecuteAllAsync<T>(IEnumerable<T>, Func<T, Task>)
+  nameWithType.vb: AsyncThrottle.ExecuteAllAsync(Of T)(IEnumerable(Of T), Func(Of T, Task))
+- uid: ConcurrentSharp.AsyncThrottle.ExecuteAllAsync``2(IEnumerable{``0},Func{``0,Task{``1}})
+  name: ExecuteAllAsync<TArg, TResult>(IEnumerable<TArg>, Func<TArg, Task<TResult>>)
+  href: api/ConcurrentSharp.AsyncThrottle.ExecuteAllAsync.html#ConcurrentSharp_AsyncThrottle_ExecuteAllAsync__2_IEnumerable___0__Func___0_Task___1___
+  commentId: M:ConcurrentSharp.AsyncThrottle.ExecuteAllAsync``2(IEnumerable{``0},Func{``0,Task{``1}})
+  name.vb: ExecuteAllAsync(Of TArg, TResult)(IEnumerable(Of TArg), Func(Of TArg, Task(Of TResult)))
+  fullName: ConcurrentSharp.AsyncThrottle.ExecuteAllAsync<TArg, TResult>(IEnumerable<TArg>, Func<TArg, Task<TResult>>)
+  fullName.vb: ConcurrentSharp.AsyncThrottle.ExecuteAllAsync(Of TArg, TResult)(IEnumerable(Of TArg), Func(Of TArg, Task(Of TResult)))
+  nameWithType: AsyncThrottle.ExecuteAllAsync<TArg, TResult>(IEnumerable<TArg>, Func<TArg, Task<TResult>>)
+  nameWithType.vb: AsyncThrottle.ExecuteAllAsync(Of TArg, TResult)(IEnumerable(Of TArg), Func(Of TArg, Task(Of TResult)))
+- uid: ConcurrentSharp.AsyncThrottle.ExecuteAsync(Action)
+  name: ExecuteAsync(Action)
+  href: api/ConcurrentSharp.AsyncThrottle.ExecuteAsync.html#ConcurrentSharp_AsyncThrottle_ExecuteAsync_Action_
+  commentId: M:ConcurrentSharp.AsyncThrottle.ExecuteAsync(Action)
+  fullName: ConcurrentSharp.AsyncThrottle.ExecuteAsync(Action)
+  nameWithType: AsyncThrottle.ExecuteAsync(Action)
+- uid: ConcurrentSharp.AsyncThrottle.ExecuteAsync(Func{Task})
+  name: ExecuteAsync(Func<Task>)
+  href: api/ConcurrentSharp.AsyncThrottle.ExecuteAsync.html#ConcurrentSharp_AsyncThrottle_ExecuteAsync_Func_Task__
+  commentId: M:ConcurrentSharp.AsyncThrottle.ExecuteAsync(Func{Task})
+  name.vb: ExecuteAsync(Func(Of Task))
+  fullName: ConcurrentSharp.AsyncThrottle.ExecuteAsync(Func<Task>)
+  fullName.vb: ConcurrentSharp.AsyncThrottle.ExecuteAsync(Func(Of Task))
+  nameWithType: AsyncThrottle.ExecuteAsync(Func<Task>)
+  nameWithType.vb: AsyncThrottle.ExecuteAsync(Func(Of Task))
+- uid: ConcurrentSharp.AsyncThrottle.ExecuteAsync*
+  name: ExecuteAsync
+  href: api/ConcurrentSharp.AsyncThrottle.ExecuteAsync.html
+  commentId: Overload:ConcurrentSharp.AsyncThrottle.ExecuteAsync
+  fullName: ConcurrentSharp.AsyncThrottle.ExecuteAsync
+  nameWithType: AsyncThrottle.ExecuteAsync
+- uid: ConcurrentSharp.AsyncThrottle.ExecuteAsync``1(Action{``0},``0)
+  name: ExecuteAsync<T>(Action<T>, T)
+  href: api/ConcurrentSharp.AsyncThrottle.ExecuteAsync.html#ConcurrentSharp_AsyncThrottle_ExecuteAsync__1_Action___0____0_
+  commentId: M:ConcurrentSharp.AsyncThrottle.ExecuteAsync``1(Action{``0},``0)
+  name.vb: ExecuteAsync(Of T)(Action(Of T), T)
+  fullName: ConcurrentSharp.AsyncThrottle.ExecuteAsync<T>(Action<T>, T)
+  fullName.vb: ConcurrentSharp.AsyncThrottle.ExecuteAsync(Of T)(Action(Of T), T)
+  nameWithType: AsyncThrottle.ExecuteAsync<T>(Action<T>, T)
+  nameWithType.vb: AsyncThrottle.ExecuteAsync(Of T)(Action(Of T), T)
+- uid: ConcurrentSharp.AsyncThrottle.ExecuteAsync``1(Func{``0})
+  name: ExecuteAsync<TResult>(Func<TResult>)
+  href: api/ConcurrentSharp.AsyncThrottle.ExecuteAsync.html#ConcurrentSharp_AsyncThrottle_ExecuteAsync__1_Func___0__
+  commentId: M:ConcurrentSharp.AsyncThrottle.ExecuteAsync``1(Func{``0})
+  name.vb: ExecuteAsync(Of TResult)(Func(Of TResult))
+  fullName: ConcurrentSharp.AsyncThrottle.ExecuteAsync<TResult>(Func<TResult>)
+  fullName.vb: ConcurrentSharp.AsyncThrottle.ExecuteAsync(Of TResult)(Func(Of TResult))
+  nameWithType: AsyncThrottle.ExecuteAsync<TResult>(Func<TResult>)
+  nameWithType.vb: AsyncThrottle.ExecuteAsync(Of TResult)(Func(Of TResult))
+- uid: ConcurrentSharp.AsyncThrottle.ExecuteAsync``2(Func{``0,Task{``1}},``0)
+  name: ExecuteAsync<T, TResult>(Func<T, Task<TResult>>, T)
+  href: api/ConcurrentSharp.AsyncThrottle.ExecuteAsync.html#ConcurrentSharp_AsyncThrottle_ExecuteAsync__2_Func___0_Task___1_____0_
+  commentId: M:ConcurrentSharp.AsyncThrottle.ExecuteAsync``2(Func{``0,Task{``1}},``0)
+  name.vb: ExecuteAsync(Of T, TResult)(Func(Of T, Task(Of TResult)), T)
+  fullName: ConcurrentSharp.AsyncThrottle.ExecuteAsync<T, TResult>(Func<T, Task<TResult>>, T)
+  fullName.vb: ConcurrentSharp.AsyncThrottle.ExecuteAsync(Of T, TResult)(Func(Of T, Task(Of TResult)), T)
+  nameWithType: AsyncThrottle.ExecuteAsync<T, TResult>(Func<T, Task<TResult>>, T)
+  nameWithType.vb: AsyncThrottle.ExecuteAsync(Of T, TResult)(Func(Of T, Task(Of TResult)), T)
 - uid: ConcurrentSharp.BlockingCollectionProcessor`1
   name: BlockingCollectionProcessor<T>
   href: api/ConcurrentSharp.BlockingCollectionProcessor-1.html
@@ -947,45 +1142,27 @@ references:
   fullName.vb: ConcurrentSharp.Throttle.Execute(Of T, TResult)(Func(Of T, TResult), T)
   nameWithType: Throttle.Execute<T, TResult>(Func<T, TResult>, T)
   nameWithType.vb: Throttle.Execute(Of T, TResult)(Func(Of T, TResult), T)
-- uid: ConcurrentSharp.Throttle.ExecuteAllAsync*
-  name: ExecuteAllAsync
-  href: api/ConcurrentSharp.Throttle.ExecuteAllAsync.html
-  commentId: Overload:ConcurrentSharp.Throttle.ExecuteAllAsync
-  fullName: ConcurrentSharp.Throttle.ExecuteAllAsync
-  nameWithType: Throttle.ExecuteAllAsync
-- uid: ConcurrentSharp.Throttle.ExecuteAllAsync``1(IEnumerable{``0},Func{``0,Task})
-  name: ExecuteAllAsync<T>(IEnumerable<T>, Func<T, Task>)
-  href: api/ConcurrentSharp.Throttle.ExecuteAllAsync.html#ConcurrentSharp_Throttle_ExecuteAllAsync__1_IEnumerable___0__Func___0_Task__
-  commentId: M:ConcurrentSharp.Throttle.ExecuteAllAsync``1(IEnumerable{``0},Func{``0,Task})
-  name.vb: ExecuteAllAsync(Of T)(IEnumerable(Of T), Func(Of T, Task))
-  fullName: ConcurrentSharp.Throttle.ExecuteAllAsync<T>(IEnumerable<T>, Func<T, Task>)
-  fullName.vb: ConcurrentSharp.Throttle.ExecuteAllAsync(Of T)(IEnumerable(Of T), Func(Of T, Task))
-  nameWithType: Throttle.ExecuteAllAsync<T>(IEnumerable<T>, Func<T, Task>)
-  nameWithType.vb: Throttle.ExecuteAllAsync(Of T)(IEnumerable(Of T), Func(Of T, Task))
-- uid: ConcurrentSharp.Throttle.ExecuteAllAsync``2(IEnumerable{``0},Func{``0,Task{``1}})
-  name: ExecuteAllAsync<TArg, TResult>(IEnumerable<TArg>, Func<TArg, Task<TResult>>)
-  href: api/ConcurrentSharp.Throttle.ExecuteAllAsync.html#ConcurrentSharp_Throttle_ExecuteAllAsync__2_IEnumerable___0__Func___0_Task___1___
-  commentId: M:ConcurrentSharp.Throttle.ExecuteAllAsync``2(IEnumerable{``0},Func{``0,Task{``1}})
-  name.vb: ExecuteAllAsync(Of TArg, TResult)(IEnumerable(Of TArg), Func(Of TArg, Task(Of TResult)))
-  fullName: ConcurrentSharp.Throttle.ExecuteAllAsync<TArg, TResult>(IEnumerable<TArg>, Func<TArg, Task<TResult>>)
-  fullName.vb: ConcurrentSharp.Throttle.ExecuteAllAsync(Of TArg, TResult)(IEnumerable(Of TArg), Func(Of TArg, Task(Of TResult)))
-  nameWithType: Throttle.ExecuteAllAsync<TArg, TResult>(IEnumerable<TArg>, Func<TArg, Task<TResult>>)
-  nameWithType.vb: Throttle.ExecuteAllAsync(Of TArg, TResult)(IEnumerable(Of TArg), Func(Of TArg, Task(Of TResult)))
-- uid: ConcurrentSharp.ThrottleToken
-  name: ThrottleToken
-  href: api/ConcurrentSharp.ThrottleToken.html
-  commentId: T:ConcurrentSharp.ThrottleToken
-  fullName: ConcurrentSharp.ThrottleToken
-  nameWithType: ThrottleToken
-- uid: ConcurrentSharp.ThrottleToken.Dispose
-  name: Dispose()
-  href: api/ConcurrentSharp.ThrottleToken.Dispose.html#ConcurrentSharp_ThrottleToken_Dispose
-  commentId: M:ConcurrentSharp.ThrottleToken.Dispose
-  fullName: ConcurrentSharp.ThrottleToken.Dispose()
-  nameWithType: ThrottleToken.Dispose()
-- uid: ConcurrentSharp.ThrottleToken.Dispose*
-  name: Dispose
-  href: api/ConcurrentSharp.ThrottleToken.Dispose.html
-  commentId: Overload:ConcurrentSharp.ThrottleToken.Dispose
-  fullName: ConcurrentSharp.ThrottleToken.Dispose
-  nameWithType: ThrottleToken.Dispose
+- uid: ConcurrentSharp.Throttle.ExecuteAll*
+  name: ExecuteAll
+  href: api/ConcurrentSharp.Throttle.ExecuteAll.html
+  commentId: Overload:ConcurrentSharp.Throttle.ExecuteAll
+  fullName: ConcurrentSharp.Throttle.ExecuteAll
+  nameWithType: Throttle.ExecuteAll
+- uid: ConcurrentSharp.Throttle.ExecuteAll``1(IEnumerable{``0},Action{``0})
+  name: ExecuteAll<T>(IEnumerable<T>, Action<T>)
+  href: api/ConcurrentSharp.Throttle.ExecuteAll.html#ConcurrentSharp_Throttle_ExecuteAll__1_IEnumerable___0__Action___0__
+  commentId: M:ConcurrentSharp.Throttle.ExecuteAll``1(IEnumerable{``0},Action{``0})
+  name.vb: ExecuteAll(Of T)(IEnumerable(Of T), Action(Of T))
+  fullName: ConcurrentSharp.Throttle.ExecuteAll<T>(IEnumerable<T>, Action<T>)
+  fullName.vb: ConcurrentSharp.Throttle.ExecuteAll(Of T)(IEnumerable(Of T), Action(Of T))
+  nameWithType: Throttle.ExecuteAll<T>(IEnumerable<T>, Action<T>)
+  nameWithType.vb: Throttle.ExecuteAll(Of T)(IEnumerable(Of T), Action(Of T))
+- uid: ConcurrentSharp.Throttle.ExecuteAll``2(IEnumerable{``0},Func{``0,``1})
+  name: ExecuteAll<TArg, TResult>(IEnumerable<TArg>, Func<TArg, TResult>)
+  href: api/ConcurrentSharp.Throttle.ExecuteAll.html#ConcurrentSharp_Throttle_ExecuteAll__2_IEnumerable___0__Func___0___1__
+  commentId: M:ConcurrentSharp.Throttle.ExecuteAll``2(IEnumerable{``0},Func{``0,``1})
+  name.vb: ExecuteAll(Of TArg, TResult)(IEnumerable(Of TArg), Func(Of TArg, TResult))
+  fullName: ConcurrentSharp.Throttle.ExecuteAll<TArg, TResult>(IEnumerable<TArg>, Func<TArg, TResult>)
+  fullName.vb: ConcurrentSharp.Throttle.ExecuteAll(Of TArg, TResult)(IEnumerable(Of TArg), Func(Of TArg, TResult))
+  nameWithType: Throttle.ExecuteAll<TArg, TResult>(IEnumerable<TArg>, Func<TArg, TResult>)
+  nameWithType.vb: Throttle.ExecuteAll(Of TArg, TResult)(IEnumerable(Of TArg), Func(Of TArg, TResult))

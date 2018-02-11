@@ -116,10 +116,43 @@
                                   <a href="ConcurrentSharp.AsyncSemaphore.-ctor.html" title="AsyncSemaphore" class="">AsyncSemaphore</a>
                                 </li>
                                 <li class="">
+                                  <a href="ConcurrentSharp.AsyncSemaphore.Dispose.html" title="Dispose" class="">Dispose</a>
+                                </li>
+                                <li class="">
                                   <a href="ConcurrentSharp.AsyncSemaphore.Wait.html" title="Wait" class="">Wait</a>
                                 </li>
                                 <li class="">
                                   <a href="ConcurrentSharp.AsyncSemaphore.WaitAsync.html" title="WaitAsync" class="">WaitAsync</a>
+                                </li>
+                              </ul>  </li>
+                          <li class="">
+                            <span class="expand-stub"></span>
+                            <a href="ConcurrentSharp.AsyncThrottle.html" title="AsyncThrottle" class="">AsyncThrottle</a>
+                              
+                              <ul class="nav level3">
+                                <li class="">
+                                  <a href="ConcurrentSharp.AsyncThrottle.-ctor.html" title="AsyncThrottle" class="">AsyncThrottle</a>
+                                </li>
+                                <li class="">
+                                  <a href="ConcurrentSharp.AsyncThrottle.Dispose.html" title="Dispose" class="">Dispose</a>
+                                </li>
+                                <li class="">
+                                  <a href="ConcurrentSharp.AsyncThrottle.Enter.html" title="Enter" class="">Enter</a>
+                                </li>
+                                <li class="">
+                                  <a href="ConcurrentSharp.AsyncThrottle.EnterAsync.html" title="EnterAsync" class="">EnterAsync</a>
+                                </li>
+                                <li class="">
+                                  <a href="ConcurrentSharp.AsyncThrottle.Execute.html" title="Execute" class="">Execute</a>
+                                </li>
+                                <li class="">
+                                  <a href="ConcurrentSharp.AsyncThrottle.ExecuteAll.html" title="ExecuteAll" class="">ExecuteAll</a>
+                                </li>
+                                <li class="">
+                                  <a href="ConcurrentSharp.AsyncThrottle.ExecuteAllAsync.html" title="ExecuteAllAsync" class="">ExecuteAllAsync</a>
+                                </li>
+                                <li class="">
+                                  <a href="ConcurrentSharp.AsyncThrottle.ExecuteAsync.html" title="ExecuteAsync" class="">ExecuteAsync</a>
                                 </li>
                               </ul>  </li>
                           <li class="">
@@ -239,19 +272,10 @@
                                   <a href="ConcurrentSharp.Throttle.Execute.html" title="Execute" class="">Execute</a>
                                 </li>
                                 <li class="">
-                                  <a href="ConcurrentSharp.Throttle.ExecuteAllAsync.html" title="ExecuteAllAsync" class="">ExecuteAllAsync</a>
+                                  <a href="ConcurrentSharp.Throttle.ExecuteAll.html" title="ExecuteAll" class="">ExecuteAll</a>
                                 </li>
                                 <li class="">
                                   <a href="ConcurrentSharp.Throttle.-ctor.html" title="Throttle" class="">Throttle</a>
-                                </li>
-                              </ul>  </li>
-                          <li class="">
-                            <span class="expand-stub"></span>
-                            <a href="ConcurrentSharp.ThrottleToken.html" title="ThrottleToken" class="">ThrottleToken</a>
-                              
-                              <ul class="nav level3">
-                                <li class="">
-                                  <a href="ConcurrentSharp.ThrottleToken.Dispose.html" title="Dispose" class="">Dispose</a>
                                 </li>
                               </ul>  </li>
                         </ul>  </li>
@@ -273,7 +297,7 @@
 
 <a id="ConcurrentSharp_Throttle_Enter_" data-uid="ConcurrentSharp.Throttle.Enter*"></a>
 <h4 id="ConcurrentSharp_Throttle_Enter" data-uid="ConcurrentSharp.Throttle.Enter">Enter()</h4>
-<div class="markdown level1 summary"><p>Creates and returns a <a class="xref" href="ConcurrentSharp.ThrottleToken.html">ThrottleToken</a> that can be used to notify this throttle that a job has completed. If there are already the maximum number of 
+<div class="markdown level1 summary"><p>Creates and returns an object implementing <see cref="!:IDisposable"></see> that can be used to notify this throttle that a job has completed. If there are already the maximum number of 
 operations running using this throttle, then this method will block the calling thread until another job completes.</p>
 </div>
 <div class="markdown level1 conceptual"></div>
@@ -292,7 +316,7 @@ operations running using this throttle, then this method will block the calling 
   <tbody>
     <tr>
       <td><span class="xref">IDisposable</span></td>
-      <td><p>A <a class="xref" href="ConcurrentSharp.ThrottleToken.html">ThrottleToken</a> that can be used to indicate a throttled operation has completed and another operation can begin.</p>
+      <td><p>A <span class="xref">ConcurrentSharp.ThrottleToken</span> that can be used to indicate a throttled operation has completed and another operation can begin.</p>
 </td>
     </tr>
   </tbody>

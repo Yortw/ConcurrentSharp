@@ -11,7 +11,7 @@ namespace ConcurrentSharp
 	/// </summary>
 	/// <remarks>
 	/// <para>To use a <see cref="Throttle"/> create an instance specifying the maximum number of concurrent operations you want to occur. 
-	/// Then have each operation call <see cref="Throttle.Enter"/> when it begins and capture the returned token. When the operation completes, call <see cref="ThrottleToken.Dispose()"/>.
+	/// Then have each operation call <see cref="Throttle.Enter"/> when it begins and capture the returned token. When the operation completes, call <see cref="IDisposable.Dispose()"/> on the returned token.
 	/// The Throttle will ensure no more than the specified number of operations run at the same time.</para>
 	/// </remarks>
 	/// <example>
@@ -56,7 +56,7 @@ namespace ConcurrentSharp
 		}
 
 		/// <summary>
-		/// Creates and returns a <see cref="ThrottleToken"/> that can be used to notify this throttle that a job has completed. If there are already the maximum number of 
+		/// Creates and returns an object implementing <see cref="IDisposable"/> that can be used to notify this throttle that a job has completed. If there are already the maximum number of 
 		/// operations running using this throttle, then this method will block the calling thread until another job completes.
 		/// </summary>
 		/// <returns>A <see cref="ThrottleToken"/> that can be used to indicate a throttled operation has completed and another operation can begin.</returns>
@@ -199,29 +199,40 @@ namespace ConcurrentSharp
 		/// <param name="asyncAction">A function that returns a task and takes a value of {T}.</param>
 		/// <returns>Returns a <see cref="System.Threading.Tasks.Task"/> that represents completion processing all items in <paramref name="items"/>.</returns>
 		/// <exception cref="System.ArgumentNullException">Thrown if <paramref name="items"/> or <paramref name="asyncAction"/> is null.</exception>
-		public async Task ExecuteAllAsync<T>(IEnumerable<T> items, Func<T, Task> asyncAction)
+		public void ExecuteAll<T>(IEnumerable<T> items, Action<T> asyncAction)
 		{
 			if (items == null) throw new ArgumentNullException(nameof(items));
 			if (asyncAction == null) throw new ArgumentNullException(nameof(asyncAction));
 
-			var tasks = new List<Task>(_MaxConcurrency);
-			foreach (var item in items)
+			using (var countdownEvent = new System.Threading.CountdownEvent(0))
 			{
-				_Semaphore.WaitOne();
-				var t = asyncAction(item).ContinueWith
-				(
-					(pt) => _Semaphore.Release(),
-					TaskContinuationOptions.ExecuteSynchronously
-				);
-				
-				tasks.Add(t);
-			}
+				foreach (var item in items)
+				{
+					if (countdownEvent.IsSet)
+						countdownEvent.Reset();
 
-#if BCL_ASYNC
-			await TaskEx.WhenAll(tasks).ConfigureAwait(false);
-#else
-			await Task.WhenAll(tasks).ConfigureAwait(false);
-#endif
+					countdownEvent.AddCount();
+
+					_Semaphore.WaitOne();
+					System.Threading.ThreadPool.QueueUserWorkItem
+					(
+						(i) =>
+						{
+							try
+							{
+								asyncAction((T)i);
+							}
+							finally
+							{
+								_Semaphore.Release();
+								countdownEvent.Signal();
+							}
+						}, item
+					);
+				}
+
+				countdownEvent.Wait();
+			}
 		}
 
 		/// <summary>
@@ -233,32 +244,47 @@ namespace ConcurrentSharp
 		/// <param name="asyncAction">A function that returns a task of {TResult} and takes a value of {TArg}.</param>
 		/// <returns>Returns a task whose result is an enumerable of completed tasks.</returns>
 		/// <exception cref="System.ArgumentNullException">Thrown if <paramref name="items"/> or <paramref name="asyncAction"/> is null.</exception>
-		public async Task<IEnumerable<Task<TResult>>> ExecuteAllAsync<TArg, TResult>(IEnumerable<TArg> items, Func<TArg, Task<TResult>> asyncAction)
+		public IEnumerable<TResult> ExecuteAll<TArg, TResult>(IEnumerable<TArg> items, Func<TArg, TResult> asyncAction)
 		{
 			if (items == null) throw new ArgumentNullException(nameof(items));
 			if (asyncAction == null) throw new ArgumentNullException(nameof(asyncAction));
 
-			var asyncSemaphore = new AsyncSemaphore(_Semaphore);
-			var tasks = new List<Task<TResult>>(_MaxConcurrency);
-			foreach (var item in items)
+			using (var countdownEvent = new System.Threading.CountdownEvent(0))
 			{
-				var lease = await asyncSemaphore.WaitAsync().ConfigureAwait(false);
-				var t = asyncAction(item).ContinueWith
-				(
-					(pt) => { lease.Dispose(); return pt.Result; },
-					TaskContinuationOptions.ExecuteSynchronously
-				);
+				var retVal = new List<TResult>();
+				foreach (var item in items)
+				{
+					if (countdownEvent.IsSet)
+						countdownEvent.Reset();
 
-				tasks.Add(t);
+					countdownEvent.AddCount();
+
+					_Semaphore.WaitOne();
+					System.Threading.ThreadPool.QueueUserWorkItem
+					(
+						(i) =>
+						{
+							try
+							{
+								var result = asyncAction((TArg)i);
+								lock (retVal)
+								{
+									retVal.Add(result);
+								}
+							}
+							finally
+							{
+								_Semaphore.Release();
+								countdownEvent.Signal();
+							}
+						}, item
+					);
+				}
+
+				countdownEvent.Wait();
+
+				return retVal;
 			}
-
-#if BCL_ASYNC
-			await TaskEx.WhenAll(tasks).ConfigureAwait(false);
-#else
-			await Task.WhenAll(tasks).ConfigureAwait(false);
-#endif
-
-			return tasks;
 		}
 
 		private void ThrowIfDisposed()
@@ -287,47 +313,4 @@ namespace ConcurrentSharp
 		}
 	}
 
-	/// <summary>
-	/// An object returned by <see cref="Throttle.Enter"/> that is used to notify the parent <see cref="Throttle"/> instance the job owning this token has completed.
-	/// </summary>
-	public sealed class ThrottleToken : IDisposable
-	{
-		private System.Threading.Semaphore _Semaphore;
-		private object _Synchroniser;
-
-		internal ThrottleToken(System.Threading.Semaphore semaphore)
-		{
-			_Synchroniser = new object();
-			_Semaphore = semaphore;
-		}
-
-		/// <summary>
-		/// "Releases the throttle". Notifies the parent <see cref="Throttle"/> instance the job owning this token has completed and another job can be started.
-		/// </summary>
-		public void Dispose()
-		{
-			var semaphore = _Semaphore;
-			_Semaphore = null;
-			if (semaphore != null)
-			{
-				lock (_Synchroniser)
-				{
-					try
-					{
-						//Note: Dispose does not seem to throw on subsequent calls
-						//on desktop framework, but can't guarantee that for other
-						//frameworks or future versions, so handle the likely error
-						//anyway.
-						semaphore.Release();
-					}
-					catch (ObjectDisposedException)
-					{
-						// Parent throttle was disposed, 
-						// but this is not a fatal error for the
-						// completing operation calling this method.
-					}
-				}
-			}
-		}
-	}
 }

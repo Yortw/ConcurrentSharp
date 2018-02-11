@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Constructor AsyncEventHandle
+    <title>Method Execute
    | ConcurrentSharp </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Constructor AsyncEventHandle
+    <meta name="title" content="Method Execute
    | ConcurrentSharp ">
     <meta name="generator" content="docfx 2.26.3.0">
     
@@ -88,8 +88,8 @@
                             <a href="ConcurrentSharp.AsyncEventHandle.html" title="AsyncEventHandle" class="">AsyncEventHandle</a>
                               
                               <ul class="nav level3">
-                                <li class="active">
-                                  <a href="ConcurrentSharp.AsyncEventHandle.-ctor.html" title="AsyncEventHandle" class="active">AsyncEventHandle</a>
+                                <li class="">
+                                  <a href="ConcurrentSharp.AsyncEventHandle.-ctor.html" title="AsyncEventHandle" class="">AsyncEventHandle</a>
                                 </li>
                               </ul>  </li>
                           <li class="">
@@ -142,8 +142,8 @@
                                 <li class="">
                                   <a href="ConcurrentSharp.AsyncThrottle.EnterAsync.html" title="EnterAsync" class="">EnterAsync</a>
                                 </li>
-                                <li class="">
-                                  <a href="ConcurrentSharp.AsyncThrottle.Execute.html" title="Execute" class="">Execute</a>
+                                <li class="active">
+                                  <a href="ConcurrentSharp.AsyncThrottle.Execute.html" title="Execute" class="active">Execute</a>
                                 </li>
                                 <li class="">
                                   <a href="ConcurrentSharp.AsyncThrottle.ExecuteAll.html" title="ExecuteAll" class="">ExecuteAll</a>
@@ -286,22 +286,23 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="ConcurrentSharp.AsyncEventHandle.#ctor*">
+            <article class="content wrap" id="_content" data-uid="ConcurrentSharp.AsyncThrottle.Execute*">
 
-<h1 id="ConcurrentSharp_AsyncEventHandle__ctor_" data-uid="ConcurrentSharp.AsyncEventHandle.#ctor*">Constructor AsyncEventHandle
+<h1 id="ConcurrentSharp_AsyncThrottle_Execute_" data-uid="ConcurrentSharp.AsyncThrottle.Execute*">Method Execute
 </h1>
 <div class="markdown level0 summary"></div>
 <div class="markdown level0 conceptual"></div>
 
 
 
-<a id="ConcurrentSharp_AsyncEventHandle__ctor_" data-uid="ConcurrentSharp.AsyncEventHandle.#ctor*"></a>
-<h4 id="ConcurrentSharp_AsyncEventHandle__ctor_EventWaitHandle_" data-uid="ConcurrentSharp.AsyncEventHandle.#ctor(EventWaitHandle)">AsyncEventHandle(EventWaitHandle)</h4>
-<div class="markdown level1 summary"></div>
+<a id="ConcurrentSharp_AsyncThrottle_Execute_" data-uid="ConcurrentSharp.AsyncThrottle.Execute*"></a>
+<h4 id="ConcurrentSharp_AsyncThrottle_Execute_Action_" data-uid="ConcurrentSharp.AsyncThrottle.Execute(Action)">Execute(Action)</h4>
+<div class="markdown level1 summary"><p>A convenience method that executes the <code data-dev-comment-type="paramref" class="paramref">action</code> operation using the throttle, eliminating manual management of the throttle token.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 <h5 class="decalaration">Declaration</h5>
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public AsyncEventHandle(EventWaitHandle eventWaitHandle)</code></pre>
+  <pre><code class="lang-csharp hljs">public void Execute(Action action)</code></pre>
 </div>
 <h5 class="parameters">Parameters</h5>
 <table class="table table-bordered table-striped table-condensed">
@@ -314,9 +315,227 @@
   </thead>
   <tbody>
     <tr>
-      <td><span class="xref">EventWaitHandle</span></td>
-      <td><span class="parametername">eventWaitHandle</span></td>
-      <td></td>
+      <td><span class="xref">Action</span></td>
+      <td><span class="parametername">action</span></td>
+      <td><p>The job to execute via the throttle.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 id="ConcurrentSharp_AsyncThrottle_Execute_Action__examples">Examples</h5>
+<pre><code>var throttle = new Throttle(4); //No more than 4 simultaneous operations.
+
+// Start 100 calls to a &apos;DoWork&apos; function.
+for (int cnt = 0; cnt &lt; 100; cnt++)
+{
+    System.Threading.ThreadPool.QueueUserWorkItem
+    (
+        (reserved) =>
+        {
+            throttle.Execute(() => DoWork()); // Execute the action via the throttle&apos;s Execute method.
+        }
+}</code></pre>
+
+
+
+<a id="ConcurrentSharp_AsyncThrottle_Execute_" data-uid="ConcurrentSharp.AsyncThrottle.Execute*"></a>
+<h4 id="ConcurrentSharp_AsyncThrottle_Execute__1_Action___0____0_" data-uid="ConcurrentSharp.AsyncThrottle.Execute``1(Action{``0},``0)">Execute&lt;T&gt;(Action&lt;T&gt;, T)</h4>
+<div class="markdown level1 summary"><p>A convenience method that executes the <code data-dev-comment-type="paramref" class="paramref">action</code> operation using the throttle, eliminating manual management of the throttle token.</p>
+</div>
+<div class="markdown level1 conceptual"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public void Execute&lt;T&gt;(Action&lt;T&gt; action, T arg)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span class="xref">Action</span>&lt;T&gt;</td>
+      <td><span class="parametername">action</span></td>
+      <td><p>The job to execute via the throttle.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T</span></td>
+      <td><span class="parametername">arg</span></td>
+      <td><p>The value to pass to <code data-dev-comment-type="paramref" class="paramref">action</code> when it is executed.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="typeParameters">Type Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span class="parametername">T</span></td>
+      <td><p>The type of argument passed to the action.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+
+<a id="ConcurrentSharp_AsyncThrottle_Execute_" data-uid="ConcurrentSharp.AsyncThrottle.Execute*"></a>
+<h4 id="ConcurrentSharp_AsyncThrottle_Execute__1_Func___0__" data-uid="ConcurrentSharp.AsyncThrottle.Execute``1(Func{``0})">Execute&lt;TResult&gt;(Func&lt;TResult&gt;)</h4>
+<div class="markdown level1 summary"><p>A convenience method that executes the <code data-dev-comment-type="paramref" class="paramref">func</code> operation using the throttle and returning it&apos;s result while eliminating manual management of the throttle token.</p>
+</div>
+<div class="markdown level1 conceptual"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public TResult Execute&lt;TResult&gt;(Func&lt;TResult&gt; func)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span class="xref">Func</span>&lt;TResult&gt;</td>
+      <td><span class="parametername">func</span></td>
+      <td><p>The function to execute via the throttle.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span class="xref">TResult</span></td>
+      <td><p>The value returned by the <code data-dev-comment-type="paramref" class="paramref">func</code> parameter.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="typeParameters">Type Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span class="parametername">TResult</span></td>
+      <td><p>The type of value returned by <code data-dev-comment-type="paramref" class="paramref">func</code>.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 id="ConcurrentSharp_AsyncThrottle_Execute__1_Func___0___examples">Examples</h5>
+<pre><code>var throttle = new Throttle(4); //No more than 4 simultaneous operations.
+
+var results = new List*lt;int>();
+// Start 100 calls to a &apos;DoWork&apos; function.
+for (int cnt = 0; cnt &lt; 100; cnt++)
+{
+    System.Threading.ThreadPool.QueueUserWorkItem
+    (
+        (reserved) =>
+        {
+            var result = throttle.Execute(() => DoWork()); 
+            lock (results)
+            {
+                results.Add(result);
+            }
+        }
+}</code></pre>
+
+
+
+<a id="ConcurrentSharp_AsyncThrottle_Execute_" data-uid="ConcurrentSharp.AsyncThrottle.Execute*"></a>
+<h4 id="ConcurrentSharp_AsyncThrottle_Execute__2_Func___0___1____0_" data-uid="ConcurrentSharp.AsyncThrottle.Execute``2(Func{``0,``1},``0)">Execute&lt;T, TResult&gt;(Func&lt;T, TResult&gt;, T)</h4>
+<div class="markdown level1 summary"><p>A convenience method that executes the <code data-dev-comment-type="paramref" class="paramref">func</code> operation using the throttle and returning it&apos;s result while eliminating manual management of the throttle token.</p>
+</div>
+<div class="markdown level1 conceptual"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public TResult Execute&lt;T, TResult&gt;(Func&lt;T, TResult&gt; func, T arg)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span class="xref">Func</span>&lt;T, TResult&gt;</td>
+      <td><span class="parametername">func</span></td>
+      <td><p>The function to execute via the throttle.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">T</span></td>
+      <td><span class="parametername">arg</span></td>
+      <td><p>The value to pass to <code data-dev-comment-type="paramref" class="paramref">func</code> when it is executed.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span class="xref">TResult</span></td>
+      <td><p>The value returned by the <code data-dev-comment-type="paramref" class="paramref">func</code> parameter.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="typeParameters">Type Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span class="parametername">T</span></td>
+      <td><p>The type of argument passed to the function.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">TResult</span></td>
+      <td><p>The type of value returned by <code data-dev-comment-type="paramref" class="paramref">func</code>.</p>
+</td>
     </tr>
   </tbody>
 </table>

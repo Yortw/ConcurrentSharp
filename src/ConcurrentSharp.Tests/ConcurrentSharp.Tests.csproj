@@ -67,6 +67,7 @@
   <ItemGroup>
     <Compile Include="AsyncLockTests.cs" />
     <Compile Include="AsyncSemaphoreTests.cs" />
+    <Compile Include="AsyncThrottleTests.cs" />
     <Compile Include="BlockingCollectionProcessorTests.cs" />
     <Compile Include="CounterTests.cs" />
     <Compile Include="GlobalSuppressions.cs" />

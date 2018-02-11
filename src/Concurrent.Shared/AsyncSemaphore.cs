@@ -9,7 +9,7 @@ namespace ConcurrentSharp
 	/// <summary>
 	/// Provides synchronisation between multiple threads, restricting concurrent operations to a maximum limit.
 	/// </summary>
-	public class AsyncSemaphore : IReleasable
+	public sealed class AsyncSemaphore : IReleasable, IDisposable
 	{
 		private System.Threading.Semaphore _Semaphore;
 		private System.Collections.Generic.Queue<CancellableTaskSource<IDisposable>> _Queue;
@@ -27,10 +27,9 @@ namespace ConcurrentSharp
 		/// Constructs a new <see cref="AsyncSemaphore"/> using an existing (synchronous) <see cref="System.Threading.Semaphore"/> as the synchronisation primitive.
 		/// </summary>
 		/// <param name="semaphore">The <see cref="System.Threading.Semaphore"/> to use for synchronisation.</param>
-		public AsyncSemaphore(System.Threading.Semaphore semaphore)
+		private AsyncSemaphore(System.Threading.Semaphore semaphore)
 		{
 			if (semaphore == null) throw new ArgumentNullException(nameof(semaphore));
-
 			_Queue = new System.Collections.Generic.Queue<CancellableTaskSource<IDisposable>>();
 			_Semaphore = semaphore;
 		}
@@ -95,6 +94,7 @@ namespace ConcurrentSharp
 			return retVal;
 		}
 
+#pragma warning disable 1574
 		/// <summary>
 		/// Synchronously attempts to obtain a lease from the semaphore, returns a task whose result releases the lease when it is disposed.
 		/// </summary>
@@ -102,6 +102,7 @@ namespace ConcurrentSharp
 		/// <para>On platforms that support <see cref="System.Runtime.ExceptionServices.ExceptionDispatchInfo"/> any exceptions thrown by the task will be unwrapped, on other platforms the <see cref="AggregateException"/> will be thown and must be manually handled.</para>
 		/// </remarks>
 		/// <returns>A task whose result is disposable, and releases the lease when disposed.</returns>
+#pragma warning restore 1574
 		public IDisposable Wait()
 		{
 			return Wait(CancellationToken.None);
@@ -138,6 +139,15 @@ namespace ConcurrentSharp
 					if (next.TaskCompletionSource.TrySetResult(new ReleaseToken(this))) break;
 				}
 			}
+		}
+
+		/// <summary>
+		/// Disposes this instance and all internal resources.
+		/// </summary>
+		public void Dispose()
+		{
+			_Semaphore?.Dispose();
+			_Semaphore = null;
 		}
 	}
 }

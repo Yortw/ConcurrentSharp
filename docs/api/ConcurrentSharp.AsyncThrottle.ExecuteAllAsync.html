@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Constructor AsyncEventHandle
+    <title>Method ExecuteAllAsync
    | ConcurrentSharp </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Constructor AsyncEventHandle
+    <meta name="title" content="Method ExecuteAllAsync
    | ConcurrentSharp ">
     <meta name="generator" content="docfx 2.26.3.0">
     
@@ -88,8 +88,8 @@
                             <a href="ConcurrentSharp.AsyncEventHandle.html" title="AsyncEventHandle" class="">AsyncEventHandle</a>
                               
                               <ul class="nav level3">
-                                <li class="active">
-                                  <a href="ConcurrentSharp.AsyncEventHandle.-ctor.html" title="AsyncEventHandle" class="active">AsyncEventHandle</a>
+                                <li class="">
+                                  <a href="ConcurrentSharp.AsyncEventHandle.-ctor.html" title="AsyncEventHandle" class="">AsyncEventHandle</a>
                                 </li>
                               </ul>  </li>
                           <li class="">
@@ -148,8 +148,8 @@
                                 <li class="">
                                   <a href="ConcurrentSharp.AsyncThrottle.ExecuteAll.html" title="ExecuteAll" class="">ExecuteAll</a>
                                 </li>
-                                <li class="">
-                                  <a href="ConcurrentSharp.AsyncThrottle.ExecuteAllAsync.html" title="ExecuteAllAsync" class="">ExecuteAllAsync</a>
+                                <li class="active">
+                                  <a href="ConcurrentSharp.AsyncThrottle.ExecuteAllAsync.html" title="ExecuteAllAsync" class="active">ExecuteAllAsync</a>
                                 </li>
                                 <li class="">
                                   <a href="ConcurrentSharp.AsyncThrottle.ExecuteAsync.html" title="ExecuteAsync" class="">ExecuteAsync</a>
@@ -286,22 +286,23 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="ConcurrentSharp.AsyncEventHandle.#ctor*">
+            <article class="content wrap" id="_content" data-uid="ConcurrentSharp.AsyncThrottle.ExecuteAllAsync*">
 
-<h1 id="ConcurrentSharp_AsyncEventHandle__ctor_" data-uid="ConcurrentSharp.AsyncEventHandle.#ctor*">Constructor AsyncEventHandle
+<h1 id="ConcurrentSharp_AsyncThrottle_ExecuteAllAsync_" data-uid="ConcurrentSharp.AsyncThrottle.ExecuteAllAsync*">Method ExecuteAllAsync
 </h1>
 <div class="markdown level0 summary"></div>
 <div class="markdown level0 conceptual"></div>
 
 
 
-<a id="ConcurrentSharp_AsyncEventHandle__ctor_" data-uid="ConcurrentSharp.AsyncEventHandle.#ctor*"></a>
-<h4 id="ConcurrentSharp_AsyncEventHandle__ctor_EventWaitHandle_" data-uid="ConcurrentSharp.AsyncEventHandle.#ctor(EventWaitHandle)">AsyncEventHandle(EventWaitHandle)</h4>
-<div class="markdown level1 summary"></div>
+<a id="ConcurrentSharp_AsyncThrottle_ExecuteAllAsync_" data-uid="ConcurrentSharp.AsyncThrottle.ExecuteAllAsync*"></a>
+<h4 id="ConcurrentSharp_AsyncThrottle_ExecuteAllAsync__1_IEnumerable___0__Func___0_Task__" data-uid="ConcurrentSharp.AsyncThrottle.ExecuteAllAsync``1(IEnumerable{``0},Func{``0,Task})">ExecuteAllAsync&lt;T&gt;(IEnumerable&lt;T&gt;, Func&lt;T, Task&gt;)</h4>
+<div class="markdown level1 summary"><p>Executes <code data-dev-comment-type="paramref" class="paramref">asyncAction</code> over all items in <code data-dev-comment-type="paramref" class="paramref">items</code>, using the throttle to restrict the maximum number of parallel executing tasks.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 <h5 class="decalaration">Declaration</h5>
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public AsyncEventHandle(EventWaitHandle eventWaitHandle)</code></pre>
+  <pre><code class="lang-csharp hljs">public Task ExecuteAllAsync&lt;T&gt;(IEnumerable&lt;T&gt; items, Func&lt;T, Task&gt; asyncAction)</code></pre>
 </div>
 <h5 class="parameters">Parameters</h5>
 <table class="table table-bordered table-striped table-condensed">
@@ -314,9 +315,151 @@
   </thead>
   <tbody>
     <tr>
-      <td><span class="xref">EventWaitHandle</span></td>
-      <td><span class="parametername">eventWaitHandle</span></td>
+      <td><span class="xref">IEnumerable</span>&lt;T&gt;</td>
+      <td><span class="parametername">items</span></td>
+      <td><p>The items to process.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">Func</span>&lt;T, <span class="xref">Task</span>&gt;</td>
+      <td><span class="parametername">asyncAction</span></td>
+      <td><p>A function that returns a task and takes a value of {T}.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span class="xref">Task</span></td>
+      <td><p>Returns a <span class="xref">System.Threading.Tasks.Task</span> that represents completion processing all items in <code data-dev-comment-type="paramref" class="paramref">items</code>.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="typeParameters">Type Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span class="parametername">T</span></td>
+      <td><p>The type of value in <code data-dev-comment-type="paramref" class="paramref">items</code>.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="exceptions">Exceptions</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Condition</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span class="xref">System.ArgumentNullException</span></td>
+      <td><p>Thrown if <code data-dev-comment-type="paramref" class="paramref">items</code> or <code data-dev-comment-type="paramref" class="paramref">asyncAction</code> is null.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+
+<a id="ConcurrentSharp_AsyncThrottle_ExecuteAllAsync_" data-uid="ConcurrentSharp.AsyncThrottle.ExecuteAllAsync*"></a>
+<h4 id="ConcurrentSharp_AsyncThrottle_ExecuteAllAsync__2_IEnumerable___0__Func___0_Task___1___" data-uid="ConcurrentSharp.AsyncThrottle.ExecuteAllAsync``2(IEnumerable{``0},Func{``0,Task{``1}})">ExecuteAllAsync&lt;TArg, TResult&gt;(IEnumerable&lt;TArg&gt;, Func&lt;TArg, Task&lt;TResult&gt;&gt;)</h4>
+<div class="markdown level1 summary"><p>Executes <code data-dev-comment-type="paramref" class="paramref">asyncAction</code> over all items in <code data-dev-comment-type="paramref" class="paramref">items</code>, using the throttle to restrict the maximum number of parallel executing tasks.</p>
+</div>
+<div class="markdown level1 conceptual"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public Task&lt;IEnumerable&lt;Task&lt;TResult&gt;&gt;&gt; ExecuteAllAsync&lt;TArg, TResult&gt;(IEnumerable&lt;TArg&gt; items, Func&lt;TArg, Task&lt;TResult&gt;&gt; asyncAction)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span class="xref">IEnumerable</span>&lt;TArg&gt;</td>
+      <td><span class="parametername">items</span></td>
+      <td><p>The items to process.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">Func</span>&lt;TArg, <span class="xref">Task</span>&lt;TResult&gt;&gt;</td>
+      <td><span class="parametername">asyncAction</span></td>
+      <td><p>A function that returns a task of {TResult} and takes a value of {TArg}.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span class="xref">Task</span>&lt;<span class="xref">IEnumerable</span>&lt;<span class="xref">Task</span>&lt;TResult&gt;&gt;&gt;</td>
+      <td><p>Returns a task whose result is an enumerable of completed tasks.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="typeParameters">Type Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span class="parametername">TArg</span></td>
+      <td><p>The type of value in <code data-dev-comment-type="paramref" class="paramref">items</code>.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="parametername">TResult</span></td>
       <td></td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="exceptions">Exceptions</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Condition</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span class="xref">System.ArgumentNullException</span></td>
+      <td><p>Thrown if <code data-dev-comment-type="paramref" class="paramref">items</code> or <code data-dev-comment-type="paramref" class="paramref">asyncAction</code> is null.</p>
+</td>
     </tr>
   </tbody>
 </table>

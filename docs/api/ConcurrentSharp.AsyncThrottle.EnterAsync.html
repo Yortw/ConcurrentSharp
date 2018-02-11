@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Constructor AsyncEventHandle
+    <title>Method EnterAsync
    | ConcurrentSharp </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Constructor AsyncEventHandle
+    <meta name="title" content="Method EnterAsync
    | ConcurrentSharp ">
     <meta name="generator" content="docfx 2.26.3.0">
     
@@ -88,8 +88,8 @@
                             <a href="ConcurrentSharp.AsyncEventHandle.html" title="AsyncEventHandle" class="">AsyncEventHandle</a>
                               
                               <ul class="nav level3">
-                                <li class="active">
-                                  <a href="ConcurrentSharp.AsyncEventHandle.-ctor.html" title="AsyncEventHandle" class="active">AsyncEventHandle</a>
+                                <li class="">
+                                  <a href="ConcurrentSharp.AsyncEventHandle.-ctor.html" title="AsyncEventHandle" class="">AsyncEventHandle</a>
                                 </li>
                               </ul>  </li>
                           <li class="">
@@ -139,8 +139,8 @@
                                 <li class="">
                                   <a href="ConcurrentSharp.AsyncThrottle.Enter.html" title="Enter" class="">Enter</a>
                                 </li>
-                                <li class="">
-                                  <a href="ConcurrentSharp.AsyncThrottle.EnterAsync.html" title="EnterAsync" class="">EnterAsync</a>
+                                <li class="active">
+                                  <a href="ConcurrentSharp.AsyncThrottle.EnterAsync.html" title="EnterAsync" class="active">EnterAsync</a>
                                 </li>
                                 <li class="">
                                   <a href="ConcurrentSharp.AsyncThrottle.Execute.html" title="Execute" class="">Execute</a>
@@ -286,40 +286,52 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="ConcurrentSharp.AsyncEventHandle.#ctor*">
+            <article class="content wrap" id="_content" data-uid="ConcurrentSharp.AsyncThrottle.EnterAsync*">
 
-<h1 id="ConcurrentSharp_AsyncEventHandle__ctor_" data-uid="ConcurrentSharp.AsyncEventHandle.#ctor*">Constructor AsyncEventHandle
+<h1 id="ConcurrentSharp_AsyncThrottle_EnterAsync_" data-uid="ConcurrentSharp.AsyncThrottle.EnterAsync*">Method EnterAsync
 </h1>
 <div class="markdown level0 summary"></div>
 <div class="markdown level0 conceptual"></div>
 
 
 
-<a id="ConcurrentSharp_AsyncEventHandle__ctor_" data-uid="ConcurrentSharp.AsyncEventHandle.#ctor*"></a>
-<h4 id="ConcurrentSharp_AsyncEventHandle__ctor_EventWaitHandle_" data-uid="ConcurrentSharp.AsyncEventHandle.#ctor(EventWaitHandle)">AsyncEventHandle(EventWaitHandle)</h4>
-<div class="markdown level1 summary"></div>
+<a id="ConcurrentSharp_AsyncThrottle_EnterAsync_" data-uid="ConcurrentSharp.AsyncThrottle.EnterAsync*"></a>
+<h4 id="ConcurrentSharp_AsyncThrottle_EnterAsync" data-uid="ConcurrentSharp.AsyncThrottle.EnterAsync">EnterAsync()</h4>
+<div class="markdown level1 summary"><p>Creates and returns an object implementing <see cref="!:IDisposable"></see> that can be used to notify this throttle that a job has completed. If there are already the maximum number of 
+operations running using this throttle, then this method will block the calling thread until another job completes.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 <h5 class="decalaration">Declaration</h5>
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public AsyncEventHandle(EventWaitHandle eventWaitHandle)</code></pre>
+  <pre><code class="lang-csharp hljs">public Task&lt;IDisposable&gt; EnterAsync()</code></pre>
 </div>
-<h5 class="parameters">Parameters</h5>
+<h5 class="returns">Returns</h5>
 <table class="table table-bordered table-striped table-condensed">
   <thead>
     <tr>
       <th>Type</th>
-      <th>Name</th>
       <th>Description</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td><span class="xref">EventWaitHandle</span></td>
-      <td><span class="parametername">eventWaitHandle</span></td>
-      <td></td>
+      <td><span class="xref">Task</span>&lt;<span class="xref">IDisposable</span>&gt;</td>
+      <td><p>A <span class="xref">ConcurrentSharp.ThrottleToken</span> that can be used to indicate a throttled operation has completed and another operation can begin.</p>
+</td>
     </tr>
   </tbody>
 </table>
+<h5 id="ConcurrentSharp_AsyncThrottle_EnterAsync_examples">Examples</h5>
+<pre><code>public void DoWork()
+{
+    // Assumes there is there is a _Throttle field set
+    // to a valid instance of the Throttle class.
+    using (var token = await _Throttle.EnterAsync())
+    {
+        // Your actual work goes here.
+    }
+}</code></pre>
+
 </article>
           </div>
           

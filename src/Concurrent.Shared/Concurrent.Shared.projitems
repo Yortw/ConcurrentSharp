@@ -20,6 +20,8 @@
     <Compile Include="$(MSBuildThisFileDirectory)ReleaseToken.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)TaskExtensions.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)TaskFrom.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)AsyncThrottle .cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Throttle.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ThrottleToken.cs" />
   </ItemGroup>
 </Project>
