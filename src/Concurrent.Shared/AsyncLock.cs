@@ -66,6 +66,7 @@ namespace ConcurrentSharp
 		/// </summary>
 		/// <param name="cancellationToken">A <see cref="CancellationToken"/> used to cancel waiting for the lock.</param>
 		/// <returns>A task whose result is an <see cref="IDisposable"/> used to release the lock.</returns>
+		/// <exception cref="System.Threading.Tasks.TaskCanceledException">Thrown if waiting for the lock is cancelled via the <paramref name="cancellationToken"/>.</exception>
 		public Task<IDisposable> LockAsync(System.Threading.CancellationToken cancellationToken)
 		{
 			TaskCompletionSource<IDisposable> tcs = null;
@@ -131,10 +132,26 @@ namespace ConcurrentSharp
 #pragma warning restore 1574
 		public IDisposable Lock()
 		{
+			return Lock(CancellationToken.None);
+		}
+
+#pragma warning disable 1574
+		/// <summary>
+		/// Acquires the lock synchronously and returns the <see cref="IDisposable"/> token that releases the lock when disposed.
+		/// </summary>
+		/// <remarks>
+		/// <para>On platforms that support <see cref="System.Runtime.ExceptionServices.ExceptionDispatchInfo"/> any exceptions thrown by the task will be unwrapped, on other platforms the <see cref="AggregateException"/> will be thown and must be manually handled.</para>
+		/// </remarks>
+		/// <param name="cancellationToken">A <see cref="CancellationToken"/> used to cancel waiting for the lock.</param>
+		/// <returns>A object implementing <see cref="IDisposable"/> that releases the lock when the dispose method is called.</returns>
+		/// <exception cref="System.Threading.Tasks.TaskCanceledException">Thrown if waiting for the lock is cancelled via the <paramref name="cancellationToken"/>.</exception>
+#pragma warning restore 1574
+		public IDisposable Lock(System.Threading.CancellationToken cancellationToken)
+		{
 #if SUPPORTS_EXCEPTIONSERVICES
-			return LockAsync().WaitWithUnwrappedException();
+			return LockAsync(cancellationToken).WaitWithUnwrappedException();
 #else
-			return LockAsync().Result;
+			return LockAsync(cancellationToken).Result;
 #endif
 		}
 

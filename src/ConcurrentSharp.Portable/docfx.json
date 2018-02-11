@@ -65,7 +65,7 @@
 				"_appTitle": "ConcurrentSharp",
 				"_appFaviconPath": "images/ConcurrentSharp.ico",
 				"_appLogoPath": "images/ConcurrentSharp.png",
-				"_appFooter": "Copyright (c) 2017 Troy Willmot"
+				"_appFooter": "Copyright (c) 2018 Troy Willmot"
 			},
 		"template": [ "statictoc", "memberpage/2.24.0/content" ],
 	}

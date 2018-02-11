@@ -100,6 +100,21 @@
                               </ul>  </li>
                           <li class="">
                             <span class="expand-stub"></span>
+                            <a href="ConcurrentSharp.AsyncSemaphore.html" title="AsyncSemaphore" class="">AsyncSemaphore</a>
+                              
+                              <ul class="nav level3">
+                                <li class="">
+                                  <a href="ConcurrentSharp.AsyncSemaphore.-ctor.html" title="AsyncSemaphore" class="">AsyncSemaphore</a>
+                                </li>
+                                <li class="">
+                                  <a href="ConcurrentSharp.AsyncSemaphore.Wait.html" title="Wait" class="">Wait</a>
+                                </li>
+                                <li class="">
+                                  <a href="ConcurrentSharp.AsyncSemaphore.WaitAsync.html" title="WaitAsync" class="">WaitAsync</a>
+                                </li>
+                              </ul>  </li>
+                          <li class="">
+                            <span class="expand-stub"></span>
                             <a href="ConcurrentSharp.BlockingCollectionProcessor-1.html" title="BlockingCollectionProcessor&lt;T&gt;" class="">BlockingCollectionProcessor&lt;T&gt;</a>
                               
                               <ul class="nav level3">
@@ -308,6 +323,70 @@
 <h5 id="ConcurrentSharp_AsyncLock_Lock_remarks">Remarks</h5>
 <div class="markdown level1 remarks"><p>On platforms that support <span class="xref">System.Runtime.ExceptionServices.ExceptionDispatchInfo</span> any exceptions thrown by the task will be unwrapped, on other platforms the <see cref="!:AggregateException"></see> will be thown and must be manually handled.</p>
 </div>
+
+
+<a id="ConcurrentSharp_AsyncLock_Lock_" data-uid="ConcurrentSharp.AsyncLock.Lock*"></a>
+<h4 id="ConcurrentSharp_AsyncLock_Lock_System_Threading_CancellationToken_" data-uid="ConcurrentSharp.AsyncLock.Lock(System.Threading.CancellationToken)">Lock(CancellationToken)</h4>
+<div class="markdown level1 summary"><p>Acquires the lock synchronously and returns the <see cref="!:IDisposable"></see> token that releases the lock when disposed.</p>
+</div>
+<div class="markdown level1 conceptual"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public IDisposable Lock(CancellationToken cancellationToken)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span class="xref">System.Threading.CancellationToken</span></td>
+      <td><span class="parametername">cancellationToken</span></td>
+      <td><p>A <see cref="!:CancellationToken"></see> used to cancel waiting for the lock.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span class="xref">IDisposable</span></td>
+      <td><p>A object implementing <see cref="!:IDisposable"></see> that releases the lock when the dispose method is called.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 id="ConcurrentSharp_AsyncLock_Lock_System_Threading_CancellationToken__remarks">Remarks</h5>
+<div class="markdown level1 remarks"><p>On platforms that support <span class="xref">System.Runtime.ExceptionServices.ExceptionDispatchInfo</span> any exceptions thrown by the task will be unwrapped, on other platforms the <see cref="!:AggregateException"></see> will be thown and must be manually handled.</p>
+</div>
+<h5 class="exceptions">Exceptions</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Condition</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span class="xref">System.Threading.Tasks.TaskCanceledException</span></td>
+      <td><p>Thrown if waiting for the lock is cancelled via the <code data-dev-comment-type="paramref" class="paramref">cancellationToken</code>.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
 </article>
           </div>
           
@@ -332,7 +411,7 @@
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
-            Copyright (c) 2017 Troy Willmot
+            Copyright (c) 2018 Troy Willmot
             
           </div>
         </div>

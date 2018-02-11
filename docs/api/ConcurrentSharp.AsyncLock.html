@@ -100,6 +100,21 @@
                               </ul>  </li>
                           <li class="">
                             <span class="expand-stub"></span>
+                            <a href="ConcurrentSharp.AsyncSemaphore.html" title="AsyncSemaphore" class="">AsyncSemaphore</a>
+                              
+                              <ul class="nav level3">
+                                <li class="">
+                                  <a href="ConcurrentSharp.AsyncSemaphore.-ctor.html" title="AsyncSemaphore" class="">AsyncSemaphore</a>
+                                </li>
+                                <li class="">
+                                  <a href="ConcurrentSharp.AsyncSemaphore.Wait.html" title="Wait" class="">Wait</a>
+                                </li>
+                                <li class="">
+                                  <a href="ConcurrentSharp.AsyncSemaphore.WaitAsync.html" title="WaitAsync" class="">WaitAsync</a>
+                                </li>
+                              </ul>  </li>
+                          <li class="">
+                            <span class="expand-stub"></span>
                             <a href="ConcurrentSharp.BlockingCollectionProcessor-1.html" title="BlockingCollectionProcessor&lt;T&gt;" class="">BlockingCollectionProcessor&lt;T&gt;</a>
                               
                               <ul class="nav level3">
@@ -276,7 +291,8 @@
   
   <h1 id="ConcurrentSharp_AsyncLock" data-uid="ConcurrentSharp.AsyncLock" class="text-break">Class AsyncLock
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Provides an awaitable (non-blocking) synchronisation primitve.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -313,6 +329,28 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public class AsyncLock : IReleasable</code></pre>
   </div>
+  <h5 id="ConcurrentSharp_AsyncLock_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p><p>Where you might use;</p>
+<example><p>
+<pre><code>private object _Synchroniser = new object();
+...
+lock (_Synchroniser)
+{
+    // Your synchronised code (await not allowed)
+}</code></pre>
+<p></example>
+<p>
+You would instead use (note, use of the await keyword within the using is critical for correct behaviour);
+</p>
+<example><p>
+<pre><code>private AsyncLock _AsyncLock = new AsyncLock();
+...
+using (var lock = await _AsyncLock())
+{
+    // Your synchronised code, can use await
+}</code></pre>
+<p></example></p>
+</div>
   <h3 id="constructors">Constructors
   </h3>
   <table class="table table-bordered table-striped table-condensed">
@@ -345,6 +383,13 @@
       <tr>
         <td id="ConcurrentSharp_AsyncLock_Lock" data-uid="ConcurrentSharp.AsyncLock.Lock">
           <a class="xref" href="ConcurrentSharp.AsyncLock.Lock.html#ConcurrentSharp_AsyncLock_Lock">Lock()</a>
+        </td>
+        <td class="markdown level1 summary"><p>Acquires the lock synchronously and returns the <see cref="!:IDisposable"></see> token that releases the lock when disposed.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ConcurrentSharp_AsyncLock_Lock_System_Threading_CancellationToken_" data-uid="ConcurrentSharp.AsyncLock.Lock(System.Threading.CancellationToken)">
+          <a class="xref" href="ConcurrentSharp.AsyncLock.Lock.html#ConcurrentSharp_AsyncLock_Lock_System_Threading_CancellationToken_">Lock(CancellationToken)</a>
         </td>
         <td class="markdown level1 summary"><p>Acquires the lock synchronously and returns the <see cref="!:IDisposable"></see> token that releases the lock when disposed.</p>
 </td>
@@ -389,7 +434,7 @@
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
-            Copyright (c) 2017 Troy Willmot
+            Copyright (c) 2018 Troy Willmot
             
           </div>
         </div>

@@ -11,6 +11,7 @@
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)AssemblyInfoCommon.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)AsyncLock.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)AsyncSemaphore.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)BlockingCollectionProcessor.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)CancellableTaskSource.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Counter.cs" />

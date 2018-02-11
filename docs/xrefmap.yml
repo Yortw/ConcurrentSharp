@@ -31,6 +31,12 @@ references:
   commentId: M:ConcurrentSharp.AsyncLock.Lock
   fullName: ConcurrentSharp.AsyncLock.Lock()
   nameWithType: AsyncLock.Lock()
+- uid: ConcurrentSharp.AsyncLock.Lock(System.Threading.CancellationToken)
+  name: Lock(CancellationToken)
+  href: api/ConcurrentSharp.AsyncLock.Lock.html#ConcurrentSharp_AsyncLock_Lock_System_Threading_CancellationToken_
+  commentId: M:ConcurrentSharp.AsyncLock.Lock(System.Threading.CancellationToken)
+  fullName: ConcurrentSharp.AsyncLock.Lock(System.Threading.CancellationToken)
+  nameWithType: AsyncLock.Lock(CancellationToken)
 - uid: ConcurrentSharp.AsyncLock.Lock*
   name: Lock
   href: api/ConcurrentSharp.AsyncLock.Lock.html
@@ -55,6 +61,66 @@ references:
   commentId: Overload:ConcurrentSharp.AsyncLock.LockAsync
   fullName: ConcurrentSharp.AsyncLock.LockAsync
   nameWithType: AsyncLock.LockAsync
+- uid: ConcurrentSharp.AsyncSemaphore
+  name: AsyncSemaphore
+  href: api/ConcurrentSharp.AsyncSemaphore.html
+  commentId: T:ConcurrentSharp.AsyncSemaphore
+  fullName: ConcurrentSharp.AsyncSemaphore
+  nameWithType: AsyncSemaphore
+- uid: ConcurrentSharp.AsyncSemaphore.#ctor(System.Int32,System.Int32)
+  name: AsyncSemaphore(Int32, Int32)
+  href: api/ConcurrentSharp.AsyncSemaphore.-ctor.html#ConcurrentSharp_AsyncSemaphore__ctor_System_Int32_System_Int32_
+  commentId: M:ConcurrentSharp.AsyncSemaphore.#ctor(System.Int32,System.Int32)
+  fullName: ConcurrentSharp.AsyncSemaphore.AsyncSemaphore(System.Int32, System.Int32)
+  nameWithType: AsyncSemaphore.AsyncSemaphore(Int32, Int32)
+- uid: ConcurrentSharp.AsyncSemaphore.#ctor(System.Threading.Semaphore)
+  name: AsyncSemaphore(Semaphore)
+  href: api/ConcurrentSharp.AsyncSemaphore.-ctor.html#ConcurrentSharp_AsyncSemaphore__ctor_System_Threading_Semaphore_
+  commentId: M:ConcurrentSharp.AsyncSemaphore.#ctor(System.Threading.Semaphore)
+  fullName: ConcurrentSharp.AsyncSemaphore.AsyncSemaphore(System.Threading.Semaphore)
+  nameWithType: AsyncSemaphore.AsyncSemaphore(Semaphore)
+- uid: ConcurrentSharp.AsyncSemaphore.#ctor*
+  name: AsyncSemaphore
+  href: api/ConcurrentSharp.AsyncSemaphore.-ctor.html
+  commentId: Overload:ConcurrentSharp.AsyncSemaphore.#ctor
+  fullName: ConcurrentSharp.AsyncSemaphore.AsyncSemaphore
+  nameWithType: AsyncSemaphore.AsyncSemaphore
+- uid: ConcurrentSharp.AsyncSemaphore.Wait
+  name: Wait()
+  href: api/ConcurrentSharp.AsyncSemaphore.Wait.html#ConcurrentSharp_AsyncSemaphore_Wait
+  commentId: M:ConcurrentSharp.AsyncSemaphore.Wait
+  fullName: ConcurrentSharp.AsyncSemaphore.Wait()
+  nameWithType: AsyncSemaphore.Wait()
+- uid: ConcurrentSharp.AsyncSemaphore.Wait(CancellationToken)
+  name: Wait(CancellationToken)
+  href: api/ConcurrentSharp.AsyncSemaphore.Wait.html#ConcurrentSharp_AsyncSemaphore_Wait_CancellationToken_
+  commentId: M:ConcurrentSharp.AsyncSemaphore.Wait(CancellationToken)
+  fullName: ConcurrentSharp.AsyncSemaphore.Wait(CancellationToken)
+  nameWithType: AsyncSemaphore.Wait(CancellationToken)
+- uid: ConcurrentSharp.AsyncSemaphore.Wait*
+  name: Wait
+  href: api/ConcurrentSharp.AsyncSemaphore.Wait.html
+  commentId: Overload:ConcurrentSharp.AsyncSemaphore.Wait
+  fullName: ConcurrentSharp.AsyncSemaphore.Wait
+  nameWithType: AsyncSemaphore.Wait
+- uid: ConcurrentSharp.AsyncSemaphore.WaitAsync
+  name: WaitAsync()
+  href: api/ConcurrentSharp.AsyncSemaphore.WaitAsync.html#ConcurrentSharp_AsyncSemaphore_WaitAsync
+  commentId: M:ConcurrentSharp.AsyncSemaphore.WaitAsync
+  fullName: ConcurrentSharp.AsyncSemaphore.WaitAsync()
+  nameWithType: AsyncSemaphore.WaitAsync()
+- uid: ConcurrentSharp.AsyncSemaphore.WaitAsync(CancellationToken)
+  name: WaitAsync(CancellationToken)
+  href: api/ConcurrentSharp.AsyncSemaphore.WaitAsync.html#ConcurrentSharp_AsyncSemaphore_WaitAsync_CancellationToken_
+  commentId: M:ConcurrentSharp.AsyncSemaphore.WaitAsync(CancellationToken)
+  fullName: ConcurrentSharp.AsyncSemaphore.WaitAsync(CancellationToken)
+  nameWithType: AsyncSemaphore.WaitAsync(CancellationToken)
+- uid: ConcurrentSharp.AsyncSemaphore.WaitAsync*
+  name: WaitAsync
+  href: api/ConcurrentSharp.AsyncSemaphore.WaitAsync.html
+  commentId: Overload:ConcurrentSharp.AsyncSemaphore.WaitAsync
+  fullName: ConcurrentSharp.AsyncSemaphore.WaitAsync
+  nameWithType: AsyncSemaphore.WaitAsync
 - uid: ConcurrentSharp.BlockingCollectionProcessor`1
   name: BlockingCollectionProcessor<T>
   href: api/ConcurrentSharp.BlockingCollectionProcessor-1.html
