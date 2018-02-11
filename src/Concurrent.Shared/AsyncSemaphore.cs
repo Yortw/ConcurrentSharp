@@ -128,7 +128,16 @@ namespace ConcurrentSharp
 
 		void IReleasable.Release()
 		{
-			_Semaphore.Release();
+			lock (_Queue)
+			{
+				CancellableTaskSource<IDisposable> next = null;
+				while (_Queue.Count > 0 && (next = _Queue.Dequeue()) != null)
+				{
+					//If the task is already cancelled etc. then this will return false
+					//and we move to the next requested lock.
+					if (next.TaskCompletionSource.TrySetResult(new ReleaseToken(this))) break;
+				}
+			}
 		}
 	}
 }

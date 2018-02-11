@@ -7,6 +7,24 @@ references:
   commentId: N:ConcurrentSharp
   fullName: ConcurrentSharp
   nameWithType: ConcurrentSharp
+- uid: ConcurrentSharp.AsyncEventHandle
+  name: AsyncEventHandle
+  href: api/ConcurrentSharp.AsyncEventHandle.html
+  commentId: T:ConcurrentSharp.AsyncEventHandle
+  fullName: ConcurrentSharp.AsyncEventHandle
+  nameWithType: AsyncEventHandle
+- uid: ConcurrentSharp.AsyncEventHandle.#ctor(EventWaitHandle)
+  name: AsyncEventHandle(EventWaitHandle)
+  href: api/ConcurrentSharp.AsyncEventHandle.-ctor.html#ConcurrentSharp_AsyncEventHandle__ctor_EventWaitHandle_
+  commentId: M:ConcurrentSharp.AsyncEventHandle.#ctor(EventWaitHandle)
+  fullName: ConcurrentSharp.AsyncEventHandle.AsyncEventHandle(EventWaitHandle)
+  nameWithType: AsyncEventHandle.AsyncEventHandle(EventWaitHandle)
+- uid: ConcurrentSharp.AsyncEventHandle.#ctor*
+  name: AsyncEventHandle
+  href: api/ConcurrentSharp.AsyncEventHandle.-ctor.html
+  commentId: Overload:ConcurrentSharp.AsyncEventHandle.#ctor
+  fullName: ConcurrentSharp.AsyncEventHandle.AsyncEventHandle
+  nameWithType: AsyncEventHandle.AsyncEventHandle
 - uid: ConcurrentSharp.AsyncLock
   name: AsyncLock
   href: api/ConcurrentSharp.AsyncLock.html
